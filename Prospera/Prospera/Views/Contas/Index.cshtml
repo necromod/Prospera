@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Prospera.Models.Contas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatEmissaoCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatVenciCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevedorCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagadorCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricaocont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetodoPgtoCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoCont)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatEmissaoCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatVenciCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevedorCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PagadorCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricaocont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoPgtoCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoCont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdContas">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdContas">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdContas">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

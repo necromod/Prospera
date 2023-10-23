@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <a asp-area="" asp-controller="Home" asp-action="Privacy">Teeeeeeeeeeeeeeeeeeeeeeeste</a>
+</div>
+
+@* MODELO PARA INSERSÇÃO DE LINK PARA PÁGINAS DIFERENTES!
+    <a asp-controller="NOME-DO-CONTROLADOR" asp-action="NOME-DO-ARQUIVO" class="CLASSES PARA ELEMENTOS CSS">TEXTO A SER EXIBIDO NO FRONT</a>
+
+    NOME-DO-CONTROLADOR será o nome da pasta em que está armazenado o arquivo .cshtml
+    NOME-DO-ARQUIVO será o nome final do arquivo a ser aberto, como index.cshtml
+    CLASSES PARA ELEMENTOS CSS são as classes normais que se adiciona a itens html, podendo também utilizar ID ao invés de classe
+*@
+
+
+
+@* Botão para a página Index de ContaBancaria *@
+<a asp-controller="ContaBancaria" asp-action="Index" class="btn btn-primary">Ir para ContaBancaria</a>
+
+@* Botão para a página Index de Contas *@
+<a asp-controller="Contas" asp-action="Index" class="btn btn-primary">Ir para Contas</a>
+
+@* Botão para a página Index de Extratos *@
+<a asp-controller="Extrato" asp-action="Index" class="btn btn-primary">Ir para Extratos</a>
+
+@* Botão para a página Index de terceiros *@
+<a asp-controller="Terceiros" asp-action="Index" class="btn btn-primary">Ir para terceiros</a>
+
+@* Botão para a página Index de Usuário *@
+<a asp-controller="Usuario" asp-action="Index" class="btn btn-primary">Ir para Usuário</a>
+
