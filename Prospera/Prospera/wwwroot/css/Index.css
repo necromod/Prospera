@@ -1,0 +1,53 @@
+html {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+
+
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
+  text-decoration: none;
+
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+
+}
+
+body {
+  background-color: var(--color-Fundo) !important;
+  /* background-color: black; */
+}
+
+:root {
+  --color-default: #242424;
+  --color-primary: #e64c30;
+  --color-segundary: #1B1572;
+  --color-tertiary: #801D7B;
+  --color-tertiary2: #fdf6f6;
+  --color-quartiary: #7836FA;
+  --color-quintiaty: #373435;
+  --color-Sextiary:#605F60;
+  --color-Fundo: #F4F2FF;
+  --color-RoxaCardMov:#8C52FF;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+body:not(.MenusSelecao h4) {
+  font-size: 14px;
+
+
+}

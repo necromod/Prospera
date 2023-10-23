@@ -1,0 +1,224 @@
+/*#region Login*/
+
+/*#region NavBar */
+.MenuNav {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+  
+  }
+  
+  .Nav-Container {
+    width: 17rem;
+    display: flex;
+    position: absolute;
+    left: 4em;
+  }
+  
+  .Nav-Container img {
+    width: 60px;
+    padding-right: 2em;
+  }
+  
+  .Nav-Container h2 {
+    color: var(--color-tertiary);
+    font-weight: 800;
+    padding-right: 2em;
+  }
+  
+  .Nav-Container li {
+    line-height: 42px;
+    background-color: var(--color-quartiary);
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    position: relative;
+    top: 0.6em;
+    border-radius: 8px;
+    transition: .5s;
+  
+  }
+  
+  .Nav-Container li:hover {
+    background-color: var(--color-tertiary);
+    transition: .5s;
+  
+  }
+  
+  .Nav-Container li a {
+    color: white;
+    font-weight: 600;
+    padding: 1em 3.5em;
+    border-radius: 8px;
+  }
+  
+  /*#endregion*/
+  
+  /*#region Central Div*/
+  
+  .div-central {
+  
+    width: 50%;
+    position: relative;
+    display: flex;
+    left: 18rem;
+    top: 8rem;
+    height: 23.5rem;
+    /* background-color: aqua; */
+  
+  
+  }
+  
+  .ImgFundo img {
+    width: 55%;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ImgFundo2 img {
+    /* background-color: red; */
+    position: absolute;
+    top: -20em;
+    left: 31em;
+    width: 1050px;
+  }
+  
+  
+  .CardInfLogin {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LoginInf {
+    /* background-color: #e64c30; */
+    position: relative;
+    align-items: center;
+    top: 1.8em;
+    width: 80%;
+    height: 36em;
+  }
+  
+  .LoginInf h2 {
+  
+    text-align: left;
+    position: absolute;
+    top: 3em;
+    color: var(--color-tertiary);
+  }
+  
+  .LiTxtLogin {
+    position: relative;
+    top: 10.6em;
+  
+  }
+  
+  .LiTxtLogin img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: .9em;
+    z-index: 1;
+  
+  }
+  
+  .LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha) {
+  
+    position: absolute;
+    top: 80%;
+    color: var(--color-tertiary);
+  }
+  
+  
+  
+  .LoginInf input:not(#ChekManterLogado) {
+    position: absolute;
+    top: 35%;
+    border: none;
+    margin: 0;
+    width: 12rem;
+    border-radius: 20px;
+    height: 3em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .LiTxtSenha {
+    top: 48%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LiTxtSenha img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: 0.7em;
+  }
+  
+  .LoginInf input::placeholder {
+    padding-left: 3em;
+    color: var(--color-tertiary);
+    font-weight: 700;
+  }
+  
+  .CheckH4 {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    color: var(--color-tertiary);
+  }
+  
+  .LiBtnLogin {
+    position: absolute;
+    width: 14em;
+    height: 2.5em;
+    border-radius: 5px;
+    top: 64%;
+    left: 23%;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .5s;
+  
+  }
+  
+  .LiBtnLogin a {
+    color: white;
+    font-size: 17px;
+    top: 1em;
+    line-height: 35px;
+    padding: 0.8em 4.4em;
+    border-radius: 5px;
+  }
+  
+  .LiBtnLogin:hover {
+    background-color: var(--color-quartiary);
+    transition: .5s;
+  }
+  
+  .BtxtInscrevase {
+    position: absolute;
+    right: 3em;
+  }
+  
+  .BtxtEsqSenha {
+    position: absolute;
+    bottom: 0;
+    right: 3em;
+    /* background-color: red; */
+  }
+  
+  #BtnAjuda {
+    position: absolute;
+    right: 10.7em;
+  }
+  
+  
+  /*#endregion*/
+  
+  /*#endregion*/
