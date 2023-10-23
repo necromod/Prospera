@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Prospera.Models.Terceiros>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefoneTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone2Terceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnderecoTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CidadeTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BairroTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UFTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CEPTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCadastroTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataUltimaMovimentacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusTerceiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefoneTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone2Terceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CidadeTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BairroTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UFTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CEPTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastroTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataUltimaMovimentacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusTerceiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTerceiros">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTerceiros">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTerceiros">Delete</a>
+            </td>
+        </tr>
+}
+        @* Botão para a página Index de Contas *@
+        <a asp-controller="Contas" asp-action="Index" class="btn btn-primary">Ir para Contas</a>
+    </tbody>
+</table>
