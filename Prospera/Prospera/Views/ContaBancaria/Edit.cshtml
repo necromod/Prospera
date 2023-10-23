@@ -1,0 +1,69 @@
+﻿@model Prospera.Models.ContaBancaria
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ContaBancaria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdContaBancaria" />
+            <div class="form-group">
+                <label asp-for="TitularContBan" class="control-label"></label>
+                <input asp-for="TitularContBan" class="form-control" />
+                <span asp-validation-for="TitularContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumContBan" class="control-label"></label>
+                <input asp-for="NumContBan" class="form-control" />
+                <span asp-validation-for="NumContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgenciaContBan" class="control-label"></label>
+                <input asp-for="AgenciaContBan" class="form-control" />
+                <span asp-validation-for="AgenciaContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoContBan" class="control-label"></label>
+                <input asp-for="TipoContBan" class="form-control" />
+                <span asp-validation-for="TipoContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaldoContBan" class="control-label"></label>
+                <input asp-for="SaldoContBan" class="form-control" />
+                <span asp-validation-for="SaldoContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObsContBan" class="control-label"></label>
+                <input asp-for="ObsContBan" class="form-control" />
+                <span asp-validation-for="ObsContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdUsuario" class="control-label"></label>
+                <input asp-for="IdUsuario" class="form-control" />
+                <span asp-validation-for="IdUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTerceiros" class="control-label"></label>
+                <input asp-for="IdTerceiros" class="form-control" />
+                <span asp-validation-for="IdTerceiros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
