@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Prospera.Models.Extrato>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinatarioExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemetenteExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoExtrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinatarioExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RemetenteExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoExtrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdExtrato">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdExtrato">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdExtrato">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
