@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cihPdYPMWTK481rj6X7k5pi2DSahlBMwIVy1xNH1CwQ=",
+  "Hash": "4lBAhpXUJC6xB3BfNyU8+0R4EAZ7t9v157Yr6m912/w=",
   "Source": "Prospera",
   "BasePath": "_content/Prospera",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\login.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+      "BasePath": "_content/Prospera",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\PaginaInicial.js",

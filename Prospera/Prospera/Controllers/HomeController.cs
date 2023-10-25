@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Prospera.Models;
 using System.Diagnostics;
 
@@ -22,6 +23,10 @@ namespace Prospera.Controllers
         {
             return View();
         }
+
+        //[Authorize(Policy = "AcessoAdmin")] // Aplicar a política "AcessoAdmin" a esta ação
+
+        [AllowAnonymous]
         public IActionResult MenuUsuario()
         {
             return View();

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Prospera.Data;
+using Prospera.Helpers;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Prospera
 {
@@ -28,6 +28,32 @@ namespace Prospera
             builder.Services.AddDbContext<ProsperaContext>(options =>
                 options.UseSqlServer(connectionString));
 
+            /*// Adicione a configuração de autorização aqui
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AcessoComum", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                    policy.RequireRole("Comum");
+                });
+
+                options.AddPolicy("AcessoAdmin", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                    policy.RequireRole("Admin");
+                });
+            });
+
+            builder.Services.AddMvc(options =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+
+                options.Filters.Add(new CustomAuthorizeFilter(policy));
+            });*/
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -46,9 +72,25 @@ namespace Prospera
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Usuario}/{action=login}/{id?}");
+
+            // Adicione um filtro personalizado de autorização aqui
+            var policy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .Build();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers().WithMetadata(new CustomAuthorizeFilter(policy));
+            });
+
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
 
             app.Run();
+
+
         }
     }
 }

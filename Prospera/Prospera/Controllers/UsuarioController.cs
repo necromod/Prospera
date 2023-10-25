@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace Prospera.Controllers
 {
     public class UsuarioController : Controller
     {
+
         private readonly ProsperaContext _context;
 
         public UsuarioController(ProsperaContext context)
@@ -159,5 +161,56 @@ namespace Prospera.Controllers
         {
           return (_context.Usuario?.Any(e => e.IdUsuario == id)).GetValueOrDefault();
         }
+
+
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(UsuarioLogin model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Consulte o banco de dados para verificar se o email do usuário existe
+                var user = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == model.EmailUsuario);
+
+                if (user != null)
+                {
+                    // O email existe, verifique a senha
+                    if (user.SenhaUsuario == model.SenhaUsuario)
+                    {
+                        // Senha correta, autentique o usuário, por exemplo, definindo um cookie de autenticação
+                        // Redirecione para a página de boas-vindas ou outra página de destino
+                        // Você também pode adicionar informações do usuário à sessão ou a um cookie
+                        return RedirectToAction("MenuUsuario", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Senha incorreta, tente novamente");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Email não cadastrado");
+                }
+            }
+
+            return View(model);
+        }
+
+        public IActionResult BemVindo()
+        {
+            return View();
+        }
+
+
     }
 }

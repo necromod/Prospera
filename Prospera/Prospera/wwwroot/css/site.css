@@ -178,7 +178,10 @@ width: 1050px;
   z-index: 1;
  
   }
-.LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha){
+
+   /* Comentário temporário para configuração de Login*/
+    
+/*.LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha){
 
   position: absolute;
   top: 80%;
@@ -198,7 +201,7 @@ width: 1050px;
  height: 3em;
  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
- }
+ }*/
 
  .LiTxtSenha{
   top: 48%;
