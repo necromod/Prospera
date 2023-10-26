@@ -7,6 +7,12 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <a asp-area="" asp-controller="Home" asp-action="Privacy">Teeeeeeeeeeeeeeeeeeeeeeeste</a>
 </div>
+<link rel="stylesheet" href="/wwwroot/css/site.css">
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+      rel="stylesheet">
 
 @* MODELO PARA INSERSÇÃO DE LINK PARA PÁGINAS DIFERENTES!
     <a asp-controller="NOME-DO-CONTROLADOR" asp-action="NOME-DO-ARQUIVO" class="CLASSES PARA ELEMENTOS CSS">TEXTO A SER EXIBIDO NO FRONT</a>
@@ -35,4 +41,23 @@
 
 @* Botão para a página Index de Usuário *@
 <a asp-controller="Home" asp-action="MenuUsuario" class="btn btn-primary">Ir para a tela inicial do usuário</a>
+
+<style>
+    #BtnInicio{
+        background-color: var(--color-tertiary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        top: 0.6em;
+        border-radius: 20px;
+        transition: .5s;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+    }
+</style>
+
+@* Botão para a página Login de Usuario *@
+<a asp-controller="Login" asp-action="Login" id="BtnInicio" class="btn btn-primary">LOGIN</a>
 

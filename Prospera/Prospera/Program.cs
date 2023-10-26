@@ -3,6 +3,7 @@ using Prospera.Data;
 using Prospera.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
+using Prospera.Controllers;
 
 namespace Prospera
 {
@@ -28,31 +29,22 @@ namespace Prospera
             builder.Services.AddDbContext<ProsperaContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            /*// Adicione a configuração de autorização aqui
-            builder.Services.AddAuthorization(options =>
-            {
-                options.AddPolicy("AcessoComum", policy =>
-                {
-                    policy.RequireAuthenticatedUser();
-                    policy.RequireRole("Comum");
-                });
+            // Configure o ProsperaContext
+            builder.Services.AddDbContext<ProsperaContext>(options =>
+                options.UseSqlServer(connectionString));
 
-                options.AddPolicy("AcessoAdmin", policy =>
-                {
-                    policy.RequireAuthenticatedUser();
-                    policy.RequireRole("Admin");
-                });
+            // Adicione o serviço do UsuarioController
+            builder.Services.AddScoped<UsuarioController>();
+            // Adicione o serviço do UsuarioController
+            builder.Services.AddScoped<LoginController>();
+
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddScoped<SessaoInterface, Sessao>();
+            builder.Services.AddSession(o =>
+            {
+                o.Cookie.HttpOnly = true;
+                o.Cookie.IsEssential =true;
             });
-
-            builder.Services.AddMvc(options =>
-            {
-                var policy = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .Build();
-
-                options.Filters.Add(new CustomAuthorizeFilter(policy));
-            });*/
-
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -69,10 +61,11 @@ namespace Prospera
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Usuario}/{action=login}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             // Adicione um filtro personalizado de autorização aqui
             var policy = new AuthorizationPolicyBuilder()
