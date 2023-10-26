@@ -26,7 +26,6 @@ namespace Prospera.Controllers
 
         //[Authorize(Policy = "AcessoAdmin")] // Aplicar a política "AcessoAdmin" a esta ação
 
-        [AllowAnonymous]
         public IActionResult MenuUsuario()
         {
             return View();

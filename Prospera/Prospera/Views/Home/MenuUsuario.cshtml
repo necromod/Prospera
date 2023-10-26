@@ -10,13 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <!-- link css -->
     <link rel="stylesheet" href="/css/PaginaInicial.css">
+
+
+    <!-- Css Pagina Axiliares -->
+    <!-- Receitas css -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
+    <!-- DespesasCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
     <!-- Fonte inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+          rel="stylesheet">
 
     <title>Prospera</title>
 </head>
@@ -26,8 +32,8 @@
     <section id="CardCentral">
         <!-- CardConversão e conta bancaria -->
         <ul class="CardCotBanc">
-            <li class="ImgMundoCot"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/ImgMundoCotação.png"></li>
-            <ul class="CardCot">    
+            <li class="ImgMundoCot EstiloScrooll"><img src="/img/PaginaInicial/CardCotBanc/ImgMundoCotação.png"></li>
+            <ul class="CardCot">
                 <li class="CardHeadCotacao head1">
                     <h2>Cotação em Yuan</h2>
                 </li>
@@ -41,17 +47,111 @@
                 <li class="CardCot2"><span>Dolar</span><input type="text" value="1,00"></li>
                 <li class="CardCot3"><span>Euro</span><input type="text" value="1,00"></li>
             </ul>
-           <ul class="CardBanco">
-            <li class="CardBanc1"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeBradesco.png"><input
-                    type="text" value="Bradesco"><input type="text" value="1.000,00"></li>
-            <li class="CardBanc2"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeItau.png"><input
-                    type="text" value="Itau"><input type="text" value="35.000,000"></li>
-            <li class="CardBanc3"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeInter.png"><input
-                    type="text" value="Banco do Brasil"><input type="text" value="1.000,00"></li>
+            <ul class="CardBanco">
+                <li class="CardBanc1">
+                    <img src="/img/PaginaInicial/CardCotBanc/IconeBradesco.png"><input type="text" value="Bradesco"><input type="text" value="1.000,00">
+                </li>
+                <li class="CardBanc2">
+                    <img src="/img/PaginaInicial/CardCotBanc/IconeItau.png"><input type="text" value="Itau"><input type="text" value="35.000,000">
+                </li>
+                <li class="CardBanc3">
+                    <img src="/img/PaginaInicial/CardCotBanc/IconeInter.png"><input type="text" value="Banco do Brasil"><input type="text" value="1.000,00">
+                </li>
 
-            </li>
+                </li>
+            </ul>
         </ul>
+
+        <!-- Region Menu Receitas -->
+        <li id="CarregamentoMenu"><img src="/img/PaginaInicial/PaginaAuxiliar/Receitas/IconCarregamento.png"></li>
+        <ul id="FundoMenusReceita">
+            <ul class="Container">
+                <li class="HeadMenuReceitas"><h4>Cadastro de Receitas</h4></li>
+                <li class="TxtInfReceita">
+                    <span>
+                        <h4>Nome</h4>
+                        <h4>Observação</h4>
+                        <h4>Valor</h4>
+                        <h4>Data de Vencimento</h4>
+                    </span>
+                    <input type="text" id="TxtReceitaNome" maxlength="30">
+                    <input type="text" id="TxtReceitaObservacao" maxlength="100">
+                    <input type="text" id="TxtReceitaValor">
+                    <input type="text" id="TxtReceitaData">
+                    <button id="BtnReceitasCadastrar">Cadastrar</button>
+                    <button id="BtnReceitasVoltar">Voltar</button>
+                    <button id="BtnReceitasLimpar">Limpar</button>
+                </li>
+                <li>
+                <li id="ReceitasVoltar"><a href="#">Voltar</a></li>
+                <li class="DropContainer">
+                    <select id="ReceitaDropPessoa">
+                        <option value=""></option>
+                        <option value="Marcos">Vermelho</option>
+                        <option value="Vitor">Azul</option>
+                        <option value="Jonas">Verde</option>
+                        <option value="Marcio">Amarelo</option>
+                        <option value="Vitor">Roxo</option>
+
+                    </select>
+                    <h4>Pessoa</h4>
+                    <!-- Conteúdo da tela oculta aqui -->
+
+                </li>
+            </ul>
         </ul>
+
+        <!-- FIM Region Menu Receitas -->
+        <!-- Region Menu -->
+        <ul id="FundoMenusDespesa">
+            <ul class="Container DespesasContainer">
+                <li class="HeadMenuDespesas"><h4>Cadastro de Despesas</h4></li>
+                <li class="TxtInfDespesas">
+                    <span>
+                        <h4>Nome</h4>
+                        <h4>Observação</h4>
+                        <h4>Valor</h4>
+                        <h4>Data de Vencimento</h4>
+                    </span>
+                    <input type="text" id="TxtDespesasNome" maxlength="30">
+                    <input type="text" id="TxtDespesasObservacao" maxlength="100">
+                    <input type="text" id="TxtDespesasValor">
+                    <input type="text" id="TxtDespesasData">
+                    <button id="BtnDespesasCadastrar">Cadastrar</button>
+                    <button id="BtnDespesasVoltar">Voltar</button>
+                    <button id="BtnDespesasLimpar">Limpar</button>
+                </li>
+                <li>
+                <li id="DespesasVoltar"><a href="#">Voltar</a></li>
+                <li class="DropContainerDespesas">
+                    <select id="DespesasDropPessoaDespesas">
+                        <option value=""></option>
+                        <option value="Marcos">Vermelho</option>
+                        <option value="Vitor">Azul</option>
+                        <option value="Jonas">Verde</option>
+                        <option value="Marcio">Amarelo</option>
+                        <option value="Vitor">Roxo</option>
+
+                    </select>
+                    <h4>Pessoa</h4>
+                    <!-- Conteúdo da tela oculta aqui -->
+
+                </li>
+            </ul>
+        </ul>
+
+        <!-- FIM Region Menu Receitas -->
+        <div id="FundoMenusTransacoes">
+            <ul>
+                <li>
+                    <input type="text" id="TxtTranNome" placeholder="Nome">
+                    <input type="text" id="TxtTranDesc" placeholder="Descrição">
+                    <input type="text" id="TxtTranDesc" placeholder="Descrição">
+                </li>
+            </ul>
+        </div>
+        <!-- Region Transacoes -->
+        <!-- FIM Region Menu Transacoes -->
         <!-- Cardes Transacoes -->
         <div class="Cards container">
             <ul class="CardTransacoes">
@@ -59,25 +159,24 @@
                     <h2>Pagamentos</h2>
                     <h4>Ultimo Pagamento</h4>
                     <span>R$<input type="text" value="1.500,00" readonly></span>
-                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov1.png">
+                    <img src="/img/PaginaInicial/CardMov/LogoCardMov1.png">
                 </li>
                 <li class="CardUltReceb">
                     <h2>Recebimentos</h2>
                     <h4>Ultimo Recebimento</h4>
                     <span>R$<input type="text" value="1.000,00" readonly></span>
-                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov2.png">
+                    <img src="/img/PaginaInicial/CardMov/LogoCardMov2.png">
                 </li>
                 <li class="CardTotalTran">
                     <h2>Trasações</h2>
                     <h4>Total de Movimentações</h4>
                     <span>R$<input type="text" value="500.000,00" readonly></span>
-                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov3.png">
+                    <img src="/img/PaginaInicial/CardMov/LogoCardMov3.png">
                 </li>
             </ul>
             <!-- Cardes Evolução meta -->
             <ul class="CardEvulucaoMeta container">
                 <ul>
-                  
                 </ul>
             </ul>
 
@@ -148,58 +247,54 @@
     <section id="MenuOpções">
 
         <div class="MenuLateral">
-            <h4><img src="/ProsperaModel/img/Login/IconeLogin.png">Prospera</h4>
-
-            <a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">INICIO</a>
-            <a href="#" id="BtnUsuarioConfig"><img src="/ProsperaModel/img/PaginaInicial/Menu/IconeUsuario.png"></a>
+            <a asp-area ="" asp-controller="Home" asp-action="Index"><h4><img src="">Prospera</h4></a>
+            <a asp-area="" asp-controller="Login" asp-action="Sair"></a>
+            <a ></a>
+            <a href="#" id="BtnUsuarioConfig"><img src="/img/PaginaInicial/Menu/Logo.png"></a>
             <ul class="MenusSelecao container">
                 <h2>Menu</h2>
                 <li class="Selecao1">
                     <a href="#" id="BtnReceitas">Receitas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Receitas.png">
+                    <img src="/img/PaginaInicial/Menu/Receitas.png">
                 </li>
                 <li class="Selecao2">
                     <a href="#" id="BtnDespesas">Despesas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/IDespesas.png">
+                    <img src="/img/PaginaInicial/Menu/IDespesas.png">
                 </li>
                 <li class="Selecao3">
                     <a href="#" id="BtnTransacoes">Transações</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Transacoes.png">
+                    <img src="/img/PaginaInicial/Menu/Transacoes.png">
                 </li>
                 <li class="Selecao4">
                     <a href="#" id="BtnMetas">Metas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Metas.png">
+                    <img src="/img/PaginaInicial/Menu/Metas.png">
                 </li>
                 <li class="Selecao5">
                     <a href="#" id="BtnOrcamento">Orçamentos</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Orcamento.png">
+                    <img src="/img/PaginaInicial/Menu/Orcamento.png">
 
                 </li>
                 <li class="Selecao6">
                     <a href="#" id="BtnContasBancaria">Contas Bancarias</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/ContasBancaria.png">
+                    <img src="/img/PaginaInicial/Menu/ContasBancaria.png">
                 </li>
-                <li class="Selecao7"> <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Devedor_Pagador.png">
+                <li class="Selecao7">
+                    <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
+                    <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
                 </li>
                 <li class="Selecao8">
                     <a href="#" id="BtnAjuda">Ajuda</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Ajuda.png">
-                </li>
-                <li class="Selecao8">
-                    
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Ajuda.png">
+                    <img src="/img/PaginaInicial/Menu/Ajuda.png">
                 </li>
 
                 <ul class="MenuAplicativo">
                     <h2>Aplicativo Mobile</h2>
 
-                    <a id="BtnSairUsuario" asp-controller="Login" asp-action="Sair">Sair do usuário</a>
-
 
                     <a href="https://play.google.com/store/apps/details?id=net.zedge.android&hl=pt_BR&gl=US"
-                        target="_blank">
-                        <img src="/ProsperaModel/img/PaginaInicial/Menu/Qrcode.png"></a>
+                       target="_blank">
+                        <img src="/img/PaginaInicial/Menu/Qrcode.png">
+                    </a>
 
                     <h4>Clique no Qrcode ou escaneie para Baixar o aplicativo</h4>
                 </ul>
@@ -225,7 +320,7 @@
 
 
     <!-- link js -->
-    <script src="/ProsperaModel/wwwroot/js/site.js" asp-append-version="true"></script>
+    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
 </body>
 
 </html>
