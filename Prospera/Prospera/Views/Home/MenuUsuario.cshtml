@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@model Prospera.Controllers.LoginController;
+
+
 
 <head>
     <meta charset="UTF-8">
@@ -148,6 +149,8 @@
 
         <div class="MenuLateral">
             <h4><img src="/ProsperaModel/img/Login/IconeLogin.png">Prospera</h4>
+
+            <a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">INICIO</a>
             <a href="#" id="BtnUsuarioConfig"><img src="/ProsperaModel/img/PaginaInicial/Menu/IconeUsuario.png"></a>
             <ul class="MenusSelecao container">
                 <h2>Menu</h2>
@@ -179,12 +182,19 @@
                 <li class="Selecao7"> <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
                     <img src="/ProsperaModel/img/PaginaInicial/Menu/Devedor_Pagador.png">
                 </li>
-                <li class="Selecao8"> <a href="#" id="BtnAjuda">Ajuda</a>
+                <li class="Selecao8">
+                    <a href="#" id="BtnAjuda">Ajuda</a>
+                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Ajuda.png">
+                </li>
+                <li class="Selecao8">
+                    
                     <img src="/ProsperaModel/img/PaginaInicial/Menu/Ajuda.png">
                 </li>
 
                 <ul class="MenuAplicativo">
                     <h2>Aplicativo Mobile</h2>
+
+                    <a id="BtnSairUsuario" asp-controller="Login" asp-action="Sair">Sair do usuário</a>
 
 
                     <a href="https://play.google.com/store/apps/details?id=net.zedge.android&hl=pt_BR&gl=US"

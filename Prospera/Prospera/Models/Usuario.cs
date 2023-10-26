@@ -5,6 +5,7 @@ namespace Prospera.Models
 {
     public class Usuario
     {
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdUsuario { get; set; }
