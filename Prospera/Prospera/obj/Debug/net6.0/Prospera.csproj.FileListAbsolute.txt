@@ -528,3 +528,4 @@ C:\Users\edila\Source\Repos\necromod\Prospera\Prospera\Prospera\obj\Debug\net6.0
 C:\Users\edila\Source\Repos\necromod\Prospera\Prospera\Prospera\obj\Debug\net6.0\Prospera.genruntimeconfig.cache
 C:\Users\edila\Source\Repos\necromod\Prospera\Prospera\Prospera\obj\Debug\net6.0\ref\Prospera.dll
 C:\Users\edila\source\repos\necromod\Prospera\Prospera\Prospera\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutDeslogado.cshtml.rz.scp.css
+C:\Users\edimilson.rsilva\source\repos\Prospera\Prospera\Prospera\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutDeslogado.cshtml.rz.scp.css
