@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿@model Prospera.Models.Usuario
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +14,8 @@
     <!-- Fonte inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+          rel="stylesheet">
 
     <title>Document</title>
 
@@ -44,17 +46,21 @@
                     <ul class="CadastrarInf">
                         <h2>Cadastrar</h2>
 
-                        <li class="LiTxtNome"><input type="text" placeholder="Nome:" id="TxtCadastroNome"> <img
-                                src="/ProsperaModel/img/Cadastrar/IconNome.png" alt="Nome"></li>
+                        <li class="LiTxtNome">
+                            <input type="text" placeholder="Nome:" id="TxtCadastroNome"> <img src="/ProsperaModel/img/Cadastrar/IconNome.png" alt="Nome">
+                        </li>
 
-                        <li class="LiTxtEmail"><input type="text" placeholder="E-mail:" id="TxtCadastroEmail">
+                        <li class="LiTxtEmail">
+                            <input type="text" placeholder="E-mail:" id="TxtCadastroEmail">
                             <img src="/ProsperaModel/img/Cadastrar/IconEmail.png" alt="Email">
                         </li>
 
-                        <li class="LiTxtSenha"><input type="text" placeholder="Senha:" id="TxtCadastroSenha"> 
+                        <li class="LiTxtSenha">
+                            <input type="text" placeholder="Senha:" id="TxtCadastroSenha">
                             <img src="/ProsperaModel/img/Cadastrar/IconSenha.png" alt="Senha">
                         </li>
-                        <li class="LiTxtCPF"><input type="text" placeholder="CPF:" id="TxtCadastroCPF"> 
+                        <li class="LiTxtCPF">
+                            <input type="text" placeholder="CPF:" id="TxtCadastroCPF">
                             <img src="/ProsperaModel/img/Cadastrar/IconCPF.png" alt="CPF">
                         </li>
                         <h4 class="CheckH4Cadastro"><input type="checkbox" id="ChekPermitirEnvioEmail">Permito Receber e-mail Promocionais e Novidades.</h4>

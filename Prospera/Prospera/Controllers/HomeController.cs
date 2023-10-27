@@ -24,6 +24,11 @@ namespace Prospera.Controllers
             return View();
         }
 
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
         //[Authorize(Policy = "AcessoAdmin")] // Aplicar a política "AcessoAdmin" a esta ação
 
         public IActionResult MenuUsuario()
