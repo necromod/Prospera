@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6SWxcdiMmCpEa2Z+4UcScZrm8/OmNBV8+GAPmrGwBRE=",
+  "Hash": "70ImyJbmG5ErHAB9TtJUqkvrsHm6TRxn4ttmywyyIR4=",
   "Source": "Prospera",
   "BasePath": "_content/Prospera",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\PaginaInicial.css"
+    },
+    {
+      "Identity": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Despesas.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+      "BasePath": "_content/Prospera",
+      "RelativePath": "css/PaginaMenus/Despesas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Despesas.css"
+    },
+    {
+      "Identity": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Receitas.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+      "BasePath": "_content/Prospera",
+      "RelativePath": "css/PaginaMenus/Receitas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Receitas.css"
     },
     {
       "Identity": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\site.css",
