@@ -36,8 +36,7 @@
             <ul class="Nav-Container">
                 <img src="/ProsperaModel/img/Login/IconeLogin.png">
                 <h2>PROSPERA</h2>
-                <a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">INICIO</a>
-                <li><a href="#" id="BtnInicio">INICIO</a></li>
+                <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
             </ul>
         </div>
     </section>
@@ -73,7 +72,7 @@
 
 
                 <!-- Btxt - Botão que na verdade esta dentro de um texto, h1 ou p... -->
-                <h4 class="BtxtInscrevase">Não tem conta? <a href="#" id="BtnInscrevase">Inscreva-se</a></h4>
+                <h4 class="BtxtInscrevase">Não tem conta? <a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInscrevase">Inscreva-se</a></h4>
 
                 <h4 class="BtxtEsqSenha"><a href="#" id="BtnAjuda">Ajuda</a> <a href="#" id="BtnEsqSenha">Esqueceu a senha?</a></h4>
 

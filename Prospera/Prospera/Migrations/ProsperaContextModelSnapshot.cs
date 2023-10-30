@@ -267,6 +267,11 @@ namespace Prospera.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdUsuario"));
 
+                    b.Property<string>("CPFUsuario")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<string>("CargoUsuario")
                         .IsRequired()
                         .HasMaxLength(80)
