@@ -70,7 +70,6 @@ namespace Prospera.Controllers
                     {
                         TempData["MensagemErro"] = $"Email não cadastrado";
                     }
-
                 }
             }
             catch (Exception erro)

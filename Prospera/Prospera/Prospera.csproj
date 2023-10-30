@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\TestedeUsuario.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
     <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="7.0.12" />
     <PackageReference Include="microsoft.entityframeworkcore.tools" Version="7.0.12">
       <PrivateAssets>all</PrivateAssets>

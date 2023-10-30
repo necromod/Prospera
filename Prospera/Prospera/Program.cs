@@ -21,7 +21,7 @@ namespace Prospera
 
             // Configurar a string de conexão para o Azure SQL com as informações fornecidas
             var azureDbServer = "prosperamodel.database.windows.net";
-            var azureDbName = "prosperamodel"; // Substitua pelo nome do seu banco de dados
+            var azureDbName = "prosperamodel"; 
             var azureDbUser = "ProsperaModel";
             var azureDbPassword = "Prospera2023@";
             var connectionString = $"Server={azureDbServer};Database={azureDbName};User Id={azureDbUser};Password={azureDbPassword};Trusted_Connection=False;Encrypt=True;";
@@ -35,7 +35,7 @@ namespace Prospera
 
             // Adicione o serviço do UsuarioController
             builder.Services.AddScoped<UsuarioController>();
-            // Adicione o serviço do UsuarioController
+            // Adicione o serviço do LoginController
             builder.Services.AddScoped<LoginController>();
 
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -65,7 +65,7 @@ namespace Prospera
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Cadastro}/{id?}");
+                pattern: "{controller=Cadastro}/{action=Cadastro}/{id?}");
 
             // Adicione um filtro personalizado de autorização aqui
             var policy = new AuthorizationPolicyBuilder()

@@ -22,6 +22,10 @@ namespace Prospera.Models
         [StringLength(20)]
         public string SenhaUsuario { get; set; }
 
+        [Required]
+        [StringLength(20)]
+        public string CPFUsuario { get; set; }
+
         [StringLength(80)]
         public string CargoUsuario { get; set; }
 

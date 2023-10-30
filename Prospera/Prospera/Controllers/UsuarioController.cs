@@ -58,10 +58,14 @@ namespace Prospera.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUsuario,NomeUsuario,EmailUsuario,SenhaUsuario,CargoUsuario,DatCadastroUsuario,DatUltimoAcesUsuario,StatusUsuario")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("IdUsuario,NomeUsuario,EmailUsuario,SenhaUsuario,CPFUsuario,CargoUsuario,DatCadastroUsuario,DatUltimoAcesUsuario,StatusUsuario")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.DatCadastroUsuario = DateTime.Now;
+
+                usuario.DatUltimoAcesUsuario = DateTime.Now;
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
