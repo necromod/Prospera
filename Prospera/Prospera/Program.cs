@@ -4,6 +4,8 @@ using Prospera.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
 using Prospera.Controllers;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Prospera
 {
@@ -42,6 +44,7 @@ namespace Prospera
             builder.Services.AddScoped<SessaoInterface, Sessao>();
             builder.Services.AddSession(o =>
             {
+                o.IdleTimeout = TimeSpan.FromDays(5);
                 o.Cookie.HttpOnly = true;
                 o.Cookie.IsEssential =true;
             });
