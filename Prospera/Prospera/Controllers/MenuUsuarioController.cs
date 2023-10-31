@@ -1,90 +1,39 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Prospera.Data;
 using Prospera.Models;
+using Prospera.Helpers;
 
 namespace Prospera.Controllers
 {
     public class MenuUsuarioController : Controller
     {
-        // GET: MenuUsuarioController
-        public ActionResult Index()
+        private readonly SessaoInterface _sessao;
+        private readonly ProsperaContext _context;
+
+        public MenuUsuarioController(ProsperaContext context, SessaoInterface sessao)
         {
-            return View();
+            _context = context;
+            _sessao = sessao;
         }
 
-        // GET: MenuUsuarioController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: MenuUsuarioController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: MenuUsuarioController/Create
+        //Método de criação de Receitas (Tabela Contas -> TipoCont:Depósito)
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult CadastrarReceita(Contas contasModel)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            //Iserção auomática de campos
+            //Inserir: CodigoCont
+            //usuario.DatUltimoAcesUsuario = DateTime.Now;
+            contasModel.DatEmissaoCont = DateTime.Now;
+
+            _context.Contas.Add(contasModel);
+            _context.SaveChanges();
+            return View(contasModel);
+
+
         }
-
-        // GET: MenuUsuarioController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: MenuUsuarioController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: MenuUsuarioController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: MenuUsuarioController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-            
-        
-
-
 
     }
 }

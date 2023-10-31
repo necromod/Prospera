@@ -91,11 +91,6 @@ namespace Prospera.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<string>("DevedorCont")
-                        .IsRequired()
-                        .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)");
-
                     b.Property<int>("IdUsuario")
                         .HasColumnType("int");
 
@@ -110,6 +105,11 @@ namespace Prospera.Migrations
                         .HasColumnType("nvarchar(80)");
 
                     b.Property<string>("PagadorCont")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<string>("RecebedorCont")
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
