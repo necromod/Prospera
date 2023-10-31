@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a5uqkO/AYQGSDxhDTHvMppp5tymprdFu+IOakH26X6s5b/SEjuShLR5kbUD44gV/Y7zBDjcLNRTKL+eKuxZoVA==",
+  "dgSpecHash": "5A85H3ERfxdHgSfIgAxx1OO/Ch9vm6QWaA4jgplVP1e7zfR/hOJD5hEFywPGjEO9SxmcQf3SvkQFushQED/IKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\silas.ssilva7\\Source\\Repos\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
+  "projectFilePath": "C:\\Users\\silas.ssilva7\\source\\repos\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\silas.ssilva7\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\silas.ssilva7\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

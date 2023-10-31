@@ -20,6 +20,10 @@ html {
     font-family: 'Inter', sans-serif;
   
   }
+
+  button{
+    color: var(--color-Sextiary);
+  }
   
   body {
     background-color: var(--color-Fundo) !important;
@@ -78,7 +82,7 @@ display: none;
     position: relative;
     display: flex;
     height: 25rem;
-    width: 28%;
+    width: 30%;
     /* right: 1em; */
     top: 10em;
     border-radius: 12px;
@@ -151,8 +155,8 @@ border-radius: 5px;
   background-color: white;
   position: absolute;
   bottom: 0;
-  right: 5em;
-  width: 30%;
+ right: 1em;
+  width: 20%;
   
 }
 #BtnReceitasVoltar{
@@ -167,10 +171,31 @@ border-radius: 5px;
 #BtnReceitasLimpar{
   background-color: white;
   position: absolute;
+  left: -2em;
   bottom: 0;
-  left: 1.7em;
-  width: 30%;
+  width: 20%;
 }
+#BtnReceitasApagar{
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 11em;
+  width: 20%;
+}
+#BtnReceitasAlterar{
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 24.4em;
+  width: 20%;
+}
+#BtnReceitasConsultar{
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 6em;
+  width: 20%;}
 #TxtReceitaObservacao{
     width: 33em;
 }
@@ -205,6 +230,7 @@ text-align: left;
   font-weight: 600;
 }
 
+/* IMAGEM DE CARREGADOMENTO */
 #CarregamentoMenu{
   display: none;
   z-index: 99999;
@@ -217,5 +243,15 @@ text-align: left;
 width:90px;
 animation: rotate 3s linear infinite;
 
+}
+
+#TxtReceitasBuscaId{
+  position: absolute;
+  top: 0;
+  width: 6%;
+  height: 2.8em;
+  right: 16em;
+  text-align: center;
+  font-weight: 600;
 }
   /*#endregion/
