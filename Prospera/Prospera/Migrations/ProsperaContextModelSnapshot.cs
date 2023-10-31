@@ -91,7 +91,7 @@ namespace Prospera.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<string>("DevedorCont")
+                    b.Property<string>("RecebedorCont")
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
