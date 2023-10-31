@@ -25,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.DatVenciCont)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RecebedorCont)
+                @Html.DisplayNameFor(model => model.DevedorCont)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.PagadorCont)
@@ -67,7 +67,7 @@
                 @Html.DisplayFor(modelItem => item.DatVenciCont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RecebedorCont)
+                @Html.DisplayFor(modelItem => item.DevedorCont)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PagadorCont)
@@ -88,7 +88,7 @@
                 @Html.DisplayFor(modelItem => item.ObservacaoCont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.CPFUsuario)
+                @Html.DisplayFor(modelItem => item.Usuario.EmailUsuario)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdContas">Edit</a> |

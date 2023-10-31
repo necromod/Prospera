@@ -3,25 +3,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-<style>
-    #BtnInicio {
-        background-color: var(--color-tertiary);
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        position: relative;
-        top: 0.6em;
-        border-radius: 20px;
-        transition: .5s;
-        font-weight: 600;
-        color: white;
-        padding: 10px;
-    }
-</style>
-<h1>Index</h1>
 
-@* Botão para a página Login de Usuario *@
-<a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>

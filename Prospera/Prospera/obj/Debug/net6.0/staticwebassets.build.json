@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ie8DvlsfAq4w/tOrPA4xaKQu42mQw+G5cfsPm0FiZY8=",
+  "Hash": "bwM0zlmf5Yo6KAtExZTQ8fRIEgozmonu8AkAW4+fmCg=",
   "Source": "Prospera",
   "BasePath": "_content/Prospera",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Index.css"
     },
     {
-      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\Login.css",
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\Loginold.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
       "BasePath": "_content/Prospera",
-      "RelativePath": "css/Login.css",
+      "RelativePath": "css/Loginold.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Login.css"
+      "OriginalItemSpec": "wwwroot\\css\\Loginold.css"
     },
     {
       "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaInicial.css",

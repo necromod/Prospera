@@ -48,7 +48,7 @@ namespace Prospera.Controllers
         // GET: Contas/Create
         public IActionResult Create()
         {
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario");
+            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Prospera.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdContas,CodigoCont,TipoCont,DatEmissaoCont,DatVenciCont,RecebedorCont,PagadorCont,Descricaocont,ValorCont,StatusCont,MetodoPgtoCont,ObservacaoCont,IdUsuario")] Contas contas)
+        public async Task<IActionResult> Create([Bind("IdContas,CodigoCont,TipoCont,DatEmissaoCont,DatVenciCont,DevedorCont,PagadorCont,Descricaocont,ValorCont,StatusCont,MetodoPgtoCont,ObservacaoCont,IdUsuario")] Contas contas)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace Prospera.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contas.IdUsuario);
             return View(contas);
         }
 
@@ -82,7 +82,7 @@ namespace Prospera.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contas.IdUsuario);
             return View(contas);
         }
 
@@ -91,7 +91,7 @@ namespace Prospera.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdContas,CodigoCont,TipoCont,DatEmissaoCont,DatVenciCont,RecebedorCont,PagadorCont,Descricaocont,ValorCont,StatusCont,MetodoPgtoCont,ObservacaoCont,IdUsuario")] Contas contas)
+        public async Task<IActionResult> Edit(int id, [Bind("IdContas,CodigoCont,TipoCont,DatEmissaoCont,DatVenciCont,DevedorCont,PagadorCont,Descricaocont,ValorCont,StatusCont,MetodoPgtoCont,ObservacaoCont,IdUsuario")] Contas contas)
         {
             if (id != contas.IdContas)
             {
@@ -118,7 +118,7 @@ namespace Prospera.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contas.IdUsuario);
             return View(contas);
         }
 
