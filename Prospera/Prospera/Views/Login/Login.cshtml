@@ -6,12 +6,15 @@
 }
 
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="/wwwroot/css/site.css">
     <!-- Fonte inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +32,7 @@
             <ul class="Nav-Container">
                 <img src="/ProsperaModel/img/Login/IconeLogin.png">
                 <h2>PROSPERA</h2>
-                <li><a href="#" id="BtnInicio">INICIO</a></li>
+                <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
             </ul>
 
 
@@ -41,19 +44,28 @@
 
                     <ul class="LoginInf">
                         <h2>Olá <br> Seja bem vindo</h2>
-
-                        <li class="LiTxtLogin"><input type="text" placeholder="Login" id="TxtLogin"></li>
-
+                        @if (TempData["MensagemErro"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" aria-label="Close">X</button>
+                                @TempData["MensagemErro"]
+                            </div>
+                        }
+                        <form asp-controller="Login" asp-action="Entrar" method="post">
+                        <li class="TxtLogin EspacoInput"><input asp-for="Email" type="text" placeholder="Email"></li>
+                            @Html.ValidationMessageFor(x => x.Email)
                         <li class="IconSenha"><img src=""></li>
 
-                        <li class="LiTxtSenha"><input type="text" placeholder="Senha"></li>
+                        <li class="TxtSenha EspacoInput"><input type="password" asp-for="Senha" placeholder="Senha"></li>
+                            @Html.ValidationMessageFor(x => x.Senha)
 
                         <h4 class="CheckH4"><input type="checkbox" name="" id="ChekManterLogado">  Manter logado?</h4>
 
-                        <li id="BtnLogin"><a href="#">Logar</a></li>
+                        <li id="BtnLogin"><a><button type="submit" class="btn btn-primary btn-block">Submit</button></li>
+                        </form>
 
                         <!-- Btxt - Botão que na verdade esta dentro de um texto, h1 ou p... -->
-                        <h4 class="BtxtInscrevase">Não tem conta? <a href="#" id="BtnInscrevase">Inscreva-se</a></h4>
+                        <h4 class="BtxtInscrevase">Não tem conta? <a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInscrevase">Inscreva-se</a></h4>
 
                         <h4 class="BtxtEsqSenha"><a href="#" id="BtnAjuda">Ajuda</a> <a href="#" id="BtnEsqSenha">Esqueceu a senha?</a></h4>
 
