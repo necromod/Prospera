@@ -25,28 +25,12 @@
       "PackagePath": "staticwebassets\\css\\PaginaInicial.css"
     },
     {
-      "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ConsultaTerceiros.css",
-      "PackagePath": "staticwebassets\\css\\PaginaMenus\\ConsultaTerceiros.css"
-    },
-    {
-      "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ContaBancaria.css",
-      "PackagePath": "staticwebassets\\css\\PaginaMenus\\ContaBancaria.css"
-    },
-    {
       "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Despesas.css",
       "PackagePath": "staticwebassets\\css\\PaginaMenus\\Despesas.css"
     },
     {
       "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Receitas.css",
       "PackagePath": "staticwebassets\\css\\PaginaMenus\\Receitas.css"
-    },
-    {
-      "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Terceiros.css",
-      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Terceiros.css"
-    },
-    {
-      "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Transacao.css",
-      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Transacao.css"
     },
     {
       "Id": "C:\\Users\\edila\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\site.css",

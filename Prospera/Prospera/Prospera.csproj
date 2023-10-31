@@ -24,45 +24,4 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\img\Cadastrar\CadastrarBanner.png" />
-    <None Include="wwwroot\img\Cadastrar\IconCPF.png" />
-    <None Include="wwwroot\img\Cadastrar\IconEmail.png" />
-    <None Include="wwwroot\img\Cadastrar\IconNome.png" />
-    <None Include="wwwroot\img\Cadastrar\IconSenha.png" />
-    <None Include="wwwroot\img\Favicon.png" />
-    <None Include="wwwroot\img\Login\IconeLogin.png" />
-    <None Include="wwwroot\img\Login\IconLogin.png" />
-    <None Include="wwwroot\img\Login\IconSenha.png" />
-    <None Include="wwwroot\img\Login\LoginBanner.png" />
-    <None Include="wwwroot\img\Login\LoginBannerLaterial.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardCotBanc\Design sem nome %283%29.zip" />
-    <None Include="wwwroot\img\PaginaInicial\CardCotBanc\IconeBradesco.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardCotBanc\IconeInter.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardCotBanc\IconeItau.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardCotBanc\ImgMundoCotação.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardMov\Design sem nome %281%29.zip" />
-    <None Include="wwwroot\img\PaginaInicial\CardMov\Design sem nome %282%29.zip" />
-    <None Include="wwwroot\img\PaginaInicial\CardMov\LogoCardMov1.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardMov\LogoCardMov2.png" />
-    <None Include="wwwroot\img\PaginaInicial\CardMov\LogoCardMov3.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Ajuda.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\ContasBancaria.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Design sem nome.zip" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Devedor_Pagador.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\IconeUsuario.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\IDespesas.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Logo.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Metas.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Orcamento.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Qrcode.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Qrcodeold.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Receitas.png" />
-    <None Include="wwwroot\img\PaginaInicial\Menu\Transacoes.png" />
-    <None Include="wwwroot\img\PaginaInicial\PaginaAuxiliar\ContaBanc\IconeBradesco.png" />
-    <None Include="wwwroot\img\PaginaInicial\PaginaAuxiliar\ContaBanc\IconeInter.png" />
-    <None Include="wwwroot\img\PaginaInicial\PaginaAuxiliar\ContaBanc\IconeItau.png" />
-    <None Include="wwwroot\img\PaginaInicial\PaginaAuxiliar\Receitas\IconCarregamento.png" />
-  </ItemGroup>
-
 </Project>
