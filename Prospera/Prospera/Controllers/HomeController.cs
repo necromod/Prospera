@@ -28,10 +28,11 @@ namespace Prospera.Controllers
         {
             return View();
         }
-
-        //[Authorize(Policy = "AcessoAdmin")] // Aplicar a política "AcessoAdmin" a esta ação
-
         public IActionResult MenuUsuario()
+        {
+            return View();
+        }
+        public IActionResult VariasExibicoes()
         {
             return View();
         }
@@ -41,5 +42,21 @@ namespace Prospera.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult CarregarMenu()
+        {
+            return ViewComponent("Menu");
+        }
+
+        public IActionResult CarregarViewComponent(string viewComponentName)
+        {
+            return ViewComponent(viewComponentName);
+        }
+        public IActionResult carregarViewContas(string viewComponentContas)
+        {
+            return ViewComponent(viewComponentContas);
+        }
+
+
     }
 }
