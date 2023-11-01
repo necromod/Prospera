@@ -239,6 +239,12 @@ top: 5em;
   color: var(--color-tertiary);
  }
 
+#btn-transparent {
+    background-color: transparent;
+    color: white;
+    top:50%;
+}
+
 
 #BtnLogin{
   position: absolute;

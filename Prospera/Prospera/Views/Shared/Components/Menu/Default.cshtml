@@ -1,0 +1,30 @@
+﻿@model Usuario
+@{
+    Layout = null;
+}
+
+@if ((bool)ViewData["ExibirSelecao1"])
+{
+    <ul class="Selecao1">
+        <li>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Olá, @Model.NomeUsuario</a>
+        </li>
+        <li>
+            <a id="BtnAjuda" asp-area="" asp-controller="Login" asp-action="Sair">Sair do usuário</a>
+        </li>
+        <li>
+            <a asp-area="" asp-controller="Login" asp-action="Sair">Sair do Usuário</a>
+        </li>
+    </ul>
+}
+<ul class="MenuAplicativo">
+    <h2>Aplicativo Mobile</h2>
+
+
+    <a href="https://play.google.com/store/apps/details?id=net.zedge.android&hl=pt_BR&gl=US"
+       target="_blank">
+        <img src="/img/PaginaInicial/Menu/Qrcode.png">
+    </a>
+
+    <h4>Clique no Qrcode ou escaneie para Baixar o aplicativo</h4>
+</ul>

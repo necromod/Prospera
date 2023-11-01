@@ -40,7 +40,7 @@ namespace Prospera.Migrations
                     TipoCont = table.Column<int>(type: "int", nullable: false),
                     DatEmissaoCont = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DatVenciCont = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DevedorCont = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false),
+                    RecebedorCont = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false),
                     PagadorCont = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false),
                     Descricaocont = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     ValorCont = table.Column<decimal>(type: "decimal(18,2)", nullable: false),

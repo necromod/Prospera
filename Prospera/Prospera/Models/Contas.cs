@@ -22,7 +22,7 @@ namespace Prospera.Models
         public DateTime DatVenciCont { get; set; } // Data de vencimento da conta
 
         [StringLength(120)]
-        public string DevedorCont { get; set; } // Quem estará recebendo o valor da conta
+        public string RecebedorCont { get; set; } // Quem estará recebendo o valor da conta
 
         [StringLength(120)]
         public string PagadorCont { get; set; } // Quem estará pagando o valor da conta

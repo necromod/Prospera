@@ -68,7 +68,7 @@ namespace Prospera
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Cadastro}/{action=Cadastro}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             // Adicione um filtro personalizado de autorização aqui
             var policy = new AuthorizationPolicyBuilder()
@@ -78,6 +78,12 @@ namespace Prospera
             {
                 endpoints.MapControllers().WithMetadata(new CustomAuthorizeFilter(policy));
             });
+
+            app.MapControllerRoute(
+            name: "exibicao2",
+            pattern: "Exibicao2",
+            defaults: new { controller = "Home", action = "CarregarExibicao2" }
+            );
 
             if (!app.Environment.IsDevelopment())
             {

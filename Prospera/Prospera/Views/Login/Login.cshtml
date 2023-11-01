@@ -28,7 +28,7 @@
 
 
             <ul class="Nav-Container">
-                <img src="/ProsperaModel/img/Login/IconeLogin.png">
+                <img src="/img/Login/IconeLogin.png">
                 <h2>PROSPERA</h2>
                 <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
             </ul>
@@ -41,6 +41,7 @@
                 <ul class="CardInfLogin">
 
                     <ul class="LoginInf">
+
                         <h2>Olá <br> Seja bem vindo</h2>
                             @if (TempData["MensagemErro"] != null)
                             {
@@ -59,7 +60,7 @@
 
                         <h4 class="CheckH4"><input type="checkbox" name="manterLogado" id="ChekManterLogado">  Manter logado?</h4>
 
-                        <li id="BtnLogin"><a><button type="submit" class="btn btn-primary btn-block">Submit</button></li>
+                        <li id="BtnLogin"><a><button type="submit" id="btn-transparent" class="btn  btn-primary btn-block">Submit</button></li>
                         </form>
 
                         <!-- Btxt - Botão que na verdade esta dentro de um texto, h1 ou p... -->
