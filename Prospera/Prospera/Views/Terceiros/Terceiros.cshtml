@@ -1,0 +1,211 @@
+﻿@model Prospera.Controllers.TerceirosController;
+@{
+    Layout = null;
+    ViewData["Title"] = "Terceiros";
+}
+
+<link rel="stylesheet" href="/css/PaginaInicial.css">
+<!-- Css Pagina Axiliares -->
+<!-- Receitas css -->
+<link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
+<!-- DespesasCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
+<!-- ContaBancariaCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
+<!-- TerceirosCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
+<!-- TerceirosConsultaCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
+<!-- TransacaoConsultaCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/img/Favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+      rel="stylesheet">
+ <style>
+    #BtnInicio {
+        background-color: var(--color-tertiary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        top: 0.6em;
+        border-radius: 20px;
+        transition: .5s;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+    }
+</style> 
+<script>
+    const VoltarTerceiros = document.getElementById("BtnTerceirosVoltar");
+    const botaoMostrarTerceiros = document.getElementById("testist");
+    const telaOcultaTerceiros = document.getElementById("FundoMenusTerceiros");
+
+
+    botaoMostrarTerceiros.addEventListener("click", function () {
+        // Mostrar o elemento de carregamento
+
+        AnimacaoCarregamento.style.display = "block";
+        // Ocultar a tela de receitas
+        telaOcultaTerceiros.style.display = "none";
+
+        // Simular uma operação demorada (substitua isso pela sua própria função)
+        setTimeout(function () {
+            // Ative a tela definindo a opacidade para 1
+            telaOcultaTerceiros.style.opacity = 1;
+
+            // Ocultar o elemento de carregamento
+            AnimacaoCarregamento.style.display = "none";
+
+            // Mostrar a tela de receitas novamente
+            telaOcultaTerceiros.style.display = "block";
+
+        }, 500); // Tempo de simulação (.5 segundos)
+    });
+
+    VoltarTerceiros.addEventListener("click", function () {
+        //Ocultar
+        telaOcultaTerceiros.style.display = "none";
+    })
+</script>
+
+
+@* Botão para a página Login de Usuario *@
+<a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
+
+<li class="Selecao7">
+    <a href="#" id="testist">Devedor/Pagador</a>
+    <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
+</li>
+
+<!-- Region Menu Devedor/pagado-->
+<ul id="FundoMenusTerceiros">
+    <ul class="Container TerceirosContainer">
+        <li class="HeadMenuTerceiros">
+            <h4>Cadastro de Devedor/Pagador</h4>
+        </li>
+        <li class="TxtInfTerceiros">
+            <span>
+                <h4>Nome</h4>
+                <h4>Telefone</h4>
+                <h4>Email</h4>
+                <h4>Telefone2</h4>
+                <h4>Endereço</h4>
+                <h4>Cidade</h4>
+                <h4>Bairro</h4>
+                <h4>UF</h4>
+                <h4>CEP</h4>
+                <h4>Observacao</h4>
+                <h4 class="NomID">ID</h4>
+
+            </span>
+            <input type="text" id="TxtTerceirosNome" maxlength="30">
+            <input type="text" id="TxtTerceirosTelefone" maxlength="100">
+            <input type="text" id="TxtTerceirosEmail">
+            <input type="text" id="TxtTerceirosTelefone2">
+            <input type="text" id="TxtTerceirosEndereco">
+            <input type="text" id="TxtTerceirosCidade">
+            <input type="text" id="TxtTerceirosBairro">
+            <input type="text" id="TxtTerceirosUF">
+            <input type="text" id="TxtTerceirosCEP">
+            <input type="text" id="TxtTerceirosObservacao">
+            <input type="text" id="TxtTerceirosID" maxlength="3">
+            <button id="BtnTerceirosCadastrar">Cadastrar</button>
+            <button id="BtnTerceirosVoltar">Voltar</button>
+            <button id="BtnTerceirosConsultar">Consultar</button>
+            <button id="BtnTerceirosLimpar">Limpar</button>
+            <button id="BtnTerceirosApagar">Apagar</button>
+            <button id="BtnTerceirosAlterar">Alterar</button>
+            <button id="BtnTerceirosBuscar">Buscar</button>
+        </li>
+        <li>
+
+            <h4>Pessoa</h4>
+            <!-- Conteúdo da tela oculta aqui -->
+
+        </li>
+    </ul>
+</ul>
+
+<ul id="FundoMenusTerceirosConsult">
+    <ul class="Container TerceirosContainerConsult" style="overflow-y: auto;">
+        <li class="HeadMenuTerceirosConsult">
+        </li>
+        <li class="TxtInfTerceirosConsult">
+        <li class="HeadConsultContainer">
+            <h4 class="ConsutHead1">Nome</h4>
+            <h4 class="ConsutHead2">Telefone</h4>
+            <h4 class="ConsutHead3">Email</h4>
+            <h4 class="ConsutHead4">Observação</h4>
+            <h4 class="ConsutHead5">Saldo Devedor</h4>
+            <h4 class="ConsutHead6">Saldo Pagador</h4>
+            <h4 class="ConsutHead7">Ultima Movimentação</h4>
+            <h4 class="ConsutHead8">ID</h4>
+        </li>
+
+        </span>
+        <li class="TtxTerceirosContainer">
+            <input type="text" id="TxtTerceirosNomeConsult" maxlength="30">
+            <input type="text" id="TxtTerceirosTelefoneConsult" maxlength="100">
+            <input type="text" id="TxtTerceirosEmailConsult">
+            <input type="text" id="TxtTerceirosObservacaoConsult">
+            <input type="text" id="TxtTerceirosSaldoDevedorConsult">
+            <input type="text" id="TxtTerceirosSaldoPagadorConsult">
+            <input type="text" id="TxtTerceirosUltMovConsut">
+            <input type="text" id="TxtTerceirosIDConsult">
+        </li>
+        <button id="BtnTerceirosVoltarConsult">Voltar</button>
+        <button id="BtnTerceirosEndercosConsult">Endereço</button>
+        </li>
+        <li>
+
+
+            <!-- Conteúdo da tela oculta aqui -->
+
+        </li>
+    </ul>
+</ul>
+<ul id="TerceirosConsultEnd">
+    <ul class="Container TerceirosContainerConsultEnd" style="overflow-y: auto;">
+        <li class="HeadMenuTerceirosConsultEnd">
+            <h4>Consulta de Terceiros</h4>
+        </li>
+        <li class="TxtInfTerceirosConsultEnd">
+        <li class="HeadContainer">
+            <h4 class="Head1">Pessoa</h4>
+            <h4 class="Head2">Telefone2</h4>
+            <h4 class="Head3">Endereço</h4>
+            <h4 class="Head4">Cidade</h4>
+            <h4 class="Head5">Bairro</h4>
+            <h4 class="Head6">UF</h4>
+            <h4 class="Head7">CEP</h4>
+
+
+        </li>
+        <li class="TtxEndContainer">
+
+            <input type="text" id="TxtTerceirosPessoaConsultEnd">
+            <input type="text" id="TxtTerceirosTelefone2ConsultEnd">
+            <input type="text" id="TxtTerceirosEnderecoConsultEnd">
+            <input type="text" id="TxtTerceirosCidadeConsultEnd">
+            <input type="text" id="TxtTerceirosBairroConsultEnd">
+            <input type="text" id="TxtTerceirosUFConsultEnd">
+            <input type="text" id="TxtTerceirosCEPConsultEnd">
+        </li>
+        <button id="BtnTerceirosVoltarConsultEnd">Voltar</button>
+        </li>
+        <li>
+
+            <h4>Pessoa</h4>
+            <!-- Conteúdo da tela oculta aqui -->
+
+        </li>
+    </ul>
+</ul>
+
+
+<!-- FIM Region Menu Devedor/pagador-->
+<script src="/js/PaginaInicial.js" asp-append-version="true"></script>
