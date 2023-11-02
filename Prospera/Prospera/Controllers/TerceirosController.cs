@@ -164,5 +164,9 @@ namespace Prospera.Controllers
         {
           return (_context.Terceiros?.Any(e => e.IdTerceiros == id)).GetValueOrDefault();
         }
+        public IActionResult Terceiros()
+        {
+            return View();
+        }
     }
 }

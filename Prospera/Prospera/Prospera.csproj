@@ -11,11 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Views\Login\Logincopy.html" />
-    <None Remove="Views\Login\LoginModelo.html" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
     <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="7.0.12" />
     <PackageReference Include="microsoft.entityframeworkcore.tools" Version="7.0.12">
@@ -27,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Views\PaginasMenus\" />
   </ItemGroup>
 
 </Project>

@@ -24,7 +24,6 @@ body{
 button{
   border: none;
   outline: none;
-  font-family: 'Inter', sans-serif;
 }
 :root {
   --color-default: #242424;
@@ -71,10 +70,8 @@ body {
 }
 
 .Nav-Container img{
-  width: 50px;
-  height: 50px;
-  padding-right: .3em;
-  padding-top: .5em;
+  width: 60px;
+  padding-right: 2em;
 }
 
 .Nav-Container h2{
@@ -133,19 +130,7 @@ top: 5em;
   
 
 }
-.imgLateral img{
-  width: 600px;
-  z-index: 1;
-  position: absolute;
-  right: 0;
-}
-.imgFund img{
-  width:560px!important;
-  position: absolute;
-  left: -1.5em;
-  top: 1em;
-  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
-}
+
 /* .ImgFundo img{
   width: 55%;
   position: absolute;
@@ -154,7 +139,21 @@ top: 5em;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 } */
 
+.ImgFundo2 img {
+    /* background-color: red; */
+    position: absolute;
+    top: -20em;
+    left: 31em;
+    width: 1050px;
+}
+.ImgFundoInf{
+    width:560px!important;
+    position: absolute;
+    left: -4em;
+    top: 1em;
+  
 
+}
 .TxtSenha{
   position: absolute!important;
   bottom:  19.2em!important;
@@ -211,20 +210,7 @@ top: 5em;
  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
  }
-.IconSenha img{
-  position: absolute;
-  width: 20px;
-  left: 3.6em;
-  top: 17.4em;
-  z-index: 99999;
-}
-.IconLogin img{
-  position: absolute;
-  width: 20px;
-  left: 3.6em;
-  top: 13.5em;
-  z-index: 99999;
-}
+
  /* .LiTxtSenha{
   background-color: #7836FA;
   top: 42%!important;
@@ -233,6 +219,12 @@ top: 5em;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
  } */
 
+ .LiTxtSenha img{
+ position: absolute;
+ width: 20px;
+ left: 1.3em;
+ top: 0.7em;
+ }
 .LoginInf input::placeholder
 {
  padding-left: 3em;
@@ -264,17 +256,14 @@ top: 5em;
  background-color: #1B1572;
   text-align: center;
   transition: .3s;
-  cursor: pointer;
 }
-#BtnLogin button{
+#BtnLogin a{
   color: white;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
-  background-color: #1B1572;
-  padding: 0.8em 6em;
+  font-size: 17px;
+  top: 1em;
+  line-height: 35px;
+  padding: 0.8em 4.4em;
   border-radius: 5px;
-  cursor: pointer;
 }
 #BtnLogin:hover{
   background-color: var(--color-quartiary);
@@ -550,32 +539,29 @@ z-index: 1;
  }
  
 
-.ImgFundo2 img{
-  width:560px!important;
-  position: absolute;
-  left: -1.5em;
-  top: 1em;
-  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
-}
+
 #BtnCadastrar{
   position: absolute;
   width: 13em;
-  height: 2.7em;
+  height: 2.5em;
   border-radius: 5px;
-  top: 72%;
-  left: 10.2em;
+  top: 74%;
+  left: 25%;
   background-color: #801D7B;
   text-align: center;
-  transition: .3s;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
+  transition: .5s;
 
+}
+#BtnCadastrar a{
+  color: white;
+  font-size: 17px;
+  top: 1em;
+  line-height: 35px;
+  border-radius: 5px;
+}
 #BtnCadastrar:hover{
   background-color: var(--color-quartiary);
-  transition: .3s;
-  transform: scale(1.1);
+  transition: .5s;
 }
 
 .BtxtInscrevase{
