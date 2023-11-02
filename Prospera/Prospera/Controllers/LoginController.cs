@@ -57,14 +57,17 @@ namespace Prospera.Controllers
                         // O email existe, verifique a senha
                         if (usuario.SenhaUsuario == loginModel.Senha)
                         {
-                            // Verifique se a caixa "Manter logado" foi marcada
-                            bool manterLogado = HttpContext.Request.Form["manterLogado"] == "on"; // Assumindo que "manterLogado" é o nome do campo do checkbox
+                            if (HttpContext != null)
+                            {
+                                // Verifique se a caixa "Manter logado" foi marcada
+                                bool manterLogado = HttpContext.Request.Form["manterLogado"] == "on" ? true : false; // Assumindo que "manterLogado" é o nome do campo do checkbox
 
-                            // Configurar o tempo de expiração da sessão com base na escolha do usuário
-                            var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
+                                // Configurar o tempo de expiração da sessão com base na escolha do usuário
+                                var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
 
-                            // Configurar a sessão com o tempo de expiração especificado
-                            HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+                                // Configurar a sessão com o tempo de expiração especificado
+                                HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+                            }
 
                             //Criação de Cookies de login
                             _sessao.CriarSessaoUsuario(usuario);

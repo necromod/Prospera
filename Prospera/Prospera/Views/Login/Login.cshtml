@@ -35,8 +35,9 @@
 
 
             <ul class="div-central container">
-
-                <img src="/img/Login/LoginBanner.png" alt="">
+                <li class="imgFund">
+                    <img src="/img/Login/LoginBanner.png">
+                </li>
 
                 <ul class="CardInfLogin">
 
@@ -53,14 +54,14 @@
                         <form asp-controller="Login" asp-action="Entrar" method="post">
                         <li class="TxtLogin EspacoInput"><input asp-for="Email" type="text" placeholder="Email" id="TxtLogin"></li>
                                 @Html.ValidationMessageFor(x => x.Email)
-                        <li class="IconSenha"><img src=""></li>
+                        <li class="IconSenha"><img src="/"></li>
 
                         <li class="TxtSenha EspacoInput"><input type="password" asp-for="Senha" placeholder="Senha" id="TxtSenha"></li>
                                 @Html.ValidationMessageFor(x => x.Senha)
 
                         <h4 class="CheckH4"><input type="checkbox" name="manterLogado" id="ChekManterLogado">  Manter logado?</h4>
 
-                        <li id="BtnLogin"><a><button type="submit" id="btn-transparent" class="btn  btn-primary btn-block">Submit</button></li>
+                        <li id="BtnLogin"><a><button type="submit" id="btn-transparent" class="btn  btn-primary btn-block">LOGAR</button></li>
                         </form>
 
                         <!-- Btxt - Botão que na verdade esta dentro de um texto, h1 ou p... -->
