@@ -18,16 +18,26 @@ namespace Prospera.Controllers
             _context = context;
             _sessao = sessao;
         }
-        public async Task<IActionResult> MenuUsuario()
+        /*public async Task<IActionResult> MenuUsuario()
         {
             var prosperaContext = _context.Terceiros.Include(t => t.Usuario);
             return View("~/Views/Home/MenuUsuario.cshtml", await prosperaContext.ToListAsync());
+        }*/
+
+        public IActionResult MenuUsuario()
+        {
+            var viewModel = new TerceirosViewModelInterface(_context);
+            viewModel.PreencherListaTerceiros();
+
+            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
+
+            return View("~/Views/Home/MenuUsuario.cshtml", viewModel);
         }
-
-
-        
-
-
-
+/*
+        public IActionResult MenuUsuario()
+        {
+            return View("~/Views/Home/MenuUsuario.cshtml");
+        }
+*/
     }
 }

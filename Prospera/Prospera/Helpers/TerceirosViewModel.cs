@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Prospera.Models;
+using Prospera.Controllers;
+using Prospera.Helpers;
 
 namespace Prospera.Helpers
 {
