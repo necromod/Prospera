@@ -1,0 +1,84 @@
+﻿@model Prospera.Models.Terceiros
+@{
+    Layout = null;
+    ViewData["Title"] = "Terceiros";
+}
+
+
+ <style>
+    #BtnInicio {
+        background-color: var(--color-tertiary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        top: 0.6em;
+        border-radius: 20px;
+        transition: .5s;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+    }
+</style>
+    <!-- TerceirosCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css"> 
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+@* Botão para a página Login de Usuario *@
+<a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
+<!-- Region Menu Devedor/pagado-->
+<ul id="FundoMenusTerceiros">
+    <ul class="Container TerceirosContainer">
+        <li class="HeadMenuTerceiros">
+            <h4>Cadastro de Devedor/Pagador</h4>
+        </li>
+        <li class="TxtInfTerceiros">
+            <span>
+                <h4>Nome</h4>
+                <h4>Telefone</h4>
+                <h4>Email</h4>
+                <h4>Telefone2</h4>
+                <h4>Endereço</h4>
+                <h4>Cidade</h4>
+                <h4>Bairro</h4>
+                <h4>UF</h4>
+                <h4>CEP</h4>
+                <h4>Observacao</h4>
+                <h4 class="NomID">ID</h4>
+
+            </span>
+            <form asp-controller="Terceiros" asp-action="CadastrarTerceiro" method="post">
+                <input type="text" asp-for="NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                <input type="text" asp-for="EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                <input type="text" asp-for="TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                <input type="text" asp-for="Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                <input type="text" asp-for="EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                <input type="text" asp-for="CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                <input type="text" asp-for="BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                <input type="text" asp-for="UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                <input type="text" asp-for="CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                <input type="text" asp-for="ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+                <button type="submit" id="BtnTerceirosCadastrar">Cadastrar</button>
+            </form>
+            <button id="BtnTerceirosVoltar">Voltar</button>
+            <button id="BtnTerceirosConsultar">Consultar</button>
+            <button id="BtnTerceirosLimpar">Limpar</button>
+            <button id="BtnTerceirosApagar">Apagar</button>
+            <button id="BtnTerceirosAlterar">Alterar</button>
+            <button id="BtnTerceirosBuscar">Buscar</button>
+        </li>
+        <li>
+
+            <h4>Pessoa</h4>
+            <!-- Conteúdo da tela oculta aqui -->
+
+        </li>
+    </ul>
+</ul>
+
+
+<!-- FIM Region Menu Devedor/pagador--> 
+<!-- link js -->
+<script src="/js/PaginaInicial.js" asp-append-version="true"></script> 
