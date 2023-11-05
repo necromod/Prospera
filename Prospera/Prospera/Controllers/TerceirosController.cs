@@ -149,14 +149,17 @@ namespace Prospera.Controllers
         {
           return (_context.Terceiros?.Any(e => e.IdTerceiros == id)).GetValueOrDefault();
         }
-        public IActionResult Terceiros()
+        public IActionResult CadastroTerceiros() {return View();}
+        
+        public async Task<IActionResult> ConsultaTerceiros()
         {
-            return View();
+            var prosperaContext = _context.Terceiros.Include(t => t.Usuario);
+            return View(await prosperaContext.ToListAsync());
         }
 
 
-        // POST: Criação de campo Terceiros
-        [HttpPost]
+    // POST: Criação de campo Terceiros
+    [HttpPost]
         public IActionResult CadastrarTerceiro(Terceiros terceiros)
         {
             //Verifica se o usuário está logado

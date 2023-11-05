@@ -68,7 +68,7 @@ namespace Prospera
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Terceiros}/{action=ConsultaTerceiros}/{id?}");
 
             // Adicione um filtro personalizado de autorização aqui
             var policy = new AuthorizationPolicyBuilder()
