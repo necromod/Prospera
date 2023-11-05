@@ -22,45 +22,49 @@
 </head>
 
 <body>
-       <!-- Session NavBar -->
+    <!-- Session NavBar -->
     <section id="NavBar">
         <div class="MenuNav">
+    <li class="ImgFundoLateral">
 
 
             <ul class="Nav-Container">
                 <img src="/img/Login/IconeLogin.png">
+                <img src="/img/Login/Lateral.png" class="ImgLateral">
                 <h2>PROSPERA</h2>
                 <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
             </ul>
 
 
             <ul class="div-central container">
-
-                <img src="/img/Login/LoginBanner.png" alt="">
-
+                <li class="imgFund">
+                    <img src="/img/Login/LoginBanner.png">
+                </li>
+           
                 <ul class="CardInfLogin">
 
                     <ul class="LoginInf">
 
                         <h2>Olá <br> Seja bem vindo</h2>
-                            @if (TempData["MensagemErro"] != null)
-                            {
+                        @if (TempData["MensagemErro"] != null)
+                        {
                             <div class="alert alert-danger" role="alert">
                                 <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" aria-label="Close">X</button>
-                                    @TempData["MensagemErro"]
+                                @TempData["MensagemErro"]
                             </div>
-                            }
+                        }
                         <form asp-controller="Login" asp-action="Entrar" method="post">
                         <li class="TxtLogin EspacoInput"><input asp-for="Email" type="text" placeholder="Email" id="TxtLogin"></li>
-                                @Html.ValidationMessageFor(x => x.Email)
-                        <li class="IconSenha"><img src=""></li>
+                            @Html.ValidationMessageFor(x => x.Email)
+                        <li class="IconSenha"><img src="/img/Login/IconLogin.png"></li>
+                        <li class="IconLogin"><img src="/img/Login/IconSenha.png"></li>
 
                         <li class="TxtSenha EspacoInput"><input type="password" asp-for="Senha" placeholder="Senha" id="TxtSenha"></li>
-                                @Html.ValidationMessageFor(x => x.Senha)
+                            @Html.ValidationMessageFor(x => x.Senha)
 
                         <h4 class="CheckH4"><input type="checkbox" name="manterLogado" id="ChekManterLogado">  Manter logado?</h4>
 
-                        <li id="BtnLogin"><a><button type="submit" id="btn-transparent" class="btn  btn-primary btn-block">Submit</button></li>
+                        <li id="BtnLogin"><a><button type="submit" id="btn-transparent" class="btn  btn-primary btn-block">LOGAR</button></li>
                         </form>
 
                         <!-- Btxt - Botão que na verdade esta dentro de um texto, h1 ou p... -->

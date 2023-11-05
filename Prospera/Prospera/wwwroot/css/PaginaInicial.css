@@ -2,31 +2,27 @@ html {
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
-  
-  
-  }
-  
-  ul,
-  li {
+}
+
+ul,
+li {
     list-style: none;
-  }
-  
-  a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
+}
+
+a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
     text-decoration: none;
-  
-  }
-  
-  input {
+}
+
+input {
     font-family: 'Inter', sans-serif;
-  
-  }
-  
-  body {
+}
+
+body {
     background-color: var(--color-Fundo) !important;
     /* background-color: black; */
-  }
-  
-  :root {
+}
+
+:root {
     --color-default: #242424;
     --color-primary: #e64c30;
     --color-segundary: #1B1572;
@@ -34,283 +30,326 @@ html {
     --color-tertiary2: #fdf6f6;
     --color-quartiary: #7836FA;
     --color-quintiaty: #373435;
-    --color-Sextiary:#605F60;
+    --color-Sextiary: #605F60;
     --color-Fundo: #F4F2FF;
-    --color-RoxaCardMov:#8C52FF;
-  }
-  
-  
-  
-  
-  html {
+    --color-RoxaCardMov: #8C52FF;
+}
+
+
+
+
+html {
     position: relative;
     min-height: 100%;
-  
-  }
-  
-  body:not(.MenusSelecao h4) {
+}
+
+body:not(.MenusSelecao h4) {
     font-size: 14px;
-  
-  
-  }
-  
+}
+
 
 /*#region PaginaIncial */
 
 /*#region MenuLateral*/
+
+#AtivaMenu{
+    display: none;
+    z-index: 99999;
+    position: relative;
+    left: 4em;
+    top: 4em;
+    height: 2.4em;
+    width: 2.5em;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+
+}
+#AtivaMenu:hover{
+transform: scale(1.1);
+transition: .3s;
+border-radius: 0px;
+}
+#AtivaMenu img{
+  width: 30px;
+  position: absolute;
+  margin: auto;
+  left: .1em;
+  top: .1em;
+
+}
+
+
 .MenuLateral {
-    background-color:white;
+    background-color: white;
     position: fixed;
     width: 18%;
-    height: 69em;
+    height: 70em;
     top: -.2rem;
     left: -.5em;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .MenuLateral h4 img:first-child {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    width: 8%;
-  }
-  
-  .MenuLateral h4:first-child {
-    padding-left: 4em;
-    padding-top: 1.3em;
-    color: var(--color-Sextiary);
-    letter-spacing: 1px;
-  }
-  
-  #BtnUsuarioConfig {
+}
+
+    .MenuLateral h4 img:first-child {
+        position: absolute;
+        top: 1.8em;
+        left: 3em;
+        width: 8%;
+    }
+
+    .MenuLateral h4:first-child {
+        padding-right: 7.5em;
+        padding-top: .8em;
+        color: var(--color-Sextiary);
+        letter-spacing: 1px;
+    }
+
+#BtnUsuarioConfig {
     position: absolute;
     display: flex;
     right: 0;
     top: 0;
     background-color: #7836FA;
-  
-  }
-  
-  #BtnUsuarioConfig img {
-    position: absolute;
-    width: 3em;
-    right: 1em;
-    top: 1em;
-    transition: .3s;
-  
-  }
-  #BtnUsuarioConfig  img:hover{
-    transform: scale(1.1);
-    transition: .3s;
-  }
-  
-  .MenusSelecao {
+}
+
+    #BtnUsuarioConfig img {
+        position: absolute;
+        width: 3em;
+        right: 1em;
+        top: 1em;
+        transition: .3s;
+    }
+
+        #BtnUsuarioConfig img:hover {
+            transform: scale(1.1);
+            transition: .3s;
+        }
+
+.MenusSelecao {
     position: absolute;
     top: 8em;
     height: 90%;
     width: 88.3%;
     /* background-color: #373435; */
-  }
-  .MenusSelecao h2{
-   color: var(--color-Sextiary);
-   font-weight: 700 !important;
-   font-size: 20px !important;
-  
-  }
-  
-  
-  .MenusSelecao  li img {
-    width: 9%;
-    left: 4em;
-  }
-  
-  .MenusSelecao a:not(.MenuAplicativo a){
-    position: absolute;
-    display: block;
-    line-height: 37px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--color-Sextiary);
-    /* alinha na vertical */
-    width: 9em;
-    height: 2.5em;
-    left: 6em;
-    margin-top: 2em;
-    padding-left: .4em;
-  }
-  
-  .Selecao1 a {
+}
+
+    .MenusSelecao h2 {
+        color: var(--color-Sextiary);
+        font-weight: 700 !important;
+        font-size: 20px !important;
+    }
+
+
+    .MenusSelecao li img {
+        width: 9%;
+        left: 4em;
+    }
+
+    .MenusSelecao a:not(.MenuAplicativo a) {
+        position: absolute;
+        display: block;
+        line-height: 37px;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--color-Sextiary);
+        /* alinha na vertical */
+        width: 9em;
+        height: 2.5em;
+        left: 6em;
+        margin-top: 2em;
+        padding-left: .4em;
+    }
+
+.Selecao1 a {
     position: absolute;
     top: 2em;
-  }
-  .Selecao1 img {
+}
+
+.Selecao1 img {
     position: absolute;
     top: 4.7em;
-  }
-  .Selecao2 a {
+}
+
+.Selecao2 a {
     position: absolute;
-    top:4.8em;
-  }
-  .Selecao2 img {
+    top: 4.8em;
+}
+
+.Selecao2 img {
     position: absolute;
     top: 8em;
-  }
-  .Selecao3 a {
+}
+
+.Selecao3 a {
     position: absolute;
     top: 7.5em;
-  }
-  .Selecao3 img {
+}
+
+.Selecao3 img {
     position: absolute;
     top: 11em;
-  }
-  
-  .Selecao4 a {
+}
+
+.Selecao4 a {
     position: absolute;
     top: 10.2em;
     color: var(--color-Sextiary) !important;
-  }
-  .Selecao4 img {
+}
+
+.Selecao4 img {
     position: absolute;
     top: 14em;
-  }
-  .Selecao5 a {
+}
+
+.Selecao5 a {
     position: absolute;
     top: 12.6em;
-  }
-  
-  .Selecao5 img {
+}
+
+.Selecao5 img {
     position: absolute;
     top: 17em;
-  }
-  .Selecao6 a {
+}
+
+.Selecao6 a {
     position: absolute;
     top: 15.2em;
-  }
-  .Selecao6 img {
+}
+
+.Selecao6 img {
     position: absolute;
     top: 20em;
-  }
-  .Selecao7 a {
+}
+
+.Selecao7 a {
     position: absolute;
     top: 17.7em;
-  }
-  .Selecao7 img {
+}
+
+.Selecao7 img {
     position: absolute;
     top: 23em;
-  }
-  .Selecao8 a {
+}
+
+.Selecao8 a {
     position: absolute;
     top: 20em;
     text-decoration: none;
-  }
-  .Selecao8 img {
+}
+
+.Selecao8 img {
     position: absolute;
     top: 25.6em;
-  }
-  .MenusSelecao a:hover:not(.MenuAplicativo a) {
+}
+
+.MenusSelecao a:hover:not(.MenuAplicativo a) {
     color: white !important;
     font-weight: 500;
     border-radius: 6px;
     background-color: var(--color-tertiary);
-  }
-  
-  .MenuAplicativo{
-  /* background-color: red; */
-  position: absolute;
-  left: 0;
-  bottom: 2em;
-  height: 24em;
-  width: 88%;
-  }
-  .MenuAplicativo h2{
-   padding-left: -1em;
-   font-size: 17px !important;
-   color: var(--color-Sextiary);
-  }
-  .MenuAplicativo img{
-  position: absolute;
-  width: 13em !important;
-  left: 5em;
-  top: 3.9em;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius:16px;
-  transition: .3s;
-  /* background-color: #242424; */
-  
-   }
-   .MenuAplicativo h4{
-    position: absolute;
-    bottom: 3em;
-    font-size: 11px;
-   left: 1.5em;
-   color: var(--color-Sextiary);
-   }
-  .MenuAplicativo img:hover{
-    transform: scale(1.1);
-    transition: .3s;
-  }
-  /*#endregion*/
-  /*#endregion*/
+}
 
-  /*#region CardCentral*/
-  
-  /*#region Movimentações recentes*/
-  .Cards{
+.MenuAplicativo {
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    bottom: 2em;
+    height: 24em;
+    width: 88%;
+}
+
+    .MenuAplicativo h2 {
+        padding-left: -1em;
+        font-size: 17px !important;
+        color: var(--color-Sextiary);
+    }
+
+    .MenuAplicativo img {
+        position: absolute;
+        width: 13em !important;
+        left: 5em;
+        top: 3.9em;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        transition: .3s;
+        /* background-color: #242424; */
+    }
+
+    .MenuAplicativo h4 {
+        position: absolute;
+        bottom: 3em;
+        font-size: 11px;
+        left: 1.5em;
+        color: var(--color-Sextiary);
+    }
+
+    .MenuAplicativo img:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+/*#endregion*/
+/*#endregion*/
+
+/*#region CardCentral*/
+
+/*#region Movimentações recentes*/
+.Cards {
     /* background-color: #373435; */
     width: 60%;
-    height: 38.8rem;
+    height: 40.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
     left: 13.9rem;
-    top:-.7em;
-  
-  }
-  .CardMovRecentes{
+    top: -.7em;
+}
+
+.CardMovRecentes {
     /* background-color: red; */
     position: relative;
     height: 17rem;
     left: 4em;
     bottom: 6.2em;
     width: 102.5%;
-  
-  }
-  .CabecalhoMovimentacoes{
-  
+}
+
+.CabecalhoMovimentacoes {
     background-color: var(--color-quartiary);
     display: flex;
     position: absolute;
-  justify-content: space-evenly;
+    justify-content: space-evenly;
     top: 5.5em;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     left: -1.8em;
     width: 43rem;
-    height: 4em; 
+    height: 4em;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  
-  }
-  
-  .CabecalhoMovimentacoes h2{
-    padding-right: 2em;
-    text-align: center;
-    font-size: 13px; 
-    padding-top: 1em;
-    color: white;
-  }
-  .CabecalhoMovimentacoes h4{
-    position: absolute;
-  top: -.8em;
-  text-align: center;
-    font-size: 12px;
-    z-index:1;
-    color: white;
-    
-  }
-  .InfMovimentacoes{
+}
+
+    .CabecalhoMovimentacoes h2 {
+        padding-right: 2em;
+        text-align: center;
+        font-size: 13px;
+        padding-top: 1em;
+        color: white;
+    }
+
+    .CabecalhoMovimentacoes h4 {
+        position: absolute;
+        top: -.8em;
+        text-align: center;
+        font-size: 12px;
+        z-index: 1;
+        color: white;
+    }
+
+.InfMovimentacoes {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     width: 80%;
     position: absolute;
     top: 7em;
@@ -318,50 +357,52 @@ html {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Estilizando minha barra de rolagem das transacoes */
-  .InfMovimentacoes::-webkit-scrollbar {
-    width: 6px;
-    transition: .3s;
-  }
-  .InfMovimentacoes::-webkit-scrollbar-track {
-    background: white; /* Cor de fundo da pista da barra de rolagem */
-  }
-  .InfMovimentacoes::-webkit-scrollbar-thumb {
-    background: var(--color-quartiary); /* Cor da alça da barra de rolagem */
-  }
-  .InfMovimentacoes::-webkit-scrollbar-thumb:hover {
-    background: var(--color-tertiary); /* Cor da alça da barra de rolagem ao passar o mouse */
-    transition: .5s;
-  }
-  
-  .InfMovimentacoes li input{
-    border: none;
-    outline: none;
-    text-align:center;
-    height: 3.8em;
-    width: 13em;
-    background-color:var(--color-quartiary);
-   color: white;
-   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-   border-radius: 8px;
-  
-  }
-  
-  .InfMovimentacoes li:not(.CabecalhoMovimentacoes){
-  border-radius: 8px;
-    margin-bottom: 2.8em;
-    height: 3.8em;
-    width: 94.5%;
-  background-color:var(--color-quartiary);
-    color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  /*#endregion*/
-  
-  /*#region Evolucao meta*/
-  .CardEvulucaoMeta{
+}
+
+    /* Estilizando minha barra de rolagem das transacoes */
+    .InfMovimentacoes::-webkit-scrollbar {
+        width: 6px;
+        transition: .3s;
+    }
+
+    .InfMovimentacoes::-webkit-scrollbar-track {
+        background: white; /* Cor de fundo da pista da barra de rolagem */
+    }
+
+    .InfMovimentacoes::-webkit-scrollbar-thumb {
+        background: var(--color-quartiary); /* Cor da alça da barra de rolagem */
+    }
+
+        .InfMovimentacoes::-webkit-scrollbar-thumb:hover {
+            background: var(--color-tertiary); /* Cor da alça da barra de rolagem ao passar o mouse */
+            transition: .5s;
+        }
+
+    .InfMovimentacoes li input {
+        border: none;
+        outline: none;
+        text-align: center;
+        height: 3.8em;
+        width: 13.2em;
+        background-color: var(--color-quartiary);
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .InfMovimentacoes li:not(.CabecalhoMovimentacoes) {
+        border-radius: 8px;
+        margin-bottom: 2.8em;
+        height: 3.8em;
+        width: 94.5%;
+        background-color: var(--color-quartiary);
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+/*#endregion*/
+
+/*#region Evolucao meta*/
+.CardEvulucaoMeta {
     background-color: white;
     width: 86%;
     height: 40%;
@@ -371,22 +412,22 @@ html {
     left: 2.5em;
     top: -1.7;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  /*#endregion*/
-  
-  /*#region cotacao*/
-  .CardCotBanc{
+}
+/*#endregion*/
+
+/*#region cotacao*/
+.CardCotBanc {
     width: 20%;
     position: absolute;
     left: 77%;
     height: 68em;
-  }
-  
-  .CardCotBanc img{
-    width:20px;
-  
-  }
-  .CardCot{
+}
+
+    .CardCotBanc img {
+        width: 20px;
+    }
+
+.CardCot {
     background-color: white;
     position: relative;
     border-radius: 12px;
@@ -394,204 +435,203 @@ html {
     width: 85%;
     right: 2.9em;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .CardCot li:not(.CardHeadCotacao){
-    background-color: white;
-    position: absolute;
-    height: 2.8em;
-    width: 15em;
-    top: 18em;
-    left: 5em;
-    z-index: 1;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  .ImgMundoCot{
-  background-color: #7836FA;
-  position: absolute;
-  width: 68%;
-  top: 3.5em;
-  left: 2.5em;
-  height: 7rem;
-  z-index: 1;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  .ImgMundoCot img{
-    width: 340px;
-    position: absolute;
-   right: -1.8em;
-   bottom: .1em;
-  }
-
-  .CardCot li input{
-   width:4em;
-   margin: auto;
-   line-height: 2.4em;
-   font-size: 15px;
-   font-weight: 600;
-   border: none;
-   outline: none;
-   padding-left: .5em;
-
-   }
-
-   .CardCot span{
-color: var(--color-quintiaty);
-padding-left: 4em;
-font-size: 17px;
-font-weight: 600;
-    }
-
-
-  .CardCot1{
-    margin-top: 6em;
-  }
-.CardCot2{
-  margin-top: 12em;
 }
 
-  .CardHeadCotacao{
+    .CardCot li:not(.CardHeadCotacao) {
+        background-color: white;
+        position: absolute;
+        height: 2.8em;
+        width: 15em;
+        top: 18em;
+        left: 5em;
+        z-index: 1;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+.ImgMundoCot {
+    background-color: #7836FA;
+    position: absolute;
+    width: 68%;
+    top: 3.5em;
+    left: 2.5em;
+    height: 7rem;
+    z-index: 1;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .ImgMundoCot img {
+        width: 340px;
+        position: absolute;
+        right: -1.8em;
+        bottom: .1em;
+    }
+
+.CardCot li input {
+    width: 4em;
+    margin: auto;
+    line-height: 2.4em;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding-left: .5em;
+}
+
+.CardCot span {
+    color: var(--color-quintiaty);
+    padding-left: 4em;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.CardCot1 {
+    margin-top: 6em;
+}
+
+.CardCot2 {
+    margin-top: 12em;
+}
+
+.CardHeadCotacao {
     background-color: var(--color-RoxaCardMov);
     position: absolute;
     top: 16.3em;
-    width:63%;
-   left: 4.3em;
+    width: 63%;
+    left: 4.3em;
     height: 2em;
     z-index: 2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 3px 2px 14pxpx rgba(0, 0, 0, 0.2);
-  }
-  
-  .CardHeadCotacao h2{
-font-size: 13px;
-text-align: center;
-padding-top: .5em;
-margin: auto;
-color: white;
-font-weight: 500;
-  }
-
-.head2{
-  margin-top: 6em;
-}
-.head3{
-  margin-top: 12em;
-}
-  
-
-
-.CardBanco{
-
-  position: relative;
-  top: 4em;
-  height: 13rem;
-  width: 85%;
-  right: 2.9em;
 }
 
-.CardBanco li{
- background-color: #7836FA;
- width: 100%;
- position: absolute;
- top: 2em;
- height: 4.8em;
- right: .1em;
- border-radius: 8px;
- align-items: center;
- box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.2);
- display: flex;
- flex-direction: row;
- 
+    .CardHeadCotacao h2 {
+        font-size: 13px;
+        text-align: center;
+        padding-top: .5em;
+        margin: auto;
+        color: white;
+        font-weight: 500;
+    }
+
+.head2 {
+    margin-top: 6em;
 }
-.CardBanco li input{
-  width: 30%;
-  margin-left: 1em;
-  top: 1em;
-  border: none;
-  outline: none;
-  background-color: var(--color-quartiary);
-  color: white;
-  height: 2em;
-  font-size: 15px;
-  font-weight: 600;
-  
-  
- }
- .CardBanco li img{
-  width: 55px;
-  padding-top: .1em;
-  padding-left: 1em;
-  background-color: var(--color-quartiary);
 
-  
- }
+.head3 {
+    margin-top: 12em;
+}
 
- .CardBanc2{
-  margin-top: 7em;
- 
- }
- .CardBanc3{
-  margin-top: 14em;
 
- }
-  /*#endregion*/
 
-  /*#region CardsPagamento*/
+.CardBanco {
+    position: relative;
+    top: 4em;
+    height: 13rem;
+    width: 85%;
+    right: 2.9em;
+}
 
-    /*#endregion*/
+    .CardBanco li {
+        background-color: #7836FA;
+        width: 100%;
+        position: absolute;
+        top: 2em;
+        height: 4.8em;
+        right: .1em;
+        border-radius: 8px;
+        align-items: center;
+        box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: row;
+    }
+
+        .CardBanco li input {
+            width: 30%;
+            margin-left: 1em;
+            top: 1em;
+            border: none;
+            outline: none;
+            background-color: var(--color-quartiary);
+            color: white;
+            height: 2em;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .CardBanco li img {
+            width: 55px;
+            padding-top: .1em;
+            padding-left: 1em;
+            background-color: var(--color-quartiary);
+        }
+
+.CardBanc2 {
+    margin-top: 7em;
+}
+
+.CardBanc3 {
+    margin-top: 14em;
+}
+/*#endregion*/
+
+/*#region CardsPagamento*/
+
+/*#endregion*/
 
 
 
 
 /*#region transações*/
-.CardTransacoes{
-  /* background-color: #e64c30; */
-  position: relative;
-  display:flex;
-  flex-direction: row-reverse;
-  top: -.5em;
-  left: 2.6em;
-  width: 86%;
-  height: 38%;
-
+.CardTransacoes {
+    /* background-color: #e64c30; */
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    top: -.5em;
+    left: 2.6em;
+    width: 86%;
+    height: 38%;
 }
 
-  .CardTransacoes li{
-    background-color: var(--color-RoxaCardMov);
-    position: absolute;
-    left: 4em;
-    height: 100%;
-    width: 23%;
-    border-radius: 9px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .CardUltReceb{
+    .CardTransacoes li {
+        background-color: var(--color-RoxaCardMov);
+        position: absolute;
+        left: 4em;
+        height: 100%;
+        width: 23%;
+        border-radius: 9px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+.CardUltReceb {
     left: 28em !important;
-  }
-  .CardTotalTran{
+}
+
+.CardTotalTran {
     left: 52.5em !important;
-  }
-  
-  .CardTransacoes h2,h4,span{
-   text-align: center;
-   color: white;
-  }
-  .CardTransacoes h2{
+}
+
+.CardTransacoes h2, h4, span {
+    text-align: center;
+    color: white;
+}
+
+.CardTransacoes h2 {
     padding-top: 1em;
     font-size: 18px !important;
-    font-weight:600;
-   }
-  
-   .CardTransacoes h4{
+    font-weight: 600;
+}
+
+.CardTransacoes h4 {
     font-size: 15px !important;
     font-weight: 500;
-   }
-   .CardTransacoes span input{
+}
+
+.CardTransacoes span input {
     border: none;
     outline: none;
     background-color: var(--color-RoxaCardMov);
@@ -599,50 +639,126 @@ font-weight: 500;
     color: white;
     text-align: center;
     font-size: 20px;
-    font-weight:600;
-  
-  
-   }
-   .CardTransacoes span{
-  position: absolute;
-  /* background-color: #1B1572; */
-  text-align: left;
-  width:7.5em;
-  font-size: 20px;
-  left: 2.5em;
-  font-weight:600;
-   }
-   .CardTransacoes img{
+    font-weight: 600;
+}
+
+.CardTransacoes span {
+    position: absolute;
+    /* background-color: #1B1572; */
+    text-align: left;
+    width: 7.5em;
+    font-size: 20px;
+    left: 2.5em;
+    font-weight: 600;
+}
+
+.CardTransacoes img {
     position: absolute;
     left: 6em;
     bottom: 2em;
     width: 67px;
     animation: rotate 3s linear infinite;
-   }
-  
-  /* Fazendo a imagem rodar */
-   @keyframes rotate {
+}
+
+/* Fazendo a imagem rodar */
+@keyframes rotate {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
-  }
-  
-  
-  /*#endregion*/
-  
-  
-  
-  /*#region Card Cotação*/
-  
-  /*#endregion*/
-  
-  
-  /*#region CardSaldoBanco*/
-  
-  /*#endregion*/
-  
-  
-  /*#endregion*/
+}
+
+
+/*#endregion*/
+
+
+
+/*#region Responsivo*/
+
+
+
+@media (max-width: 360px) {
+
+    /* MenuLateral */
+    .OcultaMenu{
+        display: none;
+    }
+    #AtivaMenu{
+        display: block;
+        left: 1em;
+        top: 1em;
+        z-index: 99999;
+        position: absolute;
+    }
+.MenuLateral{
+    width: 74%;
+    height: 102%;
+}
+.MenusSelecao li a{
+    font-size: 16px!important;
+}
+.MenuAplicativo a img{
+    width:110px!important;
+   margin-top: 7em;
+   margin-left: 1em;
+}
+.MenuAplicativo h2{
+    font-size: 14px!important;
+    margin-top: 8.2em;
+}
+.MenuAplicativo h4{
+    font-size: 8px!important;
+    margin-bottom: 4em;
+    margin-left: 2em;
+
+}
+.MenuLateral h4:first-child{
+    display: none;
+}
+
+}
+/* FIM MENU LATERAL */
+
+html{
+    overflow:scroll;
+ }
+/* Trnasacoes */
+.Cards {
+    left: 0;
+    background-color: #373435;
+    width: 95%;
+}
+.CardTransacoes{
+    background-color: #801D7B;
+    display: flex;
+    height: 90rem;
+    width: 60%;
+
+}
+.CardTransacoes li{
+    height: 17em;
+    width: 15em;
+
+}
+.CardUltPagto{
+    position: absolute;
+    right: 5em!important;
+}
+.CardCotBanc{
+    display: none;
+}
+/* FIM TRANSACOES */
+
+
+
+
+    /*#endregion*/
+
+
+
+
+
+    /*#endregion*/
