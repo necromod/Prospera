@@ -1,29 +1,10 @@
-﻿@model Prospera.Controllers.TerceirosController;
+﻿@model Prospera.Models.Terceiros
 @{
     Layout = null;
     ViewData["Title"] = "Terceiros";
 }
 
-<link rel="stylesheet" href="/css/PaginaInicial.css">
-<!-- Css Pagina Axiliares -->
-<!-- Receitas css -->
-<link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
-<!-- DespesasCSS -->
-<link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
-<!-- ContaBancariaCSS -->
-<link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
-<!-- TerceirosCSS -->
-<link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
-<!-- TerceirosConsultaCSS -->
-<link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
-<!-- TransacaoConsultaCSS -->
-<link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
-<!-- Fonte inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="/img/Favicon.png" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-      rel="stylesheet">
+
  <style>
     #BtnInicio {
         background-color: var(--color-tertiary);
@@ -38,46 +19,17 @@
         color: white;
         padding: 10px;
     }
-</style> 
-<script>
-    const VoltarTerceiros = document.getElementById("BtnTerceirosVoltar");
-    const botaoMostrarTerceiros = document.getElementById("testist");
-    const telaOcultaTerceiros = document.getElementById("FundoMenusTerceiros");
-
-
-    botaoMostrarTerceiros.addEventListener("click", function () {
-        // Mostrar o elemento de carregamento
-
-        AnimacaoCarregamento.style.display = "block";
-        // Ocultar a tela de receitas
-        telaOcultaTerceiros.style.display = "none";
-
-        // Simular uma operação demorada (substitua isso pela sua própria função)
-        setTimeout(function () {
-            // Ative a tela definindo a opacidade para 1
-            telaOcultaTerceiros.style.opacity = 1;
-
-            // Ocultar o elemento de carregamento
-            AnimacaoCarregamento.style.display = "none";
-
-            // Mostrar a tela de receitas novamente
-            telaOcultaTerceiros.style.display = "block";
-
-        }, 500); // Tempo de simulação (.5 segundos)
-    });
-
-    VoltarTerceiros.addEventListener("click", function () {
-        //Ocultar
-        telaOcultaTerceiros.style.display = "none";
-    })
-</script>
-
+</style>
+    <!-- TerceirosCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css"> 
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 @* Botão para a página Login de Usuario *@
 <a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
-
 <li class="Selecao7">
-    <a href="#" id="testist">Devedor/Pagador</a>
+    <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
     <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
 </li>
 
@@ -102,18 +54,19 @@
                 <h4 class="NomID">ID</h4>
 
             </span>
-            <input type="text" id="TxtTerceirosNome" maxlength="30">
-            <input type="text" id="TxtTerceirosTelefone" maxlength="100">
-            <input type="text" id="TxtTerceirosEmail">
-            <input type="text" id="TxtTerceirosTelefone2">
-            <input type="text" id="TxtTerceirosEndereco">
-            <input type="text" id="TxtTerceirosCidade">
-            <input type="text" id="TxtTerceirosBairro">
-            <input type="text" id="TxtTerceirosUF">
-            <input type="text" id="TxtTerceirosCEP">
-            <input type="text" id="TxtTerceirosObservacao">
-            <input type="text" id="TxtTerceirosID" maxlength="3">
-            <button id="BtnTerceirosCadastrar">Cadastrar</button>
+            <form asp-controller="Terceiros" asp-action="CadastrarTerceiro" method="post">
+                <input type="text" asp-for="NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                <input type="text" asp-for="EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                <input type="text" asp-for="TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                <input type="text" asp-for="Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                <input type="text" asp-for="EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                <input type="text" asp-for="CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                <input type="text" asp-for="BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                <input type="text" asp-for="UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                <input type="text" asp-for="CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                <input type="text" asp-for="ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+                <button type="submit" id="BtnTerceirosCadastrar">Cadastrar</button>
+            </form>
             <button id="BtnTerceirosVoltar">Voltar</button>
             <button id="BtnTerceirosConsultar">Consultar</button>
             <button id="BtnTerceirosLimpar">Limpar</button>
@@ -207,5 +160,6 @@
 </ul>
 
 
-<!-- FIM Region Menu Devedor/pagador-->
-<script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+<!-- FIM Region Menu Devedor/pagador--> @* 
+<!-- link js -->
+<script src="/js/PaginaInicial.js" asp-append-version="true"></script>  *@
