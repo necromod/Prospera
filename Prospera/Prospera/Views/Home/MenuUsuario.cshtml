@@ -332,18 +332,19 @@
                         <h4 class="NomID">ID</h4>
 
                     </span>
-                    <input type="text" id="TxtTerceirosNome" maxlength="30">
-                    <input type="text" id="TxtTerceirosTelefone" maxlength="100">
-                    <input type="text" id="TxtTerceirosEmail">
-                    <input type="text" id="TxtTerceirosTelefone2">
-                    <input type="text" id="TxtTerceirosEndereco">
-                    <input type="text" id="TxtTerceirosCidade">
-                    <input type="text" id="TxtTerceirosBairro">
-                    <input type="text" id="TxtTerceirosUF">
-                    <input type="text" id="TxtTerceirosCEP">
-                    <input type="text" id="TxtTerceirosObservacao">
-                    <input type="text" id="TxtTerceirosID" maxlength="3">
-                    <button id="BtnTerceirosCadastrar">Cadastrar</button>
+                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post">
+                        <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                        <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                        <input type="text" asp-for="NovoTerceiro.TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                        <input type="text" asp-for="NovoTerceiro.Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                        <input type="text" asp-for="NovoTerceiro.EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                        <input type="text" asp-for="NovoTerceiro.CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                        <input type="text" asp-for="NovoTerceiro.BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                        <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                        <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                        <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+                        <button type="submit" id="BtnTerceirosCadastrar">Cadastrar</button>
+                    </form>
                     <button id="BtnTerceirosVoltar">Voltar</button>
                     <button id="BtnTerceirosConsultar">Consultar</button>
                     <button id="BtnTerceirosLimpar">Limpar</button>

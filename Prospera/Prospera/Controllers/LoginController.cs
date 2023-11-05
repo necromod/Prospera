@@ -69,7 +69,7 @@ namespace Prospera.Controllers
                             //Criação de Cookies de login
                             _sessao.CriarSessaoUsuario(usuario);
 
-                            return RedirectToAction("MenuUsuario", "Home");
+                            return RedirectToAction("MenuUsuario", "MenuUsuario");
                         }
                         else
                         {

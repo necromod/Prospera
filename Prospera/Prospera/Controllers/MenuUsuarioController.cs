@@ -12,17 +12,14 @@ namespace Prospera.Controllers
     {
         private readonly ProsperaContext _context;
         private readonly SessaoInterface _sessao;
+        private readonly TerceirosViewModel _teerceirosViewModel;
 
-        public MenuUsuarioController(ProsperaContext context, SessaoInterface sessao)
+        public MenuUsuarioController(ProsperaContext context, SessaoInterface sessao, TerceirosViewModel teerceirosViewModel)
         {
             _context = context;
             _sessao = sessao;
+            _teerceirosViewModel = teerceirosViewModel; 
         }
-        /*public async Task<IActionResult> MenuUsuario()
-        {
-            var prosperaContext = _context.Terceiros.Include(t => t.Usuario);
-            return View("~/Views/Home/MenuUsuario.cshtml", await prosperaContext.ToListAsync());
-        }*/
 
         public IActionResult MenuUsuario()
         {
@@ -33,11 +30,40 @@ namespace Prospera.Controllers
 
             return View("~/Views/Home/MenuUsuario.cshtml", viewModel);
         }
-/*
-        public IActionResult MenuUsuario()
+
+
+
+        // POST: Criação de campo Terceiros
+        [HttpPost]
+        public IActionResult CadastrarTerceiro(TerceirosViewModel terceiros)
         {
-            return View("~/Views/Home/MenuUsuario.cshtml");
+
+            //Terceiros testeExterno = new Terceiros();
+            //testeExterno = _teerceirosViewModel.NovoTerceiro();
+
+            //Verifica se o usuário está logado
+            if (_sessao.BuscarSessaoUsuario() != null)
+            {
+                Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
+                terceiros.NovoTerceiro.IdUsuario = usuarioModel.IdUsuario;
+            }
+            else
+            {
+                terceiros.NovoTerceiro.IdUsuario = 55;
+            }
+
+            
+
+            //inserção automática dos campos
+            terceiros.NovoTerceiro.DataCadastroTerceiros = DateTime.Now;
+            terceiros.NovoTerceiro.DataUltimaMovimentacao = DateTime.Now;
+            terceiros.NovoTerceiro.StatusTerceiros = "Ativo";
+
+            //Criação do campo dentro do banco de dados
+            _context.Terceiros.Add(terceiros.NovoTerceiro);
+            _context.SaveChanges();
+
+            return RedirectToAction("MenuUsuario", "MenuUsuario");
         }
-*/
     }
 }
