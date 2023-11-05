@@ -40,11 +40,12 @@ namespace Prospera
             // Adicione o serviço do LoginController
             builder.Services.AddScoped<LoginController>();
 
+            builder.Services.AddScoped<TerceirosViewModel, TerceirosViewModelInterface>();
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped<SessaoInterface, Sessao>();
             builder.Services.AddSession(o =>
             {
-                o.IdleTimeout = TimeSpan.FromDays(5);
+                o.IdleTimeout = TimeSpan.FromMinutes(5);
                 o.Cookie.HttpOnly = true;
                 o.Cookie.IsEssential =true;
             });
@@ -68,7 +69,7 @@ namespace Prospera
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Terceiros}/{action=ConsultaTerceiros}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             // Adicione um filtro personalizado de autorização aqui
             var policy = new AuthorizationPolicyBuilder()

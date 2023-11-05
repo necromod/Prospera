@@ -1,4 +1,4 @@
-@model Prospera.Controllers.LoginController;
+@model Prospera.Helpers.TerceirosViewModel
 
 
 
@@ -312,18 +312,19 @@
                         <h4 class="NomID">ID</h4>
 
                     </span>
-                    <input type="text" id="TxtTerceirosNome" maxlength="30">
-                    <input type="text" id="TxtTerceirosTelefone" maxlength="100">
-                    <input type="text" id="TxtTerceirosEmail">
-                    <input type="text" id="TxtTerceirosTelefone2">
-                    <input type="text" id="TxtTerceirosEndereco">
-                    <input type="text" id="TxtTerceirosCidade">
-                    <input type="text" id="TxtTerceirosBairro">
-                    <input type="text" id="TxtTerceirosUF">
-                    <input type="text" id="TxtTerceirosCEP">
-                    <input type="text" id="TxtTerceirosObservacao">
-                    <input type="text" id="TxtTerceirosID" maxlength="3">
-                    <button id="BtnTerceirosCadastrar">Cadastrar</button>
+                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post">
+                        <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                        <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                        <input type="text" asp-for="NovoTerceiro.TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                        <input type="text" asp-for="NovoTerceiro.Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                        <input type="text" asp-for="NovoTerceiro.EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                        <input type="text" asp-for="NovoTerceiro.CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                        <input type="text" asp-for="NovoTerceiro.BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                        <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                        <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                        <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+                        <button type="submit" id="BtnTerceirosCadastrar">Cadastrar</button>
+                    </form>
                     <button id="BtnTerceirosVoltar">Voltar</button>
                     <button id="BtnTerceirosConsultar">Consultar</button>
                     <button id="BtnTerceirosLimpar">Limpar</button>
@@ -345,29 +346,35 @@
                 <li class="HeadMenuTerceirosConsult">
                 </li>
                 <li class="TxtInfTerceirosConsult">
-                <li class="HeadConsultContainer">
-                    <h4 class="ConsutHead1">Nome</h4>
-                    <h4 class="ConsutHead2">Telefone</h4>
-                    <h4 class="ConsutHead3">Email</h4>
-                    <h4 class="ConsutHead4">Observação</h4>
-                    <h4 class="ConsutHead5">Saldo Devedor</h4>
-                    <h4 class="ConsutHead6">Saldo Pagador</h4>
-                    <h4 class="ConsutHead7">Ultima Movimentação</h4>
-                    <h4 class="ConsutHead8">ID</h4>
+                    <ul class="HeadConsultContainer">
+                        <li><h4 class="ConsutHead1">Nome</h4></li>
+                        <li><h4 class="ConsutHead2">Telefone</h4></li>
+                        <li><h4 class="ConsutHead3">Email</h4></li>
+                        <li><h4 class="ConsutHead4">Observação</h4></li>
+                        <li><h4 class="ConsutHead7">Ultima Movimentação</h4></li>
+                        <li><h4 class="ConsutHead8">ID</h4></li>
+                    </ul>
+                    </span>
+                <li class="TtxTerceirosContainer">
+                        @foreach (var item in Model.ListaTerceiros)
+                        
+                            {
+                                <ul class="TtxTerceirosContainer list-unstyled espacotop">
+                                    <li><input type="text" id="TxtTerceirosNomeConsult" value="@item.NomeTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosTelefoneConsult" value="@item.TelefoneTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosEmailConsult" value="@item.EmailTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosObservacaoConsult" value="@item.ObservacaoTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosUltMovConsut" value="@item.DataUltimaMovimentacao"></li>
+                                    <li><input type="text" id="TxtTerceirosIDConsult" value="@item.IdTerceiros"></li>
+                                </ul>
+                            }
+
+                        } 
+                       
+
                 </li>
 
-                </span>
-                <li class="TtxTerceirosContainer">
-                    <input type="text" id="TxtTerceirosNomeConsult" maxlength="30">
-                    <input type="text" id="TxtTerceirosTelefoneConsult" maxlength="100">
-                    <input type="text" id="TxtTerceirosEmailConsult">
-                    <input type="text" id="TxtTerceirosObservacaoConsult">
-                    <input type="text" id="TxtTerceirosSaldoDevedorConsult">
-                    <input type="text" id="TxtTerceirosSaldoPagadorConsult">
-                    <input type="text" id="TxtTerceirosUltMovConsut">
-                    <input type="text" id="TxtTerceirosIDConsult">
-                </li>
-                <button id="BtnTerceirosVoltarConsult">Voltar</button>
+                <a asp-action="MenuUsuario" id="BtnTerceirosVoltarConsult">Voltar</a>
                 <button id="BtnTerceirosEndercosConsult">Endereço</button>
                 </li>
                 <li>
@@ -376,6 +383,7 @@
                     <!-- Conteúdo da tela oculta aqui -->
 
                 </li>
+
             </ul>
         </ul>
         <ul id="TerceirosConsultEnd">

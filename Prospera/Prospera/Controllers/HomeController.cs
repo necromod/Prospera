@@ -28,10 +28,10 @@ namespace Prospera.Controllers
         {
             return View();
         }
-        public IActionResult MenuUsuario()
+        /*public IActionResult MenuUsuario()
         {
             return View();
-        }
+        }*/
         public IActionResult VariasExibicoes()
         {
             return View();

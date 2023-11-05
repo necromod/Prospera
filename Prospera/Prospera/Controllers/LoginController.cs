@@ -65,6 +65,18 @@ namespace Prospera.Controllers
 
                             // Configurar a sessão com o tempo de expiração especificado
                             HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+<<<<<<< HEAD
+=======
+
+                            //Criação de Cookies de login
+                            _sessao.CriarSessaoUsuario(usuario);
+
+                            return RedirectToAction("MenuUsuario", "MenuUsuario");
+                        }
+                        else
+                        {
+                            TempData["MensagemErro"] = $"Senha incorreta. Tenta novamente";
+>>>>>>> b4be0a46a18ea23e615e22fd9ab2b974c203574f
                         }
 
                         //Criação de Cookies de login
