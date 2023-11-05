@@ -30,6 +30,9 @@
 <a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
 </header>
     <ul class="Container TerceirosContainerConsult" style="overflow-y: auto;">
+        <li class="HeadMenuTerceirosConsult">
+        </li>
+        <li class="TxtInfTerceirosConsult">
         <ul class="HeadConsultContainer">
             <li><h4 class="ConsutHead1">Nome</h4></li>
             <li><h4 class="ConsutHead2">Telefone</h4></li>
@@ -38,6 +41,7 @@
             <li><h4 class="ConsutHead7">Ultima Movimentação</h4></li>
             <li><h4 class="ConsutHead8">ID</h4></li>
         </ul>
+        </span>
         <li class="TtxTerceirosContainer">
             @foreach (var item in Model)
             {
@@ -52,8 +56,15 @@
             }
         </li>
         
-    <a asp-action="CadastroTerceiros" id="BtnTerceirosVoltarConsult">Voltar</a>
+    <a asp-action="MenuUsuario" id="BtnTerceirosVoltarConsult">Voltar</a>
     <button id="BtnTerceirosEndercosConsult">Endereço</button>
+    </li>
+    <li>
+
+
+        <!-- Conteúdo da tela oculta aqui -->
+
+    </li>
 
     </ul>
 <!-- link js -->
