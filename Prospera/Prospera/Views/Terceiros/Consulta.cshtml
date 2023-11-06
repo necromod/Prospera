@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Prospera.Models.Terceiros>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p
+*@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaçoes -->
+    <meta name="viewport" content="width=device-width">
+    <!-- link css -->
+    <link rel="stylesheet" href="/css/PaginaInicial.css">
+    <!-- Css Pagina Axiliares -->
+    <!-- Receitas css -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
+    <!-- DespesasCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
+    <!-- ContaBancariaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
+    <!-- TerceirosCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
+    <!-- TerceirosConsultaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
+    <!-- TransacaoConsultaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
+    <!-- Fonte inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+          rel="stylesheet">
+
+    <title>Prospera</title>
+</head>
+
+<body>
+      <ul id="FundoMenusTerceirosConsult">
+            <ul class="Container TerceirosContainerConsult" style="overflow-y: auto;">
+                <li class="HeadMenuTerceirosConsult">
+                </li>
+                <li class="TxtInfTerceirosConsult">
+                    <ul class="HeadConsultContainer">
+                        <li><h4 class="ConsutHead1">Nome</h4></li>
+                        <li><h4 class="ConsutHead2">Telefone</h4></li>
+                        <li><h4 class="ConsutHead3">Email</h4></li>
+                        <li><h4 class="ConsutHead4">Observação</h4></li>
+                        <li><h4 class="ConsutHead7">Ultima Movimentação</h4></li>
+                        <li><h4 class="ConsutHead8">ID</h4></li>
+                    </ul>
+                    </span>
+      @*   <li class="TtxTerceirosContainer">
+                        @foreach (var item in Model.ListaTerceiros)
+                        
+                            {
+                                <ul class="TtxTerceirosContainer list-unstyled espacotop">
+                                    <li><input type="text" id="TxtTerceirosNomeConsult" value="@item.NomeTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosTelefoneConsult" value="@item.TelefoneTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosEmailConsult" value="@item.EmailTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosObservacaoConsult" value="@item.ObservacaoTerceiros"></li>
+                                    <li><input type="text" id="TxtTerceirosUltMovConsut" value="@item.DataUltimaMovimentacao"></li>
+                                    <li><input type="text" id="TxtTerceirosIDConsult" value="@item.IdTerceiros"></li>
+                                </ul>
+                            }
+
+                        } 
+                       
+
+                </li>*@
+            <a asp-controller="Terceiros" asp-action="Create" id="BtnTerceirosVoltarConsult">Voltar</a>
+                <button id="BtnTerceirosEndercosConsult">Endereço</button>
+                </li>
+                <li>
+
+
+                    <!-- Conteúdo da tela oculta aqui -->
+
+                </li>
+
+            </ul>
+        </ul>
+    <ul id="TerceirosConsultEnd">
+        <ul class="Container TerceirosContainerConsultEnd" style="overflow-y: auto;">
+            <li class="HeadMenuTerceirosConsultEnd">
+                <h4>Consulta de Terceiros</h4>
+            </li>
+            <li class="TxtInfTerceirosConsultEnd">
+            <li class="HeadContainer">
+                <h4 class="Head1">Pessoa</h4>
+                <h4 class="Head2">Telefone2</h4>
+                <h4 class="Head3">Endereço</h4>
+                <h4 class="Head4">Cidade</h4>
+                <h4 class="Head5">Bairro</h4>
+                <h4 class="Head6">UF</h4>
+                <h4 class="Head7">CEP</h4>
+
+
+        @*    </li>
+                @foreach (var item in Model.ListaTerceiros)
+                {
+                <li class="TtxEndContainer">
+                    <input type="text" id="TxtTerceirosPessoaConsultEnd" value="@item.NomeTerceiros">
+                    <input type="text" id="TxtTerceirosTelefone2ConsultEnd" value="@item.Telefone2Terceiros">
+                    <input type="text" id="TxtTerceirosEnderecoConsultEnd" value="@item.EnderecoTerceiros">
+                    <input type="text" id="TxtTerceirosCidadeConsultEnd" value="@item.CidadeTerceiros">
+                    <input type="text" id="TxtTerceirosBairroConsultEnd" value="@item.BairroTerceiros">
+                    <input type="text" id="TxtTerceirosUFConsultEnd" value="@item.UFTerceiros">
+                    <input type="text" id="TxtTerceirosCEPConsultEnd" value="@item.CEPTerceiros">
+                </li>
+                }*@
+
+            <button id="BtnTerceirosVoltarConsultEnd">Voltar</button>
+            </li>
+            <li>
+
+                <h4>Pessoa</h4>
+                <!-- Conteúdo da tela oculta aqui -->
+
+            </li>
+        </ul>
+    </ul>
+    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+</body>
+
+</html>
+
+

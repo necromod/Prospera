@@ -82,7 +82,7 @@ html {
     top: 1em;
 }
 #FundoMenusTerceiros:not(.Container) {
-    display: none;
+    /* display: none; */
     background-color: white;
     width: 98%;
     left: 0;

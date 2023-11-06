@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Prospera",
+    "\\Prospera\\Prospera",
+    "\\Prospera\\Prospera\\Views",
+    "\\Prospera\\Prospera\\Views\\Terceiros"
   ],
-  "SelectedNode": "\\Prospera.sln (Prospera\\Prospera.sln)",
+  "SelectedNode": "\\Prospera\\Prospera\\Views\\Terceiros\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

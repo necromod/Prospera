@@ -2,8 +2,8 @@
 // Funcao que ira mostrar as telas quando clicar nos botões dos menus 
 
 //exibindo a tela
-document.addEventListener("DOMContentLoaded", function () {
-  //Tela Receitas
+/*document.addEventListener("DOMContentLoaded", function () {*/
+/*  //Tela Receitas
   const VoltarReceitas = document.getElementById("BtnReceitasVoltar");
   const botaoMostrarReceitas = document.getElementById("BtnReceitas");
   const telaOcultaReceita = document.getElementById("FundoMenusReceita");
@@ -286,27 +286,8 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //Logo dos bancos
-
-
-
 });
-
+*/
 
 //MenuHambuber 
 // const AtivaMenu = document.getElementById("AtivaMenu"); 
