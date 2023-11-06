@@ -134,8 +134,11 @@ border-radius: 0px;
     width: 88.3%;
     /* background-color: #373435; */
 }
-
+.MenusSelecao a{
+    text-align: left;
+}
     .MenusSelecao h2 {
+       text-align: left;
         color: var(--color-Sextiary);
         font-weight: 700 !important;
         font-size: 20px !important;
@@ -383,7 +386,7 @@ border-radius: 0px;
         outline: none;
         text-align: center;
         height: 3.8em;
-        width: 13.2em;
+        width: 13em;
         background-color: var(--color-quartiary);
         color: white;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -401,17 +404,129 @@ border-radius: 0px;
     }
 /*#endregion*/
 
-/*#region Evolucao meta*/
-.CardEvulucaoMeta {
-    background-color: white;
+/*#region Noticias*/
+#ContadorNews{
+    z-index: 9999; 
+    position: absolute;
+    right: 30em;
+    bottom: .4em;
+    color: var(--color-Sextiary);
+
+    
+}
+.CardNoticias {
+   background-color: white;
     width: 86%;
-    height: 40%;
+    height: 35%;
     display: flex;
     border-radius: 9px;
     position: relative;
-    left: 2.5em;
-    top: -1.7;
+    left: 4em;
+    top: -.7em;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.news{
+    position: absolute;
+    left: 2em;
+    height: 19em;
+    width: 38.3rem;
+    border-radius: 5px;
+   
+}
+.news h2{
+  
+    padding: 0px 7px;
+    text-align: center;
+    font-size: 13px;
+   margin-top: .9em;
+   color: var(--color-Sextiary);
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+}
+
+.news li{
+    display: flex;
+    background-color: white;
+   margin-right: 4em;
+   margin-top: 2em;
+   height: 3em;
+   position: absolute;
+   left: 1em;
+   border-radius: 6px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.news p{
+    padding: 0px 7px;
+    text-align: center;
+    font-size: 13px;
+   margin-top: .9em;
+   color: var(--color-Sextiary);
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+}
+.NotAtual{
+    position: absolute;
+    text-align: center;
+    top: -1em;
+    left: 40%;
+    font-size: 18px!important;
+    font-weight: 600!important;
+}
+.NewTitulo{
+    top: .3em;
+}
+.news h4{
+    background-color: #801D7B;
+    z-index: 99999;
+}
+.NewAutor{
+    position: absolute;
+    top: 4em;
+}
+.NewUrl a{
+    position: absolute;
+    left: 35rem;
+    top: 15em;
+    width: 5em;
+    z-index: 99999;
+   
+}
+
+.NewDescrica{
+    position: absolute;
+    top: 8em;
+}
+.NewDataPublic{
+    position: absolute;
+    top: 12em;
+}
+
+
+.NewAutor p{
+   padding: 0px 5px;
+   color:var(--color-Sextiary);
+   margin-bottom: .2em;
+}
+.CardNoticias button{
+    background-color: #7836FA!important;
+    width: 13%;
+    height: 3em;
+    position: absolute;
+    right: 20em;
+    bottom: 1em;
+    border-radius: 6px;
+    color: white;
+    z-index: 99999;
+    cursor: pointer;
+    transition: .3s;
+}
+.CardNoticias button:hover{
+  transition: .3s;
+  transform: scale(1.1);
+  border-radius: 0px;
+}
+#proximo{
+    right: 9em;
 }
 /*#endregion*/
 
@@ -480,10 +595,11 @@ border-radius: 0px;
 }
 
 .CardCot span {
-    color: var(--color-quintiaty);
-    padding-left: 4em;
+    color: var(--color-Sextiary);
+    padding-left: 1.2em;
     font-size: 17px;
     font-weight: 600;
+    text-align: left;
 }
 
 
@@ -582,9 +698,6 @@ border-radius: 0px;
 
 /*#endregion*/
 
-
-
-
 /*#region transações*/
 .CardTransacoes {
     /* background-color: #e64c30; */
@@ -594,7 +707,7 @@ border-radius: 0px;
     top: -.5em;
     left: 2.6em;
     width: 86%;
-    height: 38%;
+    height: 32%;
 }
 
     .CardTransacoes li {
@@ -680,77 +793,6 @@ border-radius: 0px;
 
 
 
-@media (max-width: 360px) {
-
-    /* MenuLateral */
-    .OcultaMenu{
-        display: none;
-    }
-    #AtivaMenu{
-        display: block;
-        left: 1em;
-        top: 1em;
-        z-index: 99999;
-        position: absolute;
-    }
-.MenuLateral{
-    width: 74%;
-    height: 102%;
-}
-.MenusSelecao li a{
-    font-size: 16px!important;
-}
-.MenuAplicativo a img{
-    width:110px!important;
-   margin-top: 7em;
-   margin-left: 1em;
-}
-.MenuAplicativo h2{
-    font-size: 14px!important;
-    margin-top: 8.2em;
-}
-.MenuAplicativo h4{
-    font-size: 8px!important;
-    margin-bottom: 4em;
-    margin-left: 2em;
-
-}
-.MenuLateral h4:first-child{
-    display: none;
-}
-
-}
-/* FIM MENU LATERAL */
-
-html{
-    overflow:scroll;
- }
-/* Trnasacoes */
-.Cards {
-    left: 0;
-    background-color: #373435;
-    width: 95%;
-}
-.CardTransacoes{
-    background-color: #801D7B;
-    display: flex;
-    height: 90rem;
-    width: 60%;
-
-}
-.CardTransacoes li{
-    height: 17em;
-    width: 15em;
-
-}
-.CardUltPagto{
-    position: absolute;
-    right: 5em!important;
-}
-.CardCotBanc{
-    display: none;
-}
-/* FIM TRANSACOES */
 
 
 

@@ -1,12 +1,4 @@
-html {
-  font-size: 24px;
-  font-family: 'Inter', sans-serif;
-  overflow: hidden;
 
-
-}
-
-ul,
 li {
   list-style: none;
 }
@@ -24,10 +16,11 @@ input {
 body {
   background-color: var(--color-Fundo) !important;
   /* background-color: black; */
+  overflow: scroll;
 }
 
 :root {
-  --color-default: #242424;
+  --color-default: #7836FA;
   --color-primary: #e64c30;
   --color-segundary: #1B1572;
   --color-tertiary: #801D7B;
@@ -51,3 +44,45 @@ body:not(.MenusSelecao h4) {
 
 
 }
+/* ICONES FUNDO */
+body img{
+  width: 200px;
+}
+.ImgIndex1{
+  width: 300px;
+  position: absolute;
+  top: -.9em;
+  left: -4em;
+}
+/* FIM ICONES FUNDO */
+
+/* REGION NAVBAR  */
+.MenuNav{
+  /* background-color: #7836FA; */
+  position: relative;
+  top: -10em;
+}
+.MenuVanInfContainer{
+position: absolute;
+width:86%;
+left: 14em;
+display: flex;
+justify-content: space-around;
+}
+.LibtnLogin{
+ position: absolute;
+ background-color: var(--color-default);
+ left: 0;
+ height: 3em;
+ z-index: 9999;
+}
+.LibtnLogin a{
+  color: white;
+  background-color: var(--color-default);
+  height: 2.4em;
+  width: 6em;
+  border-radius: 6px;
+  text-align: center;
+
+}
+/* FIM MENUNAV */
