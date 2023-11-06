@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     telaOcultaContBanc.style.display = "none";
   })
-  
-//Consulta contas bancarias
-//Conta Bancaria
+
+  //Consulta contas bancarias
+  //Conta Bancaria
 
   const VoltarContBancConsult = document.getElementById("BtnVoltarConsultCont");
   const botaoMostrarContBancConsult = document.getElementById("BtnContaBancLista");
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     AnimacaoCarregamento.style.display = "block";
     // Ocultar a tela de receitas
-    telaOcultaContBancConsult.style.zIndex="99999";
+    telaOcultaContBancConsult.style.zIndex = "99999";
     telaOcultaContBancConsult.style.display = "none";
 
     // Simular uma operação demorada (substitua isso pela sua própria função)
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     telaOcultaContBancConsult.style.display = "none";
   })
 
-// FIM CONSULTA CONT BANCARIA
+  // FIM CONSULTA CONT BANCARIA
 
 
 
@@ -157,133 +157,133 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- //Conta Devedor/pagador
+  //Conta Devedor/pagador
 
- const VoltarTerceiros = document.getElementById("BtnTerceirosVoltar");
- const botaoMostrarTerceiros = document.getElementById("BtnCadastroDevedorPagador");
- const telaOcultaTerceiros = document.getElementById("FundoMenusTerceiros");
-
-
-
- botaoMostrarTerceiros.addEventListener("click", function () {
-   // Mostrar o elemento de carregamento
-
-   AnimacaoCarregamento.style.display = "block";
-   // Ocultar a tela de receitas
-   telaOcultaTerceiros.style.display = "none";
-
-   // Simular uma operação demorada (substitua isso pela sua própria função)
-   setTimeout(function () {
-     // Ative a tela definindo a opacidade para 1
-     telaOcultaTerceiros.style.opacity = 1;
-
-     // Ocultar o elemento de carregamento
-     AnimacaoCarregamento.style.display = "none";
-
-     // Mostrar a tela de receitas novamente
-     telaOcultaTerceiros.style.display = "block";
-
-   }, 500); // Tempo de simulação (.5 segundos)
- });
-
- VoltarTerceiros.addEventListener("click", function () {
-  //Ocultar
-   telaOcultaTerceiros.style.display = "none";
- })
-
-
- //Abrir tela de consulta
- const BtnTerceirosVoltarConsult = document.getElementById("BtnTerceirosVoltarConsult");
- const BtnTerceirosConsultar = document.getElementById("BtnTerceirosConsultar");
- const FundoMenusTerceirosConsult = document.getElementById("FundoMenusTerceirosConsult");
+  const VoltarTerceiros = document.getElementById("BtnTerceirosVoltar");
+  const botaoMostrarTerceiros = document.getElementById("BtnCadastroDevedorPagador");
+  const telaOcultaTerceiros = document.getElementById("FundoMenusTerceiros");
 
 
 
- BtnTerceirosConsultar .addEventListener("click", function () {
-   // Mostrar o elemento de carregamento
+  botaoMostrarTerceiros.addEventListener("click", function () {
+    // Mostrar o elemento de carregamento
 
-   // Simular uma operação demorada (substitua isso pela sua própria função)
-   setTimeout(function () {
-     // Ative a tela definindo a opacidade para 1
-     FundoMenusTerceirosConsult.style.opacity = 1;
+    AnimacaoCarregamento.style.display = "block";
+    // Ocultar a tela de receitas
+    telaOcultaTerceiros.style.display = "none";
 
-     // Ocultar o elemento de carregamento
-     AnimacaoCarregamento.style.display = "none";
+    // Simular uma operação demorada (substitua isso pela sua própria função)
+    setTimeout(function () {
+      // Ative a tela definindo a opacidade para 1
+      telaOcultaTerceiros.style.opacity = 1;
 
-     // Mostrar a tela de receitas novamente
-     FundoMenusTerceirosConsult.style.display = "block";
+      // Ocultar o elemento de carregamento
+      AnimacaoCarregamento.style.display = "none";
 
-   }, 200); // Tempo de simulação (.5 segundos)
- });
+      // Mostrar a tela de receitas novamente
+      telaOcultaTerceiros.style.display = "block";
 
- BtnTerceirosVoltarConsult.addEventListener("click", function () {
-  //Ocultar
-  FundoMenusTerceirosConsult.style.display = "none";
-  telaOcultaTerceiros.style.display="block";
- })
+    }, 500); // Tempo de simulação (.5 segundos)
+  });
+
+  VoltarTerceiros.addEventListener("click", function () {
+    //Ocultar
+    telaOcultaTerceiros.style.display = "none";
+  })
 
 
-
- //TelaConsulta endereço
-
- const BtnTerceirosVoltarConsultEnd = document.getElementById("BtnTerceirosVoltarConsultEnd");
- const BtnTerceirosConsultarEnd = document.getElementById("BtnTerceirosEndercosConsult");
- const FundoMenusTerceirosConsultEnd = document.getElementById("TerceirosConsultEnd");
-
- BtnTerceirosConsultarEnd .addEventListener("click", function () {
-  // Mostrar o elemento de carregamento
-
-  // Simular uma operação demorada (substitua isso pela sua própria função)
-  setTimeout(function () {
-
-    FundoMenusTerceirosConsultEnd.style.opacity = 1;
-    FundoMenusTerceirosConsultEnd.style.display = "block";
-    FundoMenusTerceirosConsultEnd.style.zIndex = "99999";
-
-  }, 200); // Tempo de simulação (.5 segundos)
-});
-
-BtnTerceirosVoltarConsultEnd.addEventListener("click", function () {
-  FundoMenusTerceirosConsultEnd.style.display = "none";
-  FundoMenusTerceirosConsult.style.display="block";
-})
+  //Abrir tela de consulta
+  const BtnTerceirosVoltarConsult = document.getElementById("BtnTerceirosVoltarConsult");
+  const BtnTerceirosConsultar = document.getElementById("BtnTerceirosConsultar");
+  const FundoMenusTerceirosConsult = document.getElementById("FundoMenusTerceirosConsult");
 
 
 
- //TRANSACAO 
- 
- const VoltarTransacao = document.getElementById("BtnTransacaoVoltarConsult");
- const botaoMostrarTransacao = document.getElementById("BtnTransacoes");
- const telaOcultaTransacao= document.getElementById("FundoMenusTransacaoConsult");
+  BtnTerceirosConsultar.addEventListener("click", function () {
+    // Mostrar o elemento de carregamento
+
+    // Simular uma operação demorada (substitua isso pela sua própria função)
+    setTimeout(function () {
+      // Ative a tela definindo a opacidade para 1
+      FundoMenusTerceirosConsult.style.opacity = 1;
+
+      // Ocultar o elemento de carregamento
+      AnimacaoCarregamento.style.display = "none";
+
+      // Mostrar a tela de receitas novamente
+      FundoMenusTerceirosConsult.style.display = "block";
+
+    }, 200); // Tempo de simulação (.5 segundos)
+  });
+
+  BtnTerceirosVoltarConsult.addEventListener("click", function () {
+    //Ocultar
+    FundoMenusTerceirosConsult.style.display = "none";
+    telaOcultaTerceiros.style.display = "block";
+  })
 
 
 
- botaoMostrarTransacao.addEventListener("click", function () {
-   // Mostrar o elemento de carregamento
+  //TelaConsulta endereço
 
-   AnimacaoCarregamento.style.display = "block";
-   // Ocultar a tela de receitas
-   telaOcultaTransacao.style.display = "none";
+  const BtnTerceirosVoltarConsultEnd = document.getElementById("BtnTerceirosVoltarConsultEnd");
+  const BtnTerceirosConsultarEnd = document.getElementById("BtnTerceirosEndercosConsult");
+  const FundoMenusTerceirosConsultEnd = document.getElementById("TerceirosConsultEnd");
 
-   // Simular uma operação demorada (substitua isso pela sua própria função)
-   setTimeout(function () {
-     // Ative a tela definindo a opacidade para 1
-     telaOcultaTransacao.style.opacity = 1;
+  BtnTerceirosConsultarEnd.addEventListener("click", function () {
+    // Mostrar o elemento de carregamento
 
-     // Ocultar o elemento de carregamento
-     AnimacaoCarregamento.style.display = "none";
+    // Simular uma operação demorada (substitua isso pela sua própria função)
+    setTimeout(function () {
 
-     // Mostrar a tela de receitas novamente
-     telaOcultaTransacao.style.display = "block";
+      FundoMenusTerceirosConsultEnd.style.opacity = 1;
+      FundoMenusTerceirosConsultEnd.style.display = "block";
+      FundoMenusTerceirosConsultEnd.style.zIndex = "99999";
 
-   }, 500); // Tempo de simulação (.5 segundos)
- });
+    }, 200); // Tempo de simulação (.5 segundos)
+  });
 
- VoltarTransacao.addEventListener("click", function () {
+  BtnTerceirosVoltarConsultEnd.addEventListener("click", function () {
+    FundoMenusTerceirosConsultEnd.style.display = "none";
+    FundoMenusTerceirosConsult.style.display = "block";
+  })
 
 
-  telaOcultaTransacao.style.display = "none";
- })
+
+  //TRANSACAO 
+
+  const VoltarTransacao = document.getElementById("BtnTransacaoVoltarConsult");
+  const botaoMostrarTransacao = document.getElementById("BtnTransacoes");
+  const telaOcultaTransacao = document.getElementById("FundoMenusTransacaoConsult");
+
+
+
+  botaoMostrarTransacao.addEventListener("click", function () {
+    // Mostrar o elemento de carregamento
+
+    AnimacaoCarregamento.style.display = "block";
+    // Ocultar a tela de receitas
+    telaOcultaTransacao.style.display = "none";
+
+    // Simular uma operação demorada (substitua isso pela sua própria função)
+    setTimeout(function () {
+      // Ative a tela definindo a opacidade para 1
+      telaOcultaTransacao.style.opacity = 1;
+
+      // Ocultar o elemento de carregamento
+      AnimacaoCarregamento.style.display = "none";
+
+      // Mostrar a tela de receitas novamente
+      telaOcultaTransacao.style.display = "block";
+
+    }, 500); // Tempo de simulação (.5 segundos)
+  });
+
+  VoltarTransacao.addEventListener("click", function () {
+
+
+    telaOcultaTransacao.style.display = "none";
+  })
 
 
 
@@ -308,5 +308,153 @@ BtnTerceirosVoltarConsultEnd.addEventListener("click", function () {
 });
 
 
+//MenuHambuber 
+// const AtivaMenu = document.getElementById("AtivaMenu"); 
+// const menuAtivo = document.getElementById("OcultaMenu");
 
 
+// AtivaMenu.addEventListener("click", function () {
+//    if (menuAtivo.classList.contains("OcultaMenu")) {
+//         menuAtivo.classList.remove("OcultaMenu")
+//    }
+//    else
+//    {
+//     menuAtivo.classList.add("OcultaMenu")
+//    }
+// });
+
+//Fim MenuHamburguer
+
+
+//API cotacão
+
+//Link api usado https://docs.awesomeapi.com.br/api-de-moedas
+$(document).ready(function () {
+  // URL da API de cotações
+  var apiUrl = 'https://economia.awesomeapi.com.br/last/USD-BRL,CNY-BRL,EUR-BRL';
+
+  // Realize a solicitação AJAX
+  $.ajax({
+    url: apiUrl,
+    type: 'GET',
+    success: function (data) {
+      // Acessando a taxa de conversão corretamente usando colchetes e aspas
+      var Dolar = data.USDBRL.bid;
+      var Euro = data.EURBRL.bid;
+      var Yuan = data.CNYBRL.bid;
+
+      var DolarFormat = parseFloat(Dolar).toFixed(2);
+      var EuroFormat = parseFloat(Euro).toFixed(2);
+      var YuanFormat = parseFloat(Yuan).toFixed(2);
+      
+      // Definindo o valor da conversão no campo de texto
+      $('#TxtDolar').val(DolarFormat);
+      $('#TxtEuro').val(EuroFormat);
+      $('#TxtYuan').val(YuanFormat);
+    },
+    error: function (error) {
+      console.error('Erro ao buscar a conversão de moeda:');
+    }
+  });
+});
+
+//FIM API Cotação
+
+//API Busca noticias Atual Geral BR
+
+document.addEventListener('DOMContentLoaded', function () {
+  const apiKey = '50984f2a91ea4599b9bf798c3a7f6b48';
+  const apiUrl = 'https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=50984f2a91ea4599b9bf798c3a7f6b48'; // Substitua pela URL da API de notícias
+  const newsContainer = document.getElementById('news');
+  let currentNews = 0;
+  const newsCounterHeading = document.getElementById('ContadorNews'); // Elemento <h4> para o contador
+  const nextButton = document.getElementById('proximo');
+  const prevButton = document.getElementById('Anterior');
+  let totalNewsCount = 0; // Variável para contar o total de notícias encontradas
+
+  function showNews(newsIndex) {
+    newsCounterHeading.textContent = `Notícia ${currentNews + 1} de ${totalNewsCount}`;
+      fetch(apiUrl)
+          .then(response => response.json())
+          .then(data => {
+              if (data.articles && data.articles.length > 0) {
+                totalNewsCount = data.articles.length; // Atualiza o total de notícias
+                  if (newsIndex < 0) {
+                      currentNews = data.articles.length - 1;
+                  } else if (newsIndex >= data.articles.length) {
+                      currentNews = 0;
+                  }
+
+                  const newsData = data.articles[currentNews];
+                  // Atualiza o contador
+                  ContadorNews.textContent = `Notícia ${currentNews + 1} de ${totalNewsCount}`;
+                  // Verificar se o autor é null e substituir por "Sem autor"
+                  const author = newsData.source.name !== null ? newsData.source.name : "Sem autor";
+                  const Description = newsData.description !== null ? newsData.description : "Sem Descrição";
+               
+                  // Traduzir o título e a descrição para o português
+                  traduzirTexto(newsData.title, 'pt')
+                      .then(tituloTraduzido => {
+                          traduzirTexto(Description, 'pt')
+                              .then(descricaoTraduzida => {
+                                
+          
+                            
+                                  const newsHTML = `
+                                  <h2 class="NotAtual">Notícias Atuais </h2>
+                                  <li class="NewTitulo">
+                                      <h2>${tituloTraduzido}</h2>
+                                      </li>
+                                      <li class="NewAutor">
+                                      <p>${author}</p>
+                                      </li>
+                                      <li class="NewDescrica">
+                                      <p>${descricaoTraduzida}</p>
+                                      </li>
+      
+                                      <li class="NewUrl">
+                                      <a href="${newsData.url}" target="_blank">Leia mais</a>
+                                      </li>
+                                      <li class="NewDataPublic">
+                                      <p>Data de Publicação: ${new Date(newsData.publishedAt).toLocaleString()}</p>
+                                      </li>
+                                    
+                                  `;
+                                  newsContainer.innerHTML = newsHTML;
+                               
+                              });
+                      });
+              }
+          })
+          .catch(error => {
+              console.error('Erro na solicitação à API de notícias:', error);
+          });
+  }
+
+  showNews(currentNews);
+
+  document.getElementById('Anterior').addEventListener('click', function () {
+      currentNews--;
+      showNews(currentNews);
+  });
+
+  document.getElementById('proximo').addEventListener('click', function () {
+      currentNews++;
+      showNews(currentNews);
+  });
+
+  // Função para traduzir o texto usando o Google Translate
+  function traduzirTexto(texto, idiomaDestino) {
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURI(texto)}`;
+
+      return fetch(url)
+          .then(response => response.json())
+          .then(data => {
+              return data[0][0][0];
+          })
+          .catch(error => {
+              console.error('Erro na tradução:', error);
+              return texto; // Retorna o texto original em caso de erro
+          });
+  }
+});

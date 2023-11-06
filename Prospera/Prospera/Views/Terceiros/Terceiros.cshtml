@@ -1,0 +1,91 @@
+﻿@model Prospera.Controllers.TerceirosController;
+@{
+    Layout = null;
+    ViewData["Title"] = "Terceiros";
+}
+
+
+<style>
+    #BtnInicio {
+        background-color: var(--color-tertiary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        top: 0.6em;
+        border-radius: 20px;
+        transition: .5s;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<!-- TerceirosCSS -->
+<link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+@* Botão para a página Login de Usuario *@
+<a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
+<li class="Selecao7">
+    <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
+    <img src="/img/PaginaInicial/Menu/
+
+Devedor_Pagador.png">
+</li>
+
+<!-- Region Menu Devedor/pagado-->
+<ul id="FundoMenusTerceiros">
+    <ul class="Container TerceirosContainer">
+        <li class="HeadMenuTerceiros">
+            <h4>Cadastro de Devedor/Pagador</h4>
+        </li>
+        <li class="TxtInfTerceiros">
+            <span>
+                <h4>Nome</h4>
+                <h4>Telefone</h4>
+                <h4>Email</h4>
+                <h4>Telefone2</h4>
+                <h4>Endereço</h4>
+                <h4>Cidade</h4>
+                <h4>Bairro</h4>
+                <h4>UF</h4>
+
+                <h4>CEP</h4>
+                <h4>Observacao</h4>
+                <h4 class="NomID">ID</h4>
+
+            </span>
+            <input type="text" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+            <input type="text" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+            <input type="text" placeholder="Email" id="TxtTerceirosEmail">
+            <input type="text" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+            <input type="text" placeholder="Endereco" id="TxtTerceirosEndereco">
+
+            <input type="text" placeholder="Cidade" id="TxtTerceirosCidade">
+            <input type="text" placeholder="Bairro" id="TxtTerceirosBairro">
+            <input type="text" placeholder="UF" id="TxtTerceirosUF">
+            <input type="text" placeholder="CEP" id="TxtTerceirosCEP">
+            <input type="text" placeholder="bservacao" id="TxtTerceirosObservacao">
+            <input type="text" placeholder="ID" id="TxtTerceirosID" maxlength="3">
+            <button id="BtnTerceirosCadastrar">Cadastrar</button>
+            <button id="BtnTerceirosVoltar">Voltar</button>
+            <button id="BtnTerceirosConsultar">
+                Consultar
+            </button>
+            <button id="BtnTerceirosLimpar">Limpar</button>
+            <button id="BtnTerceirosApagar">Apagar</button>
+            <button id="BtnTerceirosAlterar">Alterar</button>
+            <button id="BtnTerceirosBuscar">Buscar</button>
+        </li>
+        <li>
+
+            <h4>Pessoa</h4>
+            <!-- Conteúdo da tela oculta aqui -->
+
+        </li>
+    </ul>
+</ul>
+
+<ul id="FundoMe
