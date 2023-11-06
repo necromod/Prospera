@@ -48,7 +48,7 @@ namespace Prospera.Controllers
         // GET: Extrato/Create
         public IActionResult Create()
         {
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "EmailUsuario");
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace Prospera.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "EmailUsuario", extrato.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", extrato.IdUsuario);
             return View(extrato);
         }
 
@@ -82,7 +82,7 @@ namespace Prospera.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "EmailUsuario", extrato.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", extrato.IdUsuario);
             return View(extrato);
         }
 
@@ -118,7 +118,7 @@ namespace Prospera.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "EmailUsuario", extrato.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", extrato.IdUsuario);
             return View(extrato);
         }
 

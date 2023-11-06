@@ -299,6 +299,7 @@
                 </li>
                 <li class="TxtInfTerceiros">
                     <span>
+                        <h4>ID</h4>
                         <h4>Nome</h4>
                         <h4>Telefone</h4>
                         <h4>Email</h4>
@@ -312,7 +313,7 @@
                         <h4 class="NomID">ID</h4>
 
                     </span>
-                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post" id="TerceirosForm">
+                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post">
                         <input type="text" asp-for="NovoTerceiro.IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
                         <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
                         <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
@@ -328,12 +329,11 @@
                         <input type="hidden" name="acao" id="acao" value="cadastro" />
                         <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
                         <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
+                    </form>
                         <button id="BtnTerceirosConsultar">Consultar</button>
                         <button id="BtnTerceirosLimpar">Limpar</button>
                         <button id="BtnTerceirosAlterar">Alterar</button>
-                        <button type="submit" name="btnAcao" value="buscar" id="BtnTerceirosBuscar">Buscar</button>
-
-                    </form>
+                        <button id="BtnTerceirosBuscar">Buscar</button>
                     <button id="BtnTerceirosVoltar">Voltar</button>
                 </li>
                 <li>
@@ -407,22 +407,6 @@
 
 
                 </li>
-                @*
-                    @foreach (var item in Model.ListaTerceiros)
-
-                    {
-                    <ul class="TtxTerceirosContainer list-unstyled espacotop">
-                    <li><input type="text" id="TxtTerceirosNomeConsult" value="@item.NomeTerceiros"></li>
-                    <li><input type="text" id="TxtTerceirosTelefoneConsult" value="@item.TelefoneTerceiros"></li>
-                    <li><input type="text" id="TxtTerceirosEmailConsult" value="@item.EmailTerceiros"></li>
-                    <li><input type="text" id="TxtTerceirosObservacaoConsult" value="@item.ObservacaoTerceiros"></li>
-                    <li><input type="text" id="TxtTerceirosUltMovConsut" value="@item.DataUltimaMovimentacao"></li>
-                    <li><input type="text" id="TxtTerceirosIDConsult" value="@item.IdTerceiros"></li>
-                    </ul>
-                    }
-
-                    }
-                *@
                     @foreach (var item in Model.ListaTerceiros)
                     {
                     <li class="TtxEndContainer">

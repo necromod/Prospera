@@ -37,32 +37,6 @@ namespace Prospera.Controllers
         [HttpPost]
         public IActionResult CadastrarTerceiro(TerceirosViewModel terceiros, string btnAcao)
         {
-            if (btnAcao == "Consultar")
-            {
-                if (int.TryParse(terceiros.NovoTerceiro.IdTerceiros.ToString(), out int id))
-                {
-                    var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
-
-                    if (terceiro != null)
-                    {
-                        return View();
-                        /*// Retorne os valores encontrados em formato JSON
-                        return Json(new
-                        {
-                            IdTerceiros = terceiro.IdTerceiros,
-                            NomeTerceiros = terceiro.NomeTerceiros,
-                            EmailTerceiros = terceiro.EmailTerceiros,
-                            TelefoneTerceiros = terceiro.TelefoneTerceiros,
-                            // Adicione outros campos conforme necessário
-                        });*/
-                    }
-                }
-            }
-
-
-
-
-
             //botão de Cadastrar foi pressionado
             if (btnAcao == "cadastro")
             {
@@ -121,14 +95,22 @@ namespace Prospera.Controllers
                     // Você pode retornar uma mensagem de erro ou redirecionar para uma página apropriada.
                 }
             }
+
             //botão de Alterar foi pressionado
             else if (btnAcao == "Alterar")
-            {
+                {
+                    if (int.TryParse(terceiros.NovoTerceiro.IdTerceiros.ToString(), out int id))
+                    {
+                        var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
 
-            }
+                        if (terceiro != null)
+                        {
+                            return RedirectToAction("MenuUsuario", "MenuUsuario");
+                        }
+                    }
+                }
 
-            return Json(null);
-            //return RedirectToAction("MenuUsuario", "MenuUsuario");
+            return RedirectToAction("MenuUsuario", "MenuUsuario");
 
         }
 
