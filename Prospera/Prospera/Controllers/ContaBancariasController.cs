@@ -10,23 +10,23 @@ using Prospera.Models;
 
 namespace Prospera.Controllers
 {
-    public class ContaBancariaController : Controller
+    public class ContaBancariasController : Controller
     {
         private readonly ProsperaContext _context;
 
-        public ContaBancariaController(ProsperaContext context)
+        public ContaBancariasController(ProsperaContext context)
         {
             _context = context;
         }
 
-        // GET: ContaBancaria
+        // GET: ContaBancarias
         public async Task<IActionResult> Index()
         {
             var prosperaContext = _context.ContaBancaria.Include(c => c.Terceiros).Include(c => c.Usuario);
             return View(await prosperaContext.ToListAsync());
         }
 
-        // GET: ContaBancaria/Details/5
+        // GET: ContaBancarias/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.ContaBancaria == null)
@@ -46,15 +46,15 @@ namespace Prospera.Controllers
             return View(contaBancaria);
         }
 
-        // GET: ContaBancaria/Create
+        // GET: ContaBancarias/Create
         public IActionResult Create()
         {
-            ViewData["IdTerceiros"] = new SelectList(_context.Set<Terceiros>(), "IdTerceiros", "NomeTerceiros");
-            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario");
+            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros");
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario");
             return View();
         }
 
-        // POST: ContaBancaria/Create
+        // POST: ContaBancarias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -67,12 +67,12 @@ namespace Prospera.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdTerceiros"] = new SelectList(_context.Set<Terceiros>(), "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contaBancaria.IdUsuario);
+            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
             return View(contaBancaria);
         }
 
-        // GET: ContaBancaria/Edit/5
+        // GET: ContaBancarias/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.ContaBancaria == null)
@@ -85,12 +85,12 @@ namespace Prospera.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdTerceiros"] = new SelectList(_context.Set<Terceiros>(), "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contaBancaria.IdUsuario);
+            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
             return View(contaBancaria);
         }
 
-        // POST: ContaBancaria/Edit/5
+        // POST: ContaBancarias/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -122,12 +122,12 @@ namespace Prospera.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdTerceiros"] = new SelectList(_context.Set<Terceiros>(), "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Set<Usuario>(), "IdUsuario", "EmailUsuario", contaBancaria.IdUsuario);
+            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
             return View(contaBancaria);
         }
 
-        // GET: ContaBancaria/Delete/5
+        // GET: ContaBancarias/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.ContaBancaria == null)
@@ -147,7 +147,7 @@ namespace Prospera.Controllers
             return View(contaBancaria);
         }
 
-        // POST: ContaBancaria/Delete/5
+        // POST: ContaBancarias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

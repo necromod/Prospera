@@ -2,12 +2,13 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = null;
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Terceiros">Criar Terceiro</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -100,7 +101,7 @@
                 @Html.DisplayFor(modelItem => item.StatusTerceiros)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.EmailUsuario)
+                @Html.DisplayFor(modelItem => item.Usuario.CPFUsuario)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdTerceiros">Edit</a> |
