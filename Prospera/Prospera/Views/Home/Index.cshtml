@@ -7,12 +7,14 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <a asp-area="" asp-controller="Home" asp-action="Privacy">Teeeeeeeeeeeeeeeeeeeeeeeste</a>
 </div>
-<link rel="stylesheet" href="/wwwroot/css/site.css">
+<head>
+<link rel="stylesheet" href="/css/Index.css">
 <!-- Fonte inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
       rel="stylesheet">
+</head>
 
 @* MODELO PARA INSERSÇÃO DE LINK PARA PÁGINAS DIFERENTES!
     <a asp-controller="NOME-DO-CONTROLADOR" asp-action="NOME-DO-ARQUIVO" class="CLASSES PARA ELEMENTOS CSS">TEXTO A SER EXIBIDO NO FRONT</a>
@@ -22,7 +24,61 @@
     CLASSES PARA ELEMENTOS CSS são as classes normais que se adiciona a itens html, podendo também utilizar ID ao invés de classe
 *@
 
+<body>
+     <div class="MenuNav container">
 
+       <ul class="MenuVanInfContainer">
+             <li class="LibtnLogin"><a asp-controller="Login" asp-action="Login" id="BtnLogin">LOGIN</a></li> 
+             <a href="#">About</a>
+             <a href="#">Serviços</a>
+              <a href="#">Contate-nos</a>
+              <a href="#">FAQ</a> 
+             <li class="LiperiodoGratis"><a href="#">Periodo Grátis</a></li>
+       </ul>
+     </div>
+     <div class="ReginInfCentral">
+        <li class="IconesFundoIndex">
+                     <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex1">
+                     <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex2">
+                     <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex3">
+        </li>
+                     <ul class="InfSobrePros">
+                    
+                            <h2></h2>
+                            <h4></h4>
+                       
+                        <li><a href="#" id="BtnAproveitar">Aproveitar</a></li>
+                       <li class="LinkSite">
+                         <a href="">Invistajá.com.br</a>
+                       </li>
+                       <img src="~/img/Index/iconePrincipalInf.png">
+                     </ul>
+
+     </div>
+     <div class="RegionMeioInf">
+   <ul class="MeuInfApp-Container">
+        <li class="InfQrcode">
+            <h2>
+              Gerencie as suas contas
+de uma maneia fácil e rapida
+            </h2>
+            <h4>
+Saiba mais sobre o nosso aplicativo
+            </h4>
+            <h4>
+Coloque a câmera encima do Qrcode 
+e acompanhe as novidades de perto
+            </h4>
+            <img src="/img/Index/IconeMaoCel.png">
+    
+        </li class="TextoInfApp">
+         <h4>Tenha em mãos as melhores ferramentas e os melhores métodos.
+Aprenda a gerenciar melhores seu dinheiro
+com o nosso aplicativo você sempre estará em vantagem</h4>
+   </ul>
+     </div>
+</body>
+<script src="/js/PaginaInicial.js"></script>
 
 @* Botão para a página Index de ContaBancaria *@
 <a asp-controller="ContaBancaria" asp-action="Index" class="btn btn-primary">Ir para ContaBancaria</a>
@@ -59,7 +115,6 @@
 </style>
 
 @* Botão para a página Login de Usuario *@
-<a asp-controller="Login" asp-action="Login" id="BtnInicio" class="btn btn-primary">LOGIN</a>
 
 @* Botão para a página Cadastro de Usuario *@
 <a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInicio" class="btn btn-primary">Cadastro</a>
