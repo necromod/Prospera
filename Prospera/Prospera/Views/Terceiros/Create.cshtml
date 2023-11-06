@@ -1,97 +1,94 @@
-﻿@model Prospera.Models.Terceiros
-
+﻿@model Prospera.Helpers.TerceirosViewModel;
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Terceiros";
 }
 
-<h1>Create</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaçoes -->
+    <meta name="viewport" content="width=device-width">
+    <!-- link css -->
+    <link rel="stylesheet" href="/css/PaginaInicial.css">
+    <!-- Css Pagina Axiliares -->
+    <!-- Receitas css -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
+    <!-- DespesasCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
+    <!-- ContaBancariaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
+    <!-- TerceirosCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
+    <!-- TerceirosConsultaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
+    <!-- TransacaoConsultaCSS -->
+    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
+    <!-- Fonte inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+          rel="stylesheet">
 
-<h4>Terceiros</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NomeTerceiros" class="control-label"></label>
-                <input asp-for="NomeTerceiros" class="form-control" />
-                <span asp-validation-for="NomeTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TelefoneTerceiros" class="control-label"></label>
-                <input asp-for="TelefoneTerceiros" class="form-control" />
-                <span asp-validation-for="TelefoneTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefone2Terceiros" class="control-label"></label>
-                <input asp-for="Telefone2Terceiros" class="form-control" />
-                <span asp-validation-for="Telefone2Terceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EmailTerceiros" class="control-label"></label>
-                <input asp-for="EmailTerceiros" class="form-control" />
-                <span asp-validation-for="EmailTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EnderecoTerceiros" class="control-label"></label>
-                <input asp-for="EnderecoTerceiros" class="form-control" />
-                <span asp-validation-for="EnderecoTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CidadeTerceiros" class="control-label"></label>
-                <input asp-for="CidadeTerceiros" class="form-control" />
-                <span asp-validation-for="CidadeTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BairroTerceiros" class="control-label"></label>
-                <input asp-for="BairroTerceiros" class="form-control" />
-                <span asp-validation-for="BairroTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UFTerceiros" class="control-label"></label>
-                <input asp-for="UFTerceiros" class="form-control" />
-                <span asp-validation-for="UFTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CEPTerceiros" class="control-label"></label>
-                <input asp-for="CEPTerceiros" class="form-control" />
-                <span asp-validation-for="CEPTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ObservacaoTerceiros" class="control-label"></label>
-                <input asp-for="ObservacaoTerceiros" class="form-control" />
-                <span asp-validation-for="ObservacaoTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataCadastroTerceiros" class="control-label"></label>
-                <input asp-for="DataCadastroTerceiros" class="form-control" />
-                <span asp-validation-for="DataCadastroTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataUltimaMovimentacao" class="control-label"></label>
-                <input asp-for="DataUltimaMovimentacao" class="form-control" />
-                <span asp-validation-for="DataUltimaMovimentacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StatusTerceiros" class="control-label"></label>
-                <input asp-for="StatusTerceiros" class="form-control" />
-                <span asp-validation-for="StatusTerceiros" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdUsuario" class="control-label"></label>
-                <select asp-for="IdUsuario" class ="form-control" asp-items="ViewBag.IdUsuario"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+    <title>Prospera</title>
+</head>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<body>
+    <ul id="FundoMenusTerceiros">
+        <ul class="Container TerceirosContainer">
+            <li class="HeadMenuTerceiros">
+                <h4>Cadastro de Devedor/Pagador</h4>
+            </li>
+            <li class="ImgFundoMenu"> <img src="/img/Terceiros/Tela-Inicial_Menu.png"> </li>
+            <li class="TxtInfTerceiros">
+                <span>
+                    <h4>Nome</h4>
+                    <h4>Telefone</h4>
+                    <h4>Email</h4>
+                    <h4>Telefone2</h4>
+                    <h4>Endereço</h4>
+                    <h4>Cidade</h4>
+                    <h4>Bairro</h4>
+                    <h4>UF</h4>
+                    <h4>CEP</h4>
+                    <h4>Observacao</h4>
+                    <h4 class="NomID">ID</h4>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+                </span>
+                <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post" id="TerceirosForm">
+                    <input type="text" asp-for="NovoTerceiro.IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
+                    <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                    <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                    <input type="text" asp-for="NovoTerceiro.TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                    <input type="text" asp-for="NovoTerceiro.Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                    <input type="text" asp-for="NovoTerceiro.EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                    <input type="text" asp-for="NovoTerceiro.CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                    <input type="text" asp-for="NovoTerceiro.BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                    <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                    <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                    <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+
+                    <input type="hidden" name="acao" id="acao" value="cadastro" />
+                    <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
+                    <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
+                    <button id="BtnTerceirosConsultar"><a asp-controller="Terceiros" asp-action="Index">Consultar</a></button>
+                    <button id="BtnTerceirosLimpar">Limpar</button>
+                    <button id="BtnTerceirosAlterar">Alterar</button>
+                    <button type="submit" name="btnAcao" value="buscar" id="BtnTerceirosBuscar">Buscar</button>
+
+                </form>
+                <button id="BtnTerceirosVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
+            </li>
+            <li>
+
+                <h4>Pessoa</h4>
+                <!-- Conteúdo da tela oculta aqui -->
+
+            </li>
+        </ul>
+    </ul>
+
+    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+</body>
+
+</html>

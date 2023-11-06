@@ -26,6 +26,15 @@ namespace Prospera.Controllers
             return View(await prosperaContext.ToListAsync());
         }
 
+        public IActionResult CreateReceitas()
+        {
+            return View();
+        }
+        public IActionResult CreateDespesas()
+        {
+            return View();
+        }
+
         // GET: Contas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
