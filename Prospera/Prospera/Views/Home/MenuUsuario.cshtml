@@ -312,7 +312,8 @@
                         <h4 class="NomID">ID</h4>
 
                     </span>
-                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post">
+                    <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post" id="TerceirosForm">
+                        <input type="text" asp-for="NovoTerceiro.IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
                         <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
                         <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
                         <input type="text" asp-for="NovoTerceiro.TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
@@ -323,14 +324,17 @@
                         <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
                         <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
                         <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
-                        <button type="submit" id="BtnTerceirosCadastrar">Cadastrar</button>
+
+                        <input type="hidden" name="acao" id="acao" value="cadastro" />
+                        <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
+                        <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
+                        <button id="BtnTerceirosConsultar">Consultar</button>
+                        <button id="BtnTerceirosLimpar">Limpar</button>
+                        <button id="BtnTerceirosAlterar">Alterar</button>
+                        <button type="submit" name="btnAcao" value="buscar" id="BtnTerceirosBuscar">Buscar</button>
+
                     </form>
                     <button id="BtnTerceirosVoltar">Voltar</button>
-                    <button id="BtnTerceirosConsultar">Consultar</button>
-                    <button id="BtnTerceirosLimpar">Limpar</button>
-                    <button id="BtnTerceirosApagar">Apagar</button>
-                    <button id="BtnTerceirosAlterar">Alterar</button>
-                    <button id="BtnTerceirosBuscar">Buscar</button>
                 </li>
                 <li>
 
