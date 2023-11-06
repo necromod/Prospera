@@ -371,6 +371,41 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextButton = document.getElementById('proximo');
   const prevButton = document.getElementById('Anterior');
   let totalNewsCount = 0; // Variável para contar o total de notícias encontradas
+  //Variáveis pra Consulta de Terceiros
+/*  const BtnTerceirosConsultar = document.getElementById("BtnTerceirosConsultar");
+
+    BtnTerceirosConsultar.addEventListener("click", function () {
+        // Obtenha o ID do Terceiros que você deseja consultar
+        const terceirosId = document.getElementById("TxtTerceirosId").value;
+
+        // Realize uma solicitação AJAX para consultar o Terceiros no backend
+        fetch(`/MenuUsuario/CadastrarTerceiro?btnAcao=Consultar&NovoTerceiro.IdTerceiros=${terceirosId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Verifique se os dados retornados não estão vazios
+                if (data) {
+                    // Preencha os campos do formulário com os valores retornados
+                    document.getElementById("TxtTerceirosNome").value = data.NomeTerceiros;
+                    document.getElementById("TxtTerceirosEmail").value = data.EmailTerceiros;
+                    document.getElementById("TxtTerceirosTelefone").value = data.TelefoneTerceiros;
+                    // Continue preenchendo outros campos aqui
+                } else {
+                    // Limpar os campos se o Terceiros não for encontrado
+                    document.getElementById("TxtTerceirosNome").value = "";
+                    document.getElementById("TxtTerceirosEmail").value = "";
+                    document.getElementById("TxtTerceirosTelefone").value = "";
+                    // Limpe outros campos aqui
+                    alert("Terceiros não encontrado.");
+                }
+            })
+            .catch(error => {
+                console.error('Erro na solicitação AJAX:', error);
+            });
+
+        // Ocultar a tela de Terceiros e mostrar a tela de consulta
+        telaOcultaTerceiros.style.display = "none";
+        telaOcultaTerceirosConsult.style.display = "block";
+    });*/
 
   function showNews(newsIndex) {
     newsCounterHeading.textContent = `Notícia ${currentNews + 1} de ${totalNewsCount}`;
@@ -458,3 +493,4 @@ document.addEventListener('DOMContentLoaded', function () {
           });
   }
 });
+

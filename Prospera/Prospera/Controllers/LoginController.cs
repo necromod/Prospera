@@ -27,7 +27,7 @@ namespace Prospera.Controllers
             //Se usuário já estiver logado, redirecionar para MenuUsuario
             if(_sessao.BuscarSessaoUsuario() != null)
             {
-                return RedirectToAction("MenuUsuario", "Home");
+                return RedirectToAction("MenuUsuario", "MenuUsuario");
             }
             return View();
         }
