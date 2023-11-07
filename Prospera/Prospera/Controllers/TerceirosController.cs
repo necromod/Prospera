@@ -132,7 +132,7 @@ namespace Prospera.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TerceirosExists(terceiros.IdTerceiros))
+                    if (!TerceirosExists((int)terceiros.IdTerceiros))
                     {
                         return NotFound();
                     }

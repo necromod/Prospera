@@ -50,6 +50,7 @@ namespace Prospera.Controllers
                 terceiros.DataCadastroTerceiros = DateTime.Now;
                 terceiros.DataUltimaMovimentacao = DateTime.Now;
                 terceiros.StatusTerceiros = "Ativo";
+                terceiros.IdTerceiros = null;
 
                 //Criação do campo dentro do banco de dados
                 _context.Terceiros.Add(terceiros);

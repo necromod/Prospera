@@ -30,6 +30,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
           rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
 
     <title>Prospera</title>
 </head>
@@ -45,8 +47,8 @@
                 <span>
                     <h4>ID</h4>
                     <h4>Nome</h4>
-                    <h4>Telefone</h4>
                     <h4>Email</h4>
+                    <h4>Telefone</h4>
                     <h4>Telefone2</h4>
                     <h4>Endereço</h4>
                     <h4>Cidade</h4>
@@ -58,14 +60,23 @@
                 </span>
                 <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post" id="TerceirosForm">
                     <input type="text" asp-for="IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
-                    <input type="text" asp-for="NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
-                    <input type="text" asp-for="EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
-                    <input type="text" asp-for="TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
-                    <input type="text" asp-for="Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                    <span asp-validation-for="NomeTerceiros" class="text-danger"></span>
+                    <input type="text" asp-for="NomeTerceiros" placeholder="Nome completo" id="TxtTerceirosNome" maxlength="120">
+                    <span asp-validation-for="EmailTerceiros" class="text-danger"></span>
+                    <input type="email" asp-for="EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                    <span asp-validation-for="TelefoneTerceiros" class="text-danger"></span>
+                    <input type="text" asp-for="TelefoneTerceiros" placeholder="(99) 9 9999-9999" class="phone" id="TxtTerceirosTelefone" maxlength="20">
+                    <span asp-validation-for="Telefone2Terceiros" class="text-danger"></span>
+                    <input type="text" asp-for="Telefone2Terceiros" placeholder="(99) 9 9999-9999" class="phone" id="TxtTerceirosTelefone2">
+                    <span asp-validation-for="EnderecoTerceiros" class="text-danger"></span>
                     <input type="text" asp-for="EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                    <span asp-validation-for="CidadeTerceiros" class="text-danger"></span>
                     <input type="text" asp-for="CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                    <span asp-validation-for="BairroTerceiros" class="text-danger"></span>
                     <input type="text" asp-for="BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                    <span asp-validation-for="UFTerceiros" class="text-danger"></span>
                     <input type="text" asp-for="UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                    <span asp-validation-for="CEPTerceiros" class="text-danger"></span>
                     <input type="text" asp-for="CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
                     <input type="text" asp-for="ObservacaoTerceiros" placeholder="Observação" id="TxtTerceirosObservacao">
                     <input type="hidden" name="IdTerceirosTemp" id="IdTerceirosTemp" />
@@ -93,6 +104,16 @@
     </ul>
     @* <script src="/js/PaginaInicial.js" asp-append-version="true"></script> *@
     <script src="/js/Buscar.js" asp-append-version="true"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    }
+
 </body>
 
 </html>
