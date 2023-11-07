@@ -21,7 +21,7 @@
     <!-- TerceirosConsultaCSS -->
     <link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
     <!-- TransacaoConsultaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
+    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css"> 
     <!-- Fonte inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,154 +68,7 @@
             </ul>
         </ul>
 
-        <!-- Alteracao sabado -->
-        <!-- Region Transações -->
-        <ul id="FundoMenusTransacaoConsult">
-            <ul class="Container TerceirosContainerTransacao" style="overflow-y: auto;">
-                <li class="HeadMenuTerceirosTransacao">
-                </li>
-                <li class="TxtInfTerceirosTransacao">
-                <li class="HeadTransacaoContainer">
-                    <h4 class="TransacaoHead1">Nome</h4>
-                    <h4 class="TransacaoHead2">Valor</h4>
-                    <h4 class="TransacaoHead3">Pessoa</h4>
-                    <h4 class="TransacaoHead4">Observação</h4>
-                    <h4 class="TransacaoHead5">Data da Movimentação</h4>
-                    <h4 class="TransacaoHead6">Status</h4>
-                    <h4 class="TransacaoHead7">Tipo de Movimentação</h4>
-                    <h4 class="TransacaoHead8">ID</h4>
-                </li>
-
-                </span>
-                <li class="TtxTransacaoContainer">
-                    <input type="text" id="TxtTransacaoNomeConsult" maxlength="30">
-                    <input type="text" id="TxtTransacaoValorfoneConsult" maxlength="100">
-                    <input type="text" id="TxtTransacaoPessoaConsult">
-                    <input type="text" id="TxtTransacaoObservacaoConsult">
-                    <input type="text" id="TxtTransacaoDatMovConsult">
-                    <input type="text" id="TxtTransacaoStatusConsult">
-                    <input type="text" id="TxtTransacaoTpMovConsult">
-                    <input type="text" id="TxtTransacaoID">
-                </li>
-                <button id="BtnTransacaoVoltarConsult">Voltar</button>
-
-                </li>
-                <li>
-
-
-                    <!-- Conteúdo da tela oculta aqui -->
-
-                </li>
-            </ul>
-        </ul>
-        <!-- FIM Transacoes -->
-        <!-- Region MenuContas Bancarias -->
-        <ul id="FundoMenusContasBanc">
-            <ul class="Container ContaBancContainer">
-                <li class="HeadMenuContasBanc">
-                    <h4>Cadastro de Contas Bancarias</h4>
-                </li>
-                <li class="TxtInfContBanc">
-
-                    <span>
-                        <h4>Banco</h4>
-                        <h4>Observação</h4>
-                        <h4>Numero Conta</h4>
-                        <h4>Agencia</h4>
-                        <h4>Tipo da Conta</h4>
-                        <h4>Saldo</h4>
-                        <h4 class="NomID2">ID</h4>
-                    </span>
-                    <select id="DropBancoCont" onchange="SelecaoDropLogo()">
-                        <option value=""></option>
-                        <option value="Inter">Inter</option>
-                        <option value="Bradesco">Bradesco</option>
-                        <option value="Itau">Itau</option>
-                        <option value="BancoDoBrasil">Banco do Brasil</option>
-                        <option value="Vitor">Roxo</option>
-
-                    </select>
-                    <input type="text" id="TxtContBancObservacao" maxlength="100">
-                    <input type="text" id="TxtContBancNumero">
-                    <input type="text" id="TxtContBancAgencia">
-                    <input type="text" id="TtxContBancTipoConta">
-                    <input type="text" id="TtxContBancSaldo">
-                    <input type="text" id="TxtContaBancBuscaId" maxlength="3">
-                    <button id="BtnContBancCadastrar">Cadastrar</button>
-                    <button id="BtnContBancVoltar">Voltar</button>
-                    <button id="BtnContBancLimpar">Limpar</button>
-                    <button id="BtnContaBancApagar">Excluir</button>
-                    <button id="BtnContaBancAlterar">Alterar</button>
-                    <button id="BtnContaBancConsultar">Buscar</button>
-                    <button id="BtnContaBancLista">Consultar</button>
-                </li>
-                <li>
-                <li id="ContBancVoltar"><a href="#">Voltar</a></li>
-                <h4>Pessoa</h4>
-                </li>
-                <li id="ImgBancoSelect">
-                    <img src="/img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeBradesco.png" class="LgBradesco">
-                    <img src="/img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeInter.png" id="LgInter">
-                    <img src="/img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeItau.png" class="LgItau">
-                </li>
-            </ul>
-        </ul>
-
-
-        <!-- CONSULTA CONTAS BANCARIAS -->
-
-        <ul id="ConsultContBanc">
-            <ul class="Container ContainerContBanc">
-                <li class="HeadMenuContBanc">
-                    <h4>Consulta de Terceiros</h4>
-                </li>
-                <li class="TxtInfContBanc">
-                <li class="HeadContBanc">
-                    <h4 class="HeadContBanc1">Banco</h4>
-                    <h4 class="HeadContBanc2">Numero</h4>
-                    <h4 class="HeadContBanc3">Agencia</h4>
-                    <h4 class="HeadContBanc4">Tipo da Conta</h4>
-                    <h4 class="HeadContBanc5">Saldo</h4>
-                    <h4 class="HeadContBanc6">ID</h4>
-
-
-
-                </li>
-                <li class="TtxContBancContainer">
-
-                    <input type="text" id="TxtBancoContConsult">
-                    <input type="text" id="TxtNumeroContConsult">
-                    <input type="text" id="TxtAgenciaContConsult">
-                    <input type="text" id="TxtTpCntContConsult">
-                    <input type="text" id="TxtSaldoContConsult">
-                    <input type="text" id="TxtIDContConsult">
-
-                </li>
-                <button id="BtnVoltarConsultCont">Voltar</button>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </ul>
-        <!-- FIM CONSULTA CONTAS BANCARIAS -->
-        <!-- FIM Region Menu Contas Bancarias -->
-   
-
-
-        <!-- FIM Region Menu Devedor/pagador-->
-        <!-- FIM ALTERACAO SABADO -->
-        <!-- <div id="FundoMenusTransacoes">
-            <ul>
-                <li>
-                    <input type="text" id="TxtTranNome" placeholder="Nome">
-                    <input type="text" id="TxtTranDesc" placeholder="Descrição">
-                    <input type="text" id="TxtTranDesc" placeholder="Descrição">
-                </li>
-            </ul>
-        </div> -->
-        <!-- Region Transacoes -->
-        <!-- FIM Region Menu Transacoes -->
+     
         <!-- Cardes Transacoes -->
         <div class="Cards container">
             <ul class="CardTransacoes">
@@ -325,16 +178,17 @@
             @* <a href="#" id="BtnUsuarioConfig"><img src="/img/PaginaInicial/Menu/IconeUsuario.png"></a>*@
             <ul class="MenusSelecao container">
                 <h2>Menu</h2>
+
                 <li class="Selecao1">
-                    <a href="#" id="BtnReceitas">Receitas</a>
+                    <a asp-controller="Contas" asp-action="CreateReceitas" id="BtnReceitas">Receitas</a>
                     <img src="/img/PaginaInicial/Menu/Receitas.png">
                 </li>
                 <li class="Selecao2">
-                    <a href="#" id="BtnDespesas">Despesas</a>
+                    <a asp-controller="Contas" asp-action="CreateDespesas" id="BtnDespesas">Despesas</a>
                     <img src="/img/PaginaInicial/Menu/IDespesas.png">
                 </li>
                 <li class="Selecao3">
-                    <a href="#" id="BtnTransacoes">Transações</a>
+                    <a asp-controller="Extrato" asp-action="ConsultaExtrato" id="BtnTransacoes">Transações</a>
                     <img src="/img/PaginaInicial/Menu/Transacoes.png">
                 </li>
                 <li class="Selecao4">
@@ -347,11 +201,11 @@
 
                 </li>
                 <li class="Selecao6">
-                    <a href="#" id="BtnContasBancaria">Contas Bancarias</a>
+                    <a asp-controller="ContaBancarias" asp-action="CreateContasBancarias" id="BtnContasBancaria">Contas Bancarias</a>
                     <img src="/img/PaginaInicial/Menu/ContasBancaria.png">
                 </li>
                 <li class="Selecao7">
-                    <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
+                    <a asp-controller="Terceiros" asp-action="CreateTerceiros" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
                     <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
                 </li>
                 <li class="Selecao8">

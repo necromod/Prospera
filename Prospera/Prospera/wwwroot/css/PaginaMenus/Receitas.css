@@ -77,7 +77,7 @@ padding-left: 5em;
 }
 .Container
 {
-display: none;
+/* display: none; */
  background-color: var(--color-RoxaCardMov);
     position: relative;
     display: flex;
@@ -93,7 +93,7 @@ display: none;
 
 
 #FundoMenusReceita:not(.Container){
-  display: none;
+  /* display: none; */
     background-color:white;
     width: 98%;
     left: 0;

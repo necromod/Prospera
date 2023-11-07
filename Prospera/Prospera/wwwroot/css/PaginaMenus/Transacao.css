@@ -131,7 +131,7 @@ body:not(.MenusSelecao h4) {
 }
 
 #FundoMenusTransacaoConsult:not(.Container) {
-    display: none;
+    /* display: none; */
     background-color: white;
     width: 98%;
     left: 0;
