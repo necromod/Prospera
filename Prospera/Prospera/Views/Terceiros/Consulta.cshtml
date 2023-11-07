@@ -1,16 +1,9 @@
-﻿@model IEnumerable<Prospera.Models.Terceiros>
+﻿@model Prospera.Helpers.TerceirosViewModel
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = null;
+    ViewData["Title"] = "Consulta";
 }
 
-@*<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p
-*@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,93 +35,43 @@
 </head>
 
 <body>
-      <ul id="FundoMenusTerceirosConsult">
-            <ul class="Container TerceirosContainerConsult" style="overflow-y: auto;">
-                <li class="HeadMenuTerceirosConsult">
-                </li>
-                <li class="TxtInfTerceirosConsult">
-                    <ul class="HeadConsultContainer">
-                        <li><h4 class="ConsutHead1">Nome</h4></li>
-                        <li><h4 class="ConsutHead2">Telefone</h4></li>
-                        <li><h4 class="ConsutHead3">Email</h4></li>
-                        <li><h4 class="ConsutHead4">Observação</h4></li>
-                        <li><h4 class="ConsutHead7">Ultima Movimentação</h4></li>
-                        <li><h4 class="ConsutHead8">ID</h4></li>
-                    </ul>
-                    </span>
-      @*   <li class="TtxTerceirosContainer">
-                        @foreach (var item in Model.ListaTerceiros)
-                        
-                            {
-                                <ul class="TtxTerceirosContainer list-unstyled espacotop">
-                                    <li><input type="text" id="TxtTerceirosNomeConsult" value="@item.NomeTerceiros"></li>
-                                    <li><input type="text" id="TxtTerceirosTelefoneConsult" value="@item.TelefoneTerceiros"></li>
-                                    <li><input type="text" id="TxtTerceirosEmailConsult" value="@item.EmailTerceiros"></li>
-                                    <li><input type="text" id="TxtTerceirosObservacaoConsult" value="@item.ObservacaoTerceiros"></li>
-                                    <li><input type="text" id="TxtTerceirosUltMovConsut" value="@item.DataUltimaMovimentacao"></li>
-                                    <li><input type="text" id="TxtTerceirosIDConsult" value="@item.IdTerceiros"></li>
-                                </ul>
-                            }
-
-                        } 
-                       
-
-                </li>*@
-            <a asp-controller="Terceiros" asp-action="Create" id="BtnTerceirosVoltarConsult">Voltar</a>
-                <button id="BtnTerceirosEndercosConsult">Endereço</button>
-                </li>
-                <li>
-
-
-                    <!-- Conteúdo da tela oculta aqui -->
-
-                </li>
-
-            </ul>
-        </ul>
-    <ul id="TerceirosConsultEnd">
-        <ul class="Container TerceirosContainerConsultEnd" style="overflow-y: auto;">
-            <li class="HeadMenuTerceirosConsultEnd">
-                <h4>Consulta de Terceiros</h4>
+    <ul id="FundoMenusTerceirosConsult">
+        <ul class="Container TerceirosContainerConsult" style="overflow-y: auto;">
+            <li class="HeadMenuTerceirosConsult">
             </li>
-            <li class="TxtInfTerceirosConsultEnd">
-            <li class="HeadContainer">
-                <h4 class="Head1">Pessoa</h4>
-                <h4 class="Head2">Telefone2</h4>
-                <h4 class="Head3">Endereço</h4>
-                <h4 class="Head4">Cidade</h4>
-                <h4 class="Head5">Bairro</h4>
-                <h4 class="Head6">UF</h4>
-                <h4 class="Head7">CEP</h4>
-
-
-        @*    </li>
-                @foreach (var item in Model.ListaTerceiros)
-                {
-                <li class="TtxEndContainer">
-                    <input type="text" id="TxtTerceirosPessoaConsultEnd" value="@item.NomeTerceiros">
-                    <input type="text" id="TxtTerceirosTelefone2ConsultEnd" value="@item.Telefone2Terceiros">
-                    <input type="text" id="TxtTerceirosEnderecoConsultEnd" value="@item.EnderecoTerceiros">
-                    <input type="text" id="TxtTerceirosCidadeConsultEnd" value="@item.CidadeTerceiros">
-                    <input type="text" id="TxtTerceirosBairroConsultEnd" value="@item.BairroTerceiros">
-                    <input type="text" id="TxtTerceirosUFConsultEnd" value="@item.UFTerceiros">
-                    <input type="text" id="TxtTerceirosCEPConsultEnd" value="@item.CEPTerceiros">
-                </li>
-                }*@
-
-            <button id="BtnTerceirosVoltarConsultEnd">Voltar</button>
+            <li class="TxtInfTerceirosConsult">
+                <ul class="HeadConsultContainer">
+                    <li><h4 class="ConsutHead1">Nome</h4></li>
+                    <li><h4 class="ConsutHead2">Telefone</h4></li>
+                    <li><h4 class="ConsutHead3">Email</h4></li>
+                    <li><h4 class="ConsutHead4">Observação</h4></li>
+                    <li><h4 class="ConsutHead7">Ultima Movimentação</h4></li>
+                    <li><h4 class="ConsutHead8">ID</h4></li>
+                </ul>
+                </span>
+            <li class="TtxTerceirosContainer">
+                    @foreach (var item in Model.ListaTerceiros)
+                    {
+                    <br class="espacotop" />
+                    <ul class="TtxTerceirosContainer list-unstyled">
+                        <li><input type="text" id="TxtTerceirosNomeConsult" value="@item.NomeTerceiros"></li>
+                        <li><input type="text" id="TxtTerceirosTelefoneConsult" value="@item.TelefoneTerceiros"></li>
+                        <li><input type="text" id="TxtTerceirosEmailConsult" value="@item.EmailTerceiros"></li>
+                        <li><input type="text" id="TxtTerceirosObservacaoConsult" value="@item.ObservacaoTerceiros"></li>
+                        <li><input type="text" id="TxtTerceirosUltMovConsut" value="@item.DataUltimaMovimentacao"></li>
+                        <li><input type="text" id="TxtTerceirosIDConsult" value="@item.IdTerceiros"></li>
+                    </ul>
+                    }
+            </li>
+            <a asp-controller="Terceiros" asp-action="CreateTerceiros" id="BtnTerceirosVoltarConsult">Voltar</a>
+            <a asp-controller="Terceiros" asp-action="ConsultaEndereco"><button id="BtnTerceirosEndercosConsult">Endereço</button></a>
             </li>
             <li>
-
-                <h4>Pessoa</h4>
-                <!-- Conteúdo da tela oculta aqui -->
-
             </li>
+
         </ul>
     </ul>
     <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
 </body>
-
-</html>
 
 

@@ -42,6 +42,7 @@
             <li class="ImgFundoMenu"> <img src="/img/Terceiros/Tela-Inicial_Menu.png"> </li>
             <li class="TxtInfTerceiros">
                 <span>
+                    <h4>ID</h4>
                     <h4>Nome</h4>
                     <h4>Telefone</h4>
                     <h4>Email</h4>
@@ -66,12 +67,12 @@
                     <input type="text" asp-for="NovoTerceiro.BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
                     <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
                     <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
-                    <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="bservacao" id="TxtTerceirosObservacao">
+                    <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="Observação" id="TxtTerceirosObservacao">
 
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
                     <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
                     <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
-                    <button id="BtnTerceirosConsultar"><a asp-controller="Terceiros" asp-action="Index">Consultar</a></button>
+                    <button id="BtnTerceirosConsultar"><a asp-controller="Terceiros" asp-action="Consulta">Consultar</a></button>
                     <button id="BtnTerceirosLimpar">Limpar</button>
                     <button id="BtnTerceirosAlterar">Alterar</button>
                     <button type="submit" name="btnAcao" value="buscar" id="BtnTerceirosBuscar">Buscar</button>

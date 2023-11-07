@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
+using Prospera.Helpers;
 using Prospera.Models;
 
 namespace Prospera.Controllers
@@ -32,8 +33,24 @@ namespace Prospera.Controllers
        }
         public IActionResult Consulta()
         {
-            return View();
+            var viewModel = new TerceirosViewModelInterface(_context);
+            viewModel.PreencherListaTerceiros();
+
+            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
+
+            return View(viewModel);
         }
+
+        public IActionResult ConsultaEndereco()
+        {
+            var viewModel = new TerceirosViewModelInterface(_context);
+            viewModel.PreencherListaTerceiros();
+
+            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
+
+            return View(viewModel);
+        }
+
         // GET: Terceiros/Details/5
         public async Task<IActionResult> Details(int? id)
         {
