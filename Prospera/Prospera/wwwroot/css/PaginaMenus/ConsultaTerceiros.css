@@ -191,6 +191,10 @@ body:not(.MenusSelecao h4) {
     transition: .3s;
 }
 
+.list-unstyled{
+    position: relative !important;
+}
+
 .TtxTerceirosContainer input {
     display: inline;
     margin-left: .1em;
@@ -298,7 +302,7 @@ body:not(.MenusSelecao h4) {
     /* opacity: 0.5; */
     background-color: rgba(195, 191, 191, 0.5);
     /* Cor vermelha com 50% de transparência */
-    display: none;
+    /*display: none;*/
     position: relative;
     width: 100%;
     height: 39.5rem;
@@ -388,19 +392,19 @@ body:not(.MenusSelecao h4) {
 /*#endregion*/
 
 #BtnTerceirosVoltarConsultEnd {
-    background-color: var(--color-RoxaCardMov);
+    background-color: white;
     position: absolute;
     right: 1em;
-    width: 5%;
+    width: 9%;
     border: none;
     outline: none;
     border-radius: 6px;
-    height: 5%;
-    top: .5em;
+    height: 4%;
+    bottom: 1em;
     z-index: 99999;
-    color: white;
+    color: var(--color-Sextiary);
     transition: .2s;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 #BtnTerceirosVoltarConsultEnd:hover {
@@ -410,6 +414,7 @@ body:not(.MenusSelecao h4) {
 }
 
 .TtxEndContainer {
+    display: inline-block;
     background-color: white;
     width: 95%;
     top: 4em;
@@ -420,14 +425,18 @@ body:not(.MenusSelecao h4) {
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
 }
 
-.TtxEndContainer input {
-    margin-left: .1em;
-    width: 18.9vh;
-    margin-top: .5em;
-    border: none;
-    outline: none;
-    text-align: center;
-}
+    .TtxEndContainer input {
+        margin-right: 10px;
+        margin-left: .1em;
+        width: 18.9vh;
+        margin-top: .5em;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+    .TtxEndContainer li{
+        display: inline-grid;
+    }
 
 /*#endregion*/
 

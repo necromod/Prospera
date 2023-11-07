@@ -19,19 +19,7 @@ namespace Prospera.Controllers
             _context = context;
             _sessao = sessao;
             _teerceirosViewModel = teerceirosViewModel; 
-        }
-
-        public IActionResult MenuUsuario()
-        {
-            var viewModel = new TerceirosViewModelInterface(_context);
-            viewModel.PreencherListaTerceiros();
-
-            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
-
-            return View("~/Views/Home/MenuUsuario.cshtml", viewModel);
-        }
-
-
+        }     
 
         // POST: Criação de campo Terceiros
         [HttpPost]
@@ -105,12 +93,12 @@ namespace Prospera.Controllers
 
                         if (terceiro != null)
                         {
-                            return RedirectToAction("MenuUsuario", "MenuUsuario");
+                            return RedirectToAction("Consulta", "Terceiros");
                         }
                     }
                 }
 
-            return RedirectToAction("MenuUsuario", "MenuUsuario");
+            return RedirectToAction("Consulta", "Terceiros");
 
         }
 

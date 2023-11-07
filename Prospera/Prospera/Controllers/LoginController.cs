@@ -27,7 +27,7 @@ namespace Prospera.Controllers
             //Se usuário já estiver logado, redirecionar para MenuUsuario
             if(_sessao.BuscarSessaoUsuario() != null)
             {
-                return RedirectToAction("MenuUsuario", "MenuUsuario");
+                return RedirectToAction("MenuUsuario", "Home");
             }
             return View();
         }
@@ -70,7 +70,7 @@ namespace Prospera.Controllers
                             //Criação de Cookies de login
                             _sessao.CriarSessaoUsuario(usuario);
 
-                            return RedirectToAction("MenuUsuario", "MenuUsuario");
+                            return RedirectToAction("MenuUsuario", "Home");
                         }
                         else
                         {

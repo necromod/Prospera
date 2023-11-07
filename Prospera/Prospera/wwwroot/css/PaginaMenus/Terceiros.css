@@ -118,38 +118,38 @@ html {
     transition: .3s;
 }
 
-.TxtInfTerceiros input {
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    width: 26em;
-    z-index: 99999;
-    /* background-color: #801D7B; */
-    margin-bottom: -0.5em;
-    height: 3em;
-    margin-left: 4em;
-    margin-top: 3em;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
+    .TxtInfTerceiros input {
+        display: block;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        width: 20em;
+        height: 2.7em;
+        z-index: 99999;
+        /* background-color: #801D7B; */
+        margin-bottom: -1.1em;
+        margin-left: 4em;
+        margin-top: 3.2em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
 #TxtTerceirosID{
-  width: 5%;
+  width: 3%;
   position: absolute;
   right: 16em;
   text-align: center;
 }
 .TxtInfTerceiros button {
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     outline: none;
-    width: 20em;
-    margin-bottom: -0.5em;
-    height: 3em;
+    width: 2em;
+    height: 2.2em;
+    margin-bottom: -1.7em;
     margin-left: 4em;
     margin-top: 3em;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: .3s;
-
 }
 
 #BtnTerceirosCadastrar {
@@ -213,12 +213,12 @@ width: 20%;
 
 .TxtInfTerceiros span {
     position: absolute;
-    left: 4em;
+    left: 3em;
    
 }
 
 .TxtInfTerceiros span h4 {
-    padding-bottom: 2.8em;
+    padding-bottom: 2.2em;
     text-align: left;
 
 }
