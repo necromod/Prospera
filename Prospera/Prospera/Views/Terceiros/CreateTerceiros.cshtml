@@ -68,17 +68,19 @@
                     <input type="text" asp-for="UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
                     <input type="text" asp-for="CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
                     <input type="text" asp-for="ObservacaoTerceiros" placeholder="Observação" id="TxtTerceirosObservacao">
+                    <input type="hidden" name="IdTerceirosTemp" id="IdTerceirosTemp" />
+
 
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
                     <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
                     <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
+                    <button type="submit" name="btnAcao" value="editar" id="BtnTerceirosAlterar">Alterar</button>
                     <button id="BtnTerceirosConsultar"><a asp-controller="Terceiros" asp-action="Consulta">Consultar</a></button>
                     <h4 class="NomID">Buscar por ID</h4>
 
                 </form>
                 <button id="BtnTerceirosBuscar">Buscar</button>
                 <button id="BtnTerceirosLimpar">Limpar</button>
-                <button id="BtnTerceirosAlterar">Alterar</button>
                 <button id="BtnTerceirosVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
             </li>
             <li>
