@@ -5,7 +5,8 @@
     $("#BtnTerceirosLimpar").click(function () {
         // Desbloqueia o input
         limparInputs();
-    });
+    }); 
+
 });
 
 var idTerceirosTemp;
@@ -66,4 +67,3 @@ function limparInputs() {
     $("#TxtTerceirosCEP").val("");
     $("#TxtTerceirosObservacao").val("");
 }
-

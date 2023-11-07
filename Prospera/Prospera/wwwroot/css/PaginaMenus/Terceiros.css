@@ -40,15 +40,17 @@ html {
     --color-Fundo: #F4F2FF;
     --color-RoxaCardMov:#8C52FF;
   }
-  
-  
-  
-  
-  html {
+
+.text-danger{
+    position: absolute;
+    display: inline;
+}
+
+
+html {
     position: relative;
     min-height: 100%;
-  
-  }
+}
   
   body:not(.MenusSelecao h4) {
     font-size: 14px;
@@ -231,3 +233,10 @@ width: 20%;
   animation: rotate 3s linear infinite;
   
   }
+
+.text-danger {
+    text-align: center;
+    white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+    margin-top: 1.4em;
+    margin-left: 3em;
+}
