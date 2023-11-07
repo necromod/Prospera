@@ -1,4 +1,4 @@
-﻿@model Prospera.Helpers.TerceirosViewModel;
+﻿@model Prospera.Models.Terceiros;
 @{
     ViewData["Title"] = "Terceiros";
 }
@@ -29,6 +29,7 @@
     <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
           rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Prospera</title>
 </head>
@@ -38,8 +39,8 @@
         <ul class="Container TerceirosContainer">
             <li class="HeadMenuTerceiros">
                 <h4>Cadastro de Devedor/Pagador</h4>
-            </li>
-            <li class="ImgFundoMenu"> <img src="/img/Terceiros/Tela-Inicial_Menu.png"> </li>
+            </li>///">
+            <li class="ImgFundoMenu"> @* <img src="~img/Terceiros/Tela-Inicial_Menu.png"> *@ </li>
             <li class="TxtInfTerceiros">
                 <span>
                     <h4>ID</h4>
@@ -53,31 +54,31 @@
                     <h4>UF</h4>
                     <h4>CEP</h4>
                     <h4>Observacao</h4>
-                    <h4 class="NomID">ID</h4>
 
                 </span>
                 <form asp-controller="MenuUsuario" asp-action="CadastrarTerceiro" method="post" id="TerceirosForm">
-                    <input type="text" asp-for="NovoTerceiro.IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
-                    <input type="text" asp-for="NovoTerceiro.NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
-                    <input type="text" asp-for="NovoTerceiro.EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
-                    <input type="text" asp-for="NovoTerceiro.TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
-                    <input type="text" asp-for="NovoTerceiro.Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
-                    <input type="text" asp-for="NovoTerceiro.EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
-                    <input type="text" asp-for="NovoTerceiro.CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
-                    <input type="text" asp-for="NovoTerceiro.BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
-                    <input type="text" asp-for="NovoTerceiro.UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
-                    <input type="text" asp-for="NovoTerceiro.CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
-                    <input type="text" asp-for="NovoTerceiro.ObservacaoTerceiros" placeholder="Observação" id="TxtTerceirosObservacao">
+                    <input type="text" asp-for="IdTerceiros" placeholder="ID do terceiro" id="TxtTerceirosId" />
+                    <input type="text" asp-for="NomeTerceiros" placeholder="Nome" id="TxtTerceirosNome" maxlength="30">
+                    <input type="text" asp-for="EmailTerceiros" placeholder="Email" id="TxtTerceirosEmail">
+                    <input type="text" asp-for="TelefoneTerceiros" placeholder="Telefone" id="TxtTerceirosTelefone" maxlength="100">
+                    <input type="text" asp-for="Telefone2Terceiros" placeholder="Telefone2" id="TxtTerceirosTelefone2">
+                    <input type="text" asp-for="EnderecoTerceiros" placeholder="Endereco" id="TxtTerceirosEndereco">
+                    <input type="text" asp-for="CidadeTerceiros" placeholder="Cidade" id="TxtTerceirosCidade">
+                    <input type="text" asp-for="BairroTerceiros" placeholder="Bairro" id="TxtTerceirosBairro">
+                    <input type="text" asp-for="UFTerceiros" placeholder="UF" id="TxtTerceirosUF">
+                    <input type="text" asp-for="CEPTerceiros" placeholder="CEP" id="TxtTerceirosCEP">
+                    <input type="text" asp-for="ObservacaoTerceiros" placeholder="Observação" id="TxtTerceirosObservacao">
 
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
                     <button type="submit" name="btnAcao" value="cadastro" id="BtnTerceirosCadastrar">Cadastrar</button>
                     <button type="submit" name="btnAcao" value="exclusao" id="BtnTerceirosApagar">Excluir</button>
                     <button id="BtnTerceirosConsultar"><a asp-controller="Terceiros" asp-action="Consulta">Consultar</a></button>
-                    <button id="BtnTerceirosLimpar">Limpar</button>
-                    <button id="BtnTerceirosAlterar">Alterar</button>
-                    <button type="submit" name="btnAcao" value="buscar" id="BtnTerceirosBuscar">Buscar</button>
+                    <h4 class="NomID">Buscar por ID</h4>
 
                 </form>
+                <button id="BtnTerceirosBuscar">Buscar</button>
+                <button id="BtnTerceirosLimpar">Limpar</button>
+                <button id="BtnTerceirosAlterar">Alterar</button>
                 <button id="BtnTerceirosVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
             </li>
             <li>
@@ -88,8 +89,8 @@
             </li>
         </ul>
     </ul>
-
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+    @* <script src="/js/PaginaInicial.js" asp-append-version="true"></script> *@
+    <script src="/js/Buscar.js" asp-append-version="true"></script>
 </body>
 
 </html>

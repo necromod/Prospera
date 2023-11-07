@@ -189,5 +189,7 @@ namespace Prospera.Controllers
         {
           return (_context.Terceiros?.Any(e => e.IdTerceiros == id)).GetValueOrDefault();
         }
+
+
     }
 }
