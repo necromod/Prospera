@@ -85,18 +85,42 @@ namespace Prospera.Controllers
             }
 
             //botão de Alterar foi pressionado
-            else if (btnAcao == "Alterar")
+            else if (btnAcao == "editar")
+            {
+                if (terceiros.IdTerceiros > 0)
                 {
-                    if (int.TryParse(terceiros.IdTerceiros.ToString(), out int id))
-                    {
-                        var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
+                    // Verifique se o ID existe no banco de dados
+                    var terceiroExistente = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == terceiros.IdTerceiros);
 
-                        if (terceiro != null)
-                        {
-                            return RedirectToAction("Consulta", "Terceiros");
-                        }
+                    if (terceiroExistente != null)
+                    {
+                        // Atualize o registro existente com os novos valores
+                        terceiroExistente.NomeTerceiros = terceiros.NomeTerceiros;
+                        terceiroExistente.EmailTerceiros = terceiros.EmailTerceiros;
+                        // Atualize outros campos da mesma forma
+
+                        // Defina a data da última movimentação
+                        terceiroExistente.DataUltimaMovimentacao = DateTime.Now;
+
+                        // Salve as alterações no banco de dados
+                        _context.SaveChanges();
+
+                        return RedirectToAction("Consulta", "Terceiros");
+                    }
+                    else
+                    {
+                        // Lidar com o caso em que o ID não foi encontrado
+                        // Você pode retornar uma mensagem de erro ou redirecionar para a página apropriada.
+                       Console.WriteLine(" ID não foi encontrado");
                     }
                 }
+                else
+                {
+                    // Lidar com o caso em que o ID não é válido
+                    // Você pode retornar uma mensagem de erro ou redirecionar para a página apropriada.
+                    Console.WriteLine("  ID não é válido");
+                }
+            }
 
             return RedirectToAction("Consulta", "Terceiros");
 
@@ -109,6 +133,7 @@ namespace Prospera.Controllers
 
             if (terceiros != null)
             {
+               /* HttpContext.Session.SetString("OriginalIdTerceiros", terceiros.IdTerceiros.ToString());*/
                 return Json(terceiros); // Retorna o Terceiros encontrado como JSON.
             }
             else
@@ -116,7 +141,6 @@ namespace Prospera.Controllers
                 return Json(null); // Retorna nulo se o Terceiros não for encontrado.
             }
         }
-
 
 
     }

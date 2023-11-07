@@ -2,7 +2,13 @@
     $("#BtnTerceirosBuscar").click(function () {
         buscarTerceiros();
     });
+    $("#BtnTerceirosLimpar").click(function () {
+        // Desbloqueia o input
+        limparInputs();
+    });
 });
+
+var idTerceirosTemp;
 
 function buscarTerceiros() {
     var idTerceiros = $("#TxtTerceirosId").val();
@@ -38,5 +44,26 @@ function preencherCampos(terceiros) {
     $("#TxtTerceirosUF").val(terceiros.ufTerceiros);
     $("#TxtTerceirosCEP").val(terceiros.cepTerceiros);
     $("#TxtTerceirosObservacao").val(terceiros.observacaoTerceiros);
+    $("IdTerceirosTemp").val(terceiros.idTerceiros);
+    idTerceirosTemp = terceiros.idTerceiros;
+
+    // Bloqueia o input ID
+    $("#TxtTerceirosEmail").prop("readonly", true);
+
+}
+
+function limparInputs() {
+    $("#TxtTerceirosId").prop("disabled", false);
+    $("#TxtTerceirosId").val("");
+    $("#TxtTerceirosNome").val("");
+    $("#TxtTerceirosEmail").val("");
+    $("#TxtTerceirosTelefone").val("");
+    $("#TxtTerceirosTelefone2").val("");
+    $("#TxtTerceirosEndereco").val("");
+    $("#TxtTerceirosCidade").val("");
+    $("#TxtTerceirosBairro").val("");
+    $("#TxtTerceirosUF").val("");
+    $("#TxtTerceirosCEP").val("");
+    $("#TxtTerceirosObservacao").val("");
 }
 
