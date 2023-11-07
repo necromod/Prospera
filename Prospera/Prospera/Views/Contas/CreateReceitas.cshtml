@@ -1,6 +1,6 @@
 ﻿@model Prospera.Helpers.TerceirosViewModel;
 @{
-    ViewData["Title"] = "Despesas";
+    ViewData["Title"] = "Receitas";
 }
 
 <head>
@@ -55,14 +55,15 @@
                     <input type="text" id="TxtReceitaData">
                     <input type="text" id="TxtReceitasBuscaId" maxlength="3">
                     <button id="BtnReceitasCadastrar">Cadastrar</button>
-                    <button id="BtnReceitasVoltar">Voltar</button>
+                <button id="BtnReceitasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
                     <button id="BtnReceitasLimpar">Limpar</button>
                     <button id="BtnReceitasApagar">Excluir</button>
                     <button id="BtnReceitasAlterar">Alterar</button>
                     <button id="BtnReceitasConsultar">Buscar</button>
                 </li>
                 <li>
-                <li id="ReceitasVoltar"><a href="#">Voltar</a></li>
+      
+            <li id="ReceitasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></li>
                 <li class="DropContainer">
                     <select id="ReceitaDropPessoa">
                         <option value=""></option>
