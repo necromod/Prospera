@@ -1,7 +1,6 @@
-﻿@model IEnumerable<Prospera.Models.Extrato>
+﻿@model Prospera.Helpers.TerceirosViewModel;
 @{
     ViewData["Title"] = "Terceiros";
-    Layout = null;
 }
 
 <head>
@@ -50,26 +49,19 @@
                 <h4 class="TransacaoHead6">Status</h4>
                 <h4 class="TransacaoHead7">Tipo de Movimentação</h4>
                 <h4 class="TransacaoHead8">ID</h4>
-                <h4 class="TransacaoHead8">Meio Pagamento</h4>
             </li>
 
             </span>
-                @foreach (var item in Model)
-                {
-                <li class="TtxTransacaoContainer">
-
-                    <input type="text" id="TxtTransacaoNomeConsult" value="@item.NomeExtrato" maxlength="30">
-                    <input type="text" id="TxtTransacaoValorfoneConsult" value="@item.ValorExtrato" maxlength="100">
-                    <input type="text" id="TxtTransacaoPessoaConsult" value="@item.RemetenteExtrato">
-                    <input type="text" id="TxtTransacaoObservacaoConsult" value="@item.ObservacaoExtrato">
-                    <input type="text" id="TxtTransacaoDatMovConsult" value="@item.DataExtrato" >
-                    <input type="text" id="TxtTransacaoStatusConsult" value="@item.StatusExtrato">
-                    <input type="text" id="TxtTransacaoTpMovConsult" placeholder="Tipo de Movimentação">
-                    <input type="text" id="TxtTransacaoID" value="@item.IdExtrato">
-                    <input type="text" id="TxtTransacaoID" placeholder="Cartão de crédito">
-                </li>
-                }
-            
+            <li class="TtxTransacaoContainer">
+                <input type="text" id="TxtTransacaoNomeConsult" maxlength="30">
+                <input type="text" id="TxtTransacaoValorfoneConsult" maxlength="100">
+                <input type="text" id="TxtTransacaoPessoaConsult">
+                <input type="text" id="TxtTransacaoObservacaoConsult">
+                <input type="text" id="TxtTransacaoDatMovConsult">
+                <input type="text" id="TxtTransacaoStatusConsult">
+                <input type="text" id="TxtTransacaoTpMovConsult">
+                <input type="text" id="TxtTransacaoID">
+            </li>
             <button id="BtnTransacaoVoltarConsult"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
 
             </li>
