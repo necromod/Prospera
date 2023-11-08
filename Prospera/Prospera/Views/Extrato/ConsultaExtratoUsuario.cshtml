@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Prospera.Models.Extrato>
+﻿@model List<Prospera.Models.Contas>
+
 @{
     ViewData["Title"] = "Terceiros";
-    Layout = null;
 }
 
 <head>
@@ -50,26 +50,24 @@
                 <h4 class="TransacaoHead6">Status</h4>
                 <h4 class="TransacaoHead7">Tipo de Movimentação</h4>
                 <h4 class="TransacaoHead8">ID</h4>
-                <h4 class="TransacaoHead8">Meio Pagamento</h4>
             </li>
 
             </span>
-                @foreach (var item in Model)
+                @foreach (var conta in Model)
                 {
+                <br class="espacotop" />
                 <li class="TtxTransacaoContainer">
-
-                    <input type="text" id="TxtTransacaoNomeConsult" value="@item.NomeExtrato" maxlength="30">
-                    <input type="text" id="TxtTransacaoValorfoneConsult" value="@item.ValorExtrato" maxlength="100">
-                    <input type="text" id="TxtTransacaoPessoaConsult" value="@item.RemetenteExtrato">
-                    <input type="text" id="TxtTransacaoObservacaoConsult" value="@item.ObservacaoExtrato">
-                    <input type="text" id="TxtTransacaoDatMovConsult" value="@item.DataExtrato" >
-                    <input type="text" id="TxtTransacaoStatusConsult" value="@item.StatusExtrato">
-                    <input type="text" id="TxtTransacaoTpMovConsult" placeholder="Tipo de Movimentação">
-                    <input type="text" id="TxtTransacaoID" value="@item.IdExtrato">
-                    <input type="text" id="TxtTransacaoID" placeholder="Cartão de crédito">
+                    <input type="text" id="TxtTransacaoNomeConsult" value="@conta.NomeCont" maxlength="30">
+                    <input type="text" id="TxtTransacaoValorfoneConsult" value="@conta.ValorCont" maxlength="100">
+                    <input type="text" id="TxtTransacaoPessoaConsult" value="@conta.PessoaCont">
+                    <input type="text" id="TxtTransacaoObservacaoConsult" value="@conta.ObservacaoCont">
+                    <input type="text" id="TxtTransacaoDatMovConsult" value="@conta.DatEmissaoCont" >
+                    <input type="text" id="TxtTransacaoStatusConsult" value="@conta.StatusCont">
+                    <input type="text" id="TxtTransacaoTpMovConsult" value="@conta.TipoCont" >
+                    <input type="text" id="TxtTransacaoID" value="@conta.IdContas">
                 </li>
-                }
-            
+
+            }
             <button id="BtnTransacaoVoltarConsult"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
 
             </li>
