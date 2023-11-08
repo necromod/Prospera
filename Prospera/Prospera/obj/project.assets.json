@@ -11427,23 +11427,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\silas.ssilva7\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\edimilson.rsilva\\.nuget\\packages\\": {},
+>>>>>>> 0b982cc9abd2ea747f07190ac53eac7014f3c267
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\silas.ssilva7\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
       "projectName": "Prospera",
       "projectPath": "C:\\Users\\silas.ssilva7\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
       "packagesPath": "C:\\Users\\silas.ssilva7\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\silas.ssilva7\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
+      "projectName": "Prospera",
+      "projectPath": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\Prospera.csproj",
+      "packagesPath": "C:\\Users\\edimilson.rsilva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\",
+>>>>>>> 0b982cc9abd2ea747f07190ac53eac7014f3c267
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\silas.ssilva7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\edimilson.rsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 0b982cc9abd2ea747f07190ac53eac7014f3c267
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
