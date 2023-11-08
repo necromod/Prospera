@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prospera.Data;
 
@@ -11,9 +12,11 @@ using Prospera.Data;
 namespace Prospera.Migrations
 {
     [DbContext(typeof(ProsperaContext))]
-    partial class ProsperaContextModelSnapshot : ModelSnapshot
+    [Migration("20231107234944_AddCampo_Contas_NomeCont")]
+    partial class AddCampo_Contas_NomeCont
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,10 +115,6 @@ namespace Prospera.Migrations
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
-
-                    b.Property<string>("PessoaCont")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RecebedorCont")
                         .IsRequired()
