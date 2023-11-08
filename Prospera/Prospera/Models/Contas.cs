@@ -13,6 +13,9 @@ namespace Prospera.Models
         public int CodigoCont { get; set; } //Código da conta/boleto pra referência
 
         [Required]
+        public string NomeCont { get; set; }// Nome da conta a ser exibida
+
+        [Required]
         public int TipoCont { get; set; } //Definição se é uma conta para Pagar ou Para receber
 
         [DataType(DataType.Date)]
@@ -20,6 +23,9 @@ namespace Prospera.Models
 
         [DataType(DataType.Date)]
         public DateTime DatVenciCont { get; set; } // Data de vencimento da conta
+
+        [Required]
+        public string PessoaCont { get; set; } // Redundância para instâncias em outras tabelas
 
         [StringLength(120)]
         public string RecebedorCont { get; set; } // Quem estará recebendo o valor da conta

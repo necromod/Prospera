@@ -1,4 +1,5 @@
-﻿@model Prospera.Helpers.TerceirosViewModel;
+﻿@model List<Prospera.Models.Contas>
+
 @{
     ViewData["Title"] = "Terceiros";
 }
@@ -52,16 +53,21 @@
             </li>
 
             </span>
-            <li class="TtxTransacaoContainer">
-                <input type="text" id="TxtTransacaoNomeConsult" maxlength="30">
-                <input type="text" id="TxtTransacaoValorfoneConsult" maxlength="100">
-                <input type="text" id="TxtTransacaoPessoaConsult">
-                <input type="text" id="TxtTransacaoObservacaoConsult">
-                <input type="text" id="TxtTransacaoDatMovConsult">
-                <input type="text" id="TxtTransacaoStatusConsult">
-                <input type="text" id="TxtTransacaoTpMovConsult">
-                <input type="text" id="TxtTransacaoID">
-            </li>
+                @foreach (var conta in Model)
+                {
+                <br class="espacotop" />
+                <li class="TtxTransacaoContainer">
+                    <input type="text" id="TxtTransacaoNomeConsult" value="@conta.NomeCont" maxlength="30">
+                    <input type="text" id="TxtTransacaoValorfoneConsult" value="@conta.ValorCont" maxlength="100">
+                    <input type="text" id="TxtTransacaoPessoaConsult" value="@conta.PessoaCont">
+                    <input type="text" id="TxtTransacaoObservacaoConsult" value="@conta.ObservacaoCont">
+                    <input type="text" id="TxtTransacaoDatMovConsult" value="@conta.DatEmissaoCont" >
+                    <input type="text" id="TxtTransacaoStatusConsult" value="@conta.StatusCont">
+                    <input type="text" id="TxtTransacaoTpMovConsult" value="@conta.TipoCont" >
+                    <input type="text" id="TxtTransacaoID" value="@conta.IdContas">
+                </li>
+
+            }
             <button id="BtnTransacaoVoltarConsult"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
 
             </li>
