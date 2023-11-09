@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
+using Prospera.Helpers;
 using Prospera.Models;
 
 namespace Prospera.Controllers
@@ -13,10 +14,13 @@ namespace Prospera.Controllers
     public class ContasController : Controller
     {
         private readonly ProsperaContext _context;
+        private readonly SessaoInterface _sessao;
 
-        public ContasController(ProsperaContext context)
+
+        public ContasController(ProsperaContext context, SessaoInterface sessao)
         {
             _context = context;
+            _sessao = sessao;
         }
 
         // GET: Contas
@@ -172,6 +176,86 @@ namespace Prospera.Controllers
         private bool ContasExists(int id)
         {
           return (_context.Contas?.Any(e => e.IdContas == id)).GetValueOrDefault();
+        }
+
+        [HttpPost]
+        public IActionResult CadastrarDespesa(Contas contas, string btnAcao)
+        {
+
+            //Botão Cadastro apertado
+            if (btnAcao == "Cadastro")
+            {//Configuração de sessão usuário
+                if (_sessao.BuscarSessaoUsuario() != null)
+                {
+                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
+                    contas.IdUsuario = usuarioModel.IdUsuario;
+                }
+                else
+                {
+                    contas.IdUsuario = 55;
+                }
+
+
+                //Inserção automática dos campos
+                // Encontre o próximo CodigoCont para o usuário atual
+                int proximoCodigoCont = EncontrarProximoCodigoCont(contas.IdUsuario);
+                contas.CodigoCont = proximoCodigoCont;
+                contas.TipoCont = 1;
+                contas.DatEmissaoCont = DateTime.Now;
+                contas.PessoaCont = Convert.ToString(contas.IdUsuario);
+                contas.PagadorCont = Convert.ToString(contas.IdUsuario);
+                contas.Descricaocont = " ";
+
+                //Criação do campo dentro do banco de dados
+                _context.Contas.Add(contas);
+                _context.SaveChanges();
+            }
+            //Botão Excluir apertado
+            if (btnAcao == "Excluir")
+                {
+
+                }
+            //Botão Alterar apertado
+            if (btnAcao == "Alterar")
+                {
+
+                }
+
+            
+
+            return RedirectToAction("ConsultaExtrato", "Extrato");
+        }
+
+        private int EncontrarProximoCodigoCont(int idUsuario)
+        {
+            // Verifique o maior CodigoCont para o usuário especificado
+            int? maxCodigoCont = _context.Contas
+                .Where(c => c.IdUsuario == idUsuario)
+                .Max(c => (int?)c.CodigoCont);
+
+            // Calcule o próximo CodigoCont com base no máximo encontrado
+            int proximoCodigoCont = (maxCodigoCont ?? 0) + 1;
+
+            return proximoCodigoCont;
+        }
+
+
+
+        [HttpGet]
+        public IActionResult BuscarContas(int idUsuario, int codicoCont)
+        {
+            var busca = _context.Contas.FirstOrDefault(y => y.IdUsuario == idUsuario && y.CodigoCont == codicoCont);
+
+
+            if (busca != null)
+            {
+                /* HttpContext.Session.SetString("OriginalIdTerceiros", terceiros.IdTerceiros.ToString());*/
+                return Json(busca); // Retorna o Terceiros encontrado como JSON.
+            }
+            else
+            {
+                return Json(null); // Retorna nulo se o Terceiros não for encontrado.
+            }
         }
     }
 }

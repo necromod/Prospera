@@ -29,9 +29,6 @@ namespace Prospera.Controllers
             if (btnAcao == "cadastro")
             {
 
-                //Terceiros testeExterno = new Terceiros();
-                //testeExterno = _teerceirosViewModel.NovoTerceiro();
-
                 //Verifica se o usuário está logado
                 if (_sessao.BuscarSessaoUsuario() != null)
                 {
