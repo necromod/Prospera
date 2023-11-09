@@ -1,6 +1,6 @@
-﻿@model Prospera.Helpers.TerceirosViewModel;
+﻿@model Prospera.Models.Contas;
 @{
-    ViewData["Title"] = "Terceiros";
+    ViewData["Title"] = "Despesas";
 }
 
 <head>
@@ -47,23 +47,34 @@
                     <h4>Valor</h4>
                     <h4>Data de Vencimento</h4>
                     <h4>Pessoa</h4>
+                    <h4>Forma de pagamento</h4>
+                    <h4>Status</h4>
                     <h4 class="NomID">ID</h4>
                 </span>
-                <input type="text" id="TxtDespesasNome" maxlength="30">
-                <input type="text" id="TxtDespesasObservacao" maxlength="100">
-                <input type="text" id="TxtDespesasValor">
-                <input type="text" id="TxtDespesasData">
-                <input type="text" id="TxtDespesasBuscaId" maxlength="3">
-                <button id="BtnDespesasCadastrar">Cadastrar</button>
+                <form asp-controller="Contas" asp-action="CadastrarDespesa" method="post" id="DespesaForm">
+                    <input type="text" asp-for="NomeCont" placeholder="Nome despesa" id="TxtDespesasNome" maxlength="30">
+                    <input type="text" asp-for="ObservacaoCont"placeholder="Observação" id="TxtDespesasObservacao" maxlength="100">
+                    <input type="text" asp-for="ValorCont" placeholder="Valor " id="TxtDespesasValor">
+                    <input type="text" asp-for="DatVenciCont" placeholder="Data Vencimento" id="TxtDespesasData">
+                    <input type="Text" asp-for="MetodoPgtoCont" placeholder="Forma de pagamento" id="MetodoPgtoCont" />
+                    <input type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont" />                    
+                    <input type="Text" asp-for="RecebedorCont" placeholder="Destino" id="DespesasDropPessoaDespesas" />
+                    <input type="text" asp-for="CodigoCont" placeholder="Código da conta" id="TxtDespesasBuscaId" maxlength="3">
+
+                    <input type="hidden" name="acao" id="acao" value="cadastro" />
+                    <input type="hidden" name="acao" id="acao" value="@Model.IdUsuario" id="IdUsuarioLogado" />
+                    <button type="submit" name="btnAcao" value="Cadastro" id="BtnDespesasCadastrar">Cadastrar</button>
+                    <button type="submit" name="btnAcao" value="Excluir" id="BtnDespesasApagar">Excluir</button>
+                    <button type="submit" name="btnAcao" value="Alterar" id="BtnDespesasAlterar">Alterar</button>
+                </form>
+
                 <button id="BtnDespesasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
                 <button id="BtnDespesasLimpar">Limpar</button>
-                <button id="BtnDespesasApagar">Excluir</button>
-                <button id="BtnDespesasAlterar">Alterar</button>
                 <button id="BtnDespesasConsultar">Buscar</button>
             </li>
             <li>
             <li id="DespesasVoltar"><a href="#">Voltar</a></li>
-            <li class="DropContainerDespesas">
+            @*<li class="DropContainerDespesas">
                 <select id="DespesasDropPessoaDespesas">
                     <option value=""></option>
                     <option value="Marcos">Vermelho</option>
@@ -73,7 +84,7 @@
                     <option value="Vitor">Roxo</option>
                 </select>
 
-            </li>
+            </li>*@
         </ul>
     </ul>
 

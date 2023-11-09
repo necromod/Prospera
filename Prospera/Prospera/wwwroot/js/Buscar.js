@@ -4,8 +4,15 @@
     });
     $("#BtnTerceirosLimpar").click(function () {
         // Desbloqueia o input
-        limparInputs();
+        limparTerceiros();
     }); 
+    $("#BtnDespesasConsultar").click(function () {
+        BuscarContas();
+    });
+    $("#BtnDespesasLimpar").click(function () {
+        // Desbloqueia o input
+        limparInputs();
+    });
 
 });
 
@@ -53,7 +60,7 @@ function preencherCampos(terceiros) {
 
 }
 
-function limparInputs() {
+function limparTerceiros() {
     $("#TxtTerceirosId").prop("disabled", false);
     $("#TxtTerceirosId").val("");
     $("#TxtTerceirosNome").val("");
@@ -66,4 +73,27 @@ function limparInputs() {
     $("#TxtTerceirosUF").val("");
     $("#TxtTerceirosCEP").val("");
     $("#TxtTerceirosObservacao").val("");
+}
+
+function BuscarContas() {
+    var idUsuario = $("#IdUsuarioLogado").val();
+    var codicoCont = $("#TxtDespesasBuscaId").val();
+
+    $.ajax({
+        url: "/MenuUsuario/BuscarTerceiros",
+        method: "GET",
+        data: { id: idTerceiros },
+        success: function (data) {
+            if (data) {
+                preencherCampos(data);
+                console.log("asdasdasd.");
+                console.log(data);
+            } else {
+                console.log("Terceiros não encontrado no banco de dados.");
+            }
+        },
+        error: function () {
+            alert("Erro ao buscar Terceiros.");
+        }
+    });
 }
