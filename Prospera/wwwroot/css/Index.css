@@ -1,0 +1,422 @@
+
+li {
+    list-style: none;
+}
+
+a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
+    text-decoration: none;
+}
+
+
+input {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: var(--color-Fundo) !important;
+    /* background-color: black; */
+}
+
+:root {
+    --color-default: #7836FA;
+    --color-primary: #e64c30;
+    --color-segundary: #1B1572;
+    --color-tertiary: #801D7B;
+    --color-tertiary2: #fdf6f6;
+    --color-quartiary: #7836FA;
+    --color-quintiaty: #373435;
+    --color-Sextiary: #605F60;
+    --color-Fundo: #F4F2FF;
+    --color-RoxaCardMov: #8C52FF;
+    --color-BlueFont: #516CEC;
+    --color-BlueBotao: #38B6FF;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+a {
+    font-weight: 800 !important;
+}
+
+html {
+    position: relative;
+    /* min-height: 100%; */
+    font-family: 'Inter', sans-serif;
+}
+
+body:not(.MenusSelecao h4) {
+    font-size: 14px;
+}
+/* ICONES FUNDO */
+body img {
+    width: 200px;
+}
+
+.ImgIndex1 {
+    width: 300px;
+    position: absolute;
+    top: -11em;
+    left: -4em;
+}
+
+.ImgIndex2 {
+    position: absolute;
+    width: 360px;
+    margin-top: 2em;
+    right: -12em;
+}
+/* FIM ICONES FUNDO */
+
+/* REGION NAVBAR  */
+.MenuNav {
+    /* background-color: #7836FA; */
+    position: relative;
+    top: 0em;
+}
+
+.MenuVanInfContainer {
+    position: absolute;
+    width: 86%;
+    top: 2em;
+    left: 23rem;
+    display: flex;
+}
+
+    .MenuVanInfContainer a {
+        margin-right: 3em;
+        color: var(--color-Sextiary);
+        font-weight: 600;
+    }
+
+.LibtnLogin {
+    position: absolute;
+    background-color: var(--color-default) !important;
+    left: -8em;
+    width: 8em;
+    top: -.9em;
+    height: 3em;
+    border-radius: 6px;
+    transition: .3s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+    .LibtnLogin:hover {
+        border-radius: 0px;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+    .LibtnLogin a {
+        color: white;
+        padding: 13px 33px;
+        line-height: 2.8em;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+.LiperiodoGratis {
+    position: absolute;
+    background-color: white;
+    right: 15rem;
+    height: 3em;
+    width: 13em;
+    top: -1em;
+    border-radius: 6px;
+    transition: .3s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+    .LiperiodoGratis:hover {
+        border-radius: 0px;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+    .LiperiodoGratis a {
+        color: var(--color-BlueFont);
+        /* background-color: #605F60; */
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 3em;
+        line-height: 3em;
+    }
+
+/* FIM MENUNAV */
+
+
+/* INICO DIVINF PRINCIPAL */
+.ReginInfCentral {
+    position: relative;
+    top: 4em;
+    width: 100%;
+    height: 30rem;
+}
+
+.InfSobrePros img {
+    width: 650px;
+    position: absolute;
+    right: 12rem;
+    top: 0em;
+    transition: .3s;
+}
+
+    .InfSobrePros img:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+.InfSobrePros span {
+    font-size: 80px;
+    color: var(--color-quintiaty);
+    width: 60%;
+    position: absolute;
+    left: 3em;
+    top: .5em;
+    font-weight: 800 !important;
+}
+
+.InfSobrePros h4 {
+    font-size: 37px;
+    width: 10%;
+    position: absolute;
+    left: 6.8em;
+    top: 5em;
+    color: var(--color-default);
+    font-weight: 800;
+}
+
+.LibtnAproveitar {
+    position: absolute;
+    background-color: white;
+    left: 10.5rem;
+    margin-top: 5.8em;
+    height: 3.5em;
+    width: 17em;
+    border-radius: 6px;
+    transition: .3s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+    .LibtnAproveitar:hover {
+        border-radius: 0px;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+    .LibtnAproveitar a {
+        color: var(--color-BlueFont);
+        font-size: 18px;
+        padding: 14px 75px;
+        font-weight: 600;
+        line-height: 2.8em;
+    }
+
+/* FIM DIV PRINCIPAL */
+
+/* DIV CONTAINER APP  */
+.MeuInfApp-Container {
+    background-color: white;
+    position: relative;
+    top: 11em;
+    width: 60%;
+    height: 24em;
+    left: -1em;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.InfQrcode h1 {
+    color: var(--color-BlueFont);
+    position: absolute;
+    width: 70%;
+    font-size: 24px;
+    line-height: 4em;
+}
+
+.h4-1 {
+    color: var(--color-BlueFont);
+    position: absolute;
+    width: 70%;
+    font-size: 20px;
+    top: 1.3em;
+    line-height: 4em;
+}
+
+.h4-2 {
+    color: var(--color-BlueFont);
+    position: absolute;
+    width: 70%;
+    font-size: 20px;
+    bottom: 0;
+}
+
+.h4-3 {
+    color: var(--color-BlueFont);
+    position: absolute;
+    width: 70%;
+    font-size: 20px;
+    bottom: 5em;
+}
+
+.QrcodeIcon {
+    position: absolute;
+    right: 2em;
+    top: 2.8em;
+    width: 250px;
+}
+
+.MaoAppIcon {
+    position: absolute;
+    right: -35rem;
+    width: 650px;
+    top: -2.9em;
+    transition: .3s;
+}
+
+    .MaoAppIcon:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+/* FIM DIV CONTAINER APP */
+
+
+/* POSICAO FOOTER */
+/* 
+REGIAO EMAIL  */
+
+
+.RegionFooter {
+    background-color: white;
+    position: relative;
+    top: 40em;
+    left: -.6em;
+    height: 35em;
+    width: 100%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.CardInsiraEmails {
+    background-color: var(--color-RoxaCardMov);
+    position: relative;
+    top: -3em;
+    height: 12.5em;
+    width: 50%;
+    left: 20rem;
+    z-index: 99999;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.LitxtFooterEmail {
+    background-color: white;
+    height: 3em;
+    width: 30%;
+    border-radius: 12px;
+    position: absolute;
+    right: 9em;
+    top: 4em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+    .LitxtFooterEmail input {
+        background-color: white;
+        margin-left: .5em;
+        border-radius: 12px;
+        height: 3em;
+        width: 95%;
+        color: var(--color-Sextiary);
+    }
+
+.LibtnFooterEnviar {
+    position: absolute;
+    background-color: var(--color-BlueBotao);
+    height: 3.6em;
+    width: 10em;
+    right: 3em;
+    bottom: 5.2em;
+    border-radius: 12px;
+    transition: .3s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+    .LibtnFooterEnviar:hover {
+        border-radius: 0px;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+    .LibtnFooterEnviar a {
+        color: white;
+        margin: 0;
+        /* background-color: #373435; */
+        padding: 1em 3em;
+        line-height: 3.3em;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+.CardInsiraEmails h4:first-child {
+    position: absolute;
+    top: 2em;
+    font-size: 16px;
+    color: white;
+    left: 5em;
+}
+
+.LiCheckFooter {
+    color: white;
+    width: 36%;
+    position: absolute;
+    left: 8em;
+    top: 4.8em;
+    font-weight: 300;
+}
+
+#ChekFooterEmail {
+    position: absolute;
+    top: 1.4em;
+    left: -2em;
+}
+
+/* FIM REGIAO EMAIL */
+
+.Footer {
+    /* background-color: #516CEC; */
+    margin-left: 5em;
+    width: 30%;
+    display: flex;
+}
+
+    .Footer h2 {
+        font-size: 35px;
+        margin-top: 1em;
+        margin-left: 1em;
+        color: var(--color-RoxaCardMov);
+    }
+
+    .Footer img {
+        rotate: (1.1);
+        width: 20%;
+        animation: rotate 5s linear infinite;
+    }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* FIM FOOTER */

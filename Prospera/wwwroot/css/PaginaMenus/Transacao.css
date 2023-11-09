@@ -1,0 +1,240 @@
+html {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-Sextiary);
+
+}
+button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: var(--color-Fundo) !important;
+    /* background-color: black; */
+}
+
+:root {
+    --color-default: #242424;
+    --color-primary: #e64c30;
+    --color-segundary: #1B1572;
+    --color-tertiary: #801D7B;
+    --color-tertiary2: #fdf6f6;
+    --color-quartiary: #7836FA;
+    --color-quintiaty: #373435;
+    --color-Sextiary: #605F60;
+    --color-Fundo: #F4F2FF;
+    --color-RoxaCardMov: #8C52FF;
+}
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+
+body:not(.MenusSelecao h4) {
+    font-size: 14px;
+
+
+}
+
+.HeadMenuTerceirosTransacao {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 3.5em;
+    left: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.HeadMenuTerceirosTransacao h4 {
+    color: var(--color-Sextiary);
+    text-align: left;
+    padding-left: 1em;
+}
+.HeadTransacaoContainer{
+        /* background-color: blue; */
+        width: 100%;
+        z-index: 9999;
+        position: relative;
+        height: 3em;
+        display: flex;
+       
+}
+.HeadTransacaoContainer h4{
+   margin-left: 8em;
+   color: var(--color-Sextiary);
+}
+/*#region h4 Head*/
+.TransacaoHead1{
+    position: absolute;
+    left: -2.3em;
+}
+.TransacaoHead2{
+    position: absolute;
+    left: 7.5rem;
+}
+.TransacaoHead3{
+    position: absolute;
+    left: 16.2rem;
+}
+.TransacaoHead4{
+    position: absolute;
+    left: 24.3rem;
+}
+.TransacaoHead5{
+    position: absolute;
+    left: 32rem;
+}
+.TransacaoHead6{
+    position: absolute;
+    right: 26.2em;
+}
+.TransacaoHead7{
+    position: absolute;
+    right: 6.7em;
+}
+.TransacaoHead8{
+    position: absolute;
+    right: 2em;
+}
+
+/*#endregion*/
+
+.TerceirosContainerTransacao {
+    height: 93%;
+    width: 84%;
+    top: 1em;
+}
+
+#FundoMenusTransacaoConsult:not(.Container) {
+    /* display: none; */
+    background-color: white;
+    width: 98%;
+    left: 0;
+    top: -1em;
+    height: 100%;
+    z-index: 99999;
+    transition: .7s;
+    position: absolute;
+    /* Certifique-se de que outros elementos dentro da div não sejam afetados */
+    backdrop-filter: blur(20px);
+    /* Ajuste o valor para o desfoque desejado */
+    /* opacity: 0.5; */
+    background-color: rgba(195, 191, 191, 0.5);
+    /* Cor vermelha com 50% de transparência */
+    
+}
+
+.TxtInfTerceirosTransacao {
+    /* background-color: red; */
+    position: absolute;
+    width: 99%;
+    height: 92%;
+    display: flex;
+    left: .3em;
+    top: 4em;
+    /* background-color: #605F60; */
+}
+
+.TxtInfTerceirosTransacao button:hover {
+    border-radius: 0px;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.TtxTransacaoContainer input {
+    margin-left: .1em;
+    width: 21.9vh;
+    margin-top: .5em;
+   border: none; 
+    /* background-color: #242424; */
+    outline: none; 
+    text-align: center;
+}
+.TtxTransacaoContainer{
+    background-color: white;
+    width:97%;
+    top: 5em;
+    height: 2.5em;
+    left: 2em;
+    position: absolute;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+    
+}
+#TxtTransacaoID{
+    width: 4%;
+}
+/* .TxtInfTerceirosConsult button {
+    /* border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 20em;
+    margin-bottom: -0.5em;
+    height: 3em;
+    margin-left: .3em;
+    margin-top: 3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .3s; 
+    
+
+} */
+
+
+#BtnTransacaoVoltarConsult {
+    background-color: white;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    width: 9%;
+    height: 4%;
+    z-index: 99999;
+    color: white;
+    color: var(--color-Sextiary);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: .3s;
+}
+#BtnTransacaoVoltarConsult:hover {
+ transform: scale(1.1);
+ border-radius: 0px;
+ transition: .3s;
+}
+
+.HeadTransacaoContainer  h4 {
+    padding-bottom: 2em;
+    margin-right: 2em;
+color: var(--color-Sextiary);
+
+
+}
+
