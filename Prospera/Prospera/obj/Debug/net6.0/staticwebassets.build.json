@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "Na0zicaLaa0w1QHGSf4LpG81Sa5hxPRCEb0gr9d2aa0=",
+=======
+  "Hash": "5fhqid4kLB0wdaMPjJhxOLgsytRJ4maHS3F31p2FgvI=",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
   "Source": "Prospera",
   "BasePath": "_content/Prospera",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "Prospera\\wwwroot",
       "Source": "Prospera",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Prospera.styles.css",
       "SourceId": "Prospera",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Prospera.styles.css",
+      "SourceId": "Prospera",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "Prospera.styles.css",
       "AssetKind": "All",
@@ -31,6 +46,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Prospera.styles.css"
     },
     {
@@ -38,6 +54,15 @@
       "SourceId": "Prospera",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Prospera.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Prospera.bundle.scp.css",
+      "SourceId": "Prospera",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "Prospera.bundle.scp.css",
       "AssetKind": "All",
@@ -48,6 +73,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Prospera.bundle.scp.css"
     },
     {
@@ -55,6 +81,15 @@
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Prospera.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\Cadastrar.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/Cadastrar.css",
       "AssetKind": "All",
@@ -68,10 +103,17 @@
       "OriginalItemSpec": "wwwroot\\css\\Cadastrar.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\Index.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\Index.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/Index.css",
       "AssetKind": "All",
@@ -85,10 +127,17 @@
       "OriginalItemSpec": "wwwroot\\css\\Index.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaInicial.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaInicial.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaInicial.css",
       "AssetKind": "All",
@@ -102,10 +151,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaInicial.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ConsultaTerceiros.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ConsultaTerceiros.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/ConsultaTerceiros.css",
       "AssetKind": "All",
@@ -119,10 +175,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\ConsultaTerceiros.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ContaBancaria.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ContaBancaria.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/ContaBancaria.css",
       "AssetKind": "All",
@@ -136,10 +199,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\ContaBancaria.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Despesas.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Despesas.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/Despesas.css",
       "AssetKind": "All",
@@ -153,10 +223,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Despesas.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Receitas.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Receitas.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/Receitas.css",
       "AssetKind": "All",
@@ -170,10 +247,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Receitas.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Terceiros.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Terceiros.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/Terceiros.css",
       "AssetKind": "All",
@@ -187,10 +271,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Terceiros.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Transacao.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Transacao.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/PaginaMenus/Transacao.css",
       "AssetKind": "All",
@@ -204,10 +295,17 @@
       "OriginalItemSpec": "wwwroot\\css\\PaginaMenus\\Transacao.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\site.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\css\\site.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -221,10 +319,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\favicon.ico",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\favicon.ico",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -238,10 +343,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\CadastrarBanner.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\CadastrarBanner.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Cadastrar/CadastrarBanner.png",
       "AssetKind": "All",
@@ -255,10 +367,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Cadastrar\\CadastrarBanner.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconCPF.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconCPF.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Cadastrar/IconCPF.png",
       "AssetKind": "All",
@@ -272,10 +391,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Cadastrar\\IconCPF.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconEmail.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconEmail.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Cadastrar/IconEmail.png",
       "AssetKind": "All",
@@ -289,10 +415,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Cadastrar\\IconEmail.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconNome.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconNome.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Cadastrar/IconNome.png",
       "AssetKind": "All",
@@ -306,10 +439,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Cadastrar\\IconNome.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconSenha.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconSenha.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Cadastrar/IconSenha.png",
       "AssetKind": "All",
@@ -323,10 +463,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Cadastrar\\IconSenha.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Favicon.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Favicon.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Favicon.png",
       "AssetKind": "All",
@@ -340,10 +487,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Favicon.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\EstiloBolinha1.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\EstiloBolinha1.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Index/EstiloBolinha1.png",
       "AssetKind": "All",
@@ -357,10 +511,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Index\\EstiloBolinha1.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeMaoCel.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeMaoCel.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Index/IconeMaoCel.png",
       "AssetKind": "All",
@@ -374,10 +535,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Index\\IconeMaoCel.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\iconePrincipalInf.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\iconePrincipalInf.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Index/iconePrincipalInf.png",
       "AssetKind": "All",
@@ -391,10 +559,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Index\\iconePrincipalInf.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeQrCode.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeQrCode.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Index/IconeQrCode.png",
       "AssetKind": "All",
@@ -408,10 +583,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Index\\IconeQrCode.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconeLogin.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconeLogin.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Login/IconeLogin.png",
       "AssetKind": "All",
@@ -425,10 +607,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Login\\IconeLogin.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconLogin.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconLogin.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Login/IconLogin.png",
       "AssetKind": "All",
@@ -442,10 +631,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Login\\IconLogin.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconSenha.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconSenha.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Login/IconSenha.png",
       "AssetKind": "All",
@@ -459,10 +655,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Login\\IconSenha.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\Lateral.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\Lateral.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Login/Lateral.png",
       "AssetKind": "All",
@@ -476,10 +679,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Login\\Lateral.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\LoginBanner.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\Login\\LoginBanner.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/Login/LoginBanner.png",
       "AssetKind": "All",
@@ -493,10 +703,17 @@
       "OriginalItemSpec": "wwwroot\\img\\Login\\LoginBanner.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\Design sem nome (3).zip",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\Design sem nome (3).zip",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardCotBanc/Design sem nome (3).zip",
       "AssetKind": "All",
@@ -510,10 +727,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardCotBanc\\Design sem nome (3).zip"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeBradesco.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeBradesco.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardCotBanc/IconeBradesco.png",
       "AssetKind": "All",
@@ -527,10 +751,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeBradesco.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeInter.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeInter.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardCotBanc/IconeInter.png",
       "AssetKind": "All",
@@ -544,10 +775,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeInter.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeItau.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeItau.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardCotBanc/IconeItau.png",
       "AssetKind": "All",
@@ -561,10 +799,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeItau.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\ImgMundoCotação.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\ImgMundoCotação.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardCotBanc/ImgMundoCotação.png",
       "AssetKind": "All",
@@ -578,10 +823,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardCotBanc\\ImgMundoCotação.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (1).zip",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (1).zip",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardMov/Design sem nome (1).zip",
       "AssetKind": "All",
@@ -595,10 +847,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (1).zip"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (2).zip",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (2).zip",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardMov/Design sem nome (2).zip",
       "AssetKind": "All",
@@ -612,10 +871,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (2).zip"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov1.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov1.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardMov/LogoCardMov1.png",
       "AssetKind": "All",
@@ -629,10 +895,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov1.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov2.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov2.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardMov/LogoCardMov2.png",
       "AssetKind": "All",
@@ -646,10 +919,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov2.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov3.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov3.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/CardMov/LogoCardMov3.png",
       "AssetKind": "All",
@@ -663,10 +943,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov3.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Ajuda.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Ajuda.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Ajuda.png",
       "AssetKind": "All",
@@ -680,10 +967,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Ajuda.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\ContasBancaria.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\ContasBancaria.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/ContasBancaria.png",
       "AssetKind": "All",
@@ -697,10 +991,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\ContasBancaria.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Design sem nome.zip",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Design sem nome.zip",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Design sem nome.zip",
       "AssetKind": "All",
@@ -714,10 +1015,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Design sem nome.zip"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Devedor_Pagador.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Devedor_Pagador.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Devedor_Pagador.png",
       "AssetKind": "All",
@@ -731,10 +1039,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Devedor_Pagador.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IconeUsuario.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IconeUsuario.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/IconeUsuario.png",
       "AssetKind": "All",
@@ -748,10 +1063,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\IconeUsuario.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IDespesas.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IDespesas.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/IDespesas.png",
       "AssetKind": "All",
@@ -765,10 +1087,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\IDespesas.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Logo.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Logo.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Logo.png",
       "AssetKind": "All",
@@ -782,10 +1111,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Logo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Metas.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Metas.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Metas.png",
       "AssetKind": "All",
@@ -799,10 +1135,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Metas.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Orcamento.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Orcamento.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Orcamento.png",
       "AssetKind": "All",
@@ -816,10 +1159,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Orcamento.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcode.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcode.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Qrcode.png",
       "AssetKind": "All",
@@ -833,10 +1183,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Qrcode.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcodeold.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcodeold.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Qrcodeold.png",
       "AssetKind": "All",
@@ -850,10 +1207,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Qrcodeold.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Receitas.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Receitas.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Receitas.png",
       "AssetKind": "All",
@@ -867,10 +1231,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Receitas.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Transacoes.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Transacoes.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/Menu/Transacoes.png",
       "AssetKind": "All",
@@ -884,10 +1255,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\Menu\\Transacoes.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\MenuHamburger.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\MenuHamburger.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/MenuHamburger.png",
       "AssetKind": "All",
@@ -901,10 +1279,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\MenuHamburger.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeBradesco.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeBradesco.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeBradesco.png",
       "AssetKind": "All",
@@ -918,10 +1303,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeBradesco.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeInter.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeInter.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeInter.png",
       "AssetKind": "All",
@@ -935,10 +1327,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeInter.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeItau.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeItau.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/PaginaAuxiliar/ContaBanc/IconeItau.png",
       "AssetKind": "All",
@@ -952,10 +1351,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeItau.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\Receitas\\IconCarregamento.png",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\Receitas\\IconCarregamento.png",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "img/PaginaInicial/PaginaAuxiliar/Receitas/IconCarregamento.png",
       "AssetKind": "All",
@@ -969,10 +1375,17 @@
       "OriginalItemSpec": "wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\Receitas\\IconCarregamento.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\Buscar.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\Buscar.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "js/Buscar.js",
       "AssetKind": "All",
@@ -986,10 +1399,17 @@
       "OriginalItemSpec": "wwwroot\\js\\Buscar.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\Exibicoes.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\Exibicoes.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "js/Exibicoes.js",
       "AssetKind": "All",
@@ -1003,10 +1423,17 @@
       "OriginalItemSpec": "wwwroot\\js\\Exibicoes.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\login.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\login.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "js/login.js",
       "AssetKind": "All",
@@ -1020,10 +1447,17 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\PaginaInicial.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\PaginaInicial.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "js/PaginaInicial.js",
       "AssetKind": "All",
@@ -1037,10 +1471,17 @@
       "OriginalItemSpec": "wwwroot\\js\\PaginaInicial.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\site.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\js\\site.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1054,10 +1495,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1071,10 +1519,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1088,10 +1543,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1105,10 +1567,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1122,10 +1591,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1139,10 +1615,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1156,10 +1639,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1173,10 +1663,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1190,10 +1687,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1207,10 +1711,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1224,10 +1735,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1241,10 +1759,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1258,10 +1783,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1275,10 +1807,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1292,10 +1831,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1309,10 +1855,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1326,10 +1879,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1343,10 +1903,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1360,10 +1927,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1377,10 +1951,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1394,10 +1975,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1411,10 +1999,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1428,10 +2023,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1445,10 +2047,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1462,10 +2071,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1479,10 +2095,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1496,10 +2119,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1513,10 +2143,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1530,10 +2167,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1547,10 +2191,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1564,10 +2215,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1581,10 +2239,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1598,10 +2263,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1615,10 +2287,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1632,10 +2311,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1649,10 +2335,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1666,10 +2359,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1683,10 +2383,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1700,10 +2407,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1717,10 +2431,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1734,10 +2455,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1751,10 +2479,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1768,10 +2503,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1785,10 +2527,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1802,10 +2551,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1819,10 +2575,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1836,10 +2599,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1853,10 +2623,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1870,10 +2647,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1887,10 +2671,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1904,10 +2695,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1921,10 +2719,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1938,10 +2743,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1955,10 +2767,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1972,10 +2791,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1989,10 +2815,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2006,10 +2839,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Prospera",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\silas.ssilva7\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Prospera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edimilson.rsilva\\source\\repos\\Prospera\\Prospera\\Prospera\\wwwroot\\",
+>>>>>>> 26a3ffe75398d3ce432b7f4205e7f16375e1127e
       "BasePath": "_content/Prospera",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
