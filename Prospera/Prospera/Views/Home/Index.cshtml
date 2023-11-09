@@ -2,11 +2,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a asp-area="" asp-controller="Home" asp-action="Privacy">Teeeeeeeeeeeeeeeeeeeeeeeste</a>
-</div>
 <head>
 <link rel="stylesheet" href="/css/Index.css">
 <!-- Fonte inter -->
@@ -28,7 +23,7 @@
      <div class="MenuNav container">
 
        <ul class="MenuVanInfContainer">
-             <li class="LibtnLogin"><a asp-controller="Login" asp-action="Login" id="BtnLogin">LOGIN</a></li> 
+             <li class="LibtnLogin"><a asp-controller="Login" asp-action="Login">LOGIN</a></li> 
              <a href="#">About</a>
              <a href="#">Serviços</a>
               <a href="#">Contate-nos</a>
@@ -44,10 +39,10 @@
         </li>
                      <ul class="InfSobrePros">
                     
-                            <h2></h2>
-                            <h4></h4>
+                            <span>Seu Futuro Financeiro Começa Aqui!!</span>
+                            <h4>PROSPERA</h4>
                        
-                        <li><a href="#" id="BtnAproveitar">Aproveitar</a></li>
+                        <li class="LibtnAproveitar"><a asp-controller="Cadastro" asp-action="Cadastro" id="BtnAproveitar">Aproveitar</a>
                        <li class="LinkSite">
                          <a href="">Invistajá.com.br</a>
                        </li>
@@ -59,17 +54,18 @@
    <ul class="MeuInfApp-Container">
         <li class="InfQrcode">
             <h2>
-              Gerencie as suas contas
-de uma maneia fácil e rapida
+              Gerencie as suas Contas
+de uma Maneira fácil e Rapido.
             </h2>
-            <h4>
+            <h4 class="h4-1">
 Saiba mais sobre o nosso aplicativo
             </h4>
-            <h4>
+            <h4 class="h4-2">
 Coloque a câmera encima do Qrcode 
 e acompanhe as novidades de perto
             </h4>
-            <img src="/img/Index/IconeMaoCel.png">
+               <img src="/img/Index/IconeQrCode.png" class="QrcodeIcon">
+            <img src="/img/Index/IconeMaoCel.png" class="MaoAppIcon">
     
         </li class="TextoInfApp">
          <h4>Tenha em mãos as melhores ferramentas e os melhores métodos.
@@ -77,50 +73,9 @@ Aprenda a gerenciar melhores seu dinheiro
 com o nosso aplicativo você sempre estará em vantagem</h4>
    </ul>
      </div>
-</body>
+     
 <script src="/js/PaginaInicial.js"></script>
 
-@* Botão para a página Index de ContaBancaria *@
-<a asp-controller="ContaBancaria" asp-action="Index" class="btn btn-primary">Ir para ContaBancaria</a>
+</body>
 
-@* Botão para a página Index de Contas *@
-<a asp-controller="Contas" asp-action="Index" class="btn btn-primary">Ir para Contas</a>
 
-@* Botão para a página Index de Extratos *@
-<a asp-controller="Extrato" asp-action="Index" class="btn btn-primary">Ir para Extratos</a>
-
-@* Botão para a página Index de terceiros *@
-<a asp-controller="Terceiros" asp-action="Index" class="btn btn-primary">Ir para terceiros</a>
-
-@* Botão para a página Index de Usuário *@
-<a asp-controller="Usuario" asp-action="Index" class="btn btn-primary">Ir para Usuário</a>
-
-@* Botão para a página Index de Usuário *@
-<a asp-controller="Home" asp-action="MenuUsuario" class="btn btn-primary">Ir para a tela inicial do usuário</a>
-
-<style>
-    #BtnInicio{
-        background-color: var(--color-tertiary);
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        position: relative;
-        top: 0.6em;
-        border-radius: 20px;
-        transition: .5s;
-        font-weight: 600;
-        color: white;
-        padding: 10px;
-    }
-</style>
-
-@* Botão para a página Login de Usuario *@
-
-@* Botão para a página Cadastro de Usuario *@
-<a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInicio" class="btn btn-primary">Cadastro</a>
-
-@* Botão para a página Usuários cadastrados*@
-<a asp-controller="Usuario" asp-action="Index" id="BtnInicio" class="btn btn-primary">Usuários cadastrados</a>
-
-@* Botão para a página de ViewsComponents cadastrados*@
-<a asp-controller="Home" asp-action="VariasExibicoes" id="BtnInicio" class="btn btn-primary">ViewComponents</a>

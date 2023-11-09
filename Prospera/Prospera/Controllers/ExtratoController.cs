@@ -31,12 +31,6 @@ namespace Prospera.Controllers
             return View(await prosperaContext.ToListAsync());
         }
 
-        public async Task<IActionResult> ConsultaExtrato()
-        {
-            var prosperaContext = _context.Extrato.Include(e => e.Usuario);
-            return View(await prosperaContext.ToListAsync());
-        }
-
         // GET: Extrato/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -177,7 +171,7 @@ namespace Prospera.Controllers
         }
 
 
-        public IActionResult ConsultaExtratoUsuario()
+        public IActionResult ConsultaExtrato()
         {
             var usuarioLogado = _sessao.BuscarSessaoUsuario();
             //Verifica Sessão de usuário
