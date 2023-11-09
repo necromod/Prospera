@@ -1,14 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Prospera";
 }
 
 <head>
-<link rel="stylesheet" href="/css/Index.css">
 <!-- Fonte inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"rel="stylesheet">
+ <link rel="stylesheet" href="/css/Index.css">
 </head>
 
 @* MODELO PARA INSERSÇÃO DE LINK PARA PÁGINAS DIFERENTES!
@@ -46,34 +45,63 @@
                        <li class="LinkSite">
                          <a href="">Invistajá.com.br</a>
                        </li>
-                       <img src="~/img/Index/iconePrincipalInf.png">
+                       <img src="~/img/Index/iconePrincipalInf.png" id="ImgPrincipal">
                      </ul>
-
+        
      </div>
-     <div class="RegionMeioInf">
-   <ul class="MeuInfApp-Container">
+<div class="RegionMeioInf">
+    <ul class="MeuInfApp-Container">
         <li class="InfQrcode">
-            <h2>
-              Gerencie as suas Contas
-de uma Maneira fácil e Rapido.
-            </h2>
-            <h4 class="h4-1">
-Saiba mais sobre o nosso aplicativo
-            </h4>
-            <h4 class="h4-2">
-Coloque a câmera encima do Qrcode 
-e acompanhe as novidades de perto
-            </h4>
-               <img src="/img/Index/IconeQrCode.png" class="QrcodeIcon">
+            <h1>Gerencie as suas Contas de uma Maneira fácil e Rápida.</h1>
+            <h4 class="h4-1">Saiba mais sobre o nosso aplicativo</h4>
+            <h4 class="h4-2">Coloque a câmera em cima do Qrcode e acompanhe as novidades de perto</h4>
+            <img src="/img/Index/IconeQrCode.png" class="QrcodeIcon">
             <img src="/img/Index/IconeMaoCel.png" class="MaoAppIcon">
-    
-        </li class="TextoInfApp">
-         <h4>Tenha em mãos as melhores ferramentas e os melhores métodos.
-Aprenda a gerenciar melhores seu dinheiro
-com o nosso aplicativo você sempre estará em vantagem</h4>
-   </ul>
-     </div>
-     
+        </li>
+        <li class="TextoInfApp">
+            <h4 class="h4-3">Tenha em mãos as melhores ferramentas e os melhores métodos.
+                Aprenda a gerenciar melhor o seu dinheiro. Com o nosso aplicativo, você sempre estará em vantagem.
+            </h4>
+        </li>
+        
+    </ul>
+</div>
+
+ <div class="RegionFooter"> 
+      <ul class="CardInsiraEmails" >
+            <h4>Coloque o seu e-mail e acompanhe as novidades</h4>
+            <li class="LiCheckFooter"><input type="checkbox" name="" id="ChekFooterEmail"><h4>Aceito Receber e-mails sobre promoções e planos</h4></li>
+            <li class="LitxtFooterEmail"><input type="Email" autocomplete="off" id="TxtFooterEmail" placeholder="Email:"></li>
+            <li class="LibtnFooterEnviar"><a href="">Enviar</a></li>
+           
+      </ul>
+       <ul class="Footer" >
+     <img src="/img/Favicon.png" class="LogoFooter">
+     <h2>PROSPERA</h2>
+      </ul>
+      <ul class="InfoFooter">
+          <li class="LiCabecalhoFooter">
+            <h4>Navegação</h4>
+            <h4>Contatos</h4>
+            </li>
+            <li class="LibtnFooter">
+                <a asp-controller="" asp-action="" id="BtnFooterHome">Home</a>
+                <a asp-controller="" asp-action="" id="BtnFooterLogin">Login</a>
+                <a asp-controller="" asp-action="" id="BtnFooterAjuda">Ajuda</a>
+            </li>
+            <li class="LiContatoFooter">
+                <li claclass="ImgFooter">
+                <img src="" class="ImgFooterOutlook">
+                <img src="" class="ImgFooterTwitter">
+                <img src="" class="ImgFooterInstagram">
+                <img src="" class="ImgFooterLinkedin">
+                </li>
+            <h4 class="H4Linkedin"></h4>
+            <h4 class="H4Twiter"></h4>
+            <h4 class="H4Instagram"></h4>
+            <h4 class ="H4Outlook"></h4>
+      </ul>
+</div> 
 <script src="/js/PaginaInicial.js"></script>
 
 </body>

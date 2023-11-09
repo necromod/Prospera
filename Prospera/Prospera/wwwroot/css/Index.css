@@ -11,6 +11,9 @@ a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
 
 input {
   font-family: 'Inter', sans-serif;
+  border: none;
+  outline: none;
+  
 
 }
 
@@ -31,15 +34,18 @@ body {
   --color-Fundo: #F4F2FF;
   --color-RoxaCardMov:#8C52FF;
   --color-BlueFont:#516CEC;
+  --color-BlueBotao:#38B6FF;
   overflow-x: hidden;
   overflow-y: scroll; 
   scroll-behavior: smooth;
 }
-
+a{
+  font-weight: 800!important;
+}
 
 html {
   position: relative;
-  min-height: 100%;
+  /* min-height: 100%; */
   font-family: 'Inter', sans-serif;
 
 }
@@ -149,8 +155,14 @@ line-height: 3em;
   position: absolute;
   right: 12rem;
   top: 0em;
+  transition: .3s;
+    
 }
-
+.InfSobrePros img:hover{
+  transform: scale(1.1);
+  transition: .3s;
+    
+  }
 .InfSobrePros span{
   font-size: 80px;
   color: var(--color-quintiaty);
@@ -209,31 +221,40 @@ margin-top: 5.8em;
   left: -1em;
   border-radius: 10px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+
  
 }
 
-.InfQrcode h2{
+
+.InfQrcode h1{
   color: var(--color-BlueFont);
   position: absolute;
   width: 70%;
   font-size: 24px;
   line-height: 4em;
-  font-weight: 800;
 }
-.InfQrcode h4{
+.h4-1{
   color: var(--color-BlueFont);
   position: absolute;
   width: 70%;
   font-size: 20px;
-  top: 5em;
+  top: 1.3em;
   line-height: 4em;
 }
-.h4-1{
+.h4-2{
+  color: var(--color-BlueFont);
   position: absolute;
-  bottom: 0;
-  top: 0;
+  width: 70%;
+  font-size: 20px;
+bottom: 0;
 }
-
+.h4-3{
+  color: var(--color-BlueFont);
+  position: absolute;
+  width: 70%;
+  font-size: 20px;
+bottom: 5em;
+}
 .QrcodeIcon{
   position: absolute;
   right: 2em;
@@ -246,6 +267,140 @@ margin-top: 5.8em;
   right: -35rem;
   width: 650px;
   top: -2.9em;
+  transition: .3s;
+  
+}
+.MaoAppIcon:hover{
+transform: scale(1.1);
+transition: .3s;
   
 }
 /* FIM DIV CONTAINER APP */
+
+
+/* POSICAO FOOTER */
+/* 
+REGIAO EMAIL  */
+
+
+.RegionFooter{
+  background-color: white;
+  position: relative;
+  top: 40em;
+  left: -.6em;
+  height: 35em;
+  width: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.CardInsiraEmails{
+  background-color: var(--color-RoxaCardMov);
+  position:relative;
+  top: -3em;
+  height: 12.5em;
+  width: 50%;
+left: 20rem;
+  z-index: 99999;
+ border-radius: 15px;
+ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.LitxtFooterEmail{
+  background-color: white;
+height: 3em;
+width: 30%;
+border-radius: 12px;
+position: absolute;
+right: 9em;
+top: 4em;
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.LitxtFooterEmail input{
+  background-color: white;
+  margin-left: .5em;
+  border-radius: 12px;
+  height: 3em;
+width: 95%;
+color: var(--color-Sextiary);
+}
+.LibtnFooterEnviar{
+  position: absolute;
+  background-color: var(--color-BlueBotao);
+  height: 3.6em;
+  width: 10em;
+  right: 3em;
+  bottom: 5.2em;
+  border-radius: 12px;
+  transition: .3s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+}
+.LibtnFooterEnviar:hover{
+  border-radius: 0px;
+  transform: scale(1.1);
+  transition: .3s;
+}
+.LibtnFooterEnviar a{
+ color: white;
+ margin: 0;
+ /* background-color: #373435; */
+ padding: 1em 3em;
+line-height: 3.3em;
+font-size: 16px;
+border-radius: 12px;
+}
+.CardInsiraEmails h4:first-child{
+  position: absolute;
+  top: 2em;
+  font-size: 16px;
+  color: white;
+  left: 5em;
+}
+.LiCheckFooter{
+ color: white;
+  width: 36%;
+  position: absolute;
+  left: 8em;
+  top: 4.8em;
+  font-weight: 300;
+}
+#ChekFooterEmail{
+
+  position: absolute;
+  top: 1.4em;
+  left: -2em;
+}
+
+/* FIM REGIAO EMAIL */
+
+.Footer{
+/* background-color: #516CEC; */
+margin-left: 5em;
+width: 30%;
+display: flex;
+}
+
+.Footer h2{
+   font-size: 35px;
+   margin-top: 1em;
+   margin-left: 1em;
+   color: var(--color-RoxaCardMov);
+  }
+.Footer img{
+ rotate: (1.1);
+  width: 20%;
+  animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* FIM FOOTER */

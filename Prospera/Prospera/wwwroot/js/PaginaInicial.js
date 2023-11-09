@@ -441,4 +441,8 @@ document.addEventListener('DOMContentLoaded', function () {
           });
   }
 });
-
+ // Função para aplicar a classe de animação quando a página é carregada
+window.onload = function() {
+  var imagem = document.getElementById('ImgPrincipal');
+  imagem.classList.add('InfSobrePros img:hover');
+}
