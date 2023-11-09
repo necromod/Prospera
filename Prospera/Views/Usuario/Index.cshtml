@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Prospera.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    #BtnInicio {
+        background-color: var(--color-tertiary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+        top: 0.6em;
+        border-radius: 20px;
+        transition: .5s;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<h1>Index</h1>
+
+@* Botão para a página Login de Usuario *@
+<a asp-controller="Home" asp-action="Index" id="BtnInicio" class="btn btn-primary">Página inicial</a>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SenhaUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CargoUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatCadastroUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatUltimoAcesUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenhaUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CargoUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatCadastroUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatUltimoAcesUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdUsuario">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdUsuario">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdUsuario">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
