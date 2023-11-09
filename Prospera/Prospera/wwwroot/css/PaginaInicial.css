@@ -3,7 +3,10 @@ html {
     font-family: 'Inter', sans-serif;
     overflow: hidden;
 }
-
+a:hover{
+    border-radius: 0px;
+    transform: scale(1.1);
+}
 ul,
 li {
     list-style: none;
