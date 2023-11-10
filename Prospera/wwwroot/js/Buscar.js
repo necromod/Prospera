@@ -1,4 +1,10 @@
 ﻿$(document).ready(function () {
+    $("#BtnDespesasConsultar").click(function () {
+        BuscarContas();
+    });
+});
+
+/*$(document).ready(function () {
     $("#BtnTerceirosBuscar").click(function () {
         buscarTerceiros();
     });
@@ -14,7 +20,7 @@
         limparInputs();
     });
 
-});
+});*/
 
 var idTerceirosTemp;
 
@@ -56,7 +62,7 @@ function preencherCampos(terceiros) {
     idTerceirosTemp = terceiros.idTerceiros;
 
     // Bloqueia o input ID
-    $("#TxtTerceirosEmail").prop("readonly", true);
+    $("#TxtTerceirosId").prop("readonly", true);
 
 }
 
@@ -76,13 +82,12 @@ function limparTerceiros() {
 }
 
 function BuscarContas() {
-    var idUsuario = $("#IdUsuarioLogado").val();
-    var codicoCont = $("#TxtDespesasBuscaId").val();
+    var CodigoCont = $("#TxtDespesasBuscaId").val();
 
     $.ajax({
-        url: "/MenuUsuario/BuscarTerceiros",
+        url: "/Contas/BuscarContas",
         method: "GET",
-        data: { id: idTerceiros },
+        data: { id: CodigoCont },
         success: function (data) {
             if (data) {
                 preencherCampos(data);
