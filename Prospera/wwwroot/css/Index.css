@@ -68,6 +68,12 @@ body img {
     margin-top: 2em;
     right: -12em;
 }
+.ImgIndex3{
+    position: absolute;
+    top: 39em;
+    width: 360px;
+    left: -.8em;
+}
 /* FIM ICONES FUNDO */
 
 /* REGION NAVBAR  */
@@ -193,7 +199,7 @@ body img {
     position: absolute;
     background-color: white;
     left: 10.5rem;
-    margin-top: 5.8em;
+    margin-top: 22em;
     height: 3.5em;
     width: 17em;
     border-radius: 6px;
@@ -215,7 +221,23 @@ body img {
         font-weight: 600;
         line-height: 2.8em;
     }
-
+.LinkSite{
+    position: absolute;
+    background-color: white;
+    right: 8em;
+  top: 1em;
+    height: 3.5em;
+    width: 15em;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  
+}
+.LinkSite a{
+    font-size: 15px;
+    margin-left: 3em;
+    line-height: 3em;
+    color: var(--color-BlueFont);
+}
 /* FIM DIV PRINCIPAL */
 
 /* DIV CONTAINER APP  */
@@ -240,7 +262,7 @@ body img {
 }
 
 .h4-1 {
-    color: var(--color-BlueFont);
+    color: var(--color-Sextiary);
     position: absolute;
     width: 70%;
     font-size: 20px;
@@ -249,7 +271,7 @@ body img {
 }
 
 .h4-2 {
-    color: var(--color-BlueFont);
+    color: var(--color-Sextiary);
     position: absolute;
     width: 70%;
     font-size: 20px;
@@ -257,7 +279,7 @@ body img {
 }
 
 .h4-3 {
-    color: var(--color-BlueFont);
+    color: var(--color-Sextiary);
     position: absolute;
     width: 70%;
     font-size: 20px;
@@ -306,7 +328,7 @@ REGIAO EMAIL  */
 .CardInsiraEmails {
     background-color: var(--color-RoxaCardMov);
     position: relative;
-    top: -3em;
+    top: -5em;
     height: 12.5em;
     width: 50%;
     left: 20rem;
@@ -409,14 +431,75 @@ REGIAO EMAIL  */
         animation: rotate 5s linear infinite;
     }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(360deg);
-    }
+
+.ImgFooter img{
+width: 30px;
+margin-bottom: 1em;
+}
+.LiCabecalhoFooter{
+    background-color: var(--color-RoxaCardMov);
+    width: 35.7%;
+    display: flex;
+    position: absolute;
+    left: 35em;
+    bottom: 18.8em;
+    justify-content: space-around;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.LiCabecalhoFooter h4{
+   margin-left: 1em;
+   font-size: 16px;
+   color: white;
+   
+}
+.LibtnFooter{
+    background-color: white;
+    width: 35%;
+    height: 14em;
+    position: absolute;
+    left: 35.5em;
+    bottom: 4.8em;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.LibtnFooter a{
+   color: var(--color-Sextiary);
+   font-size: 18px;
+   margin-top: 1em;
+   margin-left: 8em;
+   width: 12%;
+}
+.ImgFooter{
+
+    width: 3%;
+    position: absolute;
+    left: 69em;
+    bottom: 5.5em;
+    display: flex;
+    flex-direction: column;
+}
+.H4footer{
+    width: 6%;
+    position: absolute;
+    left:  72.5em;
+    bottom: 5em;
+    color: var(--color-Sextiary);
+}
+.H4footer h4{
+    margin-bottom: 2em;
+}
+.LibtnFooter h4{
+    font-size: 12px;
+    width: 80%;
+    margin-left: 2.5em;
+    margin-top: 3em;
+    color: var(--color-Sextiary);
 }
 
 /* FIM FOOTER */
