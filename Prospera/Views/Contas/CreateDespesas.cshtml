@@ -62,7 +62,6 @@
                     <input type="text" asp-for="CodigoCont" placeholder="Código da conta" id="TxtDespesasBuscaId" maxlength="3">
 
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
-                    <input type="hidden" name="acao" id="acao" value="@Model.IdUsuario" id="IdUsuarioLogado" />
                     <button type="submit" name="btnAcao" value="Cadastro" id="BtnDespesasCadastrar">Cadastrar</button>
                     <button type="submit" name="btnAcao" value="Excluir" id="BtnDespesasApagar">Excluir</button>
                     <button type="submit" name="btnAcao" value="Alterar" id="BtnDespesasAlterar">Alterar</button>
@@ -74,23 +73,14 @@
             </li>
             <li>
             <li id="DespesasVoltar"><a href="#">Voltar</a></li>
-            @*<li class="DropContainerDespesas">
-                <select id="DespesasDropPessoaDespesas">
-                    <option value=""></option>
-                    <option value="Marcos">Vermelho</option>
-                    <option value="Vitor">Azul</option>
-                    <option value="Jonas">Verde</option>
-                    <option value="Marcio">Amarelo</option>
-                    <option value="Vitor">Roxo</option>
-                </select>
-
-            </li>*@
+            
         </ul>
     </ul>
 
     <!-- FIM Region Menu Despesas-->
 
     <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+    <script src="/js/Buscar.js" asp-append-version="true"></script>
 </body>
 
 </html>
