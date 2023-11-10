@@ -184,7 +184,8 @@ namespace Prospera.Controllers
 
             //Botão Cadastro apertado
             if (btnAcao == "Cadastro")
-            {//Configuração de sessão usuário
+            {
+                //Configuração de sessão usuário
                 if (_sessao.BuscarSessaoUsuario() != null)
                 {
                     Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
@@ -242,20 +243,28 @@ namespace Prospera.Controllers
 
 
         [HttpGet]
-        public IActionResult BuscarContas(int idUsuario, int codicoCont)
+        public IActionResult BuscarContas(int codigoCont)
         {
-            var busca = _context.Contas.FirstOrDefault(y => y.IdUsuario == idUsuario && y.CodigoCont == codicoCont);
+            // Obtenha o usuário logado (você pode usar sua lógica de sessão)
+            Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();// Implemente sua lógica para obter o usuário logado
 
+            if (usuarioLogado == null)
+            {
+                return NotFound(); // Usuário não logado, tratamento apropriado aqui
+            }
 
-            if (busca != null)
+            // Realize a consulta na tabela de Contas
+            var contaEncontrada = _context.Contas
+                .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == codigoCont);
+
+            if (contaEncontrada == null)
             {
-                /* HttpContext.Session.SetString("OriginalIdTerceiros", terceiros.IdTerceiros.ToString());*/
-                return Json(busca); // Retorna o Terceiros encontrado como JSON.
+                return NotFound(); // Conta não encontrada, tratamento apropriado aqui
             }
-            else
-            {
-                return Json(null); // Retorna nulo se o Terceiros não for encontrado.
-            }
+
+            // Faça algo com a conta encontrada, por exemplo, redirecione para uma página de detalhes
+            return RedirectToAction("Detalhes", new { id = contaEncontrada.IdContas });
         }
+
     }
 }
