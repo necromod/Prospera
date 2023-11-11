@@ -7,7 +7,9 @@ a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
     text-decoration: none;
 }
 
-
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
 input {
     font-family: 'Inter', sans-serif;
     border: none;
@@ -15,7 +17,8 @@ input {
 }
 
 body {
-    background-color: var(--color-Fundo) !important;
+    /* background-color: var(--color-Fundo) !important; */
+    /* background-color: black; */
     /* background-color: black; */
 }
 
@@ -74,11 +77,35 @@ body img {
     width: 360px;
     left: -.8em;
 }
+.ImgIndex4{
+    position: absolute;
+    top: 80em;
+    width: 360px;
+    left: -6em;
+}
+.ImgIndex5{
+    position: absolute;
+    top: 50em;
+    width: 360px;
+    right: -5em;
+}
+.ImgIndex6{
+    position: absolute;
+    top: 100em;
+    width: 360px;
+    right: -5em;
+}
+.ImgIndex7{
+    position: absolute;
+    top: 150em;
+    width: 360px;
+    left: 0;
+}
 /* FIM ICONES FUNDO */
 
 /* REGION NAVBAR  */
 .MenuNav {
-    /* background-color: #7836FA; */
+    background-color: #7836FA;
     position: relative;
     top: 0em;
 }
@@ -86,7 +113,6 @@ body img {
 .MenuVanInfContainer {
     position: absolute;
     width: 86%;
-    top: 2em;
     left: 23rem;
     display: flex;
 }
@@ -99,7 +125,7 @@ body img {
 
 .LibtnLogin {
     position: absolute;
-    background-color: var(--color-default) !important;
+    background-color: var(--color-RoxaCardMov) !important;
     left: -8em;
     width: 8em;
     top: -.9em;
@@ -125,7 +151,7 @@ body img {
 
 .LiperiodoGratis {
     position: absolute;
-    background-color: white;
+    background-color: var(--color-RoxaCardMov);
     right: 15rem;
     height: 3em;
     width: 13em;
@@ -143,7 +169,7 @@ body img {
     }
 
     .LiperiodoGratis a {
-        color: var(--color-BlueFont);
+        color: white;
         /* background-color: #605F60; */
         font-size: 14px;
         font-weight: 600;
@@ -163,45 +189,31 @@ body img {
 }
 
 .InfSobrePros img {
-    width: 650px;
+    width:550px;
     position: absolute;
-    right: 12rem;
-    top: 0em;
+    right: 10rem;
+    top: 4em;
     transition: .3s;
 }
 
-    .InfSobrePros img:hover {
-        transform: scale(1.1);
-        transition: .3s;
-    }
 
-.InfSobrePros span {
-    font-size: 80px;
-    color: var(--color-quintiaty);
-    width: 60%;
-    position: absolute;
-    left: 3em;
-    top: .5em;
-    font-weight: 800 !important;
-}
+.TextoProspera img {
+ width:1000px;
+ position: absolute;
+ left: 14em;
+ top: 0;
 
-.InfSobrePros h4 {
-    font-size: 37px;
-    width: 10%;
-    position: absolute;
-    left: 6.8em;
-    top: 5em;
-    color: var(--color-default);
-    font-weight: 800;
+   
 }
 
 .LibtnAproveitar {
     position: absolute;
-    background-color: white;
-    left: 10.5rem;
+    background-color: var(--color-RoxaCardMov);
+    left: 14.3rem;
     margin-top: 22em;
-    height: 3.5em;
-    width: 17em;
+    height: 4em;
+    width: 16em;
+    bottom: -7em;
     border-radius: 6px;
     transition: .3s;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
@@ -215,12 +227,32 @@ body img {
     }
 
     .LibtnAproveitar a {
-        color: var(--color-BlueFont);
+        color: white;
         font-size: 18px;
-        padding: 14px 75px;
+        padding: 14px 70px;
         font-weight: 600;
         line-height: 2.8em;
     }
+
+.IconIniciar img{
+  width: 60px;
+  position: absolute;
+  left: 1em;
+  top:2.6em;
+}
+.IconIniciar{
+    position: absolute;
+    left:  38em;
+    bottom: 0;
+    display: flex;
+  }
+  .IconIniciar h4{
+   position: absolute;
+   top: 1.4em;
+   left: 5em;
+   font-size: 20px;
+   color: var(--color-Sextiary);
+  }
 .LinkSite{
     position: absolute;
     background-color: white;
@@ -244,58 +276,61 @@ body img {
 .MeuInfApp-Container {
     background-color: white;
     position: relative;
-    top: 11em;
+    top: 28.7em;
     width: 60%;
     height: 24em;
     left: -1em;
     border-radius: 10px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 
-.InfQrcode h1 {
+.InfQrcode h2 {
     color: var(--color-BlueFont);
     position: absolute;
     width: 70%;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 4em;
 }
 
 .h4-1 {
     color: var(--color-Sextiary);
     position: absolute;
-    width: 70%;
-    font-size: 20px;
-    top: 1.3em;
-    line-height: 4em;
+    width: 60%;
+   text-align: left;
+    font-size: 18px;
+    top: 4em;
+    letter-spacing: 1px; 
+
 }
 
 .h4-2 {
     color: var(--color-Sextiary);
     position: absolute;
     width: 70%;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: left;
     bottom: 0;
+
 }
 
-.h4-3 {
-    color: var(--color-Sextiary);
-    position: absolute;
-    width: 70%;
-    font-size: 20px;
-    bottom: 5em;
-}
 
 .QrcodeIcon {
     position: absolute;
     right: 2em;
     top: 2.8em;
     width: 250px;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    transition: .3s;
 }
-
+.QrcodeIcon:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
 .MaoAppIcon {
     position: absolute;
-    right: -35rem;
+    right: -54rem;
     width: 650px;
     top: -2.9em;
     transition: .3s;
@@ -308,6 +343,98 @@ body img {
 /* FIM DIV CONTAINER APP */
 
 
+/* REGIAO SERVICO */
+.RegionServicos{
+    position: relative;
+     top: 50em;
+     width: 100%;
+     
+}
+.TextoServ h2{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--color-Sextiary);
+}
+.TextoServ hr{
+   width: 14%;
+   height: .1em;
+   background-color: var(--color-RoxaCardMov);
+   margin-bottom: 7em;
+   z-index: 9999;
+}
+.CardServicos-Container{
+
+    position: relative;
+    bottom: 3em;
+    height: 26em;
+    display: flex;
+}
+.CardServicos-Container li:not(.FooteServInf){
+    background-color:white;
+    width:18%;
+    border-radius: 6px;
+margin-right: 4em;
+margin-left: 4.5em;
+box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+}
+.CardServicos-Container img:not(.FooteServInf){
+    width: 90px;
+   margin-left: 8em;
+   margin-top: 1em;
+}
+
+.CardServicos-Container h2:not(.FooteServInf){
+    color: var(--color-default);
+    margin-left: 2.5em;
+   
+}
+
+.CardServicos-Container h4:not(.FooteServInf){
+  font-size: 15px;
+  width: 80%;
+  margin-left: 2.8em;
+  color: var(--color-quintiaty);
+      text-align: left;
+   }
+
+.FooteServInf h2,h4{
+text-align: center;
+color: var(--color-Sextiary);
+}
+
+
+.LiBtnServConta{
+    position: absolute;
+    background-color: var(--color-RoxaCardMov);
+    left: 48.7rem;
+    margin-top: 22em;
+    height: 4em;
+    width: 24em;
+    bottom: -7em;
+    border-radius: 6px;
+    transition: .3s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.LiBtnServConta a{
+   padding: 17px 78px;
+   font-size: 18px;
+   color: white;
+   line-height: 3.2em;
+}
+
+
+.LiBtnServConta:hover {
+    border-radius: 0px;
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* FIM REGIAO SERVICO */
+
+
+
 /* POSICAO FOOTER */
 /* 
 REGIAO EMAIL  */
@@ -316,11 +443,11 @@ REGIAO EMAIL  */
 .RegionFooter {
     background-color: white;
     position: relative;
-    top: 40em;
+    top: 78em;
     left: -.6em;
     height: 35em;
-    width: 100%;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    width: 101%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
 }
@@ -331,7 +458,7 @@ REGIAO EMAIL  */
     top: -5em;
     height: 12.5em;
     width: 50%;
-    left: 20rem;
+    left: 28rem;
     z-index: 99999;
     border-radius: 15px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -407,6 +534,7 @@ REGIAO EMAIL  */
     position: absolute;
     top: 1.4em;
     left: -2em;
+    color: white !important;
 }
 
 /* FIM REGIAO EMAIL */
