@@ -14,7 +14,8 @@ namespace Prospera.Models
         [Required(ErrorMessage = "Campo obrigatório!")]
         public string NomeCont { get; set; }// Nome da conta a ser exibida
 
-        public int? TipoCont { get; set; } //Definição se é uma conta para Pagar ou Para receber
+        public int? TipoCont { get; set; } //Campo não mais utilizado
+        public string? PagarReceberCont { get; set; } //Definição se é uma conta para Pagar ou Para receber
 
         [DataType(DataType.Date)]
         public DateTime? DatEmissaoCont { get; set; } // Data de emissão da conta

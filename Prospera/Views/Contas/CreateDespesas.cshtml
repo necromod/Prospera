@@ -43,38 +43,38 @@
                     <h4>Observação</h4>
                     <h4>Valor</h4>
                     <h4>Data de Vencimento</h4>
-                    <h4>Pessoa</h4>
                     <h4>Forma de pagamento</h4>
                     <h4>Status</h4>
+                    <h4>Pessoa</h4>
                     <h4 class="NomID">ID</h4>
                 </span>
                 <form asp-controller="Contas" asp-action="CadastrarDespesa" method="post" id="DespesaForm">
-                    <input type="text" asp-for="NomeCont" placeholder="Nome despesa" id="TxtDespesasNome" maxlength="30">
+                    <input class="inputDespesas" type="text" asp-for="NomeCont" placeholder="Nome despesa" id="TxtDespesasNome" maxlength="30">
                     <span asp-validation-for="NomeCont" class="text-danger"></span>
-                    <input type="text" asp-for="ObservacaoCont" placeholder="Observação" id="TxtDespesasObservacao" maxlength="100">
+                    <input class="inputDespesas" type="text" asp-for="ObservacaoCont" placeholder="Observação" id="TxtDespesasObservacao" maxlength="100">
                     <span asp-validation-for="ObservacaoCont" class="text-danger"></span>
-                    <input type="text" asp-for="ValorCont" placeholder="Valor " id="TxtDespesasValor">
+                    <input class="inputDespesas" type="number" asp-for="ValorCont" placeholder="Valor " id="TxtDespesasValor">
                     <span asp-validation-for="ValorCont" class="text-danger"></span>
-                    <input type="text" asp-for="DatVenciCont" placeholder="Data Vencimento" id="TxtDespesasData">
+                    <input class="inputDespesas" type="date" asp-for="DatVenciCont" placeholder="Data Vencimento" id="TxtDespesasData">
                     <span asp-validation-for="DatVenciCont" class="text-danger"></span>
-                    <input type="Text" asp-for="MetodoPgtoCont" placeholder="Forma de pagamento" id="MetodoPgtoCont" />
+                    <input class="inputDespesas" type="Text" asp-for="MetodoPgtoCont" placeholder="Forma de pagamento" id="MetodoPgtoCont" />
                     <span asp-validation-for="MetodoPgtoCont" class="text-danger"></span>
-                    <input type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont" />
+                    <input class="inputDespesas" type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont" />
                     <span asp-validation-for="StatusCont" class="text-danger"></span>
-                    <input type="Text" asp-for="RecebedorCont" placeholder="Destino" id="DespesasDropPessoaDespesas" />
+                    <input class="inputDespesas" type="Text" asp-for="RecebedorCont" placeholder="Destino" id="DespesasDropPessoaDespesas" />
                     <span asp-validation-for="RecebedorCont" class="text-danger"></span>
-                    <input type="text" asp-for="CodigoCont" placeholder="Código da conta" id="TxtDespesasBuscaId" maxlength="3">
+                    <input class="inputDespesas" type="text" asp-for="CodigoCont" placeholder="Código da conta" id="TxtDespesasBuscaId" maxlength="3">
                     <span asp-validation-for="CodigoCont" class="text-danger"></span>
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
 
-                    <button type="submit" name="btnAcao" value="Cadastro" id="BtnDespesasCadastrar">Cadastrar</button>
-                    <button type="submit" name="btnAcao" value="Excluir" id="BtnDespesasApagar">Excluir</button>
-                    <button type="submit" name="btnAcao" value="Alterar" id="BtnDespesasAlterar">Alterar</button>
+                    <button class="espacco-top" type="submit" name="btnAcao" value="Cadastro" id="BtnDespesasCadastrar">Cadastrar</button>
+                    <button class="espacco-top" type="submit" name="btnAcao" value="Excluir" id="BtnDespesasApagar">Excluir</button>
+                    <button class="espacco-top" type="submit" name="btnAcao" value="Alterar" id="BtnDespesasAlterar">Alterar</button>
                 </form>
 
 
                 <button id="BtnDespesasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
-                <button id="BtnDespesasLimpar">Limpar</button>
+                <button class="espacco-top" id="BtnDespesasLimpar">Limpar</button>
                 <button id="BtnDespesasConsultar">Buscar</button>
             </li>
             <li>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prospera.Data;
 
@@ -11,9 +12,11 @@ using Prospera.Data;
 namespace Prospera.Migrations
 {
     [DbContext(typeof(ProsperaContext))]
-    partial class ProsperaContextModelSnapshot : ModelSnapshot
+    [Migration("20231112194949_AjusteContas_PagarReceberCont")]
+    partial class AjusteContas_PagarReceberCont
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
