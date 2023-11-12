@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prospera.Models
@@ -9,9 +10,15 @@ namespace Prospera.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdContaBancaria { get; set; }
 
-        [StringLength(120)]
-        public string TitularContBan { get; set; }
+        [StringLength(50)]
+        public string? BancoContBan {  get; set; }
 
+        [StringLength(120)]
+        public string? TitularContBan { get; set; }
+
+        public int?CodigoContaBanc { get; set; }
+
+        [Obsolete]
         public int NumContBan { get; set; }
 
         public int AgenciaContBan { get; set; }
