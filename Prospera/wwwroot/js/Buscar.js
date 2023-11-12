@@ -13,10 +13,20 @@
         // Desbloqueia o input
         limparDespesas();
     });
+    $("#BtnReceitasConsultar").click(function () {
+        BtnReceitasConsultar();
+    });
+    $("#BtnReceitasLimpar").click(function () {
+        // Desbloqueia o input
+        limparReceitas();
+    });
+
+
 });
 
 var idTerceirosTemp;
 
+//Tabela terceiros
 function buscarTerceiros() {
     var idTerceiros = $("#TxtTerceirosId").val();
 
@@ -77,6 +87,8 @@ function limparTerceiros() {
     $("#TxtTerceirosId").prop("readonly", false);
 }
 
+
+// Tabela Despesas
 function BuscarDespesas() {
     console.log("function JS chamada.");
     var CodigoCont = $("#TxtDespesasBuscaId").val();
@@ -130,4 +142,59 @@ function limparDespesas() {
 
     //Desbloqueia o Input ID
     $("#TxtDespesasBuscaId").prop("readonly", false);
+}
+
+ //Tabela receitas
+
+
+function BtnReceitasConsultar() {
+    console.log("function JS chamada.");
+    var CodigoCont = $("#TxtReceitasBuscaId").val();
+    console.log(CodigoCont);
+
+    $.ajax({
+        url: "/Contas/BuscarDespesas",
+        method: "GET",
+        data: { id: CodigoCont },
+        success: function (data) {
+            if (data) {
+                preencherReceitas(data);
+                console.log("asdasdasd.");
+                console.log(data);
+            } else {
+                console.log("Conta não encontrado no banco de dados.");
+            }
+        },
+        error: function () {
+            alert("Erro ao buscar Conta.");
+        }
+    });
+}
+
+function preencherReceitas(receitas) {
+    $("#TxtReceitaNome").val(receitas.nomeCont);
+    $("#TxtReceitaObservacao").val(receitas.observacaoCont);
+    $("#TxtReceitaValor").val(receitas.valorCont);
+    $("#TxtReceitaData").val(receitas.datVenciCont);
+    $("#Metdpagamento").val(receitas.metodoPgtoCont);
+    $("#StatusCont").val(receitas.statusCont);
+    $("#DespesasDropPessoaDespesas").val(receitas.recebedorCont);
+    $("#TxtReceitasBuscaId").val(receitas.codigoCont);
+
+    // Bloqueia o Input ID
+    $("#TxtReceitasBuscaId").prop("readonly", true);
+}
+
+function limparReceitas() {
+    $("#TxtReceitaNome").val("");
+    $("#TxtReceitaObservacao").val("");
+    $("#TxtReceitaValor").val("");
+    $("#TxtReceitaData").val("");
+    $("#Metdpagamento").val("");
+    $("#StatusCont").val("");
+    $("#DespesasDropPessoaDespesas").val("");
+    $("#TxtReceitasBuscaId").val("");
+
+    // Desbloqueia o Input ID
+    $("#TxtReceitasBuscaId").prop("readonly", false);
 }

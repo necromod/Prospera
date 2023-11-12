@@ -204,6 +204,7 @@ namespace Prospera.Controllers
                 // Encontre o próximo CodigoCont para o usuário atual
                 int proximoCodigoCont = EncontrarProximoCodigoCont(contas.IdUsuario);
                 contas.CodigoCont = proximoCodigoCont;
+                contas.PagarReceberCont = "Despesa";
                 contas.TipoCont = 1;
                 contas.DatEmissaoCont = DateTime.Now;
                 contas.PessoaCont = Convert.ToString(contas.IdUsuario);
@@ -243,36 +244,29 @@ namespace Prospera.Controllers
                 }
 
             }
-                //Botão Alterar apertado
-                if (btnAcao == "Alterar")
+            //Botão Alterar apertado
+            if (btnAcao == "Alterar")
+        {
+            if (contas.CodigoCont > 0)
             {
-                if (contas.CodigoCont > 0)
+                //Carrega sessão de usuário
+                Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                //Verifica se a conta existe
+                var DespesaExiste = _context.Contas
+                    .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
+                if(DespesaExiste != null)
                 {
-                    //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
-                    //Verifica se a conta existe
-                    var DespesaExiste = _context.Contas
-                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
-                    if(DespesaExiste != null)
-                    {
-                        // Atualize o registro existente com os novos valores
-                        DespesaExiste.NomeCont = contas.NomeCont;
-                        DespesaExiste.ObservacaoCont = contas.ObservacaoCont;
-                        DespesaExiste.ValorCont = contas.ValorCont;
-                        DespesaExiste.DatVenciCont = contas.DatVenciCont;
-                        DespesaExiste.MetodoPgtoCont = contas.MetodoPgtoCont;
-                        DespesaExiste.StatusCont = contas.StatusCont;
-                        DespesaExiste.RecebedorCont = contas.RecebedorCont;
-                        contas.DatEmissaoCont = DateTime.Now;
+                    // Atualize o registro existente com os novos valores
+                    DespesaExiste.NomeCont = contas.NomeCont;
+                    DespesaExiste.ObservacaoCont = contas.ObservacaoCont;
+                    DespesaExiste.ValorCont = contas.ValorCont;
+                    DespesaExiste.DatVenciCont = contas.DatVenciCont;
+                    DespesaExiste.MetodoPgtoCont = contas.MetodoPgtoCont;
+                    DespesaExiste.StatusCont = contas.StatusCont;
+                    DespesaExiste.RecebedorCont = contas.RecebedorCont;
+                    contas.DatEmissaoCont = DateTime.Now;
 
-                        _context.SaveChanges();
-                    }
-                    else
-                    {
-                        return (null);
-                    }
-
-
+                    _context.SaveChanges();
                 }
                 else
                 {
@@ -281,6 +275,13 @@ namespace Prospera.Controllers
 
 
             }
+            else
+            {
+                return (null);
+            }
+
+
+        }
 
 
 
@@ -320,6 +321,112 @@ namespace Prospera.Controllers
             var contaEncontrada = _context.Contas
                 .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == id);
             return Json(contaEncontrada);
+        }
+
+        public IActionResult CadastrarReceita(Contas contas, string btnAcao)
+        {
+
+            //Botão Cadastro apertado
+            if (btnAcao == "Cadastro")
+            {
+                //Configuração de sessão usuário
+                if (_sessao.BuscarSessaoUsuario() != null)
+                {
+                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
+                    contas.IdUsuario = usuarioModel.IdUsuario;
+                }
+                else
+                {
+                    contas.IdUsuario = 55;
+                }
+
+
+                //Inserção automática dos campos
+                // Encontre o próximo CodigoCont para o usuário atual
+                int proximoCodigoCont = EncontrarProximoCodigoCont(contas.IdUsuario);
+                contas.CodigoCont = proximoCodigoCont;
+                contas.TipoCont = 2;
+                contas.PagarReceberCont = "Receita";
+                contas.DatEmissaoCont = DateTime.Now;
+                contas.PessoaCont = Convert.ToString(contas.IdUsuario);
+                contas.PagadorCont = Convert.ToString(contas.IdUsuario);
+                contas.Descricaocont = " ";
+
+                //Criação do campo dentro do banco de dados
+                _context.Contas.Add(contas);
+                _context.SaveChanges();
+            }
+            //Botão Excluir apertado
+            if (btnAcao == "Excluir")
+            {
+                if (int.TryParse(contas.CodigoCont.ToString(), out int id))
+                {
+                    //Carrega sessão de usuário
+                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    //Verifica se a conta existe
+                    var DespesaExiste = _context.Contas
+                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
+
+                    if (DespesaExiste != null)
+                    {
+                        // O ID existe no banco de dados, você pode excluí-lo.
+                        _context.Contas.Remove(DespesaExiste);
+                        _context.SaveChanges();
+                    }
+                    else
+                    {
+                        return (null);
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("entrada do usuário não é um número inteiro válido");
+                }
+
+            }
+            //Botão Alterar apertado
+            if (btnAcao == "Alterar")
+            {
+                if (contas.CodigoCont > 0)
+                {
+                    //Carrega sessão de usuário
+                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    //Verifica se a conta existe
+                    var DespesaExiste = _context.Contas
+                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
+                    if (DespesaExiste != null)
+                    {
+                        // Atualize o registro existente com os novos valores
+                        DespesaExiste.NomeCont = contas.NomeCont;
+                        DespesaExiste.ObservacaoCont = contas.ObservacaoCont;
+                        DespesaExiste.ValorCont = contas.ValorCont;
+                        DespesaExiste.DatVenciCont = contas.DatVenciCont;
+                        DespesaExiste.MetodoPgtoCont = contas.MetodoPgtoCont;
+                        DespesaExiste.StatusCont = contas.StatusCont;
+                        DespesaExiste.RecebedorCont = contas.RecebedorCont;
+                        contas.DatEmissaoCont = DateTime.Now;
+
+                        _context.SaveChanges();
+                    }
+                    else
+                    {
+                        return (null);
+                    }
+
+
+                }
+                else
+                {
+                    return (null);
+                }
+
+
+            }
+
+
+
+            return RedirectToAction("ConsultaExtrato", "Extrato");
         }
 
     }

@@ -1,7 +1,4 @@
-﻿@model Prospera.Helpers.TerceirosViewModel;
-@{
-    ViewData["Title"] = "Receitas";
-}
+﻿@model Prospera.Models.Contas;
 
 <head>
     <meta charset="UTF-8">
@@ -47,44 +44,60 @@
                         <h4>Observação</h4>
                         <h4>Valor</h4>
                         <h4>Data de Vencimento</h4>
+                        <h4>Forma de pagamento</h4>
+                        <h4>Status</h4>
+                        <h4>Pegador</h4>
                         <h4 class="NomID">ID</h4>
                     </span>
-                    <input type="text" id="TxtReceitaNome" maxlength="30">
-                    <input type="text" id="TxtReceitaObservacao" maxlength="100">
-                    <input type="text" id="TxtReceitaValor">
-                    <input type="text" id="TxtReceitaData">
-                    <input type="text" id="TxtReceitasBuscaId" maxlength="3">
-                    <button id="BtnReceitasCadastrar">Cadastrar</button>
+                <form asp-controller="Contas" asp-action="CadastrarReceita" method="post" id="ReceitaForm">
+                    <input type="text" asp-for="NomeCont" placeholder="Nome receita" id="TxtReceitaNome" maxlength="30">
+                    <span asp-validation-for="NomeCont" class="text-danger"></span>
+
+                    <input type="text" asp-for="ObservacaoCont" placeholder="Observação" id="TxtReceitaObservacao" maxlength="100">
+                    <span asp-validation-for="ObservacaoCont" class="text-danger"></span>
+
+                    <input type="number" asp-for="ValorCont" placeholder="Valor" id="TxtReceitaValor">
+                    <span asp-validation-for="ValorCont" class="text-danger"></span>
+
+                    <input type="date" asp-for="DatVenciCont" placeholder="Data Vencimento" id="TxtReceitaData">
+                    <span asp-validation-for="DatVenciCont" class="text-danger"></span>
+
+                    <input type="text" asp-for="MetodoPgtoCont" placeholder="Forma de pagamento" id="Metdpagamento">
+                    <span asp-validation-for="MetodoPgtoCont" class="text-danger"></span>
+
+                    <input type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont">
+                    <span asp-validation-for="StatusCont" class="text-danger"></span>
+
+                    <input type="number" asp-for="RecebedorCont" placeholder="ID do Devedor" id="DespesasDropPessoaDespesas">
+                    <span asp-validation-for="RecebedorCont" class="text-danger"></span>
+
+                    <input type="number" asp-for="CodigoCont" placeholder="Código da conta" id="TxtReceitasBuscaId" maxlength="3">
+                    <span asp-validation-for="CodigoCont" class="text-danger"></span>
+
+                    <input type="hidden" name="acao" id="acao" value="cadastro" />
+
+                    <button type="submit" name="btnAcao" value="Cadastro" id="BtnReceitasCadastrar">Cadastrar</button>
+                    <button type="submit" name="btnAcao" value="Excluir" id="BtnReceitasApagar">Excluir</button>
+                    <button type="submit" name="btnAcao" value="Alterar" id="BtnReceitasAlterar">Alterar</button>
+                </form>
+
                 <button id="BtnReceitasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
-                    <button id="BtnReceitasLimpar">Limpar</button>
-                    <button id="BtnReceitasApagar">Excluir</button>
-                    <button id="BtnReceitasAlterar">Alterar</button>
+                <button id="BtnReceitasLimpar">Limpar</button>
                     <button id="BtnReceitasConsultar">Buscar</button>
                 </li>
                 <li>
       
-            <li id="ReceitasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></li>
-                <li class="DropContainer">
-                    <select id="ReceitaDropPessoa">
-                        <option value=""></option>
-                        <option value="Marcos">Vermelho</option>
-                        <option value="Vitor">Azul</option>
-                        <option value="Jonas">Verde</option>
-                        <option value="Marcio">Amarelo</option>
-                        <option value="Vitor">Roxo</option>
-
-                    </select>
-                    <h4>Pessoa</h4>
-                    <!-- Conteúdo da tela oculta aqui -->
-
-                </li>
+            <li id="ReceitasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></li>                
             </ul>
         </ul>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+        <script src="/js/Buscar.js" asp-append-version="true"></script>
+        <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+    }
 
-        <!-- FIM Region Menu Receitas -->
-      
-
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
 </body>
 
 </html>
