@@ -127,8 +127,11 @@ namespace Prospera.Controllers
         [HttpGet]
         public IActionResult BuscarTerceiros(int id)
         {
+            Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+
             Console.WriteLine($"O método BuscarContas foi chamado com o código: {id}");  // Adicione 
-            var terceiros = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
+            var terceiros = _context.Terceiros
+                .FirstOrDefault(t => t.IdTerceiros == id && t.IdUsuario == usuarioLogin.IdUsuario);
 
             if (terceiros != null)
             {

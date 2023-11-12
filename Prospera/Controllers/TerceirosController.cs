@@ -14,10 +14,12 @@ namespace Prospera.Controllers
     public class TerceirosController : Controller
     {
         private readonly ProsperaContext _context;
+        private readonly SessaoInterface _sessao;
 
-        public TerceirosController(ProsperaContext context)
+        public TerceirosController(ProsperaContext context, SessaoInterface sessao)
         {
             _context = context;
+            _sessao = sessao;
         }
 
         // GET: Terceiros
@@ -33,7 +35,7 @@ namespace Prospera.Controllers
        }
         public IActionResult Consulta()
         {
-            var viewModel = new TerceirosViewModelInterface(_context);
+            var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
 
             // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
@@ -43,7 +45,7 @@ namespace Prospera.Controllers
 
         public IActionResult ConsultaEndereco()
         {
-            var viewModel = new TerceirosViewModelInterface(_context);
+            var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
 
             // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros

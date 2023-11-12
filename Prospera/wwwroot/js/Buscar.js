@@ -54,13 +54,12 @@ function preencherCampos(terceiros) {
     $("IdTerceirosTemp").val(terceiros.idTerceiros);
     idTerceirosTemp = terceiros.idTerceiros;
 
-    // Bloqueia o input ID
+    //Bloqueia o Input ID
     $("#TxtTerceirosId").prop("readonly", true);
 
 }
 
 function limparTerceiros() {
-    $("#TxtTerceirosId").prop("disabled", false);
     $("#TxtTerceirosId").val("");
     $("#TxtTerceirosNome").val("");
     $("#TxtTerceirosEmail").val("");
@@ -72,6 +71,10 @@ function limparTerceiros() {
     $("#TxtTerceirosUF").val("");
     $("#TxtTerceirosCEP").val("");
     $("#TxtTerceirosObservacao").val("");
+
+
+    //Desbloqueia o Input ID
+    $("#TxtTerceirosId").prop("readonly", false);
 }
 
 function BuscarDespesas() {
