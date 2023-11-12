@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
+using Prospera.Helpers;
 using Prospera.Models;
 
 namespace Prospera.Controllers
@@ -13,171 +14,126 @@ namespace Prospera.Controllers
     public class ContaBancariasController : Controller
     {
         private readonly ProsperaContext _context;
+        private readonly SessaoInterface _sessao;
 
-        public ContaBancariasController(ProsperaContext context)
+        public ContaBancariasController(ProsperaContext context, SessaoInterface sessao)
         {
             _context = context;
+            _sessao = sessao;
         }
-
-        // GET: ContaBancarias
-        public async Task<IActionResult> Index()
-        {
-            var prosperaContext = _context.ContaBancaria.Include(c => c.Terceiros).Include(c => c.Usuario);
-            return View(await prosperaContext.ToListAsync());
-        }
-
-        public IActionResult ConsultaContasBancarias() 
-        {
-            return View();
-        }
-
         public IActionResult CreateContasBancarias()
         {
             return View();
         }
-        // GET: ContaBancarias/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult ConsultaContasBancarias()
         {
-            if (id == null || _context.ContaBancaria == null)
-            {
-                return NotFound();
-            }
-
-            var contaBancaria = await _context.ContaBancaria
-                .Include(c => c.Terceiros)
-                .Include(c => c.Usuario)
-                .FirstOrDefaultAsync(m => m.IdContaBancaria == id);
-            if (contaBancaria == null)
-            {
-                return NotFound();
-            }
-
-            return View(contaBancaria);
-        }
-
-        // GET: ContaBancarias/Create
-        public IActionResult Create()
-        {
-            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros");
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario");
             return View();
         }
 
-        // POST: ContaBancarias/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdContaBancaria,TitularContBan,NumContBan,AgenciaContBan,TipoContBan,SaldoContBan,ObsContBan,IdUsuario,IdTerceiros")] ContaBancaria contaBancaria)
+        public IActionResult CadastrarContBan(ContaBancaria contBan, string btnAcao)
         {
-            if (ModelState.IsValid)
+            //Botão Cadastro apertado
+            if (btnAcao == "Cadastro")
             {
-                _context.Add(contaBancaria);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
-            return View(contaBancaria);
-        }
-
-        // GET: ContaBancarias/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.ContaBancaria == null)
-            {
-                return NotFound();
-            }
-
-            var contaBancaria = await _context.ContaBancaria.FindAsync(id);
-            if (contaBancaria == null)
-            {
-                return NotFound();
-            }
-            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
-            return View(contaBancaria);
-        }
-
-        // POST: ContaBancarias/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdContaBancaria,TitularContBan,NumContBan,AgenciaContBan,TipoContBan,SaldoContBan,ObsContBan,IdUsuario,IdTerceiros")] ContaBancaria contaBancaria)
-        {
-            if (id != contaBancaria.IdContaBancaria)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
+                //Configuração de sessão usuário
+                if (_sessao.BuscarSessaoUsuario() != null)
                 {
-                    _context.Update(contaBancaria);
-                    await _context.SaveChangesAsync();
+                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
+                    contBan.IdUsuario = usuarioModel.IdUsuario;
+                    contBan.TitularContBan = usuarioModel.NomeUsuario;
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!ContaBancariaExists(contaBancaria.IdContaBancaria))
+                    contBan.IdUsuario = 55;
+                    contBan.TitularContBan = "Teste";
+                }
+
+
+                //Inserção automática dos campos
+                // Encontre o próximo CodigoCont para o usuário atual
+                //Criação do campo dentro do banco de dados
+                contBan.CodigoContaBanc = 1;
+
+                _context.ContaBancaria.Add(contBan);
+                _context.SaveChanges();
+            }
+            //Botão Excluir apertado
+            if (btnAcao == "Excluir")
+            {
+                if (int.TryParse(contBan.NumContBan.ToString(), out int id))
+                {
+                    //Carrega sessão de usuário
+                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    //Verifica se a conta existe
+                    var ContBanExiste = _context.ContaBancaria
+                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
+
+                    if (ContBanExiste != null)
                     {
-                        return NotFound();
+                        // O ID existe no banco de dados, você pode excluí-lo.
+                        _context.ContaBancaria.Remove(ContBanExiste);
+                        _context.SaveChanges();
                     }
                     else
                     {
-                        throw;
+                        return (null);
                     }
+
                 }
-                return RedirectToAction(nameof(Index));
+                else
+                {
+                    Console.WriteLine("entrada do usuário não é um número inteiro válido");
+                }
+
             }
-            ViewData["IdTerceiros"] = new SelectList(_context.Terceiros, "IdTerceiros", "NomeTerceiros", contaBancaria.IdTerceiros);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contaBancaria.IdUsuario);
-            return View(contaBancaria);
+            //Botão Alterar apertado
+            if (btnAcao == "Alterar")
+            {
+                if (contBan.NumContBan > 0)
+                {
+                    //Carrega sessão de usuário
+                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    //Verifica se a conta existe
+                    var ContBanExiste = _context.ContaBancaria
+                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
+                    if (ContBanExiste != null)
+                    {
+                        // Atualize o registro existente com os novos valores
+                        ContBanExiste.BancoContBan = contBan.BancoContBan;
+                        ContBanExiste.TitularContBan = contBan.TitularContBan;
+                        ContBanExiste.CodigoContaBanc = contBan.CodigoContaBanc;
+                        ContBanExiste.NumContBan = contBan.NumContBan;
+                        ContBanExiste.AgenciaContBan = contBan.AgenciaContBan;
+                        ContBanExiste.TipoContBan = contBan.TipoContBan;
+                        ContBanExiste.SaldoContBan = contBan.SaldoContBan;
+                        ContBanExiste.ObsContBan = contBan.ObsContBan;
+
+                        _context.SaveChanges();
+                    }
+                    else
+                    {
+                        return (null);
+                    }
+
+
+                }
+                else
+                {
+                    return (null);
+                }
+
+
+            }
+
+
+
+            return RedirectToAction("CreateContasBancarias", "ContaBancarias");
         }
 
-        // GET: ContaBancarias/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.ContaBancaria == null)
-            {
-                return NotFound();
-            }
+        
 
-            var contaBancaria = await _context.ContaBancaria
-                .Include(c => c.Terceiros)
-                .Include(c => c.Usuario)
-                .FirstOrDefaultAsync(m => m.IdContaBancaria == id);
-            if (contaBancaria == null)
-            {
-                return NotFound();
-            }
 
-            return View(contaBancaria);
-        }
 
-        // POST: ContaBancarias/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.ContaBancaria == null)
-            {
-                return Problem("Entity set 'ProsperaContext.ContaBancaria'  is null.");
-            }
-            var contaBancaria = await _context.ContaBancaria.FindAsync(id);
-            if (contaBancaria != null)
-            {
-                _context.ContaBancaria.Remove(contaBancaria);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool ContaBancariaExists(int id)
-        {
-          return (_context.ContaBancaria?.Any(e => e.IdContaBancaria == id)).GetValueOrDefault();
-        }
     }
 }
