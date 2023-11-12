@@ -39,7 +39,7 @@ namespace Prospera
             builder.Services.AddScoped<UsuarioController>();
             // Adicione o serviço do LoginController
             builder.Services.AddScoped<LoginController>();
-
+            builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<TerceirosViewModel, TerceirosViewModelInterface>();
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped<SessaoInterface, Sessao>();
@@ -78,6 +78,13 @@ namespace Prospera
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers().WithMetadata(new CustomAuthorizeFilter(policy));
+
+                endpoints.MapControllerRoute(
+                name: "BuscarDespesas",
+                pattern: "Contas/BuscarDespesas/{id?}",
+                defaults: new { controller = "Contas", action = "BuscarDespesas" }
+                );
+
             });
 
             app.MapControllerRoute(

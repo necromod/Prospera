@@ -1,7 +1,4 @@
 ﻿@model Prospera.Models.Contas;
-@{
-    ViewData["Title"] = "Despesas";
-}
 
 <head>
     <meta charset="UTF-8">
@@ -53,19 +50,28 @@
                 </span>
                 <form asp-controller="Contas" asp-action="CadastrarDespesa" method="post" id="DespesaForm">
                     <input type="text" asp-for="NomeCont" placeholder="Nome despesa" id="TxtDespesasNome" maxlength="30">
-                    <input type="text" asp-for="ObservacaoCont"placeholder="Observação" id="TxtDespesasObservacao" maxlength="100">
+                    <span asp-validation-for="NomeCont" class="text-danger"></span>
+                    <input type="text" asp-for="ObservacaoCont" placeholder="Observação" id="TxtDespesasObservacao" maxlength="100">
+                    <span asp-validation-for="ObservacaoCont" class="text-danger"></span>
                     <input type="text" asp-for="ValorCont" placeholder="Valor " id="TxtDespesasValor">
+                    <span asp-validation-for="ValorCont" class="text-danger"></span>
                     <input type="text" asp-for="DatVenciCont" placeholder="Data Vencimento" id="TxtDespesasData">
+                    <span asp-validation-for="DatVenciCont" class="text-danger"></span>
                     <input type="Text" asp-for="MetodoPgtoCont" placeholder="Forma de pagamento" id="MetodoPgtoCont" />
-                    <input type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont" />                    
+                    <span asp-validation-for="MetodoPgtoCont" class="text-danger"></span>
+                    <input type="text" asp-for="StatusCont" placeholder="Pago/Pendente" id="StatusCont" />
+                    <span asp-validation-for="StatusCont" class="text-danger"></span>
                     <input type="Text" asp-for="RecebedorCont" placeholder="Destino" id="DespesasDropPessoaDespesas" />
+                    <span asp-validation-for="RecebedorCont" class="text-danger"></span>
                     <input type="text" asp-for="CodigoCont" placeholder="Código da conta" id="TxtDespesasBuscaId" maxlength="3">
-
+                    <span asp-validation-for="CodigoCont" class="text-danger"></span>
                     <input type="hidden" name="acao" id="acao" value="cadastro" />
+
                     <button type="submit" name="btnAcao" value="Cadastro" id="BtnDespesasCadastrar">Cadastrar</button>
                     <button type="submit" name="btnAcao" value="Excluir" id="BtnDespesasApagar">Excluir</button>
                     <button type="submit" name="btnAcao" value="Alterar" id="BtnDespesasAlterar">Alterar</button>
                 </form>
+
 
                 <button id="BtnDespesasVoltar"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
                 <button id="BtnDespesasLimpar">Limpar</button>
@@ -78,9 +84,10 @@
     </ul>
 
     <!-- FIM Region Menu Despesas-->
-
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
-    <script src="/js/Buscar.js" asp-append-version="true"></script>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+        <script src="/js/Buscar.js" asp-append-version="true"></script>
+    }
 </body>
-
-</html>

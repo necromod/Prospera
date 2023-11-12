@@ -1,10 +1,4 @@
 ﻿$(document).ready(function () {
-    $("#BtnDespesasConsultar").click(function () {
-        BuscarContas();
-    });
-});
-
-/*$(document).ready(function () {
     $("#BtnTerceirosBuscar").click(function () {
         buscarTerceiros();
     });
@@ -13,14 +7,13 @@
         limparTerceiros();
     }); 
     $("#BtnDespesasConsultar").click(function () {
-        BuscarContas();
+        BuscarDespesas();
     });
     $("#BtnDespesasLimpar").click(function () {
         // Desbloqueia o input
-        limparInputs();
+        limparDespesas();
     });
-
-});*/
+});
 
 var idTerceirosTemp;
 
@@ -81,24 +74,57 @@ function limparTerceiros() {
     $("#TxtTerceirosObservacao").val("");
 }
 
-function BuscarContas() {
+function BuscarDespesas() {
+    console.log("function JS chamada.");
     var CodigoCont = $("#TxtDespesasBuscaId").val();
+    console.log(CodigoCont);
 
     $.ajax({
-        url: "/Contas/BuscarContas",
+        url: "/Contas/BuscarDespesas",
         method: "GET",
         data: { id: CodigoCont },
         success: function (data) {
             if (data) {
-                preencherCampos(data);
+                preencherDespesas(data);
                 console.log("asdasdasd.");
                 console.log(data);
             } else {
-                console.log("Terceiros não encontrado no banco de dados.");
+                console.log("Conta não encontrado no banco de dados.");
             }
         },
         error: function () {
-            alert("Erro ao buscar Terceiros.");
+            alert("Erro ao buscar Conta.");
         }
     });
+}
+
+function preencherDespesas(contas) {
+    $("#TxtDespesasNome").val(contas.nomeCont);
+    $("#TxtDespesasObservacao").val(contas.observacaoCont);
+    $("#TxtDespesasValor").val(contas.valorCont);
+    $("#TxtDespesasData").val(contas.datVenciCont);
+    $("#MetodoPgtoCont").val(contas.metodoPgtoCont);
+    $("#StatusCont").val(contas.statusCont);
+    $("#DespesasDropPessoaDespesas").val(contas.recebedorCont);
+    $("#TxtDespesasBuscaId").val(contas.codigoCont);
+    $("#idContasTemp").val(contas.idCont);
+    idContasTemp = contas.nomeCont;
+
+    //Bloqueia o Input ID
+    $("#TxtDespesasBuscaId").prop("readonly", true);
+}
+
+function limparDespesas() {
+    $("#TxtDespesasNome").val("");
+    $("#TxtDespesasObservacao").val("");
+    $("#TxtDespesasValor").val("");
+    $("#TxtDespesasData").val("");
+    $("#MetodoPgtoCont").val("");
+    $("#StatusCont").val("");
+    $("#DespesasDropPessoaDespesas").val("");
+    $("#TxtDespesasBuscaId").val("");
+    $("IdTerceirosTemp").val("");
+
+    //Desbloqueia o Input ID
+    $("#TxtDespesasBuscaId").prop("readonly", false);
 }
