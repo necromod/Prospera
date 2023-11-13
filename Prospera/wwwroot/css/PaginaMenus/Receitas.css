@@ -81,10 +81,10 @@ padding-left: 5em;
  background-color: var(--color-RoxaCardMov);
     position: relative;
     display: flex;
-    height: 25rem;
-    width: 30%;
+    height: 35rem;
+    width: 40%;
     /* right: 1em; */
-    top: 10em;
+    top: 8em;
     border-radius: 12px;
    margin: auto;
   transition: .7s;
