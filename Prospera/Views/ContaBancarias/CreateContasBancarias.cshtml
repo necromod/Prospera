@@ -1,4 +1,4 @@
-﻿@model Prospera.Helpers.TerceirosViewModel;
+﻿@model Prospera.Models.ContaBancaria;
 @{
     ViewData["Title"] = "Contas Bancarias";
 }
@@ -29,8 +29,6 @@
     <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
           rel="stylesheet">
-
-    <title>Prospera</title>
 </head>
 
 <body>
@@ -50,26 +48,41 @@
                     <h4>Saldo</h4>
                     <h4 class="NomID2">ID</h4>
                 </span>
-                <select id="DropBancoCont" onchange="SelecaoDropLogo()">
-                    <option value=""></option>
-                    <option value="Inter">Inter</option>
-                    <option value="Bradesco">Bradesco</option>
-                    <option value="Itau">Itau</option>
-                    <option value="BancoDoBrasil">Banco do Brasil</option>
-                    <option value="Vitor">Roxo</option>
+                
+                <form asp-controller="ContaBancarias" asp-action="CadastrarContBan" method="post">
+                    <!-- Seus outros campos aqui -->
+                    <input asp-for="BancoContBan" type="text" id="DropBancoCont" placeholder="Nome do banco" />
+                    <span asp-validation-for="BancoContBan" class="text-danger"></span>
 
-                </select>
-                <input type="text" id="TxtContBancObservacao" maxlength="100">
-                <input type="text" id="TxtContBancNumero">
-                <input type="text" id="TxtContBancAgencia">
-                <input type="text" id="TtxContBancTipoConta">
-                <input type="text" id="TtxContBancSaldo">
-                <input type="text" id="TxtContaBancBuscaId" maxlength="3">
-                <button id="BtnContBancCadastrar">Cadastrar</button>
+                    <input asp-for="ObsContBan" type="text" id="TxtContBancObservacao" name="TxtContBancObservacao" maxlength="100">
+                    <span asp-validation-for="ObsContBan" class="text-danger"></span>
+
+                    <input asp-for="NumContBan" type="number" id="TxtContBancNumero" name="TxtContBancNumero">
+                    <span asp-validation-for="NumContBan" class="text-danger"></span>
+
+                    <input asp-for="AgenciaContBan" type="number" id="TxtContBancAgencia" name="TxtContBancAgencia">
+                    <span asp-validation-for="AgenciaContBan" class="text-danger"></span>
+
+                    <input asp-for="TipoContBan" type="text" id="TtxContBancTipoConta" name="TtxContBancTipoConta" maxlength="50">
+                    <span asp-validation-for="TipoContBan" class="text-danger"></span>
+
+                    <input asp-for="SaldoContBan" type="number" id="TtxContBancSaldo" name="TtxContBancSaldo" data-val="true" data-val-currency="O campo Saldo deve ser um valor monetário válido." data-val-number="O campo Saldo deve ser um número." data-val-required="O campo Saldo é obrigatório.">
+                    <span asp-validation-for="SaldoContBan" class="text-danger"></span>
+
+                    <input asp-for="CodigoContaBanc" type="number" id="TxtContaBancBuscaId" name="TxtContaBancBuscaId" maxlength="3">
+                    <span asp-validation-for="CodigoContaBanc" class="text-danger"></span>
+
+
+                    <!-- Seus botões de ação aqui -->
+                    <input type="hidden" name="acao" id="acao" value="Cadastro" />
+                    <button type="submit" name="btnAcao" value="Cadastro" id="BtnContBancCadastrar">Cadastrar</button>
+                    <button type="submit" name="btnAcao" value="Excluir" id="BtnContaBancApagar">Excluir</button>
+                    <button type="submit" name="btnAcao" value="Alterar" id="BtnContaBancAlterar">Alterar</button>
+                    <!-- Outros botões -->
+                </form>
+
                 <button id="BtnContBancVoltar">Voltar</button>
                 <button id="BtnContBancLimpar">Limpar</button>
-                <button id="BtnContaBancApagar">Excluir</button>
-                <button id="BtnContaBancAlterar">Alterar</button>
                 <button id="BtnContaBancConsultar">Buscar</button>
                 <button id="BtnContaBancLista">Consultar</button>
             </li>
@@ -86,7 +99,17 @@
     </ul>
 
 
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+    @* <script src="/js/PaginaInicial.js" asp-append-version="true"></script> *@
+    <script src="/js/Buscar.js" asp-append-version="true"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+    @* @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    } *@
 </body>
 
 </html>

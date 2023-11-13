@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prospera.Data;
 
@@ -11,9 +12,11 @@ using Prospera.Data;
 namespace Prospera.Migrations
 {
     [DbContext(typeof(ProsperaContext))]
-    partial class ProsperaContextModelSnapshot : ModelSnapshot
+    [Migration("20231112131634_ajuste_details_Contas")]
+    partial class ajuste_details_Contas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,9 +34,6 @@ namespace Prospera.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdContaBancaria"));
 
                     b.Property<int>("AgenciaContBan")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CodigoContaBanc")
                         .HasColumnType("int");
 
                     b.Property<int>("IdTerceiros")
@@ -112,9 +112,6 @@ namespace Prospera.Migrations
                     b.Property<string>("PagadorCont")
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
-
-                    b.Property<string>("PagarReceberCont")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PessoaCont")
                         .HasColumnType("nvarchar(max)");
@@ -212,9 +209,6 @@ namespace Prospera.Migrations
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
-
-                    b.Property<int?>("CodigoCont")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("DataCadastroTerceiros")
                         .HasColumnType("datetime2");

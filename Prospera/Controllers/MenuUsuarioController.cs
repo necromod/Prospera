@@ -43,6 +43,9 @@ namespace Prospera.Controllers
 
 
                 //inserção automática dos campos
+                //Encontre o próximo Codico
+                int proximoCodicoTerceiro = ProximoTerceiroUsuario(terceiros.IdUsuario);
+                terceiros.CodigoCont = proximoCodicoTerceiro;
                 terceiros.IdTerceiros = 0;
                 terceiros.DataCadastroTerceiros = DateTime.Now;
                 terceiros.DataUltimaMovimentacao = DateTime.Now;
@@ -124,10 +127,28 @@ namespace Prospera.Controllers
 
         }
 
+        private int ProximoTerceiroUsuario(int idUsuario)
+        {
+            // Verifique o maior CodigoCont para o usuário especificado
+            int? maxCodigoCont = _context.Terceiros
+                .Where(c => c.IdUsuario == idUsuario)
+                .Max(c => (int?)c.CodigoCont);
+
+            // Calcule o próximo CodigoCont com base no máximo encontrado
+            int proximoCodigoCont = (maxCodigoCont ?? 0) + 1;
+
+            return proximoCodigoCont;
+        }
+
+
         [HttpGet]
         public IActionResult BuscarTerceiros(int id)
         {
-            var terceiros = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
+            Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+
+            Console.WriteLine($"O método BuscarContas foi chamado com o código: {id}");  // Adicione 
+            var terceiros = _context.Terceiros
+                .FirstOrDefault(t => t.CodigoCont == id && t.IdUsuario == usuarioLogin.IdUsuario);
 
             if (terceiros != null)
             {
