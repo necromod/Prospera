@@ -75,6 +75,9 @@ body:not(.MenusSelecao h4) {
     text-align: left;
     padding-left: 1em;
 }
+.CardTransacoes li {
+    background-color: #605F60;
+}
 .HeadTransacaoContainer{
         /* background-color: blue; */
         width: 100%;
