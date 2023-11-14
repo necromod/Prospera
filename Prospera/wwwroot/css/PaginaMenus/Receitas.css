@@ -81,8 +81,8 @@ padding-left: 5em;
  background-color: var(--color-RoxaCardMov);
     position: relative;
     display: flex;
-    height: 35rem;
-    width: 40%;
+    height: 32rem;
+    width: 35%;
     /* right: 1em; */
     top: 8em;
     border-radius: 12px;
@@ -129,6 +129,7 @@ top: 3em;
 border-radius: 5px;
   border: none;
   outline: none;
+  
   width: 20em;
   z-index: 99999;
   margin-bottom: -0.5em;
@@ -165,9 +166,12 @@ border-radius: 5px;
   top: -5.4em;
   right: 4em;
   width: 23%;
-  height: 7%;
+  height: 6%;
   color: white;
 }
+#BtnReceitasVoltar a{
+   color: white;
+ }
 #BtnReceitasLimpar{
   background-color: white;
   position: absolute;
@@ -179,14 +183,14 @@ border-radius: 5px;
   background-color: white;
   position: absolute;
   bottom: 0;
-  right: 11em;
+  right: 13em;
   width: 20%;
 }
 #BtnReceitasAlterar{
   background-color: white;
   position: absolute;
   bottom: 0;
-  right: 24.4em;
+  right: 28.4em;
   width: 20%;
 }
 #BtnReceitasConsultar{
@@ -207,6 +211,42 @@ border-radius: 5px;
 padding-bottom: 2.8em;
 text-align: left;
 }
+
+#TxtReceitaNome{
+ position: absolute;
+ left: 0;
+}
+#TxtReceitaObservacao{
+  position: absolute;
+  left: 0;
+  top: 5.5em;
+ }
+ #TxtReceitaValor{
+  position: absolute;
+  left: 0;
+  top: 11em;
+ }
+ #TxtReceitaData{
+  position: absolute;
+  left: 0;
+  top: 17em;
+ }
+ #Metdpagamento{
+  position: absolute;
+  left: 0;
+  top: 23em;
+ }
+ #StatusCont{
+  position: absolute;
+  left: 0;
+  top: 28em;
+ }
+ #DespesasDropPessoaDespesas{
+  position: absolute;
+  left: 0;
+  top: 34em;
+ }
+
 .DropContainer{
     position: absolute;
     /* background-color: #373435; */
@@ -248,9 +288,9 @@ animation: rotate 3s linear infinite;
 #TxtReceitasBuscaId{
   position: absolute;
   top: 0;
-  width: 6%;
+  width: 5%;
   height: 2.8em;
-  right: 16em;
+  right: 24em;
   text-align: center;
   font-weight: 600;
 }
