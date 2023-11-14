@@ -54,9 +54,23 @@ namespace Prospera.Controllers
                 Senha = usuario.SenhaUsuario
             };
 
-            // Chama o método Entrar diretamente no LoginController
+            var usuarioSessao = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == loginModel.Email);
+
+            // Verifique se a caixa "Manter logado" foi marcada
+            bool manterLogado = true;
+
+            // Configurar o tempo de expiração da sessão com base na escolha do usuário
+            var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
+            // Configurar a sessão com o tempo de expiração especificado
+            HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+
+
+            _sessao.CriarSessaoUsuario(usuarioSessao);
+
+            return RedirectToAction("MenuUsuario", "Home");
+            /*// Chama o método Entrar diretamente no LoginController
             var loginController = new LoginController(_context, _sessao);
-            return loginController.Entrar(loginModel);
+            return loginController.Entrar(loginModel);*/
         }
 
 
