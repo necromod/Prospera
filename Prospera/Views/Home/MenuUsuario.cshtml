@@ -33,6 +33,7 @@
 </head>
 
 <body>
+      <button id="AtivaMenu"  onclick="toggleMenu()"><img src="/img/PaginaInicial/MenuHamburger.png"></button>
     <section id="CardCentral">
         <!-- CardConversão e conta bancaria -->
         <ul class="CardCotBanc">
@@ -166,11 +167,12 @@
     </section>
 
     <section id="MenuOpções">
-           <button id="AtivaMenu"><img src="/img/PaginaInicial/MenuHamburger.png"></button>
-        <div class="MenuLateral OcultaMenu">
-            <a asp-area="" asp-controller="Home" asp-action="Index">
-                <h4><img src="/img/PaginaInicial/Menu/Logo.png">Prospera</h4>
-            </a>
+         
+        <div class="MenuLateral OcultaMenu Display">
+            
+                <h4 class="Sair" onclick="toggleMenu()" ><img src="/img/PaginaInicial/MenuHamburger.png"></h4>
+           
+           
             <a asp-area="" asp-controller="Login" asp-action="Sair" id="BtnUsuarioConfig">
                 <img src="/img/PaginaInicial/Menu/IconeUsuario.png">
             </a>
@@ -233,6 +235,7 @@
 
     <!-- link js -->
     <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+     <script src="/js/site.js" asp-append-version="true"></script>
 </body>
 
 </html>

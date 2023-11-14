@@ -55,36 +55,6 @@ body:not(.MenusSelecao h4) {
 
 /*#region MenuLateral*/
 
-#AtivaMenu{
-    display: none;
-    z-index: 99999;
-    position: relative;
-    left: 4em;
-    top: 4em;
-    height: 2.4em;
-    width: 2.5em;
-    background-color: white;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: .3s;
-    border-radius: 5px;
-
-}
-#AtivaMenu:hover{
-transform: scale(1.1);
-transition: .3s;
-border-radius: 0px;
-}
-#AtivaMenu img{
-  width: 30px;
-  position: absolute;
-  margin: auto;
-  left: .1em;
-  top: .1em;
-
-}
-
-
 .MenuLateral {
     background-color: white;
     position: fixed;
@@ -786,14 +756,72 @@ border-radius: 0px;
         transform: rotate(360deg);
     }
 }
-
-
+#AtivaMenu{
+    display: none;
+}
+.Sair{
+    display: none;
+}
 /*#endregion*/
 
 
 
 /*#region Responsivo*/
 
+@media screen and (max-width: 768px) {
+  body{
+    overflow:auto;
+  }
+    .OcultaMenu{
+        width:35%;
+    }
+    .Display{
+        display: none;
+    }
+    .MenusSelecao li{
+        background-color: #242424;
+        width:100%;
+        left: -1.5em;
+        position: absolute;
+    }
+
+    .MenuAplicativo a img{
+             width: 170px!important;
+            margin-left: -2em;
+    }
+    .MenuAplicativo h4{
+        width:80%;
+    }
+  
+    #AtivaMenu img{
+            width: 40px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            cursor: pointer;
+    }
+    .Sair{
+        display: block;
+        cursor: pointer;
+        
+    }
+    #AtivaMenu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        z-index: 9999;
+}
+.Prospera{ display: none;}
+    /* FIM MENU */
+
+   /* TRANSACOES */
+ /* FIM */
+
+ /* NOTICIAS */
+
+
+}
 
 
 
