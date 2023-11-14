@@ -176,6 +176,12 @@ body img {
         margin-left: 3em;
         line-height: 3em;
     }
+    .MenuVanInfContainer img{
+        position: absolute;
+        left: -18em;
+        width: 100px;
+        top: -2.4em;
+    }
 
 /* FIM MENUNAV */
 
@@ -631,3 +637,387 @@ margin-bottom: 1em;
 }
 
 /* FIM FOOTER */
+
+
+
+
+@media screen and (max-width: 360px){
+
+    .IconesFundoIndex img{
+        width: 190px;
+    }
+    /* MENU NAV */
+    .MenuNav{
+        background-color: #801D7B!important;
+    
+        width: 30%;
+    }
+    .MenuVanInfContainer{
+        width: 20%;
+    }
+   
+  .LibtnLogin{
+    width: 8em;
+    margin-left: -3em;
+  }
+  .LiperiodoGratis{
+    display: none;
+  }
+  .MenuVanInfContainer img{
+  width: 80px;
+       position: absolute;
+       margin-left: -7.4em;
+       margin-top: .6em;
+  }
+
+  /* FIM MENU NAV */
+
+  /* CONTEUDO  */
+  .LinkSite{
+    display: none;
+  }
+.TextoProspera img{
+    width: 100%;
+    margin-top: 19em;
+    margin-left: -13em;
+    position: absolute;
+}
+#ImgPrincipal{
+    width: 250px;
+    position: absolute;
+    left: 3em;
+    top: 1em;
+}
+.LibtnAproveitar{
+    display: none;
+}
+.MaoAppIcon{
+    width: 360px;
+    position: absolute;
+    top: -27em;
+    left: .4em;
+}
+.MeuInfApp-Container{
+    /* background-color: #38B6FF; */
+    width: 60%;
+    height: 18em;
+    position: absolute;
+    left: 4em;
+    top: 65em;
+}
+.QrcodeIcon{
+    width: 240px;
+    left: .5em;
+    top: .5em;
+    position: absolute;
+}
+.InfQrcode h2,h4{
+    display: none;
+}
+  /* FIM CONTEUDO */
+
+  /* CARDS */
+.CardServicos-Container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+   
+}
+.CardServicos-Container li{
+    width: 17em!important;
+    height: 13em;
+    padding-bottom: 5.5em;
+    margin-bottom: 12em;
+    position: absolute;
+    left: -.7em;
+}
+.CardServ1{
+position: absolute;
+top:1em;
+}
+.CardServ2{
+    position: absolute;
+    top: 23em;
+    }
+
+    .CardServ3{
+        position: absolute;
+        top: 45em;
+        }
+        .CardServ4{
+            position: absolute;
+            top: 59rem;
+            }
+    
+
+  /* FIM CARDS */
+  .RegionFooter{
+    margin-top: 35em;
+    width: 22.5rem;
+    height: 23em;
+  }
+  .CardServicos-Container h2{
+    font-size: 16px;
+    margin-right: 1em;
+    margin-top: 7em;
+  }
+  .CardServicos-Container li img{
+   width: 70px !important;
+   position: absolute;
+   left: -2em;
+  }
+
+  .FooteServInf{
+    display: none;
+  }
+  .TextoServ{margin-top: 8.5em;}
+  .LinhaDivizora{width:12em!important;}
+
+    
+
+/* FOOTER */
+.CardInsiraEmails{
+    width: 90%;
+    height: 11em;
+    position: absolute;
+    left: 0;
+}
+.LitxtFooterEmail{
+    width: 60%;
+    margin-bottom: 2em;
+}
+.LibtnFooterEnviar{
+    width: 40%;
+  position: absolute;
+  top: 3.6em;
+  right: 1em;;
+}
+.LiCheckFooter{width: 80%;
+margin-top: 2em;
+position: absolute;
+}
+#ChekFooterEmail{
+    position: absolute;
+    left: -5em;
+}
+.LiCheckFooter h4{display: block;
+width: 90%;
+font-size: 10px;
+position: absolute;
+top: .7em;
+left: -4em;
+color: white;}
+
+.InfoFooter{
+    background-color: #1B1572;
+    position: absolute;
+    left: -42em;
+    bottom: -5em;
+    width:10%;
+}
+.LogoFooter{
+  position: absolute;
+  bottom: 5em;
+  width: 120px!important;
+  left: 12em;
+}
+}
+
+/* FIM */
+
+
+@media screen and (max-width: 768px){
+
+/* NAVBAR */
+.LiperiodoGratis{display: none;}
+.StyleA{display: none;}
+.LibtnLogin{
+    margin-left: 24em;
+    width: 11em;
+}
+.LibtnLogin a{
+  text-align: center;
+  margin-left: 1.2em;
+}
+.MenuVanInfContainer img{
+    margin-right: 5em;
+}
+/* FIM */
+
+/* CONTEUDO */
+.IconesFundoIndex img{
+    width: 230px;
+}
+.TextoProspera img{
+    width: 90%!important;
+    position: absolute;
+    top: 40em;
+    left: 4em;
+}
+#ImgPrincipal{
+    width: 480px;
+    padding-left: 3em;
+    position: absolute;
+    left:7.6em;
+}
+
+.LibtnAproveitar{
+    position: absolute;
+    top: 43em;
+    left: 8em;
+}
+.IconIniciar{
+    position: absolute;
+    top: 62.3em;
+    left: 26em;
+}
+.RegionMeioInf{
+    margin-top: 14em;
+}
+.MeuInfApp-Container{
+    width: 93%;
+}
+.InfQrcode h2{
+    font-size: 16px;
+    width: 100%;
+}
+.InfQrcode h4{
+    font-size: 16px;
+}
+.h4-2{
+    width: 100%;
+}
+.QrcodeIcon{
+    width: 180px;
+    margin-top: 2.4em;
+}
+
+/* FIM */
+
+
+/* CARDS */
+.TextoServ{   
+    margin-top: -8em;
+}
+.CardServicos-Container{
+    display: flex;
+    margin-right: 2em;
+   
+}
+.CardServicos-Container li{
+    width: 22em!important;
+    height: 15em;
+    padding-bottom: 5.5em;
+    margin-bottom: 12em;
+    position: absolute;
+    left: -2em;
+}
+.CardServicos-Container h2{
+    font-size: 16px;
+    padding-left: 1.3em;
+    margin-top: 7em;
+    
+  }
+  .CardServicos-Container li img{
+   width: 70px !important;
+   position: absolute;
+  }
+.CardServ2{
+    left: 26em!important;
+    position: absolute;
+}
+
+.CardServ3{
+top: 27em;
+position: absolute;
+
+}
+.CardServ4{
+    left: 26em!important;
+    top: 27em;
+    position: absolute;
+    
+    }
+    
+
+    .FooteServInf{
+        display: none;
+    }
+
+/* FIM CARD */
+
+/* FOOTER */
+
+.RegionFooter{
+width: 102%!important;
+}
+
+.CardInsiraEmails{
+    width: 95%;
+    height: 11em;
+    position: absolute;
+    left: 0;
+}
+.LitxtFooterEmail{
+    width: 80%;
+    margin-bottom: 2em;
+}
+.LibtnFooterEnviar{
+    width: 20%;
+  position: absolute;
+  top: 3.6em;
+  right: 1em;;
+}
+.LiCheckFooter{width: 80%;
+margin-top: 2em;
+position: absolute;
+}
+#ChekFooterEmail{
+    position: absolute;
+    left: -5em;
+}
+.LiCheckFooter h4{display: block;
+width: 90%;
+font-size: 13px;
+position: absolute;
+top: .2em;
+left: -13em;
+color: white;}
+
+.InfoFooter{
+    position: absolute;
+    left: -35em;
+    bottom: 4em;
+    width:10%;
+}
+.LogoFooter{
+  position: absolute;
+  bottom: 5em;
+  width: 120px!important;
+  left: 12em;
+}
+.LiCabecalhoFooter{
+    display: none;
+}
+.LiContatoFooter{
+  display: none;
+}
+
+.LibtnFooter{
+   box-shadow: none;
+}
+.LibtnFooter h4{display: none;}
+.Footer img{
+    position: absolute;
+    bottom: 12em;
+    left: 19em;
+    width: 150px!important;
+}
+
+
+
+
+
+
+
+}

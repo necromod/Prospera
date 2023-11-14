@@ -33,3 +33,18 @@
     });
   $('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
 });
+
+function toggleMenu() {
+  const menuLateral = document.querySelector('.MenuLateral');
+  menuLateral.classList.toggle('Display');
+}
+
+// Adicione esse código para fechar o menu ao clicar em algum item do menu
+const itensMenu = document.querySelectorAll('.MenuLateral a');
+itensMenu.forEach(item => {
+  item.addEventListener('click', () => {
+      const menuLateral = document.querySelector('.MenuLateral');
+      menuLateral.classList.add('Display');
+  });
+});
+
