@@ -54,7 +54,9 @@ body:not(.MenusSelecao h4) {
 /*#region PaginaIncial */
 
 /*#region MenuLateral*/
-
+#BtnMetas{
+    color: darkcyan; 
+}
 .MenuLateral {
     background-color: white;
     position: fixed;
@@ -110,6 +112,9 @@ body:not(.MenusSelecao h4) {
 .MenusSelecao a{
     text-align: left;
 }
+.CardBanco li{
+ background-color: #605F60;
+}
     .MenusSelecao h2 {
        text-align: left;
         color: var(--color-Sextiary);
@@ -137,7 +142,9 @@ body:not(.MenusSelecao h4) {
         margin-top: 2em;
         padding-left: .4em;
     }
-
+.CardTransacoes li span input{
+    background-color: #605F60;
+}
 .Selecao1 a {
     position: absolute;
     top: 2em;
