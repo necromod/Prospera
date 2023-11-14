@@ -77,11 +77,6 @@ namespace Prospera.Controllers
                             TempData["MensagemErro"] = $"Senha incorreta. Tenta novamente";
 
                         }
-
-                        //Criação de Cookies de login
-                        _sessao.CriarSessaoUsuario(usuario);
-
-                        return RedirectToAction("MenuUsuario", "Home");
                     }
                     else
                     {
