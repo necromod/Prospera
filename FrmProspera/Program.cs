@@ -16,7 +16,7 @@ namespace FrmProspera
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMenuInicial());
+            Application.Run(new FrmLogin());
         }
     }
 }

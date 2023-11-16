@@ -141,7 +141,30 @@ namespace FrmProspera
             }
 
         }
+        public void CadastrardATatual(DateTime Usercadastro)
+        {
+            try
+            {
+                Conexao();
+                cmd = new SqlCommand("INSERT INTO Usuario(DatUltimoAcesUsuario) VALUES (@DatUltimoAcesUsuario);", Conectar);
+                cmd.Parameters.AddWithValue("@DatUltimoAcesUsuario", DateTime.Now);
+            
+          
+                cmd.ExecuteNonQuery();
 
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+        }
         public List<TipoUsuarioModel> PopularCBO()
         {
             try

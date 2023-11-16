@@ -34,6 +34,8 @@ namespace FrmProspera
                 }
 
             }
+
+            BtnCadastrar.Enabled = true;
             TextIdUser.Enabled = false;
             TextDataCadastro.Enabled = false;
             TextStatus.Enabled = false;
@@ -133,6 +135,12 @@ namespace FrmProspera
 
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
+  
+            if (TextSenha.Text != TextConfirmaSenha.Text)
+            {
+                MessageBox.Show("Senha de confirmação diferente!!");
+                return;
+            }
 
             if (!ValidarCampos())
             {
