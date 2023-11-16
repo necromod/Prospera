@@ -32,6 +32,7 @@ namespace FrmProspera
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+
             ObjUsuario.NomeUsuario = TxtLogin.Text.Trim();
             ObjUsuario.SenhaUsuario = TxtSenha.Text.Trim();
             Usuario validaLogin =  validaForm.VerificarCredenciais(ObjUsuario);

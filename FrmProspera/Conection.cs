@@ -19,7 +19,7 @@ namespace FrmProspera
 
             try
             {
-                Conectar = new SqlConnection("Data Source=DESKTOP-KLTTHOP\\SQLEXPRESS;Initial Catalog=PROSPERA;Integrated Security=True;");
+                Conectar = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Prospera;Integrated Security=True;");
                 Conectar.Open();
             }
             catch (Exception ex)

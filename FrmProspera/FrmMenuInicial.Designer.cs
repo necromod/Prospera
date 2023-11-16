@@ -34,9 +34,6 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuCadastrar = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.disparaNotificaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.disparaEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,8 +44,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
-            this.usuarioToolStripMenuItem,
-            this.eventosToolStripMenuItem});
+            this.usuarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(947, 24);
@@ -66,7 +62,7 @@
             // MenuSair
             // 
             this.MenuSair.Name = "MenuSair";
-            this.MenuSair.Size = new System.Drawing.Size(98, 22);
+            this.MenuSair.Size = new System.Drawing.Size(180, 22);
             this.MenuSair.Text = "SAIR";
             this.MenuSair.Click += new System.EventHandler(this.MenuSair_Click);
             // 
@@ -89,30 +85,9 @@
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
-            // 
-            // eventosToolStripMenuItem
-            // 
-            this.eventosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.disparaNotificaçãoToolStripMenuItem,
-            this.disparaEmailToolStripMenuItem});
-            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.eventosToolStripMenuItem.Text = "Eventos";
-            // 
-            // disparaNotificaçãoToolStripMenuItem
-            // 
-            this.disparaNotificaçãoToolStripMenuItem.Name = "disparaNotificaçãoToolStripMenuItem";
-            this.disparaNotificaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.disparaNotificaçãoToolStripMenuItem.Text = "Dispara Notificação";
-            // 
-            // disparaEmailToolStripMenuItem
-            // 
-            this.disparaEmailToolStripMenuItem.Name = "disparaEmailToolStripMenuItem";
-            this.disparaEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.disparaEmailToolStripMenuItem.Text = "Dispara Email";
             // 
             // pictureBox1
             // 
@@ -151,9 +126,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuCadastrar;
-        private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem disparaNotificaçãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem disparaEmailToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuSair;

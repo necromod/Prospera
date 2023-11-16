@@ -33,7 +33,6 @@
             this.BtnLogin = new System.Windows.Forms.Button();
             this.LblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.lblEsqueceuSenha = new System.Windows.Forms.LinkLabel();
             this.lblSair = new System.Windows.Forms.LinkLabel();
             this.lblText = new System.Windows.Forms.Label();
             this.chkMostraSenha = new System.Windows.Forms.CheckBox();
@@ -63,7 +62,7 @@
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogin.Font = new System.Drawing.Font("Archive", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnLogin.Location = new System.Drawing.Point(128, 462);
             this.BtnLogin.Name = "BtnLogin";
@@ -76,41 +75,30 @@
             // LblLogin
             // 
             this.LblLogin.AutoSize = true;
-            this.LblLogin.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLogin.Location = new System.Drawing.Point(43, 274);
             this.LblLogin.Name = "LblLogin";
-            this.LblLogin.Size = new System.Drawing.Size(63, 19);
+            this.LblLogin.Size = new System.Drawing.Size(64, 20);
             this.LblLogin.TabIndex = 3;
             this.LblLogin.Text = "LOGIN";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.Location = new System.Drawing.Point(43, 361);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(69, 19);
+            this.lblSenha.Size = new System.Drawing.Size(70, 20);
             this.lblSenha.TabIndex = 3;
             this.lblSenha.Text = "SENHA";
-            // 
-            // lblEsqueceuSenha
-            // 
-            this.lblEsqueceuSenha.AutoSize = true;
-            this.lblEsqueceuSenha.Font = new System.Drawing.Font("Archive", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsqueceuSenha.Location = new System.Drawing.Point(12, 527);
-            this.lblEsqueceuSenha.Name = "lblEsqueceuSenha";
-            this.lblEsqueceuSenha.Size = new System.Drawing.Size(117, 12);
-            this.lblEsqueceuSenha.TabIndex = 4;
-            this.lblEsqueceuSenha.TabStop = true;
-            this.lblEsqueceuSenha.Text = "ESQUECEU A SENHA?";
             // 
             // lblSair
             // 
             this.lblSair.AutoSize = true;
-            this.lblSair.Font = new System.Drawing.Font("Archive", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSair.Location = new System.Drawing.Point(330, 527);
             this.lblSair.Name = "lblSair";
-            this.lblSair.Size = new System.Drawing.Size(31, 12);
+            this.lblSair.Size = new System.Drawing.Size(32, 13);
             this.lblSair.TabIndex = 4;
             this.lblSair.TabStop = true;
             this.lblSair.Text = "SAIR";
@@ -119,10 +107,10 @@
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Archive", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.Location = new System.Drawing.Point(159, 230);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(73, 23);
+            this.lblText.Size = new System.Drawing.Size(76, 25);
             this.lblText.TabIndex = 3;
             this.lblText.Text = "LOGIN";
             // 
@@ -155,7 +143,6 @@
             this.ClientSize = new System.Drawing.Size(392, 554);
             this.Controls.Add(this.chkMostraSenha);
             this.Controls.Add(this.lblSair);
-            this.Controls.Add(this.lblEsqueceuSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.LblLogin);
@@ -181,7 +168,6 @@
         private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.Label LblLogin;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.LinkLabel lblEsqueceuSenha;
         private System.Windows.Forms.LinkLabel lblSair;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.CheckBox chkMostraSenha;
