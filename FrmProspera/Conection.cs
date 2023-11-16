@@ -19,7 +19,14 @@ namespace FrmProspera
 
             try
             {
-                Conectar = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Prospera;Integrated Security=True;");
+                var azureDbServer = "prosperamodel.database.windows.net";
+                var azureDbName = "prosperamodel";
+                var azureDbUser = "ProsperaModel";
+                var azureDbPassword = "Prospera2023@";
+                var connectionString = $"Server={azureDbServer};Database={azureDbName};User Id={azureDbUser};Password={azureDbPassword};Trusted_Connection=False;Encrypt=True;";
+              
+                Conectar = new SqlConnection(connectionString);
+                
                 Conectar.Open();
             }
             catch (Exception ex)

@@ -26,7 +26,7 @@ namespace FrmProspera
                     objUser = new Usuario();
                     objUser.NomeUsuario = dr["NomeUsuario"].ToString();
                     objUser.SenhaUsuario = dr["SenhaUsuario"].ToString();
-                    objUser.TpUsuario = dr["TpUsuario"].ToString();
+                  
                 }
                 return objUser;
             }
@@ -60,7 +60,7 @@ namespace FrmProspera
                     objUser.CargoUsuario = dr["CargoUsuario"].ToString();
                     objUser.DatCadastroUsuario = dr["DatCadastroUsuario"].ToString();
                     objUser.StatusUsuario = dr["StatusUsuario"].ToString();
-                    objUser.TpUsuario = dr["TpUsuario"].ToString();
+                
                     lista.Add(objUser);
                 }
                 return lista;
@@ -117,7 +117,7 @@ namespace FrmProspera
             try
             {
                 Conexao();
-                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,EmailUsuario,SenhaUsuario,CPFUsuario,CargoUsuario,StatusUsuario,TpUsuario,DatCadastroUsuario) VALUES(@NomeUsuario,@EmailUsuario,@SenhaUsuario,@CPFUsuario,@CargoUsuario,@StatusUsuario,@TpUsuario,@DatCadastroUsuario);", Conectar);
+                cmd = new SqlCommand("INSERT INTO Usuario (NomeUsuario,EmailUsuario,SenhaUsuario,CPFUsuario,CargoUsuario,StatusUsuario,DatCadastroUsuario) VALUES(@NomeUsuario,@EmailUsuario,@SenhaUsuario,@CPFUsuario,@CargoUsuario,@StatusUsuario,@DatCadastroUsuario);", Conectar);
                 cmd.Parameters.AddWithValue("@NomeUsuario", UserCad.NomeUsuario).ToString();
                 cmd.Parameters.AddWithValue("@EmailUsuario", UserCad.EmailUsuario).ToString();
                 cmd.Parameters.AddWithValue("@SenhaUsuario", UserCad.SenhaUsuario).ToString();
@@ -125,7 +125,7 @@ namespace FrmProspera
                 cmd.Parameters.AddWithValue("@CargoUsuario", UserCad.CargoUsuario).ToString();
                 cmd.Parameters.AddWithValue("@StatusUsuario", UserCad.StatusUsuario).ToString();
                 cmd.Parameters.AddWithValue("@DatCadastroUsuario", Convert.ToDateTime(UserCad.DatCadastroUsuario));
-                cmd.Parameters.AddWithValue("@TpUsuario", Convert.ToInt32(UserCad.TpUsuario));            
+           /*     cmd.Parameters.AddWithValue("@TpUsuario", Convert.ToInt32(UserCad.TpUsuario));     */       
                 cmd.ExecuteNonQuery();
 
             
@@ -165,7 +165,7 @@ namespace FrmProspera
             }
 
         }
-        public List<TipoUsuarioModel> PopularCBO()
+   /*     public List<TipoUsuarioModel> PopularCBO()
         {
             try
             {
@@ -192,7 +192,7 @@ namespace FrmProspera
             {
                 Desconectar();
             }
-        }
+        }*/
 
         public void ExcluirUsuario(int objDel)
         {

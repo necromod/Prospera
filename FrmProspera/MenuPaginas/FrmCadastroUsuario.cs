@@ -88,13 +88,13 @@ namespace FrmProspera
 
 
             // Preenche a listaDeItens com dados do banco de dados ou de outra fonte
-
-            List<TipoUsuarioModel> listaDeTipoUsuario = validaForm.PopularCBO();
+/*
+            List<TipoUsuarioModel> listaDeTipoUsuario = validaForm.PopularCBO();*/
 
             // Configura o ComboBox
             CboTpUsuario.DisplayMember = "DescricaoTpUsuario";
             CboTpUsuario.ValueMember = "IdTpUsuario";
-            CboTpUsuario.DataSource = listaDeTipoUsuario;
+         /*   CboTpUsuario.DataSource = listaDeTipoUsuario;*/
 
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
             // Configurar a máscara para o CPF
@@ -158,7 +158,7 @@ namespace FrmProspera
             ObjUsuario.CargoUsuario = TextCargo.Text.ToString();
             ObjUsuario.DatCadastroUsuario = DateTime.Now.ToString();
             ObjUsuario.StatusUsuario = "ATIVO";
-            ObjUsuario.TpUsuario = CboTpUsuario.SelectedValue.ToString();
+         /*   ObjUsuario.TpUsuario = CboTpUsuario.SelectedValue.ToString();*/
 
             validaForm.CadastrarUsuario(ObjUsuario);
 
