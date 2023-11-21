@@ -7,3 +7,11 @@ O maior diferencial dessa plataforma é seu design pensado principalmente na ace
 
 Permitindo os usuários ingressem suas informações financeiras e transações, Prospera busca automatizar todas as ferramentas de plataforma, podendo realizar ou receber transações e ter um extrato atualizado em tempo real com cada movimentação, tal como histórico de movimentações com cada pessoa já relacionada, e também atualizando saldo de contas bancárias cadastradas. 
 Através de um consultor automatizado, os usuários receberão análises detalhadas, estatísticas e gráficos personalizados para avaliar seus gastos, metas financeiras e planos de economia. Além disso, implementaremos um sistema de planejamento financeiro que mostra o estado financeiro atual e futuro, mantido sempre atualizado pelas próprias movimentações da conta do usuário.
+
+
+!!! AVISO !!!
+
+Para abrir o programa, é necessário ter instalado o Visual Studio 2022, com as seguintes cargas de trabalho ativas:
+ASP.NET e desenvolvimento Web
+Desenvolvimento com a Plataforma Universal do Windows
+Processamento e armazenamento de dados
