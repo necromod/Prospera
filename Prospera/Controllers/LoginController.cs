@@ -4,7 +4,6 @@ using Prospera.Models;
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Prospera.Helpers;
 using Newtonsoft.Json;
 
@@ -53,42 +52,41 @@ namespace Prospera.Controllers
                     var usuario = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == loginModel.Email);
 
                     if (usuario != null)
-                    {
-                        // O email existe, verifique a senha
-                        if (HttpContext != null)
+                    {                        
+                        if (loginModel.Senha == usuario.SenhaUsuario) 
                         {
-                            // Verifique se a caixa "Manter logado" foi marcada
-                            bool manterLogado = HttpContext.Request.Form["manterLogado"] == "on" ? true : false; // Assumindo que "manterLogado" é o nome do campo do checkbox
+                            if (HttpContext != null)
+                            {
+                                // Verifique se a caixa "Manter logado" foi marcada
+                                bool manterLogado = HttpContext.Request.Form["manterLogado"] == "on" ? true : false; // Assumindo que "manterLogado" é o nome do campo do checkbox
 
-                            // Configurar o tempo de expiração da sessão com base na escolha do usuário
-                            var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
+                                // Configurar o tempo de expiração da sessão com base na escolha do usuário
+                                var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
 
-                            // Configurar a sessão com o tempo de expiração especificado
-                            HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+                                // Configurar a sessão com o tempo de expiração especificado
+                                HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
 
 
-                            //Criação de Cookies de login
-                            _sessao.CriarSessaoUsuario(usuario);
+                                //Criação de Cookies de login
+                                _sessao.CriarSessaoUsuario(usuario);
 
-                            return RedirectToAction("MenuUsuario", "Home");
+                                return RedirectToAction("MenuUsuario", "Home");
+                            }
+                            else
+                            {
+                                TempData["MensagemErro"] = $"Email incorreta. Tenta novamente";
+
+                            }
                         }
-                        else
-                        {
-                            TempData["MensagemErro"] = $"Senha incorreta. Tenta novamente";
-
-                        }
+                        else { TempData["MensagemErro"] = $"Senha incorreta. Tenta novamente"; }
+                        
                     }
                     else
                     {
-                        TempData["MensagemErro"] = $"Senha incorreta. Tenta novamente";
+                        TempData["MensagemErro"] = $"Email não cadastrado. Tenta novamente ou cadastre-se";
                     }
                 }
-
-                else
-                {
-                    TempData["MensagemErro"] = $"Email não cadastrado";
-                }
-                
+                                               
             }
             catch (Exception erro)
             {

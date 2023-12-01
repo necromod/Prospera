@@ -70,7 +70,7 @@
 
                         <li class="LiTxtCPF">
                             <div class="form-group">
-                                <input type="text" placeholder="CPF:" id="TxtCadastroCPF" asp-for="CPFUsuario" class="form-control" />
+                                <input type="number" placeholder="CPF:" id="TxtCadastroCPF" asp-for="CPFUsuario" class="form-control" />
                                 <img src="/img/Cadastrar/IconCPF.png">
                             </div>
                         </li>
@@ -91,9 +91,77 @@
 
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    }
+    <script>
+        var cpfValido = false; // Variável para controlar se o CPF é válido ou não
+        var emailValido = false; // Variável para controlar se o CPF é válido ou não
+
+        $(document).ready(function () {
+
+            // Função para verificar ambos os campos quando o formulário for enviado
+            $("form").submit(function (e) {
+                e.preventDefault(); // Impede o envio automático do formulário
+
+                // Verifica primeiro se o email é válido
+                VerificarEmailDuplicado($("#TxtCadastroEmail").val(), function (emailIsValid) {
+                    if (!emailIsValid) {
+                        alert("Email já cadastrado!");
+                        return;  // Retorna para interromper a execução
+                    }
+
+                    // Se o email for válido, verifica se o CPF é válido
+                    verificarCPFDuplicado($("#TxtCadastroCPF").val(), function (cpfIsValid) {
+                        if (!cpfIsValid) {
+                            alert("CPF já cadastrado!");
+                            return;  // Retorna para interromper a execução
+                        }
+
+                        // Se ambos os campos forem válidos, envie o formulário
+                        $("form").unbind('submit').submit();
+                    });
+                });
+            });
+
+            // Função para verificar se o email já existe no banco de dados
+            function VerificarEmailDuplicado(email, callback) {
+                $.ajax({
+                    url: "/Cadastro/VerificarEmailDuplicado",
+                    type: "POST",
+                    data: { email: email },
+                    success: function (data) {
+                        if (!data) {
+                            $("#TxtCadastroEmail").val("");
+                            callback(false);  // Chama o callback com falso para indicar que o e-mail não é válido
+                        } else {
+                            callback(true);  // Chama o callback com verdadeiro para indicar que o e-mail é válido
+                        }
+                    }
+                });
+            }
+
+
+            // Função para verificar se o CPF já existe no banco de dados
+            function verificarCPFDuplicado(cpf, callback) {
+                $.ajax({
+                    url: "/Cadastro/VerificarCPFDuplicado",
+                    type: "POST",
+                    data: { cpf: cpf },
+                    success: function (data) {
+                        if (!data) {
+                            $("#TxtCadastroCPF").val("");
+                            callback(false);
+                        } else {
+                            callback(true);
+                        }
+                    }
+                });
+            }
+        });
+
+    </script>
+}

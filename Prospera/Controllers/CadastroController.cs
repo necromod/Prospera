@@ -37,42 +37,71 @@ namespace Prospera.Controllers
         public IActionResult Cadastrar(Usuario usuario)
         {
 
-            //Iserção automática dos campos 
-            usuario.DatCadastroUsuario = DateTime.Now;
-            usuario.DatUltimoAcesUsuario = DateTime.Now;
-            usuario.CargoUsuario = "Comum";
-            usuario.StatusUsuario = "Ativo";
-
-            //Criação do usuário dentro do banco
-            _context.Usuario.Add(usuario);
-            _context.SaveChanges();
-
-            // Cria um objeto LoginModel com o email e senha do novo usuário
-            LoginModel loginModel = new LoginModel
+            try
             {
-                Email = usuario.EmailUsuario,
-                Senha = usuario.SenhaUsuario
-            };
-
-            var usuarioSessao = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == loginModel.Email);
-
-            // Verifique se a caixa "Manter logado" foi marcada
-            bool manterLogado = true;
-
-            // Configurar o tempo de expiração da sessão com base na escolha do usuário
-            var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
-            // Configurar a sessão com o tempo de expiração especificado
-            HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+                //Verifica se todos os campos foram preenchidos
+                if (usuario.EmailUsuario == null)
+                {
+                    TempData["MensagemErro"] = $"Por favor, preencha todos os campos.";
+                }
 
 
-            _sessao.CriarSessaoUsuario(usuarioSessao);
+                //Iserção automática dos campos 
+                usuario.DatCadastroUsuario = DateTime.Now;
+                usuario.DatUltimoAcesUsuario = DateTime.Now;
+                usuario.CargoUsuario = "Comum";
+                usuario.StatusUsuario = "Ativo";
 
-            return RedirectToAction("MenuUsuario", "Home");
-            /*// Chama o método Entrar diretamente no LoginController
-            var loginController = new LoginController(_context, _sessao);
-            return loginController.Entrar(loginModel);*/
+                //Criação do usuário dentro do banco
+                _context.Usuario.Add(usuario);
+                _context.SaveChanges();
+
+                // Cria um objeto LoginModel com o email e senha do novo usuário
+                LoginModel loginModel = new LoginModel
+                {
+                    Email = usuario.EmailUsuario,
+                    Senha = usuario.SenhaUsuario
+                };
+
+                var usuarioSessao = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == usuario.EmailUsuario);
+
+                // Verifique se a caixa "Manter logado" foi marcada
+                bool manterLogado = true;
+
+                // Configurar o tempo de expiração da sessão com base na escolha do usuário
+                var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
+                // Configurar a sessão com o tempo de expiração especificado
+                HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+
+
+                _sessao.CriarSessaoUsuario(usuarioSessao);
+
+                return RedirectToAction("MenuUsuario", "Home");
+                /*// Chama o método Entrar diretamente no LoginController
+                var loginController = new LoginController(_context, _sessao);
+                return loginController.Entrar(loginModel);*/
+            }
+            catch (Exception erro)
+            {
+                // Se houver algum erro inesperado
+                TempData["MensagemErro"] = $"Por favor, preencha todos os campos.";
+            }
+
+            return View("Cadastro");
         }
 
+        [HttpPost]
+        public JsonResult VerificarCPFDuplicado(string cpf)
+        {
+            var usuarioExistente = _context.Usuario.Any(u => u.CPFUsuario == cpf);
+            return Json(!usuarioExistente); // Retorna verdadeiro se não existir e falso se existir
+        }
 
+        [HttpPost]
+        public JsonResult VerificarEmailDuplicado(string email)
+        {
+            var usuarioExistente = _context.Usuario.Any(u => u.EmailUsuario == email);
+            return Json(!usuarioExistente); // Retorna verdadeiro se não existir e falso se existir
+        }
     }
 }

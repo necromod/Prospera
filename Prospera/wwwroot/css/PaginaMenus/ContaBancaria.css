@@ -58,14 +58,14 @@ body {
     padding-left: 5em;
 }
 #BtnOrcamento{ 
-    color: darkcyan;
+    color: dimgrey;
 }
 .ContaBancContainer{
     height: 70%;
     
 }
 #BtnMetas{
-    color: darkcyan; 
+    color: dimgrey; 
 }
 #FundoMenusContasBanc:not(.Container) {
     /* display: none; */
@@ -86,7 +86,7 @@ body {
     
 }
 #BtnContasBancaria{
-    color: darkcyan;
+    color: dimgrey;
 }
 
 .TxtInfContBanc {

@@ -1,0 +1,205 @@
+
+html {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  
+  
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
+    text-decoration: none;
+  
+  }
+  
+  input {
+    font-family: 'Inter', sans-serif;
+  
+  }
+  
+  body {
+    background-color: var(--color-Fundo) !important;
+    /* background-color: black; */
+  }
+  
+  :root {
+    --color-default: #242424;
+    --color-primary: #e64c30;
+    --color-segundary: #1B1572;
+    --color-tertiary: #801D7B;
+    --color-tertiary2: #fdf6f6;
+    --color-quartiary: #7836FA;
+    --color-quintiaty: #373435;
+    --color-Sextiary:#605F60;
+    --color-Fundo: #F4F2FF;
+    --color-RoxaCardMov:#8C52FF;
+  }
+  
+  
+  
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  
+  }
+  
+  body:not(.MenusSelecao h4) {
+    font-size: 14px;
+  
+  
+  }
+  
+
+/*#region Cadastrar*/
+
+.CardInfCadastrar {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .CadastrarInf {
+    /* background-color: #e64c30; */
+    position: relative;
+    align-items: center;
+    top: 1.8em;
+    width: 80%;
+    height: 36em;
+  }
+  
+  .CadastrarInf h2 {
+  
+    text-align: left;
+    position: absolute;
+    left: 6em;
+    top: 1em;
+    color: var(--color-tertiary);
+  }
+  
+  .CadastrarInf input:not(#ChekPermitirEnvioEmail) {
+    position: absolute;
+    top: 35%;
+    border: none;
+    margin: 0;
+    width: 12rem;
+    border-radius: 20px;
+    height: 3em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .LiTxtNome {
+    top: 20%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LiTxtNome img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: 0.7em;
+  }
+  
+  .LiTxtEmail {
+    top: 31%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LiTxtEmail img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: 0.7em;
+  }
+  
+  .LiTxtSenha {
+    top: 42%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LiTxtSenha img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: 0.7em;
+  }
+  
+  .LiTxtCPF {
+    top: 53%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .LiTxtCPF img {
+    position: absolute;
+    width: 20px;
+    left: 1.3em;
+    top: 0.7em;
+  }
+  
+  
+  
+  
+  .CadastrarInf input::placeholder {
+    padding-left: 3em;
+    color: var(--color-tertiary);
+    font-weight: 700;
+  }
+  
+  
+  
+  #BtnCadastrar {
+    position: absolute;
+    width: 13em;
+    height: 2.5em;
+    border-radius: 5px;
+    top: 74%;
+    left: 25%;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .5s;
+  
+  }
+  
+  #BtnCadastrar a {
+    color: white;
+    font-size: 17px;
+    top: 1em;
+    line-height: 35px;
+    border-radius: 5px;
+  }
+  
+  #BtnCadastrar:hover {
+    background-color: var(--color-quartiary);
+    transition: .5s;
+  }
+  
+  .BtxtInscrevase {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .CheckH4Cadastro {
+    position: absolute;
+    top: 61%;
+    left: 8%;
+    color: var(--color-tertiary);
+    font-size: 12px;
+  }
+  
+  
+  /*#endregion*/
+  
