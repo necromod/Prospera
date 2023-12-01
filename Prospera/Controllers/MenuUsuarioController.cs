@@ -39,8 +39,7 @@ namespace Prospera.Controllers
                 {
                     terceiros.IdUsuario = 55;
                 }
-
-
+                
 
                 //inserção automática dos campos
                 //Encontre o próximo Codico

@@ -1,0 +1,410 @@
+html {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+input {
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    background-color: var(--color-Fundo) !important;
+    /* background-color: black; */
+   
+}
+
+:root {
+    --color-default: #242424;
+    --color-primary: #e64c30;
+    --color-segundary: #1B1572;
+    --color-tertiary: #801D7B;
+    --color-tertiary2: #fdf6f6;
+    --color-quartiary: #7836FA;
+    --color-quintiaty: #373435;
+    --color-Sextiary: #605F60;
+    --color-Fundo: #F4F2FF;
+    --color-RoxaCardMov: #8C52FF;
+}
+
+
+.HeadMenuContasBanc {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.HeadMenuContasBanc h4 {
+    color: var(--color-quintiaty);
+    text-align: left;
+    padding-left: 5em;
+}
+#BtnOrcamento{ 
+    color: darkcyan;
+}
+.ContaBancContainer{
+    height: 70%;
+    
+}
+#BtnMetas{
+    color: darkcyan; 
+}
+#FundoMenusContasBanc:not(.Container) {
+    /* display: none; */
+    background-color: white;
+    width: 98%;
+    left: 0;
+    top: -1em;
+    height: 100%;
+    z-index: 99999;
+    transition: .7s;
+    position: absolute;
+    /* Certifique-se de que outros elementos dentro da div não sejam afetados */
+    backdrop-filter: blur(20px);
+    /* Ajuste o valor para o desfoque desejado */
+    /* opacity: 0.5; */
+    background-color: rgba(195, 191, 191, 0.5);
+    /* Cor vermelha com 50% de transparência */
+    
+}
+#BtnContasBancaria{
+    color: darkcyan;
+}
+
+.TxtInfContBanc {
+    /* background-color: red; */
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 8.5em;
+}
+
+.TxtInfContBanc button:hover {
+    border-radius: 0px;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.TxtInfContBanc input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 20em;
+    z-index: 99999;
+    margin-bottom: -0.5em;
+    height: 3em;
+    margin-left: 4em;
+    margin-top: 3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.TxtInfContBanc button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 20em;
+    margin-bottom: -0.5em;
+    height: 3em;
+    margin-left: 4em;
+    margin-top: 3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+#BtnContBancCadastrar {
+    background-color: white;
+    position: absolute;
+    bottom: 3.5em;
+    right: 1em;
+    width: 20%;
+
+}
+
+#BtnContBancVoltar {
+    background-color: var(--color-RoxaCardMov);
+    position: absolute;
+    top: -11.4em;
+    right: 1em;
+    width: 19%;
+    height: 7%;
+    color: white;
+}
+
+#BtnContBancLimpar {
+    background-color: white;
+    position: absolute;
+    bottom: 3.5em;
+    left: -2.5em;
+    width: 20%;
+}
+#BtnContaBancConsultar{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    top: -5.4em;
+    right: 10em;
+    width: 20%;
+}
+#BtnContaBancApagar{
+    background-color: white;
+    position: absolute;
+    bottom: 3.5em;
+    right: 11em;
+    width: 20%;
+}
+#BtnContaBancAlterar{
+    background-color: white;
+    position: absolute;
+    bottom: 3.5em;
+    right: 24.6em;
+    width: 20%
+}
+#BtnContaBancLista{
+    background-color: var(--color-RoxaCardMov);
+    position: absolute;
+    top: -11.4em;
+    right: 11em;
+    width: 19%;
+    height: 7%;
+    color: white;
+
+}
+#TxtContaBancBuscaId{
+    position: absolute;
+    top: -5.4em;
+    width: 6%;
+    height: 2.8em;
+    right: 22em;
+    text-align: center;
+    font-weight: 600;
+    z-index: 9999;
+    /* background-color: #242424; */
+}
+
+#TxtContBancObservacao {
+    width: 33em;
+}
+
+.TxtInfContBanc span {
+    position: absolute;
+    left: 4em;
+    top: -5em;
+}
+
+.TxtInfContBanc span h4 {
+    padding-bottom: 2.8em;
+    text-align: left;
+}
+
+
+.NomID2{
+    position: absolute;
+    top: 0;
+    left: 16.4em;
+}
+#TxtContBancObservacao {
+    width: 33em;
+}
+
+
+
+#DropBancoCont {
+    position: absolute;
+    height: 3em;
+    width: 30%;
+    top: -2.5em;
+    left: 4em;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+#ImgBancoSelect {
+    position: relative;
+    z-index: 999999;
+    top: 6em;
+    left: 11em;
+    width: 3.6em;
+    height: 3.3em;
+    /* background-color: white; */
+    border-radius: 4px;
+ 
+}
+
+#ImgBancoSelect img {
+    width:46px;
+    position: absolute;
+    left: .2em;
+    top: em;
+    border-radius: 4px;
+}
+
+
+.LgBradesco {
+    display: none;
+}
+
+#LgInter {
+    display: none;
+}
+
+.LgItau {
+    display: none;
+}
+
+
+
+
+
+
+
+/*#region Consulta conta Bancaria*/
+#ConsultContBanc {
+    backdrop-filter: blur(20px);
+    /* Ajuste o valor para o desfoque desejado */
+    /* opacity: 0.5; */
+    background-color: rgba(195, 191, 191, 0.5);
+    /* Cor vermelha com 50% de transparência */
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 39.5rem;
+    top: -1em;
+    left: -.4em;
+    margin: auto;
+}
+
+.ContainerContBanc {
+    width: 60%;
+    position: absolute;
+    height: 60%;
+    left:26em;
+    top: 6em;
+
+}
+
+.HeadMenuContBanc {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    left: 0;
+    border-top-left-radius: 12px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.TtxContBancContainer {
+    position: absolute;
+    /* background-color: #605F60; */
+    height: 100%;
+    width: 99%;
+  left: .6em;
+}
+
+.HeadContBanc {
+    /* background-color: blue; */
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    height: 3em;
+    display: flex;
+}
+.HeadContBanc h4 {
+    color: var(--color-Sextiary);
+   margin-left: 10em;
+   top: -.4em;
+}
+/*#region h4 head*/
+.HeadContBanc1{
+    position: absolute;
+    left: -5em;
+}
+.HeadContBanc2{
+    position: absolute;
+    left: 7.7em;
+}
+.HeadContBanc3{
+    position: absolute;
+    left: 12rem;
+}
+.HeadContBanc4{
+    position: absolute;
+    left: 19rem;
+}
+.HeadContBanc5{
+    position: absolute;
+    left: 27.4rem;
+}
+.HeadContBanc6{
+    position: absolute;
+    left: 35.5rem;
+}
+
+/*#endregion*/
+
+#BtnVoltarConsultCont{
+    background-color: var(--color-RoxaCardMov);
+    position: absolute;
+    right:1em;
+    width: 5%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    height: 5%;
+    top: .5em;
+    z-index: 99999;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#BtnVoltarConsultCont:hover{
+border-radius: 0px;
+transform: scale(1.1);
+transition: .2s;
+}
+.TtxContBancContainer{
+    background-color: white;
+    width:95%;
+    top: 4em;
+    height: 2.5em;
+    left: 2.5em;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.TtxContBancContainer input{
+    margin-left: .1em;
+    width: 18.9vh;
+    margin-top: .5em;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+/*#endregion/
