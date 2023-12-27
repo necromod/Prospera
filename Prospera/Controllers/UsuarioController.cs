@@ -76,17 +76,17 @@ namespace Prospera.Controllers
         // GET: Usuario/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Usuario == null)
+            /*if (id == null || _context.Usuario == null)
             {
                 return NotFound();
-            }
+            }*/
 
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(id);/*
             if (usuario == null)
             {
                 return NotFound();
-            }
-            return View(usuario);
+            }*/
+            return View();
         }
 
         // POST: Usuario/Edit/5
@@ -182,7 +182,6 @@ namespace Prospera.Controllers
         {
             return View();
         }
-
 
     }
 }

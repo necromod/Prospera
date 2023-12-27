@@ -1,64 +1,166 @@
 ﻿@model Prospera.Models.Usuario
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Redefinir Senha";
 }
 
-<h1>Edit</h1>
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdUsuario" />
-            <div class="form-group">
-                <label asp-for="NomeUsuario" class="control-label"></label>
-                <input asp-for="NomeUsuario" class="form-control" />
-                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EmailUsuario" class="control-label"></label>
-                <input asp-for="EmailUsuario" class="form-control" />
-                <span asp-validation-for="EmailUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SenhaUsuario" class="control-label"></label>
-                <input asp-for="SenhaUsuario" class="form-control" />
-                <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CargoUsuario" class="control-label"></label>
-                <input asp-for="CargoUsuario" class="form-control" />
-                <span asp-validation-for="CargoUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DatCadastroUsuario" class="control-label"></label>
-                <input asp-for="DatCadastroUsuario" class="form-control" />
-                <span asp-validation-for="DatCadastroUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DatUltimoAcesUsuario" class="control-label"></label>
-                <input asp-for="DatUltimoAcesUsuario" class="form-control" />
-                <span asp-validation-for="DatUltimoAcesUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StatusUsuario" class="control-label"></label>
-                <input asp-for="StatusUsuario" class="form-control" />
-                <span asp-validation-for="StatusUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaçoes -->
+<meta name="viewport" content="width=device-width">
+<!-- link css -->
+<link rel="stylesheet" href="/css/Login_Register.css">
+<!-- Fonte inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
+      rel="stylesheet">
+
+<title>Document</title>
+
+<!-- Session NavBar -->
+<section id="NavBar">
+    <div class="MenuNav">
+
+        <ul class="Nav-Container">
+            <img src="/img/Favicon.png">
+            <img src="/img/Login/Lateral.png" class="ImgLateral">
+            <h2>PROSPERA</h2>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
+        </ul>        
+
+        <form asp-controller="Usuario" asp-action="RedefinirSenha" method="post">         
+            <ul class="div-central container">               
+                <li class="ImgFundo2">
+                    <img src="/img/Cadastrar/CadastrarBanner.png">
+                </li>
+                <ul class="CardInfCadastrar">
+
+                    <ul class="CadastrarInf text-danger">
+                        <h2>Redefinir Senha</h2>
+                        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                        <span asp-validation-for="EmailUsuario" class="text-danger"></span>
+                        <span asp-validation-for="CPFUsuario" class="text-danger"></span>
+                        <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
+
+                        <li class="LiTxtNome">
+                            <div class="form-group">
+                                <input asp-for="NomeUsuario" id="TxtCadastroNome" placeholder="Nome completo" type="text" class="form-control" />
+                                <img src="../img/Cadastrar/IconNome.png ">
+                            </div>
+                        </li>
+                        <li class="LiTxtEmail">
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail:" id="TxtCadastroEmail" asp-for="EmailUsuario" class="form-control" />
+                                <img src="/img/Cadastrar/IconEmail.png">
+                            </div>
+                        </li>
+
+                        <li class="LiTxtCPF">
+                            <div class="form-group">
+                                <input type="number" placeholder="CPF:" id="TxtCadastroCPF" asp-for="CPFUsuario" class="form-control" />
+                                <img src="/img/Cadastrar/IconCPF.png">
+                            </div>
+                        </li>
+
+                        <h4>Digite aqui a sua nova senha</h4>
+                        <li class="LiTxtSenha">
+                            <div class="form-group">
+                                <input type="text" placeholder="nova senha:" id="TxtCadastroSenha" asp-for="SenhaUsuario" class="form-control" />
+                                <img src="/img/Cadastrar/IconSenha.png">
+                            </div>
+                        </li>
+                        <h4>Confirme a sua senha</h4>
+                        <div class="form-group">
+                            <input id="TxtCadastroSenha" class="form-control" type="text" placeholder=" confirmar senha">
+                            <img src="/img/Cadastrar/IconSenha.png">
+                        </div>
+
+                        <a asp-controller="Login" asp-action="Login" id="BtnCadastrarLogar">Logar</a>
+
+                    </ul>
+                    <div class="form-group">
+                        <button id="BtnCadastrar" type="submit" class="btn btn-primary">ALTERAR</button>
+                    </div>
+                </ul>
+            </ul>
+        </form>       
     </div>
-</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
+        
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        var cpfValido = false; // Variável para controlar se o CPF é válido ou não
+        var emailValido = false; // Variável para controlar se o CPF é válido ou não
+
+        $(document).ready(function () {
+
+            // Função para verificar ambos os campos quando o formulário for enviado
+            $("form").submit(function (e) {
+                e.preventDefault(); // Impede o envio automático do formulário
+
+                // Verifica primeiro se o email é válido
+                VerificarEmailDuplicado($("#TxtCadastroEmail").val(), function (emailIsValid) {
+                    if (!emailIsValid) {
+                        alert("Email não encontrado!");
+                        return;  // Retorna para interromper a execução
+                    }
+
+                    // Se o email for válido, verifica se o CPF é válido
+                    verificarCPFDuplicado($("#TxtCadastroCPF").val(), function (cpfIsValid) {
+                        if (!cpfIsValid) {
+                            alert("CPF não encontrado!");
+                            return;  // Retorna para interromper a execução
+                        }
+
+                        // Se ambos os campos forem válidos, envie o formulário
+                        $("form").unbind('submit').submit();
+                    });
+                });
+            });
+
+            // Função para verificar se o email já existe no banco de dados
+            function VerificarEmailDuplicado(email, callback) {
+                $.ajax({
+                    url: "/Cadastro/VerificarEmailDuplicado",
+                    type: "POST",
+                    data: { email: email },
+                    success: function (data) {
+                        if (!data) {
+                            $("#TxtCadastroEmail").val("");
+                            callback(true);  // Devolve o valor TRUE se encontrar o email
+                        } else {
+                            callback(false);  // Devolve o valor FLASE se NÃO encontrar o email
+                        }
+                    }
+                });
+            }
+
+
+            // Função para verificar se o CPF já existe no banco de dados
+            function verificarCPFDuplicado(cpf, callback) {
+                $.ajax({
+                    url: "/Cadastro/VerificarCPFDuplicado",
+                    type: "POST",
+                    data: { cpf: cpf },
+                    success: function (data) {
+                        if (!data) {
+                            $("#TxtCadastroCPF").val("");
+                            callback(true);
+                        } else {
+                            callback(false);
+                        }
+                    }
+                });
+            }
+        });
+
+    </script>
 }
