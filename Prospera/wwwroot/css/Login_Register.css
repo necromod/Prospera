@@ -196,10 +196,11 @@ top: 5em;
 
 
     .LoginInf li input:not(#ChekManterLogado) {
+        padding-left: 2.7em;
         position: absolute;
         top: 35%;
         border: none;
-        width: 12rem;
+        width: 14em;
         border-radius: 20px;
         height: 3em;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -272,11 +273,6 @@ top: 5em;
         transition: .3s;
         transform: scale(1.1);
     }
-
-.BtxtInscrevase {
-    position: absolute;
-    right: 3em;
-}
 
 .BtxtEsqSenha {
     position: absolute;
@@ -443,17 +439,19 @@ top: 5em;
         top: 1em;
         color: var(--color-tertiary);
     }
-
-    .CadastrarInf input:not(#ChekPermitirEnvioEmail) {
-        position: absolute;
-        top: 35%;
-        border: none;
-        margin: 0;
-        width: 12rem;
-        border-radius: 20px;
-        height: 3em;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
+   
+    .CadastrarInf input:not(#ChekPermitirEnvioEmail)
+{
+    padding-left: 3em;
+    position: absolute;
+    top: 35%;
+    border: none;
+    margin: 0;
+    width: 14em;
+    border-radius: 20px;
+    height: 3em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
 .LiTxtNome {
     top: 20%;
