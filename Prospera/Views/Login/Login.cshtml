@@ -56,8 +56,8 @@
                         <form asp-controller="Login" asp-action="Entrar" method="post">
                         <li class="TxtLogin EspacoInput"><input asp-for="Email" type="text" placeholder="Email" id="TxtLogin"></li>
                             @Html.ValidationMessageFor(x => x.Email)
-                        <li class="IconSenha"><img src="/img/Login/IconLogin.png"></li>
-                        <li class="IconLogin"><img src="/img/Login/IconSenha.png"></li>
+                            <li class="IconSenha"><img src="/img/Login/IconSenha.png"></li>
+                            <li class="IconLogin"><img src="/img/Login/IconLogin.png"></li>
 
                         <li class="TxtSenha EspacoInput"><input type="password" asp-for="Senha" placeholder="Senha" id="TxtSenha"></li>
                             @Html.ValidationMessageFor(x => x.Senha)
