@@ -416,6 +416,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showNews(currentNews);
 
+    //recarregar notícias do dia
+    document.getElementById('').addEventListener('click', function () {
+
+    })
+
     document.getElementById('Anterior').addEventListener('click', function () {
         currentNews--;
         showNews(currentNews);

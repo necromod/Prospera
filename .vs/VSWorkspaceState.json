@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Prospera",
+    "\\Prospera\\Views",
+    "\\Prospera\\Views\\Usuario"
   ],
+  "SelectedNode": "\\Prospera\\Views\\Usuario\\Edit.cshtml",
   "PreviewInSolutionExplorer": false
 }

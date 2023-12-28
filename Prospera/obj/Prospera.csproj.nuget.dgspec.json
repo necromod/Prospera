@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj": {}
+    "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj": {
+    "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
+        "projectUniqueName": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
         "projectName": "Prospera",
-        "projectPath": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
+        "projectPath": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
         "packagesPath": "C:\\Users\\edsilva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\obj\\",
+        "outputPath": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

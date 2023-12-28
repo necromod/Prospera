@@ -496,6 +496,19 @@ body:not(.MenusSelecao h4) {
    color:var(--color-Sextiary);
    margin-bottom: .2em;
 }
+
+
+#RecarregaNoticias {
+    font-size: 0.8em;
+    font-weight: 500;
+    top: 0.2rem;
+    right: 0.1rem;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent !important;
+    color: grey;
+}
 .CardNoticias button{
     background-color: #7836FA!important;
     width: 13%;
@@ -509,6 +522,7 @@ body:not(.MenusSelecao h4) {
     cursor: pointer;
     transition: .3s;
 }
+
 .CardNoticias button:hover{
   transition: .3s;
   transform: scale(1.1);
@@ -517,8 +531,9 @@ body:not(.MenusSelecao h4) {
 #proximo{
     right: 9em;
 }
-/*#endregion*/
 
+
+/*#endregion*/
 /*#region cotacao*/
 .CardCotBanc {
     width: 20%;
