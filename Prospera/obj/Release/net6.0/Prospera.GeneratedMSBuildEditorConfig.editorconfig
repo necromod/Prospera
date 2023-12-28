@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Prospera
 build_property.RootNamespace = Prospera
-build_property.ProjectDir = C:\Users\edsilva\source\repos\necromod\Prospera\Prospera\
+build_property.ProjectDir = C:\Users\edsilva\Source\Repos\necromod\Prospera\Prospera\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\edsilva\source\repos\necromod\Prospera\Prospera
+build_property.MSBuildProjectDirectory = C:\Users\edsilva\Source\Repos\necromod\Prospera\Prospera
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Cadastro/Cadastro.cshtml]
@@ -136,24 +136,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVyY2Vpcm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Usuario/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Usuario/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Usuario/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Usuario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/Usuario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edsilva/source/repos/necromod/Prospera/Prospera/Views/_ViewImports.cshtml]
