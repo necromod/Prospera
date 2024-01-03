@@ -23,12 +23,12 @@
 <section id="NavBar">
     <div class="MenuNav">
 
-        <ul class="Nav-Container">
+        <div class="Nav-Container">
             <img src="/img/Favicon.png">
             <img src="/img/Login/Lateral.png" id="BackgroundImg">
             <h2>PROSPERA</h2>
-            <li><a asp-area="" asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
-        </ul>        
+            <a asp-area="" class="btnProspera" asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a>
+        </div>        
 
         <form asp-controller="Usuario" asp-action="RedefinirSenha" method="post">         
             <ul class="div-central container">               
@@ -39,48 +39,54 @@
 
                     <ul class="CadastrarInf text-danger">
                         <h2>Redefinir Senha</h2>
-                        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-                        <span asp-validation-for="EmailUsuario" class="text-danger"></span>
-                        <span asp-validation-for="CPFUsuario" class="text-danger"></span>
-                        <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
-
-                        <li class="LiTxtNome">
-                            <div class="form-group">
-                                <input asp-for="NomeUsuario" id="TxtRedefinirNome" placeholder="Nome completo" type="text" class="form-control" />
-                                <img src="../img/Cadastrar/IconNome.png ">
-                            </div>
-                        </li>
-                        <li class="LiTxtEmail">
-                            <div class="form-group">
-                                <input type="email" placeholder="E-mail:" id="TxtRedefinirEmail" asp-for="EmailUsuario" class="form-control" />
-                                <img src="/img/Cadastrar/IconEmail.png">
-                            </div>
-                        </li>
-
-                        <li class="LiTxtCPF">
-                            <div class="form-group">
-                                <input type="number" placeholder="CPF:" id="TxtRedefinirCPF" asp-for="CPFUsuario" class="form-control" />
-                                <img src="/img/Cadastrar/IconCPF.png">
-                            </div>
-                        </li>
-
-                        <li class="LiTxtSenha">
-                            <div class="form-group">
-                                <input type="text" placeholder="Nova senha:" id="TxtRedefinirSenha" asp-for="SenhaUsuario" class="form-control" />
-                                <img src="/img/Cadastrar/IconSenha.png">
-                            </div>
-                        </li>
-                        <div class="form-group">
-                            <input id="TxtConfirmRedefinirSenha" class="form-control" type="text" placeholder="Confirmar senha">
-                            <img src="/img/Cadastrar/IconSenha.png">
+                        <div class="SpanValidation">
+                            <span asp-validation-for="NomeUsuario" class="span-validation-item"></span>
+                            <span asp-validation-for="EmailUsuario" class="span-validation-item"></span>
+                            <span asp-validation-for="CPFUsuario" class="span-validation-item"></span>
+                            <span asp-validation-for="SenhaUsuario" class="span-validation-item"></span>
                         </div>
 
-                        <a asp-controller="Login" asp-action="Login" id="BtnCadastrarLogar">Logar</a>
+                        <div class="InputsCard">
+                            <li class="LiTxtNome">
+                                <div class="form-group">
+                                    <input asp-for="NomeUsuario" id="TxtRedefinirNome" placeholder="Nome completo" type="text" class="form-control" />
+                                    <img src="../img/Cadastrar/IconNome.png ">
+                                </div>
+                            </li>
+                            <li class="LiTxtEmail">
+                                <div class="form-group">
+                                    <input type="email" placeholder="E-mail:" id="TxtRedefinirEmail" asp-for="EmailUsuario" class="form-control" />
+                                    <img src="/img/Cadastrar/IconEmail.png">
+                                </div>
+                            </li>
 
+                            <li class="LiTxtCPF">
+                                <div class="form-group">
+                                    <input type="number" placeholder="CPF:" id="TxtRedefinirCPF" asp-for="CPFUsuario" class="form-control" />
+                                    <img src="/img/Cadastrar/IconCPF.png">
+                                </div>
+                            </li>
+
+                            <li class="LiTxtSenha">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Nova senha:" id="TxtRedefinirSenha" asp-for="SenhaUsuario" class="form-control" />
+                                    <img src="/img/Cadastrar/IconSenha.png">
+                                </div>
+                            </li>
+                            <div class="form-group">
+                                <input id="TxtConfirmRedefinirSenha" class="form-control" type="text" placeholder="Confirmar senha">
+                                <img src="/img/Cadastrar/IconSenha.png">
+                            </div>
+                        </div>
+                        <div class="VoltaLogin">
+                            <span>Voltar para página de </span>
+                            <a asp-controller="Login" asp-action="Login" id="BtnCadastrarLogar">Login</a>
+                        </div>
+
+                        <div class="form-group">
+                            <button id="BtnRedefinir" type="submit" class="btn btn-primary">ALTERAR</button>
+                        </div>
                     </ul>
-                    <div class="form-group">
-                        <button id="BtnRedefinir" type="submit" class="btn btn-primary">ALTERAR</button>
-                    </div>
                 </ul>
             </ul>
         </form>       

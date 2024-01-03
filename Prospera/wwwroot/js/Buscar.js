@@ -40,7 +40,7 @@ function buscarTerceiros() {
                 console.log("asdasdasd.");
                 console.log(data);
             } else {
-                console.log("Terceiros não encontrado no banco de dados.");
+                alert("Terceiros não encontrado no banco de dados.")
             }
         },
         error: function () {
@@ -50,7 +50,6 @@ function buscarTerceiros() {
 }
 
 function preencherCampos(terceiros) {
-    $("#TxtTerceirosId").val(terceiros.idTerceiros);
     $("#TxtTerceirosNome").val(terceiros.nomeTerceiros);
     $("#TxtTerceirosEmail").val(terceiros.emailTerceiros);
     $("#TxtTerceirosTelefone").val(terceiros.telefoneTerceiros);
