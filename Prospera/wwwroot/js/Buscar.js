@@ -21,7 +21,7 @@
         limparReceitas();
     });
 
-
+    $("#TxtTerceirosCEP").on("change", buscaCEP);
 });
 
 var idTerceirosTemp;
@@ -86,6 +86,27 @@ function limparTerceiros() {
     $("#TxtTerceirosId").prop("readonly", false);
 }
 
+//CEP
+function buscaCEP() {
+    var CEP = $("#TxtTerceirosCEP").val();
+    console.log(CEP);
+
+    $.ajax({
+        url: "https://viacep.com.br/ws/" + CEP + "/json/",
+        method: "GET",
+        success: function (data) {
+            console.log("CEP Success", data);
+            $("#TxtTerceirosEndereco").val(data.logradouro);
+            $("#TxtTerceirosCidade").val(data.localidade);
+            $("#TxtTerceirosBairro").val(data.bairro);
+            $("#TxtTerceirosUF").val(data.uf);
+            $("#TxtTerceirosCEP").val(data.cep);
+        },
+        error: function () {
+            alert("CEP não encontrado!");
+        }
+    });
+}
 
 // Tabela Despesas
 function BuscarDespesas() {
