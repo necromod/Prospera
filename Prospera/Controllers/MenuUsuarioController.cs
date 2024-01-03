@@ -28,23 +28,14 @@ namespace Prospera.Controllers
             //botão de Cadastrar foi pressionado
             if (btnAcao == "cadastro")
             {
-
                 //Verifica se o usuário está logado
-                if (_sessao.BuscarSessaoUsuario() != null)
-                {
-                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
-                    terceiros.IdUsuario = usuarioModel.IdUsuario;
-                }
-                else
-                {
-                    terceiros.IdUsuario = 55;
-                }
-                
+                VerificaSessao(terceiros);
+
 
                 //inserção automática dos campos
                 //Encontre o próximo Codico
-                int proximoCodicoTerceiro = ProximoTerceiroUsuario(terceiros.IdUsuario);
-                terceiros.CodigoCont = proximoCodicoTerceiro;
+                int proximoCodigoTerceiro = ProximoTerceiroUsuario(terceiros.IdUsuario);
+                terceiros.CodigoCont = proximoCodigoTerceiro;
                 terceiros.IdTerceiros = 0;
                 terceiros.DataCadastroTerceiros = DateTime.Now;
                 terceiros.DataUltimaMovimentacao = DateTime.Now;
@@ -62,8 +53,10 @@ namespace Prospera.Controllers
                 // Certifique-se de que o ID seja uma string válida.
                 if (int.TryParse(terceiros.IdTerceiros.ToString(), out int id))
                 {
+                    Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
                     // Verifique se o ID existe no banco de dados.
-                    var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
+                    var terceiro = _context.Terceiros.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == id);
+                    //Original - var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
 
                     if (terceiro != null)
                     {
@@ -89,8 +82,11 @@ namespace Prospera.Controllers
             {
                 if (terceiros.IdTerceiros > 0)
                 {
+                    Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+                    // Verifique se o ID existe no banco de dados.
+                    var terceiroExistente = _context.Terceiros.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == terceiros.IdTerceiros);
                     // Verifique se o ID existe no banco de dados
-                    var terceiroExistente = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == terceiros.IdTerceiros);
+                    //var terceiroExistente = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == terceiros.IdTerceiros);
 
                     if (terceiroExistente != null)
                     {
@@ -124,6 +120,19 @@ namespace Prospera.Controllers
 
             return RedirectToAction("Consulta", "Terceiros");
 
+        }
+
+        private void VerificaSessao(Terceiros terceiros)
+        {
+            if (_sessao.BuscarSessaoUsuario() != null)
+            {
+                Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
+                terceiros.IdUsuario = usuarioModel.IdUsuario;
+            }
+            else
+            {
+                terceiros.IdUsuario = 109;
+            }
         }
 
         private int ProximoTerceiroUsuario(int idUsuario)

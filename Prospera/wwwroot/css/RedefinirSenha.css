@@ -47,12 +47,48 @@ button {
     opacity: .9;
 }
 
+.btnProspera {
+    width: 8em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .div-central {
-    position: relative; 
-    display: flex; 
-    align-items: flex-start; 
+    position: relative;
+    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
+    top: 9em;
     left: 20rem;
+}
+
+.Nav-Container{
+    position: relative;
+    left: 140px;
+    display: flex;
+}
+
+.Nav-Container img {
+    width: 50px;
+    height: 50px;
+    padding-right: 0.3em;
+    padding-top: 0.5em;
+}
+
+.Nav-Container #BtnInicio {
+    display: none;
+}
+
+.MenuNav h2 {
+    color: var(--color-tertiary);
+    font-weight: 800;
+    padding-right: 2em;
 }
 
 .ImgFundo2 {
@@ -73,17 +109,27 @@ button {
     margin-left: 10px;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
 }
 
 .CardInfCadastrar h2{
-    margin: 15px -50px 38px;
+    margin: 15px 45px 100px;
     color: var(--color-tertiary);
 }
 
+.SpanValidation{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+}
+.span-validation-item {
+    display: block;
+    margin-top: 10px;
+    color: black; }
+
 .CadastrarInf .form-group,
-.CadastrarInf h4{
-    margin-top: 35px; 
+.CadastrarInf h4 {
+    margin-top: 15px;
 }
 
 .CadastrarInf input:not(#ChekPermitirEnvioEmail) {
@@ -93,17 +139,34 @@ button {
     width: 19em;
     border-radius: 20px;
     height: 3em;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);    
+    margin: 5px -20px;
 }
 
-.CadastrarInf span{
-    display: none;
+#BtnRedefinir {
+    position: relative;
+    margin: 0px 39px;
+    width: 13em;
+    height: 2.7em;
+    border-radius: 5px;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.VoltaLogin {
+    position: relative;
+    bottom: -7em;
+    right: -9em;
 }
 
 .CadastrarInf img{
     position: fixed;
     display: flex;
-    margin: -36px 7px;    
+    margin: -41px -15px;    
     width: 29px;
 }
 
@@ -154,6 +217,3 @@ button {
         width: 90%;
     }
 }
-
-/* Estilos restantes... */
-/* ... (Mantenha os estilos que não precisam de alterações responsivas ou adicione conforme necessário) */
