@@ -1,0 +1,219 @@
+﻿/* Estilos base */
+html {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    z-index: 1;
+    width: 100%;
+    font-size: 14px;
+}
+
+ul, li {
+    list-style: none;
+    z-index: 1;
+}
+
+a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
+    text-decoration: none;
+}
+
+input, button {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+:root {
+    --color-default: #242424;
+    --color-primary: #e64c30;
+    --color-secondary: #1B1572;
+    --color-tertiary: #801D7B;
+    --color-tertiary2: #fdf6f6;
+    --color-quartiary: #7836FA;
+}
+
+#BackgroundImg {
+    width: 1400px !important;
+    height: 1296px !important;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    opacity: .9;
+}
+
+.btnProspera {
+    width: 8em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.div-central {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 9em;
+    left: 20rem;
+}
+
+.Nav-Container{
+    position: relative;
+    left: 140px;
+    display: flex;
+}
+
+.Nav-Container img {
+    width: 50px;
+    height: 50px;
+    padding-right: 0.3em;
+    padding-top: 0.5em;
+}
+
+.Nav-Container #BtnInicio {
+    display: none;
+}
+
+.MenuNav h2 {
+    color: var(--color-tertiary);
+    font-weight: 800;
+    padding-right: 2em;
+}
+
+.ImgFundo2 {
+    display: flex;
+    height: 520px;
+    width: 520px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.CardInfCadastrar {
+    margin-top: -10px;
+    display: flex;
+    left: 500px;
+    width: 380px;
+    height: 540px;
+    z-index: 1;
+    background-color: white;
+    margin-left: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.CardInfCadastrar h2{
+    margin: 15px 45px 100px;
+    color: var(--color-tertiary);
+}
+
+.SpanValidation{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+}
+.span-validation-item {
+    display: block;
+    margin-top: 10px;
+    color: black; }
+
+.CadastrarInf .form-group,
+.CadastrarInf h4 {
+    margin-top: 15px;
+}
+
+.CadastrarInf input:not(#ChekPermitirEnvioEmail) {
+    display: flex;
+    padding-left: 3em;
+    border: none;
+    width: 19em;
+    border-radius: 20px;
+    height: 3em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);    
+    margin: 5px -20px;
+}
+
+#BtnRedefinir {
+    position: relative;
+    margin: 0px 39px;
+    width: 13em;
+    height: 2.7em;
+    border-radius: 5px;
+    background-color: #801D7B;
+    text-align: center;
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.VoltaLogin {
+    position: relative;
+    bottom: -7em;
+    right: -9em;
+}
+
+.CadastrarInf img{
+    position: fixed;
+    display: flex;
+    margin: -41px -15px;    
+    width: 29px;
+}
+
+/* Responsividade com media queries */
+@media screen and (max-width: 768px) {
+    .Nav-Container {
+        width: 80%;
+        left: 1em;
+    }
+    .ImgFundo2 {
+        display: flex;
+        height: 15rem;
+    }
+    .div-central {
+        left: 0;
+        width: 80%;
+    }
+
+    .CardInfLogin, .CardInfCadastrar {
+        width: 80%;
+        background-color: black;
+    }
+
+    .LoginInf, .CadastrarInf {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .Nav-Container {
+        width: 80%;
+        left: 1em;
+    }
+    .ImgFundo2 {
+        display: flex;
+        height: 5rem;
+    }
+    .div-central {
+        left: 0;
+        width: 80%;
+    }
+
+    .CardInfLogin, .CardInfCadastrar {
+        width: 90%;
+    }
+
+    .LoginInf, .CadastrarInf {
+        width: 90%;
+    }
+}

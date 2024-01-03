@@ -1,0 +1,13 @@
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\bin\Debug\FrmProspera.exe.config
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\bin\Debug\FrmProspera.exe
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\bin\Debug\FrmProspera.pdb
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.csproj.AssemblyReference.cache
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.FrmUserGrid.resources
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.FrmCadastroUsuario.resources
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.FrmLogin.resources
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.FrmMenuInicial.resources
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.Properties.Resources.resources
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.csproj.GenerateResource.cache
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.csproj.CoreCompileInputs.cache
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.exe
+C:\Users\edsilva\Source\Repos\necromod\Prospera\FrmProspera\obj\Debug\FrmProspera.pdb

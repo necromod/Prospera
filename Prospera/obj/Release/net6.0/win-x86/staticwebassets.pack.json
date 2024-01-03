@@ -1,0 +1,545 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\obj\\Release\\net6.0\\win-x86\\scopedcss\\projectbundle\\Prospera.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Prospera.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\Cadastrar.css",
+      "PackagePath": "staticwebassets\\css\\Cadastrar.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\Login_Register.css",
+      "PackagePath": "staticwebassets\\css\\Login_Register.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaInicial.css",
+      "PackagePath": "staticwebassets\\css\\PaginaInicial.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ConsultaTerceiros.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\ConsultaTerceiros.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\ContaBancaria.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\ContaBancaria.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Despesas.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Despesas.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Receitas.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Receitas.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Terceiros.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Terceiros.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\Transacao.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\Transacao.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\PaginaMenus\\teste.css",
+      "PackagePath": "staticwebassets\\css\\PaginaMenus\\teste.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\css\\RedefinirSenha.css",
+      "PackagePath": "staticwebassets\\css\\RedefinirSenha.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\CadastrarBanner.png",
+      "PackagePath": "staticwebassets\\img\\Cadastrar\\CadastrarBanner.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconCPF.png",
+      "PackagePath": "staticwebassets\\img\\Cadastrar\\IconCPF.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconEmail.png",
+      "PackagePath": "staticwebassets\\img\\Cadastrar\\IconEmail.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconNome.png",
+      "PackagePath": "staticwebassets\\img\\Cadastrar\\IconNome.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Cadastrar\\IconSenha.png",
+      "PackagePath": "staticwebassets\\img\\Cadastrar\\IconSenha.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Favicon.png",
+      "PackagePath": "staticwebassets\\img\\Favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\EstiloBolinha1.png",
+      "PackagePath": "staticwebassets\\img\\Index\\EstiloBolinha1.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconApp.png",
+      "PackagePath": "staticwebassets\\img\\Index\\IconApp.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconIniciar.png",
+      "PackagePath": "staticwebassets\\img\\Index\\IconIniciar.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeEmpresa.png",
+      "PackagePath": "staticwebassets\\img\\Index\\IconeEmpresa.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeMaoCel.png",
+      "PackagePath": "staticwebassets\\img\\Index\\IconeMaoCel.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\IconeQrCode.png",
+      "PackagePath": "staticwebassets\\img\\Index\\IconeQrCode.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\Servico\\CartaoAtual.png",
+      "PackagePath": "staticwebassets\\img\\Index\\Servico\\CartaoAtual.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\Servico\\GerenciarAtual.png",
+      "PackagePath": "staticwebassets\\img\\Index\\Servico\\GerenciarAtual.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\Servico\\GraficoAtual.png",
+      "PackagePath": "staticwebassets\\img\\Index\\Servico\\GraficoAtual.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\Servico\\bancoAtual.png",
+      "PackagePath": "staticwebassets\\img\\Index\\Servico\\bancoAtual.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\TextoSobreProspera.png",
+      "PackagePath": "staticwebassets\\img\\Index\\TextoSobreProspera.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\facebook.png",
+      "PackagePath": "staticwebassets\\img\\Index\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\iconePrincipalInf.png",
+      "PackagePath": "staticwebassets\\img\\Index\\iconePrincipalInf.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\instagram.png",
+      "PackagePath": "staticwebassets\\img\\Index\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\linkedin.png",
+      "PackagePath": "staticwebassets\\img\\Index\\linkedin.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Index\\twitter.png",
+      "PackagePath": "staticwebassets\\img\\Index\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconLogin.png",
+      "PackagePath": "staticwebassets\\img\\Login\\IconLogin.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconSenha.png",
+      "PackagePath": "staticwebassets\\img\\Login\\IconSenha.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Login\\IconeLogin.png",
+      "PackagePath": "staticwebassets\\img\\Login\\IconeLogin.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Login\\Lateral.png",
+      "PackagePath": "staticwebassets\\img\\Login\\Lateral.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\Login\\LoginBanner.png",
+      "PackagePath": "staticwebassets\\img\\Login\\LoginBanner.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\Design sem nome (3).zip",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardCotBanc\\Design sem nome (3).zip"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeBradesco.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardCotBanc\\IconeBradesco.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeInter.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardCotBanc\\IconeInter.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\IconeItau.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardCotBanc\\IconeItau.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardCotBanc\\ImgMundoCotação.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardCotBanc\\ImgMundoCotação.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (1).zip",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardMov\\Design sem nome (1).zip"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\Design sem nome (2).zip",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardMov\\Design sem nome (2).zip"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov1.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardMov\\LogoCardMov1.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov2.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardMov\\LogoCardMov2.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\CardMov\\LogoCardMov3.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\CardMov\\LogoCardMov3.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\MenuHamburger.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\MenuHamburger.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Ajuda.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Ajuda.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\ContasBancaria.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\ContasBancaria.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Design sem nome.zip",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Design sem nome.zip"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Devedor_Pagador.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Devedor_Pagador.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IDespesas.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\IDespesas.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\IconeUsuario.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\IconeUsuario.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Metas.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Metas.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Orcamento.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Orcamento.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcode.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Qrcode.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Qrcodeold.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Qrcodeold.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Receitas.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Receitas.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\Menu\\Transacoes.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\Menu\\Transacoes.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeBradesco.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeBradesco.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeInter.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeInter.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeItau.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\PaginaAuxiliar\\ContaBanc\\IconeItau.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\img\\PaginaInicial\\PaginaAuxiliar\\Receitas\\IconCarregamento.png",
+      "PackagePath": "staticwebassets\\img\\PaginaInicial\\PaginaAuxiliar\\Receitas\\IconCarregamento.png"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\js\\Buscar.js",
+      "PackagePath": "staticwebassets\\js\\Buscar.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\js\\Exibicoes.js",
+      "PackagePath": "staticwebassets\\js\\Exibicoes.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\js\\PaginaInicial.js",
+      "PackagePath": "staticwebassets\\js\\PaginaInicial.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\edsilva\\Source\\Repos\\necromod\\Prospera\\Prospera\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.Prospera.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.build.Prospera.props",
+      "PackagePath": "build\\Prospera.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.Prospera.props",
+      "PackagePath": "buildMultiTargeting\\Prospera.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.Prospera.props",
+      "PackagePath": "buildTransitive\\Prospera.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

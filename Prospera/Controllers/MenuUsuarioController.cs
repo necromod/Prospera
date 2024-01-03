@@ -137,16 +137,30 @@ namespace Prospera.Controllers
 
         private int ProximoTerceiroUsuario(int idUsuario)
         {
-            // Verifique o maior CodigoCont para o usuário especificado
-            int? maxCodigoCont = _context.Terceiros
-                .Where(c => c.IdUsuario == idUsuario)
-                .Max(c => (int?)c.CodigoCont);
+            // Obter todos os CodigoCont para o idUsuario ordenados de forma ascendente
+            var codigosCont = _context.Terceiros
+                                    .Where(c => c.IdUsuario == idUsuario)
+                                    .Select(c => c.CodigoCont)
+                                    .OrderBy(c => c)
+                                    .ToList();
 
-            // Calcule o próximo CodigoCont com base no máximo encontrado
-            int proximoCodigoCont = (maxCodigoCont ?? 0) + 1;
+            // Iterar pelos valores de CodigoCont para encontrar a primeira lacuna na sequência
+            int proximoCodigoCont = 1;
+            foreach (var codigo in codigosCont)
+            {
+                if (codigo == proximoCodigoCont)
+                {
+                    proximoCodigoCont++; // Se o valor atual for o esperado, avance para o próximo número
+                }
+                else
+                {
+                    break; // Se houver uma lacuna, saia do loop
+                }
+            }
 
             return proximoCodigoCont;
         }
+
 
 
         [HttpGet]

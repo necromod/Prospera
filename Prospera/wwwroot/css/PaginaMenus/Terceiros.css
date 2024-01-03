@@ -21,7 +21,9 @@ html {
   
   }
 
-
+span {
+    pointer-events: none;
+  }
   
   body {
     background-color: var(--color-Fundo) !important;
@@ -221,9 +223,9 @@ width: 20%;
 }
 
 .TxtInfTerceiros span {
+    pointer-events: none;
     position: absolute;
     left: 4em;
-   
 }
 
 .TxtInfTerceiros span h4 {
