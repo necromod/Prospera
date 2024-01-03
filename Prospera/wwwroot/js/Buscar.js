@@ -64,7 +64,7 @@ function preencherCampos(terceiros) {
     idTerceirosTemp = terceiros.idTerceiros;
 
     //Bloqueia o Input ID
-    $("#TxtTerceirosId").prop("readonly", true).css({ 'background-color': '#c2c2c2' }).prop("readonly", true);
+    $("#TxtTerceirosId").prop("readonly", true).css({ 'background-color': '#c2c2c2' });
 
 }
 
@@ -83,7 +83,7 @@ function limparTerceiros() {
 
 
     //Desbloqueia o Input ID
-    $("#TxtTerceirosId").prop("readonly", false);
+    $("#TxtTerceirosId").prop("readonly", false).css({ 'background-color': '#ffffff' });
 }
 
 //CEP

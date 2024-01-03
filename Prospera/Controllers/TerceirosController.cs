@@ -38,6 +38,9 @@ namespace Prospera.Controllers
             var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
 
+            // Ordena a lista de Terceiros por CodigoCont
+            viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
+
             // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
 
             return View(viewModel);
@@ -47,6 +50,9 @@ namespace Prospera.Controllers
         {
             var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
+
+            // Ordena a lista de Terceiros por CodigoCont
+            viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
 
             // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
 
