@@ -64,7 +64,7 @@ function preencherCampos(terceiros) {
     idTerceirosTemp = terceiros.idTerceiros;
 
     //Bloqueia o Input ID
-    $("#TxtTerceirosId").prop("readonly", true);
+    $("#TxtTerceirosId").prop("readonly", true).css({ 'background-color': '#c2c2c2' }).prop("readonly", true);
 
 }
 
