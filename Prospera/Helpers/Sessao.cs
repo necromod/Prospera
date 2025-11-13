@@ -1,6 +1,7 @@
 ﻿using Prospera.Models;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using System.Security.Claims;
 
 namespace Prospera.Helpers
 {
@@ -8,14 +9,27 @@ namespace Prospera.Helpers
     {
 
         private readonly IHttpContextAccessor _httpContext;
-        public Sessao(IHttpContextAccessor httpContext)
+        private readonly IUserProvider? _userProvider;
+
+        public Sessao(IHttpContextAccessor httpContext, IUserProvider? userProvider = null)
         {
             _httpContext = httpContext;
+            _userProvider = userProvider;
         }
 
         public Usuario BuscarSessaoUsuario()
         {
-            string sessaoUsuario = _httpContext.HttpContext.Session.GetString("SessaoUsuarioLogado");
+            // Prefer claims
+            var claimId = _httpContext.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (!string.IsNullOrEmpty(claimId) && int.TryParse(claimId, out var id))
+            {
+                if (_userProvider != null)
+                {
+                    return _userProvider.GetUserById(id);
+                }
+            }
+
+            string? sessaoUsuario = _httpContext.HttpContext?.Session.GetString("SessaoUsuarioLogado");
 
             if (!string.IsNullOrEmpty(sessaoUsuario))
             {

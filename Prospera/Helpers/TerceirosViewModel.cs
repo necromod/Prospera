@@ -10,8 +10,8 @@ namespace Prospera.Helpers
 {
     public class TerceirosViewModel
     {
-        public IEnumerable<Terceiros> ListaTerceiros { get; set; }
-        public Terceiros NovoTerceiro { get; set; }
+        public IEnumerable<Terceiros> ListaTerceiros { get; set; } = new List<Terceiros>();
+        public Terceiros NovoTerceiro { get; set; } = new Terceiros();
 
         /*public void PreencherTerceiro(Terceiros terceiroModel)
         {
