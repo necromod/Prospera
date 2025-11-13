@@ -58,12 +58,12 @@ namespace Prospera.Models
         public DateTime DataUltimaMovimentacao { get; set; }
 
         [StringLength(20)]
-        public string StatusTerceiros { get; set; }
+        public string? StatusTerceiros { get; set; }
 
         public int? CodigoCont { get; set; } //Código do Tericero pra referência pelo usuário
 
         [ForeignKey("Usuario")]
         public int IdUsuario { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public virtual Usuario? Usuario { get; set; }
     }
 }
