@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DOTNET_ROOT: /usr/share/dotnet
+      PATH: ${{ env.PATH }}:${HOME}/.dotnet/tools
 
     steps:
       - uses: actions/checkout@v4
@@ -17,14 +20,25 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
+      - name: Restore dependencies (web project only)
         run: dotnet restore Prospera/Prospera.csproj
 
-      - name: Build
+      - name: Build web project
         run: dotnet build Prospera/Prospera.csproj --configuration Release --no-restore
 
-      - name: Publish
+      - name: Publish web project
         run: dotnet publish Prospera/Prospera.csproj --configuration Release --output ./publish --no-build
+
+      - name: Install dotnet-ef tool
+        run: dotnet tool install --global dotnet-ef --version 8.*
+
+      - name: Run EF Core migrations (conditional)
+        if: ${{ secrets.AZURE_SQL_CONNECTIONSTRING != '' }}
+        env:
+          AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+        run: |
+          echo "Running EF Core database update using AZURE_SQL_CONNECTIONSTRING secret"
+          $HOME/.dotnet/tools/dotnet-ef database update --connection "$AZURE_SQL_CONNECTIONSTRING" --project Prospera/Prospera.csproj --startup-project Prospera/Prospera.csproj
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2

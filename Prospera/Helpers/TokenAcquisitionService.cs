@@ -2,19 +2,22 @@ using Azure.Identity;
 using Azure.Core;
 using System.Threading.Tasks;
 
-public class TokenAcquisitionService
+namespace Prospera.Helpers
 {
-    private readonly DefaultAzureCredential _credential;
-
-    public TokenAcquisitionService()
+    public class TokenAcquisitionService
     {
-        _credential = new DefaultAzureCredential();
-    }
+        private readonly DefaultAzureCredential _credential;
 
-    public async Task<string> GetAccessTokenAsync()
-    {
-        var tokenRequestContext = new TokenRequestContext(new[] { "https://database.windows.net/.default" });
-        var token = await _credential.GetTokenAsync(tokenRequestContext);
-        return token.Token;
+        public TokenAcquisitionService()
+        {
+            _credential = new DefaultAzureCredential();
+        }
+
+        public async Task<string> GetAccessTokenAsync()
+        {
+            var tokenRequestContext = new TokenRequestContext(new[] { "https://database.windows.net/.default" });
+            var token = await _credential.GetTokenAsync(tokenRequestContext);
+            return token.Token;
+        }
     }
 }

@@ -1,26 +1,30 @@
+using System.Data.Common;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Data.Common;
 
-public class SqlAccessTokenInterceptor : DbConnectionInterceptor
+namespace Prospera.Helpers
 {
-    private readonly TokenAcquisitionService _tokenService;
-
-    public SqlAccessTokenInterceptor(TokenAcquisitionService tokenService)
+    public class SqlAccessTokenInterceptor : DbConnectionInterceptor
     {
-        _tokenService = tokenService;
-    }
+        private readonly TokenAcquisitionService _tokenService;
 
-    public override async Task ConnectionOpeningAsync(DbConnection connection, ConnectionEventData eventData, CancellationToken cancellationToken = default)
-    {
-        if (connection is SqlConnection sqlConnection)
+        public SqlAccessTokenInterceptor(TokenAcquisitionService tokenService)
         {
-            var token = await _tokenService.GetAccessTokenAsync();
-            sqlConnection.AccessToken = token;
+            _tokenService = tokenService;
         }
 
-        await base.ConnectionOpeningAsync(connection, eventData, cancellationToken);
+        public override InterceptionResult ConnectionOpening(DbConnection connection, ConnectionEventData eventData, InterceptionResult result)
+        {
+            if (connection is SqlConnection sqlConnection)
+            {
+                // Acquire token synchronously for the interception point
+                var token = _tokenService.GetAccessTokenAsync().GetAwaiter().GetResult();
+                sqlConnection.AccessToken = token;
+            }
+
+            return base.ConnectionOpening(connection, eventData, result);
+        }
     }
 }
