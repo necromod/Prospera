@@ -14,7 +14,15 @@ namespace Prospera.Helpers
 
         public Usuario? GetUserById(int id)
         {
-            return _context.Usuario?.FirstOrDefault(u => u.IdUsuario == id);
+            try
+            {
+                return _context.Usuario?.FirstOrDefault(u => u.IdUsuario == id);
+            }
+            catch
+            {
+                // If DB is not available or table missing, swallow exception and return null
+                return null;
+            }
         }
     }
 }
