@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Prospera
 {
@@ -64,7 +66,8 @@ namespace Prospera
 
             builder.Services.AddScoped<TerceirosViewModel, TerceirosViewModelInterface>();
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            builder.Services.AddScoped<SessaoInterface, Sessao>();
+            builder.Services.AddScoped<IUserProvider, UserProvider>();
+            builder.Services.AddScoped<SessaoInterface, Sessao>(sp => new Sessao(sp.GetRequiredService<IHttpContextAccessor>(), sp.GetService<IUserProvider>()));
 
             builder.Services.AddSession(o =>
             {
@@ -76,6 +79,33 @@ namespace Prospera
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+
+            // Attempt to apply any pending migrations on startup
+            try
+            {
+                using (var scope = app.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    try
+                    {
+                        var context = services.GetRequiredService<ProsperaContext>();
+                        logger.LogInformation("Applying pending migrations (if any) to the database...");
+                        context.Database.Migrate();
+                        logger.LogInformation("Database migration applied successfully.");
+                    }
+                    catch (Exception dbEx)
+                    {
+                        logger.LogError(dbEx, "An error occurred while migrating the database.");
+                        // Do not rethrow to allow the app to start; admin can inspect logs
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                var loggerFactory = app.Services.GetService<ILoggerFactory>();
+                loggerFactory?.CreateLogger<Program>()?.LogError(ex, "Error while creating scope for migrations.");
+            }
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
