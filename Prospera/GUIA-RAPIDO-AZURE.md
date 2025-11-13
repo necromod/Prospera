@@ -1,0 +1,133 @@
+# ?? GUIA RÁPIDO: Habilitar Download do Publish Profile
+
+## ?? Problema
+```
+? "A autenticação básica está desabilitada"
+? Não consigo baixar o Publish Profile
+```
+
+## ? Solução em 4 Passos
+
+### ?? Passo 1: Habilitar Autenticação Básica
+
+1. Acesse: https://portal.azure.com
+2. Vá em: **App Services** ? **Prosperaweb**
+3. Menu lateral: **Configuration**
+4. Aba: **General settings**
+5. Role até: **SCM Basic Auth Publishing Credentials**
+6. Mude para: **ON** ??
+7. Clique em: **Save**
+
+```
+???????????????????????????????????????????
+? Configuration                            ?
+???????????????????????????????????????????
+? ? Application settings                  ?
+? ? General settings                      ?
+?   ??? Stack settings                    ?
+?   ??? Platform settings                 ?
+?   ?   ??? SCM Basic Auth: [ON] ? AQUI  ?
+?   ??? Debugging                         ?
+???????????????????????????????????????????
+```
+
+### ?? Passo 2: Baixar Publish Profile
+
+1. Volte para: **Overview** (Visão geral)
+2. No topo: **Get publish profile** ??
+3. Arquivo baixado: `Prosperaweb.PublishSettings`
+4. Abra no **Notepad**
+5. Selecione **TUDO** (Ctrl+A)
+6. Copie (Ctrl+C)
+
+### ?? Passo 3: Adicionar ao GitHub
+
+1. Acesse: https://github.com/necromod/Prospera/settings/secrets/actions
+2. Clique: **New repository secret**
+3. Preencha:
+   ```
+   Name:  AZURE_WEBAPP_PUBLISH_PROFILE
+   Value: [Cole o conteúdo copiado - Ctrl+V]
+   ```
+4. Clique: **Add secret**
+
+### ?? Passo 4: Fazer Deploy
+
+```sh
+cd C:\Users\edsilva\source\repos\necromod\Prospera
+
+git add .
+git commit -m "Adiciona configuração de deploy Azure"
+git push origin main
+```
+
+## ?? Resultado
+
+Após o push, o GitHub Actions vai:
+1. ? Build do projeto Prospera
+2. ? Deploy para Azure App Service Prosperaweb
+3. ? App disponível em: https://prosperaweb.azurewebsites.net
+
+## ?? Verificar Status
+
+- GitHub Actions: https://github.com/necromod/Prospera/actions
+- Azure Portal: https://portal.azure.com ? App Services ? Prosperaweb
+
+## ?? Captura de Tela (Referência)
+
+```
+Azure Portal > Prosperaweb > Configuration > General settings
+
+?????????????????????????????????????????????????
+? General settings                               ?
+?????????????????????????????????????????????????
+?                                                ?
+? Stack settings                                 ?
+?   .NET version: .NET 8                         ?
+?                                                ?
+? Platform settings                              ?
+?   Platform: 64 Bit                            ?
+?   Always On: On                                ?
+?   ARR affinity: On                             ?
+?   HTTP version: 2.0                            ?
+?   Web sockets: Off                             ?
+?   HTTPS Only: On                               ?
+?   Minimum TLS version: 1.2                     ?
+?   FTP state: All allowed                       ?
+?   SCM Basic Auth Publishing Credentials: [ON] ? ?
+?   FTP Basic Auth Publishing Credentials: [ON]  ?
+?                                                ?
+?         [Save]  [Discard]                      ?
+?????????????????????????????????????????????????
+```
+
+## ? Comandos Rápidos
+
+```sh
+# Navegar para o diretório
+cd C:\Users\edsilva\source\repos\necromod\Prospera
+
+# Verificar status
+git status
+
+# Adicionar alterações
+git add .
+
+# Commit
+git commit -m "Configura deploy Azure com Publish Profile"
+
+# Push
+git push origin main
+
+# Ver logs do GitHub Actions
+start https://github.com/necromod/Prospera/actions
+```
+
+## ?? Precisa de Ajuda?
+
+Consulte: `CONFIGURACAO-AZURE-DEPLOY.md` para mais detalhes
+
+---
+
+**Seu arquivo Prospera.sln está correto!** ?  
+Apenas siga os 4 passos acima para configurar o deploy.

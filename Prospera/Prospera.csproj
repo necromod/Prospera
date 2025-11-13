@@ -31,6 +31,7 @@
 
   <ItemGroup>
     <None Include=".github\workflows\azure-webapp-deploy.yml" />
+    <None Include=".github\workflows\test-secret.yml" />
   </ItemGroup>
 
 </Project>
