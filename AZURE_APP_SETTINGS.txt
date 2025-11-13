@@ -1,0 +1,77 @@
+# Configurações do Azure App Service
+# Adicione estas configurações no Azure Portal > App Service > Configuration > Application settings
+
+# Connection String (adicionar em Connection strings, não em Application settings)
+# Type: SQLAzure
+# Name: ProsperaContext
+# Value: (sua connection string do SQL Database)
+
+# ========== Application Settings ==========
+
+# Para SQL Authentication:
+# ConnectionStrings__ProsperaContext=Server=tcp:seu-server.database.windows.net,1433;Initial Catalog=Prospera-DB;User ID=usuario;Password=senha;Encrypt=True;
+
+# Para Azure AD Managed Identity (recomendado):
+# ConnectionStrings__ProsperaContext=Server=tcp:seu-server.database.windows.net,1433;Initial Catalog=Prospera-DB;Authentication="Active Directory Default";Encrypt=True;
+
+# Application Insights
+ApplicationInsights__ConnectionString=InstrumentationKey=xxxx;IngestionEndpoint=https://brazilsouth-1.in.applicationinsights.azure.com/
+
+# Ambiente
+ASPNETCORE_ENVIRONMENT=Production
+
+# Desabilitar logs de Entity Framework em produção (já configurado no appsettings.Production.json)
+Logging__LogLevel__Microsoft.EntityFrameworkCore=Warning
+
+# Configurações de Session (opcional - já configurado no código)
+# Session__IdleTimeout=00:20:00
+
+# Configurações de HTTPS (obrigatório para cookies seguros)
+ASPNETCORE_HTTPS_PORT=443
+
+# ========== Configurações Avançadas ==========
+
+# No Azure Portal > App Service > Configuration > General settings
+# Stack: .NET
+# .NET version: 8.0
+# Platform: 64 Bit (recomendado)
+# Always On: On (para produção)
+# HTTPS Only: On (obrigatório)
+# Minimum TLS Version: 1.2
+# HTTP version: 2.0
+# ARR affinity: On (se usar sessões in-memory)
+
+# ========== Configurações de Deployment ==========
+# No Azure Portal > App Service > Deployment Center
+# Source: GitHub
+# Organization: necromod
+# Repository: Prospera
+# Branch: main
+
+# ========== Configurações de Segurança ==========
+# Habilitar Managed Identity:
+# Azure Portal > App Service > Identity > System assigned > Status: On
+
+# Depois de habilitar Managed Identity, execute no SQL Database:
+# CREATE USER [Prosperaweb] FROM EXTERNAL PROVIDER;
+# ALTER ROLE db_datareader ADD MEMBER [Prosperaweb];
+# ALTER ROLE db_datawriter ADD MEMBER [Prosperaweb];
+# ALTER ROLE db_ddladmin ADD MEMBER [Prosperaweb];
+
+# ========== Configurações de Logs ==========
+# Azure Portal > App Service > App Service logs
+# Application Logging (Filesystem): On, Level: Information
+# Web server logging: File System, Retention Period: 7 days
+# Detailed error messages: On
+# Failed request tracing: On
+
+# ========== Configurações de Scale Out ==========
+# Azure Portal > App Service > Scale out (App Service plan)
+# Manual scale ou Auto scale baseado em:
+# - CPU percentage > 70%
+# - Memory percentage > 80%
+# - HTTP Queue Length > 50
+
+# ========== Variáveis de Ambiente Úteis ==========
+# WEBSITE_TIME_ZONE=E. South America Standard Time
+# WEBSITE_RUN_FROM_PACKAGE=1 (para melhor performance)

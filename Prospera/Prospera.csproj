@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.17.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
     <PackageReference Include="Microsoft.Azure.AppConfiguration.AspNetCore" Version="6.1.1" />
     <!-- Use EF Core 8 compatible SQL Server provider -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.20" />
@@ -21,6 +22,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.0" />
     <!-- Code generation package for tooling (optional) -->
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
   </ItemGroup>
@@ -31,7 +33,6 @@
 
   <ItemGroup>
     <None Include=".github\workflows\azure-webapp-deploy.yml" />
-    <None Include=".github\workflows\test-secret.yml" />
   </ItemGroup>
 
 </Project>
