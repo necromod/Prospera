@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Prospera",
-    "\\Prospera\\Views",
-    "\\Prospera\\Views\\Usuario"
+    "\\Prospera\\Views\\Login"
   ],
-  "SelectedNode": "\\Prospera.sln",
+  "SelectedNode": "\\Prospera\\Prospera.sln",
   "PreviewInSolutionExplorer": false
 }
