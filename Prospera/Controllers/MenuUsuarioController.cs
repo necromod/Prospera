@@ -55,7 +55,7 @@ namespace Prospera.Controllers
             else if (btnAcao == "exclusao")
             {
                 // Certifique-se de que o ID seja uma string válida.
-                if (int.TryParse(terceiros.IdTerceiros.ToString(), out int id))
+                if (terceiros.IdTerceiros.HasValue && int.TryParse(terceiros.IdTerceiros.ToString(), out int id))
                 {
                     var usuarioLogin = _sessao.BuscarSessaoUsuario();
                     if (usuarioLogin == null)
@@ -87,7 +87,7 @@ namespace Prospera.Controllers
             //botão de Alterar foi pressionado
             else if (btnAcao == "editar")
             {
-                if (terceiros.IdTerceiros > 0)
+                if (terceiros.IdTerceiros.HasValue && terceiros.IdTerceiros > 0)
                 {
                     var usuarioLogin = _sessao.BuscarSessaoUsuario();
                     if (usuarioLogin == null)
@@ -154,7 +154,7 @@ namespace Prospera.Controllers
         {
             // Obter todos os CodigoCont para o idUsuario ordenados de forma ascendente
             var codigosCont = _context.Terceiros?.Where(c => c.IdUsuario == idUsuario && c.CodigoCont.HasValue)
-                                    .Select(c => c.CodigoCont.Value)
+                                    .Select(c => c.CodigoCont!.Value)
                                     .OrderBy(c => c)
                                     .ToList() ?? new List<int>();
 

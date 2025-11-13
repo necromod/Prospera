@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-@if ((bool)ViewData["ExibirSelecao1"])
+@if (ViewData["ExibirSelecao1"] is bool exibirSelecao && exibirSelecao)
 {
     <ul class="Selecao1">
         <li>
