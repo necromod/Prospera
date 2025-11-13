@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>18636254-57d3-47d0-b5ec-f82c14af0e56</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,17 +12,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
-    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="7.0.12" />
-    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="7.0.12">
+    <PackageReference Include="Azure.Identity" Version="1.17.0" />
+    <PackageReference Include="Microsoft.Azure.AppConfiguration.AspNetCore" Version="6.1.1" />
+    <!-- Use EF Core 8 compatible SQL Server provider -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="microsoft.visualstudio.web.codegeneration.design" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+    <!-- Code generation package for tooling (optional) -->
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".github\workflows\azure-webapp-deploy.yml" />
   </ItemGroup>
 
 </Project>

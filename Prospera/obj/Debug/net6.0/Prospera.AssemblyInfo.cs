@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("18636254-57d3-47d0-b5ec-f82c14af0e56")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prospera")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f85358b9d392418fc071416b636f2ad772791d9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prospera")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prospera")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

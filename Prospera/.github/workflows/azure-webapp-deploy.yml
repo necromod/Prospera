@@ -1,0 +1,35 @@
+name: Build and deploy ASP.NET Core app to Azure Web App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore Prospera/Prospera.csproj
+
+      - name: Build
+        run: dotnet build Prospera/Prospera.csproj --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish Prospera/Prospera.csproj --configuration Release --output ./publish --no-build
+
+      - name: 'Deploy to Azure Web App'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'Prospera'
+          slot-name: 'production'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: './publish'

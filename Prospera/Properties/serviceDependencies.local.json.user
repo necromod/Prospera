@@ -1,9 +1,29 @@
 {
   "dependencies": {
-    "mssql1": {
+    "appConfig1": {
       "restored": true,
-      "restoreTime": "2023-10-23T22:48:42.4545376Z"
+      "restoreTime": "2025-11-13T11:39:10.5302698Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2025-11-13T11:38:52.3979661Z"
     }
   },
-  "parameters": {}
+  "parameters": {
+    "appConfig1.subscriptionId": {
+      "Name": "appConfig1.subscriptionId",
+      "Type": "subscription",
+      "Value": "5c4924fa-2b44-4cdb-8d95-1d0bae34b761"
+    },
+    "appConfig1.serviceConnectorResourceGroupName": {
+      "Name": "appConfig1.serviceConnectorResourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ProsperaConfigurationResourceGroup"
+    },
+    "appConfig1.resourceGroupName": {
+      "Name": "appConfig1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ProsperaConfigurationResourceGroup"
+    }
+  }
 }

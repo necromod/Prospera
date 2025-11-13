@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
 using Prospera.Helpers;
-using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
 using Prospera.Controllers;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.SqlClient;
 
 namespace Prospera
 {
@@ -15,42 +14,50 @@ namespace Prospera
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Adicione a configuração do arquivo appsettings.json
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(builder.Environment.ContentRootPath)
-                .AddJsonFile("appsettings.json")
-                .Build();
+            // Get connection string from configuration (appsettings.json, environment, or user-secrets)
+            var connectionString = builder.Configuration.GetConnectionString("ProsperaContext");
 
-            // Configurar a string de conexão para o Azure SQL com as informações fornecidas
-            var azureDbServer = "prosperamodel.database.windows.net";
-            var azureDbName = "prosperamodel"; 
-            var azureDbUser = "ProsperaModel";
-            var azureDbPassword = "Prospera2023@";
-            var connectionString = $"Server={azureDbServer};Database={azureDbName};User Id={azureDbUser};Password={azureDbPassword};Trusted_Connection=False;Encrypt=True;";
+            // If connection string uses Azure AD Authentication keyword, set appropriate token provider
+            if (!string.IsNullOrWhiteSpace(connectionString) && connectionString.Contains("Authentication=\"Active Directory Default\"", StringComparison.OrdinalIgnoreCase))
+            {
+                // Use Default Azure Credential to obtain access token at runtime when running in Azure
+                builder.Services.AddSingleton<TokenAcquisitionService>();
 
-            builder.Services.AddDbContext<ProsperaContext>(options =>
-                options.UseSqlServer(connectionString));
+                builder.Services.AddDbContext<ProsperaContext>((serviceProvider, options) =>
+                {
+                    var tokenService = serviceProvider.GetRequiredService<TokenAcquisitionService>();
+                    var sqlConnection = new SqlConnection(connectionString);
+                    options.UseSqlServer(sqlConnection, sqlOptions =>
+                    {
+                        // additional SQL Server options if needed
+                    }).EnableSensitiveDataLogging();
 
-            // Configure o ProsperaContext
-            builder.Services.AddDbContext<ProsperaContext>(options =>
-                options.UseSqlServer(connectionString));
+                    // Acquire access token and register an interceptor to set it per connection open
+                    options.AddInterceptors(new SqlAccessTokenInterceptor(tokenService));
+                });
+            }
+            else
+            {
+                // Register DbContext once using the resolved connection string
+                builder.Services.AddDbContext<ProsperaContext>(options =>
+                    options.UseSqlServer(connectionString));
+            }
 
-            // Adicione o serviço do UsuarioController
+            // Dependency injection and services
             builder.Services.AddScoped<UsuarioController>();
-            // Adicione o serviço do LoginController
             builder.Services.AddScoped<LoginController>();
-            builder.Services.AddControllersWithViews();
+
             builder.Services.AddScoped<TerceirosViewModel, TerceirosViewModelInterface>();
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped<SessaoInterface, Sessao>();
+
             builder.Services.AddSession(o =>
             {
                 o.IdleTimeout = TimeSpan.FromMinutes(5);
                 o.Cookie.HttpOnly = true;
-                o.Cookie.IsEssential =true;
+                o.Cookie.IsEssential = true;
             });
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
@@ -60,8 +67,8 @@ namespace Prospera
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-            app.UseStaticFiles();
 
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseAuthorization();
@@ -75,32 +82,25 @@ namespace Prospera
             var policy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
                 .Build();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers().WithMetadata(new CustomAuthorizeFilter(policy));
 
                 endpoints.MapControllerRoute(
-                name: "BuscarDespesas",
-                pattern: "Contas/BuscarDespesas/{id?}",
-                defaults: new { controller = "Contas", action = "BuscarDespesas" }
+                    name: "BuscarDespesas",
+                    pattern: "Contas/BuscarDespesas/{id?}",
+                    defaults: new { controller = "Contas", action = "BuscarDespesas" }
                 );
-
             });
 
             app.MapControllerRoute(
-            name: "exibicao2",
-            pattern: "Exibicao2",
-            defaults: new { controller = "Home", action = "CarregarExibicao2" }
+                name: "exibicao2",
+                pattern: "Exibicao2",
+                defaults: new { controller = "Home", action = "CarregarExibicao2" }
             );
 
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
-
             app.Run();
-
-
         }
     }
 }

@@ -16,7 +16,7 @@
     <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_LayoutPageFile />
     <ActiveDebugProfile>Prospera</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\edsilva\Source\Repos\necromod\Prospera\Prospera\Properties\PublishProfiles\Lemuria - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\edsilva\source\repos\necromod\Prospera\.github\workflows\Prosperaweb.yml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
