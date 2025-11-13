@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authorization;
 using Prospera.Controllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Prospera
 {
@@ -43,6 +45,19 @@ namespace Prospera
                     options.UseSqlServer(connectionString));
             }
 
+            // Authentication: Cookie-based
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Usuario/Login";
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.IsEssential = true;
+                    options.ExpireTimeSpan = TimeSpan.FromDays(15);
+                });
+
+            // Authorization
+            builder.Services.AddAuthorization();
+
             // Dependency injection and services
             builder.Services.AddScoped<UsuarioController>();
             builder.Services.AddScoped<LoginController>();
@@ -71,6 +86,7 @@ namespace Prospera
             app.UseStaticFiles();
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
 
@@ -78,21 +94,11 @@ namespace Prospera
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            // Adicione um filtro personalizado de autorização aqui
-            var policy = new AuthorizationPolicyBuilder()
-                .RequireAuthenticatedUser()
-                .Build();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers().WithMetadata(new CustomAuthorizeFilter(policy));
-
-                endpoints.MapControllerRoute(
-                    name: "BuscarDespesas",
-                    pattern: "Contas/BuscarDespesas/{id?}",
-                    defaults: new { controller = "Contas", action = "BuscarDespesas" }
-                );
-            });
+            app.MapControllerRoute(
+                name: "BuscarDespesas",
+                pattern: "Contas/BuscarDespesas/{id?}",
+                defaults: new { controller = "Contas", action = "BuscarDespesas" }
+            );
 
             app.MapControllerRoute(
                 name: "exibicao2",

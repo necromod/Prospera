@@ -7,6 +7,7 @@ using Prospera.Controllers;
 
 namespace Prospera.Helpers
 {
+    [System.Obsolete("Use built-in [Authorize] attribute and policies instead of CustomAuthorizeFilter.")]
     public class CustomAuthorizeFilter : IAuthorizationFilter
     {
         private readonly AuthorizationPolicy _policy;

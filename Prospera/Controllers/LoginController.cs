@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using Prospera.Helpers;
 using Newtonsoft.Json;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Prospera.Controllers
 {
@@ -32,9 +35,10 @@ namespace Prospera.Controllers
         }
 
         //Método para limpar sessão de usuário
-        public IActionResult Sair()
+        public async Task<IActionResult> Sair()
         {
             _sessao.RemoverSessaoUsuario();
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             return RedirectToAction("Index", "Home");
         }
@@ -42,7 +46,7 @@ namespace Prospera.Controllers
 
         //Método para fazer Login de usuário
         [HttpPost]
-        public IActionResult Entrar(LoginModel loginModel)
+        public async Task<IActionResult> Entrar(LoginModel loginModel)
         {
             try
             {
@@ -63,11 +67,29 @@ namespace Prospera.Controllers
                                 // Configurar o tempo de expiração da sessão com base na escolha do usuário
                                 var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
 
-                                // Configurar a sessão com o tempo de expiração especificado
+                                // Cria claims e realiza o SignIn com cookie
+                                var claims = new List<Claim>
+                                {
+                                    new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+                                    new Claim(ClaimTypes.Name, usuario.NomeUsuario),
+                                    new Claim(ClaimTypes.Email, usuario.EmailUsuario ?? "")
+                                };
+
+                                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                                var authProperties = new AuthenticationProperties
+                                {
+                                    IsPersistent = manterLogado,
+                                    ExpiresUtc = DateTimeOffset.UtcNow.Add(tempoExpiracaoSessao)
+                                };
+
+                                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                                    new ClaimsPrincipal(claimsIdentity),
+                                    authProperties);
+
+                                //Configurar a sessão com o tempo de expiração especificado
                                 HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
 
-
-                                //Criação de Cookies de login
+                                //Criação de Sessão de usuário
                                 _sessao.CriarSessaoUsuario(usuario);
 
                                 return RedirectToAction("MenuUsuario", "Home");
