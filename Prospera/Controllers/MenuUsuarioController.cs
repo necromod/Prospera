@@ -55,10 +55,14 @@ namespace Prospera.Controllers
                 // Certifique-se de que o ID seja uma string válida.
                 if (int.TryParse(terceiros.IdTerceiros.ToString(), out int id))
                 {
-                    Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogin = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogin == null)
+                    {
+                        return RedirectToAction("Login", "Usuario");
+                    }
+
                     // Verifique se o ID existe no banco de dados.
-                    var terceiro = _context.Terceiros.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == id);
-                    //Original - var terceiro = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == id);
+                    var terceiro = _context.Terceiros?.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == id);
 
                     if (terceiro != null)
                     {
@@ -74,8 +78,6 @@ namespace Prospera.Controllers
                 else
                 {
                     Console.WriteLine("entrada do usuário não é um número inteiro válido");
-                    // A entrada do usuário não é um número inteiro válido, adote a ação apropriada.
-                    // Você pode retornar uma mensagem de erro ou redirecionar para uma página apropriada.
                 }
             }
 
@@ -84,11 +86,14 @@ namespace Prospera.Controllers
             {
                 if (terceiros.IdTerceiros > 0)
                 {
-                    Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogin = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogin == null)
+                    {
+                        return RedirectToAction("Login", "Usuario");
+                    }
+
                     // Verifique se o ID existe no banco de dados.
-                    var terceiroExistente = _context.Terceiros.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == terceiros.IdTerceiros);
-                    // Verifique se o ID existe no banco de dados
-                    //var terceiroExistente = _context.Terceiros.FirstOrDefault(t => t.IdTerceiros == terceiros.IdTerceiros);
+                    var terceiroExistente = _context.Terceiros?.SingleOrDefault(t => t.IdUsuario == usuarioLogin.IdUsuario && t.CodigoCont == terceiros.IdTerceiros);
 
                     if (terceiroExistente != null)
                     {
@@ -107,15 +112,11 @@ namespace Prospera.Controllers
                     }
                     else
                     {
-                        // Lidar com o caso em que o ID não foi encontrado
-                        // Você pode retornar uma mensagem de erro ou redirecionar para a página apropriada.
-                       Console.WriteLine(" ID não foi encontrado");
+                        Console.WriteLine(" ID não foi encontrado");
                     }
                 }
                 else
                 {
-                    // Lidar com o caso em que o ID não é válido
-                    // Você pode retornar uma mensagem de erro ou redirecionar para a página apropriada.
                     Console.WriteLine("  ID não é válido");
                 }
             }
@@ -131,25 +132,24 @@ namespace Prospera.Controllers
             {
                 terceiros.IdUsuario = userId.Value;
             }
-            else if (_sessao.BuscarSessaoUsuario() != null)
-            {
-                Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
-                terceiros.IdUsuario = usuarioModel.IdUsuario;
-            }
             else
             {
-                thirds.IdUsuario = 109;
+                var usuarioFromSessao = _sessao.BuscarSessaoUsuario();
+                if (usuarioFromSessao != null)
+                {
+                    terceiros.IdUsuario = usuarioFromSessao.IdUsuario;
+                }
+                else
+                {
+                    terceiros.IdUsuario = 109;
+                }
             }
         }
 
         private int ProximoTerceiroUsuario(int idUsuario)
         {
             // Obter todos os CodigoCont para o idUsuario ordenados de forma ascendente
-            var codigosCont = _context.Terceiros
-                                    .Where(c => c.IdUsuario == idUsuario)
-                                    .Select(c => c.CodigoCont)
-                                    .OrderBy(c => c)
-                                    .ToList();
+            var codigosCont = _context.Terceiros?.Where(c => c.IdUsuario == idUsuario).Select(c => c.CodigoCont).OrderBy(c => c).ToList() ?? new List<int>();
 
             // Iterar pelos valores de CodigoCont para encontrar a primeira lacuna na sequência
             int proximoCodigoCont = 1;
@@ -169,7 +169,6 @@ namespace Prospera.Controllers
         }
 
 
-
         [HttpGet]
         public IActionResult BuscarTerceiros(int id)
         {
@@ -179,8 +178,7 @@ namespace Prospera.Controllers
                 return Json(null);
             }
 
-            var terceiros = _context.Terceiros
-                .FirstOrDefault(t => t.CodigoCont == id && t.IdUsuario == userId.Value);
+            var terceiros = _context.Terceiros?.FirstOrDefault(t => t.CodigoCont == id && t.IdUsuario == userId.Value);
 
             if (terceiros != null)
             {
