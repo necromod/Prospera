@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
 using Prospera.Helpers;
 using Prospera.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Prospera.Controllers
 {
+    [Authorize]
     public class TerceirosController : Controller
     {
         private readonly ProsperaContext _context;
@@ -124,7 +126,7 @@ namespace Prospera.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTerceiros,NomeTerceiros,TelefoneTerceiros,Telefone2Terceiros,EmailTerceiros,EnderecoTerceiros,CidadeTerceiros,BairroTerceiros,UFTerceiros,CEPTerceiros,ObservacaoTerceiros,DataCadastroTerceiros,DataUltimaMovimentacao,StatusTerceiros,IdUsuario")] Terceiros terceiros)
+        public async Task<IActionResult> Edit(int id, [Bind("IdTerceiros,NomeTerceiros,TelefoneTerceiros,Telefone2Terceiros,EmailTerceiros,EnderecoTerceiros,CidadeTerceiros,BairroTerceiros,UFTerceiros,CEPTerceiros,ObservacaoTerceiros,DataCadastroTerceiros,DataUltimaMovimentacao,StatusTerceiros,IdUsuario")] Terceiros terceros)
         {
             if (id != terceiros.IdTerceiros)
             {

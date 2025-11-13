@@ -10,10 +10,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Prospera.Data;
 using Prospera.Helpers;
 using Prospera.Models;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace Prospera.Controllers
 {
+    [Authorize]
     public class ContasController : Controller
     {
         private readonly ProsperaContext _context;

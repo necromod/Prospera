@@ -5,9 +5,11 @@ using Newtonsoft.Json;
 using Prospera.Data;
 using Prospera.Helpers;
 using Prospera.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Prospera.Controllers
 {
+    [Authorize]
     public class MenuUsuarioController : Controller
     {
         private readonly ProsperaContext _context;
