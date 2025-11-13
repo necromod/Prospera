@@ -51,7 +51,8 @@ namespace Prospera
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/Usuario/Login";
+                    options.LoginPath = "/Login/Login";
+                    options.AccessDeniedPath = "/Login/Login";
                     options.Cookie.HttpOnly = true;
                     options.Cookie.IsEssential = true;
                     options.ExpireTimeSpan = TimeSpan.FromDays(15);

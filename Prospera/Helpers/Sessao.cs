@@ -19,27 +19,28 @@ namespace Prospera.Helpers
 
         public Usuario? BuscarSessaoUsuario()
         {
-            // Prefer claims
+            // Prefer claims (autenticação via cookie)
             var claimId = _httpContext.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (!string.IsNullOrEmpty(claimId) && int.TryParse(claimId, out var id))
             {
                 if (_userProvider != null)
                 {
-                    return _userProvider.GetUserById(id);
+                    var u = _userProvider.GetUserById(id);
+                    if (u != null) return u;
                 }
             }
 
+            // Fallback: busca na sessão (HttpSession)
             string? sessaoUsuario = _httpContext.HttpContext?.Session.GetString("SessaoUsuarioLogado");
 
             if (!string.IsNullOrEmpty(sessaoUsuario))
             {
-                Usuario usuario = JsonConvert.DeserializeObject<Usuario>(sessaoUsuario);
+                Usuario? usuario = JsonConvert.DeserializeObject<Usuario>(sessaoUsuario);
                 return usuario;
             }
-            else
-            {
-                return null;
-            }
+
+            // Se não há usuário autenticado, retorna null
+            return null;
         }
 
         public void CriarSessaoUsuario(Usuario usuariomodel)

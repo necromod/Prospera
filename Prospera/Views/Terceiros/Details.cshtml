@@ -92,7 +92,14 @@
             @Html.DisplayNameFor(model => model.Usuario)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Usuario.CPFUsuario)
+            @if (Model?.Usuario != null)
+            {
+                @Html.DisplayFor(model => model.Usuario.CPFUsuario)
+            }
+            else
+            {
+                <span>N/A</span>
+            }
         </dd>
     </dl>
 </div>

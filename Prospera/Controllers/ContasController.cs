@@ -31,6 +31,11 @@ namespace Prospera.Controllers
         // GET: Contas
         public async Task<IActionResult> Index()
         {
+            if (_context.Contas == null)
+            {
+                return View(new List<Contas>());
+            }
+
             var prosperaContext = _context.Contas.Include(c => c.Usuario);
             return View(await prosperaContext.ToListAsync());
         }
@@ -66,6 +71,12 @@ namespace Prospera.Controllers
         // GET: Contas/Create
         public IActionResult Create()
         {
+            if (_context.Usuario == null)
+            {
+                ViewData["IdUsuario"] = new SelectList(Enumerable.Empty<Usuario>(), "IdUsuario", "CPFUsuario");
+                return View();
+            }
+
             ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario");
             return View();
         }
@@ -83,7 +94,8 @@ namespace Prospera.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+
+            ViewData["IdUsuario"] = _context.Usuario != null ? new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario) : new SelectList(Enumerable.Empty<Usuario>());
             return View(contas);
         }
 
@@ -100,7 +112,8 @@ namespace Prospera.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+
+            ViewData["IdUsuario"] = _context.Usuario != null ? new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario) : new SelectList(Enumerable.Empty<Usuario>());
             return View(contas);
         }
 
@@ -136,7 +149,7 @@ namespace Prospera.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario);
+            ViewData["IdUsuario"] = _context.Usuario != null ? new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", contas.IdUsuario) : new SelectList(Enumerable.Empty<Usuario>());
             return View(contas);
         }
 
@@ -217,7 +230,7 @@ namespace Prospera.Controllers
                     var usuarioLogado = _sessao.BuscarSessaoUsuario();
                     if (usuarioLogado == null)
                     {
-                        return (null);
+                        return BadRequest();
                     }
                     //Verifica se a conta existe
                     var DespesaExiste = _context.Contas
@@ -231,13 +244,14 @@ namespace Prospera.Controllers
                     }
                     else
                     {
-                        return (null);
+                        return NotFound();
                     }
 
                 }
                 else
                 {
                     Console.WriteLine("entrada do usuário não é um número inteiro válido");
+                    return BadRequest();
                 }
 
             }
@@ -248,7 +262,7 @@ namespace Prospera.Controllers
             {
                 //Carrega sessão de usuário
                 var usuarioLogado = _sessao.BuscarSessaoUsuario();
-                if (usuarioLogado == null) return (null);
+                if (usuarioLogado == null) return BadRequest();
                 //Verifica se a conta existe
                 var DespesaExiste = _context.Contas
                     .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
@@ -268,14 +282,14 @@ namespace Prospera.Controllers
                 }
                 else
                 {
-                    return (null);
+                    return NotFound();
                 }
 
 
             }
             else
             {
-                return (null);
+                return BadRequest();
             }
 
 
@@ -307,7 +321,7 @@ namespace Prospera.Controllers
             Console.WriteLine($"O método BuscarContas foi chamado corretamente");  // Adicione esta linha para verificar no console
 
             // Obtenha o usuário logado (você pode usar sua lógica de sessão)
-            Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();// Implemente sua lógica para obter o usuário logado
+            var usuarioLogado = _sessao.BuscarSessaoUsuario();// Implemente sua lógica para obter o usuário logado
 
             if (usuarioLogado == null)
             {
@@ -328,10 +342,10 @@ namespace Prospera.Controllers
             if (btnAcao == "Cadastro")
             {
                 //Configuração de sessão usuário
-                if (_sessao.BuscarSessaoUsuario() != null)
+                var usuarioSess = _sessao.BuscarSessaoUsuario();
+                if (usuarioSess != null)
                 {
-                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
-                    contas.IdUsuario = usuarioModel.IdUsuario;
+                    contas.IdUsuario = usuarioSess.IdUsuario;
                 }
                 else
                 {
@@ -360,7 +374,11 @@ namespace Prospera.Controllers
                 if (int.TryParse(contas.CodigoCont.ToString(), out int id))
                 {
                     //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogado == null)
+                    {
+                        return BadRequest();
+                    }
                     //Verifica se a conta existe
                     var DespesaExiste = _context.Contas
                         .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
@@ -373,13 +391,14 @@ namespace Prospera.Controllers
                     }
                     else
                     {
-                        return (null);
+                        return NotFound();
                     }
 
                 }
                 else
                 {
                     Console.WriteLine("entrada do usuário não é um número inteiro válido");
+                    return BadRequest();
                 }
 
             }
@@ -389,7 +408,8 @@ namespace Prospera.Controllers
                 if (contas.CodigoCont > 0)
                 {
                     //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogado == null) return BadRequest();
                     //Verifica se a conta existe
                     var DespesaExiste = _context.Contas
                         .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
@@ -409,14 +429,14 @@ namespace Prospera.Controllers
                     }
                     else
                     {
-                        return (null);
+                        return NotFound();
                     }
 
 
                 }
                 else
                 {
-                    return (null);
+                    return BadRequest();
                 }
 
 

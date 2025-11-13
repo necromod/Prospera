@@ -12,7 +12,7 @@ namespace Prospera.Models
         public int? CodigoCont { get; set; } //Código da conta/boleto pra referência
 
         [Required(ErrorMessage = "Campo obrigatório!")]
-        public string NomeCont { get; set; }// Nome da conta a ser exibida
+        public string NomeCont { get; set; } = string.Empty;// Nome da conta a ser exibida
 
         public int? TipoCont { get; set; } //Campo não mais utilizado
         public string? PagarReceberCont { get; set; } //Definição se é uma conta para Pagar ou Para receber
@@ -41,17 +41,17 @@ namespace Prospera.Models
 
         [StringLength(20)]
         [Required(ErrorMessage = "Campo obrigatório!")]
-        public string StatusCont { get; set; } // Descrição se conta já está paga
+        public string? StatusCont { get; set; } // Descrição se conta já está paga
 
         [StringLength(20)]
         [Required(ErrorMessage = "Campo obrigatório!")]
-        public string MetodoPgtoCont { get; set; } // Cartão, Boleto, Pix, etc..
+        public string? MetodoPgtoCont { get; set; } // Cartão, Boleto, Pix, etc..
 
         [StringLength(80)]
         public string? ObservacaoCont { get; set; } // Observações adicionais
 
         [ForeignKey("Usuario")]
         public int IdUsuario { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public virtual Usuario? Usuario { get; set; }
     }
 }

@@ -88,7 +88,7 @@
                 @Html.DisplayFor(modelItem => item.ObservacaoCont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.CPFUsuario)
+                @((item.Usuario?.CPFUsuario) ?? "")
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdContas">Edit</a> |

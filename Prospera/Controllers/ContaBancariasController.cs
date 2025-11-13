@@ -37,11 +37,11 @@ namespace Prospera.Controllers
             if (btnAcao == "Cadastro")
             {
                 //Configuração de sessão usuário
-                if (_sessao.BuscarSessaoUsuario() != null)
+                var usuarioSess = _sessao.BuscarSessaoUsuario();
+                if (usuarioSess != null)
                 {
-                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
-                    contBan.IdUsuario = usuarioModel.IdUsuario;
-                    contBan.TitularContBan = usuarioModel.NomeUsuario;
+                    contBan.IdUsuario = usuarioSess.IdUsuario;
+                    contBan.TitularContBan = usuarioSess.NomeUsuario;
                 }
                 else
                 {
@@ -64,10 +64,13 @@ namespace Prospera.Controllers
                 if (int.TryParse(contBan.NumContBan.ToString(), out int id))
                 {
                     //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogado == null)
+                    {
+                        return RedirectToAction("Login", "Usuario");
+                    }
                     //Verifica se a conta existe
-                    var ContBanExiste = _context.ContaBancaria
-                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
+                    var ContBanExiste = _context.ContaBancaria.FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
 
                     if (ContBanExiste != null)
                     {
@@ -93,10 +96,13 @@ namespace Prospera.Controllers
                 if (contBan.NumContBan > 0)
                 {
                     //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogado == null)
+                    {
+                        return RedirectToAction("Login", "Usuario");
+                    }
                     //Verifica se a conta existe
-                    var ContBanExiste = _context.ContaBancaria
-                        .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
+                    var ContBanExiste = _context.ContaBancaria.FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.NumContBan == contBan.NumContBan);
                     if (ContBanExiste != null)
                     {
                         // Atualize o registro existente com os novos valores
@@ -131,8 +137,7 @@ namespace Prospera.Controllers
             return RedirectToAction("CreateContasBancarias", "ContaBancarias");
         }
 
-        
-
+         
 
 
     }

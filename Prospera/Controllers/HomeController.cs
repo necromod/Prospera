@@ -34,16 +34,12 @@ namespace Prospera.Controllers
         {
             return View();
         }
+
+        [Authorize]
         public IActionResult MenuUsuario()
-        {/*
-            //Se usuário já estiver logado, redirecionar para MenuUsuario
-            if (_sessao.BuscarSessaoUsuario() != null)
-            {
-                return RedirectToAction("MenuUsuario", "Home");
-            }*/
-            Console.WriteLine("Não funcionou IF terceiro");
+        {
+            _logger.LogInformation("User {UserId} accessed MenuUsuario", User.Identity?.Name);
             return View();
-           
         }
         public IActionResult VariasExibicoes()
         {

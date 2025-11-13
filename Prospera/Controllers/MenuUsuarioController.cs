@@ -15,12 +15,14 @@ namespace Prospera.Controllers
         private readonly ProsperaContext _context;
         private readonly SessaoInterface _sessao;
         private readonly TerceirosViewModel _teerceirosViewModel;
+        private readonly ILogger<MenuUsuarioController> _logger;
 
-        public MenuUsuarioController(ProsperaContext context, SessaoInterface sessao, TerceirosViewModel teerceirosViewModel)
+        public MenuUsuarioController(ProsperaContext context, SessaoInterface sessao, TerceirosViewModel teerceirosViewModel, ILogger<MenuUsuarioController> logger)
         {
             _context = context;
             _sessao = sessao;
-            _teerceirosViewModel = teerceirosViewModel; 
+            _teerceirosViewModel = teerceirosViewModel;
+            _logger = logger;
         }     
 
         // POST: Criação de campo Terceiros
@@ -69,15 +71,16 @@ namespace Prospera.Controllers
                         // O ID existe no banco de dados, você pode excluí-lo.
                         _context.Terceiros.Remove(terceiro);
                         _context.SaveChanges();
+                        _logger.LogInformation("Terceiro {Id} removido pelo usuário {UserId}", id, usuarioLogin.IdUsuario);
                     }
                     else
                     {
-                        Console.WriteLine("Não funcionou IF terceiro != null");
+                        _logger.LogWarning("Tentativa de exclusão de terceiro inexistente. ID: {Id}, Usuário: {UserId}", id, usuarioLogin.IdUsuario);
                     }
                 }
                 else
                 {
-                    Console.WriteLine("entrada do usuário não é um número inteiro válido");
+                    _logger.LogWarning("ID de terceiro inválido fornecido para exclusão");
                 }
             }
 
@@ -107,17 +110,18 @@ namespace Prospera.Controllers
 
                         // Salve as alterações no banco de dados
                         _context.SaveChanges();
+                        _logger.LogInformation("Terceiro {Id} atualizado pelo usuário {UserId}", terceiros.IdTerceiros, usuarioLogin.IdUsuario);
 
                         return RedirectToAction("Consulta", "Terceiros");
                     }
                     else
                     {
-                        Console.WriteLine(" ID não foi encontrado");
+                        _logger.LogWarning("Tentativa de edição de terceiro inexistente. ID: {Id}, Usuário: {UserId}", terceiros.IdTerceiros, usuarioLogin.IdUsuario);
                     }
                 }
                 else
                 {
-                    Console.WriteLine("  ID não é válido");
+                    _logger.LogWarning("ID de terceiro inválido fornecido para edição");
                 }
             }
 
@@ -149,7 +153,10 @@ namespace Prospera.Controllers
         private int ProximoTerceiroUsuario(int idUsuario)
         {
             // Obter todos os CodigoCont para o idUsuario ordenados de forma ascendente
-            var codigosCont = _context.Terceiros?.Where(c => c.IdUsuario == idUsuario).Select(c => c.CodigoCont).OrderBy(c => c).ToList() ?? new List<int>();
+            var codigosCont = _context.Terceiros?.Where(c => c.IdUsuario == idUsuario && c.CodigoCont.HasValue)
+                                    .Select(c => c.CodigoCont.Value)
+                                    .OrderBy(c => c)
+                                    .ToList() ?? new List<int>();
 
             // Iterar pelos valores de CodigoCont para encontrar a primeira lacuna na sequência
             int proximoCodigoCont = 1;

@@ -1,9 +1,12 @@
-﻿ using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
 using Prospera.Helpers;
 using Prospera.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Prospera.Controllers
 {
@@ -11,12 +14,13 @@ namespace Prospera.Controllers
     {
         private readonly SessaoInterface _sessao;
         private readonly ProsperaContext _context;
+        private readonly ILogger<CadastroController> _logger;
 
-
-        public CadastroController(ProsperaContext context, SessaoInterface sessao)
+        public CadastroController(ProsperaContext context, SessaoInterface sessao, ILogger<CadastroController> logger)
         {
             _context = context;
             _sessao = sessao;
+            _logger = logger;
         }
 
         //View /Home/Cadastro
@@ -34,74 +38,84 @@ namespace Prospera.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public IActionResult Cadastrar(Usuario usuario)
+        public async Task<IActionResult> Cadastrar(Usuario usuario)
         {
-
             try
             {
-                //Verifica se todos os campos foram preenchidos
-                if (usuario.EmailUsuario == null)
+                // Validação básica
+                if (string.IsNullOrEmpty(usuario.EmailUsuario) || 
+                    string.IsNullOrEmpty(usuario.SenhaUsuario) ||
+                    string.IsNullOrEmpty(usuario.NomeUsuario))
                 {
-                    TempData["MensagemErro"] = $"Por favor, preencha todos os campos.";
+                    TempData["MensagemErro"] = "Por favor, preencha todos os campos obrigatórios.";
+                    return View("Cadastro");
                 }
 
-
-                //Iserção automática dos campos 
+                // Inserção automática dos campos 
                 usuario.DatCadastroUsuario = DateTime.Now;
                 usuario.DatUltimoAcesUsuario = DateTime.Now;
                 usuario.CargoUsuario = "Comum";
                 usuario.StatusUsuario = "Ativo";
 
-                //Criação do usuário dentro do banco
+                // Criação do usuário dentro do banco
                 _context.Usuario.Add(usuario);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
-                // Cria um objeto LoginModel com o email e senha do novo usuário
-                LoginModel loginModel = new LoginModel
+                _logger.LogInformation("Novo usuário cadastrado: {Email}", usuario.EmailUsuario);
+
+                // ✅ AUTENTICAÇÃO COMPLETA APÓS CADASTRO
+                // 1. Criar Claims (mesmo fluxo do LoginController)
+                var claims = new List<Claim>
                 {
-                    Email = usuario.EmailUsuario,
-                    Senha = usuario.SenhaUsuario
+                    new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+                    new Claim(ClaimTypes.Name, usuario.NomeUsuario),
+                    new Claim(ClaimTypes.Email, usuario.EmailUsuario ?? "")
                 };
 
-                var usuarioSessao = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == usuario.EmailUsuario);
+                // 2. Configurar autenticação (manter logado por 15 dias após cadastro)
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var authProperties = new AuthenticationProperties
+                {
+                    IsPersistent = true,
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(15)
+                };
 
-                // Verifique se a caixa "Manter logado" foi marcada
-                bool manterLogado = true;
+                // 3. Criar cookie de autenticação
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity),
+                    authProperties
+                );
 
-                // Configurar o tempo de expiração da sessão com base na escolha do usuário
-                var tempoExpiracaoSessao = manterLogado ? TimeSpan.FromDays(15) : TimeSpan.FromMinutes(5);
-                // Configurar a sessão com o tempo de expiração especificado
-                HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.Add(tempoExpiracaoSessao).ToString());
+                // 4. Criar sessão (redundante, mas mantém compatibilidade)
+                HttpContext.Session.SetString("SessaoExpiracao", DateTime.Now.AddDays(15).ToString());
+                _sessao.CriarSessaoUsuario(usuario);
 
+                _logger.LogInformation("Usuário autenticado após cadastro: {Email}", usuario.EmailUsuario);
 
-                _sessao.CriarSessaoUsuario(usuarioSessao);
-
+                // 5. Redirecionar para MenuUsuario
                 return RedirectToAction("MenuUsuario", "Home");
-                /*// Chama o método Entrar diretamente no LoginController
-                var loginController = new LoginController(_context, _sessao);
-                return loginController.Entrar(loginModel);*/
             }
             catch (Exception erro)
             {
-                // Se houver algum erro inesperado
-                TempData["MensagemErro"] = $"Por favor, preencha todos os campos.";
+                _logger.LogError(erro, "Erro ao cadastrar usuário: {Email}", usuario?.EmailUsuario);
+                TempData["MensagemErro"] = "Ocorreu um erro ao criar sua conta. Tente novamente.";
+                return View("Cadastro");
             }
-
-            return View("Cadastro");
         }
 
         [HttpPost]
         public JsonResult VerificarCPFDuplicado(string cpf)
         {
             var usuarioExistente = _context.Usuario.Any(u => u.CPFUsuario == cpf);
-            return Json(!usuarioExistente); // Retorna verdadeiro se não existir e falso se existir
+            return Json(!usuarioExistente);
         }
 
         [HttpPost]
         public JsonResult VerificarEmailDuplicado(string email)
         {
             var usuarioExistente = _context.Usuario.Any(u => u.EmailUsuario == email);
-            return Json(!usuarioExistente); // Retorna verdadeiro se não existir e falso se existir
+            return Json(!usuarioExistente);
         }
     }
 }

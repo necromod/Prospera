@@ -16,13 +16,13 @@ namespace Prospera.Data
 
         public DbSet<Prospera.Models.ContaBancaria> ContaBancaria { get; set; } = default!;
 
-        public DbSet<Prospera.Models.Contas>? Contas { get; set; }
+        public DbSet<Prospera.Models.Contas> Contas { get; set; } = default!;
 
-        public DbSet<Prospera.Models.Usuario>? Usuario { get; set; }
+        public DbSet<Prospera.Models.Usuario> Usuario { get; set; } = default!;
 
-        public DbSet<Prospera.Models.Terceiros>? Terceiros { get; set; }
+        public DbSet<Prospera.Models.Terceiros> Terceiros { get; set; } = default!;
 
-        public DbSet<Prospera.Models.Extrato>? Extrato { get; set; }
+        public DbSet<Prospera.Models.Extrato> Extrato { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -51,10 +51,6 @@ namespace Prospera.Data
     .WithMany()
     .HasForeignKey(cb => cb.IdTerceiros)
     .OnDelete(DeleteBehavior.NoAction);
-
-
-
-
 
         }
     }

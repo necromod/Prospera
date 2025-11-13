@@ -53,10 +53,10 @@ namespace Prospera.Controllers
                 if (ModelState.IsValid)
                 {
                     // validação se o email existe no banco
-                    var usuario = _context.Usuario.SingleOrDefault(u => u.EmailUsuario == loginModel.Email);
+                    var usuario = _context.Usuario?.SingleOrDefault(u => u.EmailUsuario == loginModel.Email);
 
                     if (usuario != null)
-                    {                        
+                    {
                         if (loginModel.Senha == usuario.SenhaUsuario) 
                         {
                             if (HttpContext != null)
@@ -110,7 +110,7 @@ namespace Prospera.Controllers
                 }
                                                
             }
-            catch (Exception erro)
+            catch
             {
                 // Se houver algum erro inesperado
                 ModelState.AddModelError(string.Empty, "Ocorreu um erro durante o login");

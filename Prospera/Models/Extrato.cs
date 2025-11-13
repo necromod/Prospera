@@ -11,34 +11,28 @@ namespace Prospera.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdExtrato { get; set; }
 
-        [Required]
         [StringLength(25)]
-        public string NomeExtrato { get; set; }
+        public string? NomeExtrato { get; set; }
 
-        [Required]
         [DataType(DataType.Currency)]
         public decimal ValorExtrato { get; set; }
 
-        [Required]
         [StringLength(120)]
-        public string DestinatarioExtrato { get; set; }
+        public string? DestinatarioExtrato { get; set; }
 
-        [Required]
-        [StringLength(120)]
         public int RemetenteExtrato { get; set; }
 
-        [Required]
         [DataType(DataType.Date)]
         public DateTime DataExtrato { get; set; }
 
         [StringLength(20)]
-        public string StatusExtrato { get; set; }
+        public string? StatusExtrato { get; set; }
 
         [StringLength(80)]
-        public string ObservacaoExtrato { get; set; }
+        public string? ObservacaoExtrato { get; set; }
 
         [ForeignKey("Usuario")]
         public int IdUsuario { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public virtual Usuario? Usuario { get; set; }
     }
 }
