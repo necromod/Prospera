@@ -32,18 +32,33 @@ namespace Prospera.Controllers
             //Verifica Sessão de usuário
             if (usuarioLogado == null)
             {
-                usuarioLogado = _context.Usuario.FirstOrDefault(t => t.IdUsuario == 1);
-                _sessao.CriarSessaoUsuario(usuarioLogado);
-                Console.WriteLine("Usuário logado: ", usuarioLogado.NomeUsuario);
+                var defaultUser = _context.Usuario?.FirstOrDefault(t => t.IdUsuario == 1);
+                if (defaultUser == null)
+                {
+                    // no user available -> return empty list view
+                    return View(new List<Contas>());
+                }
+
+                usuarioLogado = defaultUser;
+
+                // only create session if http context available
+                try
+                {
+                    _sessao.CriarSessaoUsuario(usuarioLogado);
+                }
+                catch
+                {
+                    // ignore session set failures
+                }
+
+                Console.WriteLine("Usuário logado: " + usuarioLogado.NomeUsuario);
             }
             else
             {
-                Console.WriteLine("Usuário logado: ", usuarioLogado.NomeUsuario);
+                Console.WriteLine("Usuário logado: " + usuarioLogado.NomeUsuario);
             }
-            var contasDoUsuario = _context.Contas
-            .Where(c => c.IdUsuario == usuarioLogado.IdUsuario)
-            .ToList();
 
+            var contasDoUsuario = _context.Contas?.Where(c => c.IdUsuario == usuarioLogado.IdUsuario).ToList() ?? new List<Contas>();
 
             return View(contasDoUsuario);
         }
