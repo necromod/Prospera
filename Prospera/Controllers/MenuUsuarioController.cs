@@ -126,14 +126,19 @@ namespace Prospera.Controllers
 
         private void VerificaSessao(Terceiros terceiros)
         {
-            if (_sessao.BuscarSessaoUsuario() != null)
+            var userId = HttpContext.GetUserId();
+            if (userId.HasValue)
+            {
+                terceiros.IdUsuario = userId.Value;
+            }
+            else if (_sessao.BuscarSessaoUsuario() != null)
             {
                 Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
                 terceiros.IdUsuario = usuarioModel.IdUsuario;
             }
             else
             {
-                terceiros.IdUsuario = 109;
+                thirds.IdUsuario = 109;
             }
         }
 
@@ -168,20 +173,22 @@ namespace Prospera.Controllers
         [HttpGet]
         public IActionResult BuscarTerceiros(int id)
         {
-            Usuario usuarioLogin = _sessao.BuscarSessaoUsuario();
+            var userId = HttpContext.GetUserId();
+            if (!userId.HasValue)
+            {
+                return Json(null);
+            }
 
-            Console.WriteLine($"O método BuscarContas foi chamado com o código: {id}");  // Adicione 
             var terceiros = _context.Terceiros
-                .FirstOrDefault(t => t.CodigoCont == id && t.IdUsuario == usuarioLogin.IdUsuario);
+                .FirstOrDefault(t => t.CodigoCont == id && t.IdUsuario == userId.Value);
 
             if (terceiros != null)
             {
-               /* HttpContext.Session.SetString("OriginalIdTerceiros", terceiros.IdTerceiros.ToString());*/
-                return Json(terceiros); // Retorna o Terceiros encontrado como JSON.
+                return Json(terceiros);
             }
             else
             {
-                return Json(null); // Retorna nulo se o Terceiros não for encontrado.
+                return Json(null);
             }
         }
 

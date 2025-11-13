@@ -190,20 +190,11 @@ namespace Prospera.Controllers
             //Botão Cadastro apertado
             if (btnAcao == "Cadastro")
             {
-                //Configuração de sessão usuário
-                if (_sessao.BuscarSessaoUsuario() != null)
-                {
-                    Usuario usuarioModel = _sessao.BuscarSessaoUsuario();
-                    contas.IdUsuario = usuarioModel.IdUsuario;
-                }
-                else
-                {
-                    contas.IdUsuario = 55;
-                }
-
+                //Configuração de usuário a partir de claims ou sessão
+                var userId = HttpContext.GetUserId() ?? _sessao.BuscarSessaoUsuario()?.IdUsuario ?? 55;
+                contas.IdUsuario = userId;
 
                 //Inserção automática dos campos
-                // Encontre o próximo CodigoCont para o usuário atual
                 int proximoCodigoCont = EncontrarProximoCodigoCont(contas.IdUsuario);
                 contas.CodigoCont = proximoCodigoCont;
                 contas.PagarReceberCont = "Despesa";
@@ -316,7 +307,7 @@ namespace Prospera.Controllers
             if (usuarioLogado == null)
             {
                 Console.WriteLine($"Usuário sem login");
-                return Json(null); // Usuário não logado, tratamento apropriado aqui
+                return Json(null); // Usuário não logado, tratamento apropriada aqui
             }
 
             // Realize a consulta na tabela de Contas

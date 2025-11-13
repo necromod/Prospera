@@ -37,26 +37,37 @@ namespace Prospera.Controllers
        }
         public IActionResult Consulta()
         {
+            var userId = HttpContext.GetUserId();
             var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
 
-            // Ordena a lista de Terceiros por CodigoCont
-            viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
-
-            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
+            // If userId present, filter list to user-specific items
+            if (userId.HasValue)
+            {
+                viewModel.ListaTerceiros = viewModel.ListaTerceiros.Where(t => t.IdUsuario == userId.Value).OrderBy(t => t.CodigoCont).ToList();
+            }
+            else
+            {
+                viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
+            }
 
             return View(viewModel);
         }
 
         public IActionResult ConsultaEndereco()
         {
+            var userId = HttpContext.GetUserId();
             var viewModel = new TerceirosViewModelInterface(_context, _sessao);
             viewModel.PreencherListaTerceiros();
 
-            // Ordena a lista de Terceiros por CodigoCont
-            viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
-
-            // Agora, viewModel.ListaTerceiros está populado com os dados da tabela Terceiros
+            if (userId.HasValue)
+            {
+                viewModel.ListaTerceiros = viewModel.ListaTerceiros.Where(t => t.IdUsuario == userId.Value).OrderBy(t => t.CodigoCont).ToList();
+            }
+            else
+            {
+                viewModel.ListaTerceiros = viewModel.ListaTerceiros.OrderBy(t => t.CodigoCont).ToList();
+            }
 
             return View(viewModel);
         }
@@ -126,9 +137,9 @@ namespace Prospera.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTerceiros,NomeTerceiros,TelefoneTerceiros,Telefone2Terceiros,EmailTerceiros,EnderecoTerceiros,CidadeTerceiros,BairroTerceiros,UFTerceiros,CEPTerceiros,ObservacaoTerceiros,DataCadastroTerceiros,DataUltimaMovimentacao,StatusTerceiros,IdUsuario")] Terceiros terceros)
+        public async Task<IActionResult> Edit(int id, [Bind("IdTerceiros,NomeTerceiros,TelefoneTerceiros,Telefone2Terceiros,EmailTerceiros,EnderecoTerceiros,CidadeTerceiros,BairroTerceiros,UFTerceiros,CEPTerceiros,ObservacaoTerceiros,DataCadastroTerceiros,DataUltimaMovimentacao,StatusTerceiros,IdUsuario")] Terceiros terceirosModel)
         {
-            if (id != terceiros.IdTerceiros)
+            if (id != terceirosModel.IdTerceiros)
             {
                 return NotFound();
             }
@@ -137,12 +148,12 @@ namespace Prospera.Controllers
             {
                 try
                 {
-                    _context.Update(terceiros);
+                    _context.Update(terceirosModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TerceirosExists((int)terceiros.IdTerceiros))
+                    if (!TerceirosExists((int)terceirosModel.IdTerceiros))
                     {
                         return NotFound();
                     }
@@ -153,8 +164,8 @@ namespace Prospera.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", terceiros.IdUsuario);
-            return View(terceiros);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuario, "IdUsuario", "CPFUsuario", terceirosModel.IdUsuario);
+            return View(terceirosModel);
         }
 
         // GET: Terceiros/Delete/5
