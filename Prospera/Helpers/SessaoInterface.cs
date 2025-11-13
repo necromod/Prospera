@@ -6,6 +6,6 @@ namespace Prospera.Helpers
     {
         void CriarSessaoUsuario(Usuario usuariomodel);
         void RemoverSessaoUsuario();
-        Usuario BuscarSessaoUsuario();
+        Usuario? BuscarSessaoUsuario();
     }
 }

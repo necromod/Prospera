@@ -214,7 +214,11 @@ namespace Prospera.Controllers
                 if (int.TryParse(contas.CodigoCont.ToString(), out int id))
                 {
                     //Carrega sessão de usuário
-                    Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                    if (usuarioLogado == null)
+                    {
+                        return (null);
+                    }
                     //Verifica se a conta existe
                     var DespesaExiste = _context.Contas
                         .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);
@@ -243,7 +247,8 @@ namespace Prospera.Controllers
             if (contas.CodigoCont > 0)
             {
                 //Carrega sessão de usuário
-                Usuario usuarioLogado = _sessao.BuscarSessaoUsuario();
+                var usuarioLogado = _sessao.BuscarSessaoUsuario();
+                if (usuarioLogado == null) return (null);
                 //Verifica se a conta existe
                 var DespesaExiste = _context.Contas
                     .FirstOrDefault(c => c.IdUsuario == usuarioLogado.IdUsuario && c.CodigoCont == contas.CodigoCont);

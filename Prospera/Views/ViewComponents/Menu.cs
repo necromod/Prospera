@@ -11,8 +11,8 @@ namespace Prospera.ViewComponents
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            string sessaoUsuario = HttpContext.Session.GetString("SessaoUsuarioLogado");
-            
+            string? sessaoUsuario = HttpContext.Session.GetString("SessaoUsuarioLogado");
+
             // Defina a variável de exibição com base na presença de um usuário na sessão
             bool exibirSelecao1 = !string.IsNullOrEmpty(sessaoUsuario);
 
@@ -23,8 +23,17 @@ namespace Prospera.ViewComponents
                 return View();
             }
 
-            Usuario usuario = JsonConvert.DeserializeObject<Usuario>(sessaoUsuario);
-            return View(usuario);
+            Usuario? usuario = null;
+            try
+            {
+                usuario = JsonConvert.DeserializeObject<Usuario>(sessaoUsuario);
+            }
+            catch
+            {
+                usuario = null;
+            }
+
+            return View((object)usuario);
         }
     }
 }

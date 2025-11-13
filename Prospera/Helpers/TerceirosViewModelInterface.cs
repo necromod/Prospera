@@ -20,15 +20,24 @@ namespace Prospera.Helpers
             //Verifica Sessão de usuário
             if (usuarioLogado == null)
             {
-                usuarioLogado = _context.Usuario.FirstOrDefault(t => t.IdUsuario == 1);
-                _sessao.CriarSessaoUsuario(usuarioLogado);
-                Console.WriteLine("Usuário logado: ", usuarioLogado.NomeUsuario);
+                usuarioLogado = _context.Usuario?.FirstOrDefault(t => t.IdUsuario == 1);
+                if (usuarioLogado != null)
+                {
+                    _sessao.CriarSessaoUsuario(usuarioLogado);
+                    Console.WriteLine("Usuário logado: " + usuarioLogado.NomeUsuario);
+                }
+                else
+                {
+                    ListaTerceiros = new List<Terceiros>();
+                    return;
+                }
             }
             else
             {
-                Console.WriteLine("Usuário logado: ", usuarioLogado.NomeUsuario);
+                Console.WriteLine("Usuário logado: " + usuarioLogado.NomeUsuario);
             }
-            ListaTerceiros = _context.Terceiros.Where(t => t.IdUsuario ==  usuarioLogado.IdUsuario).ToList();
+
+            ListaTerceiros = _context.Terceiros?.Where(t => t.IdUsuario ==  usuarioLogado.IdUsuario).ToList() ?? new List<Terceiros>();
         }
     }
 }

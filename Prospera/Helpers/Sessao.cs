@@ -17,7 +17,7 @@ namespace Prospera.Helpers
             _userProvider = userProvider;
         }
 
-        public Usuario BuscarSessaoUsuario()
+        public Usuario? BuscarSessaoUsuario()
         {
             // Prefer claims
             var claimId = _httpContext.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -44,13 +44,14 @@ namespace Prospera.Helpers
 
         public void CriarSessaoUsuario(Usuario usuariomodel)
         {
+            if (_httpContext.HttpContext == null) return;
             string valor = JsonConvert.SerializeObject(usuariomodel);
             _httpContext.HttpContext.Session.SetString("SessaoUsuarioLogado", valor);
         }
 
         public void RemoverSessaoUsuario()
         {
-            _httpContext.HttpContext.Session.Remove("SessaoUsuarioLogado");
+            _httpContext.HttpContext?.Session.Remove("SessaoUsuarioLogado");
         }
     }
 }
