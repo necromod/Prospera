@@ -24,20 +24,20 @@ namespace Prospera.Models
         public int AgenciaContBan { get; set; }
 
         [StringLength(50)]
-        public string TipoContBan { get; set; }
+        public string? TipoContBan { get; set; }
 
         [DataType(DataType.Currency)]
         public decimal SaldoContBan { get; set; }
 
         [StringLength(80)]
-        public string ObsContBan { get; set; }
+        public string? ObsContBan { get; set; }
 
         [ForeignKey("Usuario")]
         public int IdUsuario { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public virtual Usuario? Usuario { get; set; }
 
         [ForeignKey("Terceiros")]
         public int IdTerceiros { get; set; }
-        public virtual Terceiros Terceiros { get; set; }
+        public virtual Terceiros? Terceiros { get; set; }
     }
 }
