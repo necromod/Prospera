@@ -54,7 +54,7 @@ az sql server ad-admin create \
 
 **Com SQL Authentication:**
 ```
-Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;Persist Security Info=False;User ID=prosperaadmin;Password=<SUA_SENHA>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;Persist Security Info=False;User ID=<ADMIN_USER>;Password=<ADMIN_PASSWORD>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
 **Com Azure AD Managed Identity:**

@@ -17,8 +17,8 @@
 
 ### 2. SQL Server
 - **Nome**: `sql-prospera-server`
-- **Admin User**: `prosperaadmin`
-- **Admin Password**: `SuaSenhaForte@123`
+- **Admin User**: `[Configurado no Azure Portal]`
+- **Admin Password**: `[Configurado no Azure Portal]`
 - **Região**: Australia Central
 - **Firewall**: Azure Services permitido ?
 - **Status**: ? Criado e Configurado
@@ -43,7 +43,7 @@
 ### 5. Application Insights
 - **Nome**: `ai-prospera`
 - **Região**: Australia Central
-- **Instrumentation Key**: `09ac2886-4328-4845-9b32-bb2af95d4ff0`
+- **Instrumentation Key**: `[Configurado no Azure Portal]`
 - **Connection String**: Configurada no App Service
 - **Status**: ? Criado e Configurado
 
@@ -52,12 +52,14 @@
 ## ?? CONFIGURAÇÕES APLICADAS
 
 ### Connection Strings
-? **ProsperaContext** configurada no App Service
+? **ProsperaContext** configurada no Azure Portal (App Service > Configuration > Connection strings)
+
+**Formato da Connection String** (configure no Azure Portal):
 ```
 Server=tcp:sql-prospera-server.database.windows.net,1433;
 Initial Catalog=prosperaadmin;
-User ID=prosperaadmin;
-Password=SuaSenhaForte@123;
+User ID=[SEU_USUARIO];
+Password=[SUA_SENHA];
 Encrypt=True;
 TrustServerCertificate=False;
 Connection Timeout=30;
@@ -104,34 +106,27 @@ Tables: ? Criadas
 ## ?? DEPLOY REALIZADO
 
 ### Método
-- **Tipo**: ZIP Deploy (Manual)
+- **Tipo**: ZIP Deploy (Manual) + GitHub Actions (Automático)
 - **Data**: 17/11/2025 19:41:03 UTC
 - **Status**: ? Succeeded
-- **Deployment ID**: `5ceb9917ef5d4ad3bfa3ac80b046c6ae`
 
-### Próximos Deploys
-Para deploys automáticos via GitHub Actions:
+### Deploys Automáticos via GitHub Actions
+? GitHub Secret `AZURE_WEBAPP_PUBLISH_PROFILE` configurado
 
-1. **Adicionar Secret no GitHub**:
-   - Nome: `AZURE_WEBAPP_PUBLISH_PROFILE`
-   - Valor: Conteúdo do arquivo `publish-profile.xml`
-
-2. **Fazer Push**:
-   ```bash
-   git push origin main
-   ```
-   
-   O GitHub Actions vai automaticamente fazer o build e deploy!
+Cada push na branch `main` dispara automaticamente:
+1. Build do projeto
+2. Testes (se existirem)
+3. Publicação no Azure
 
 ---
 
 ## ?? LINKS ÚTEIS
 
 ### Azure Portal
-- **Resource Group**: https://portal.azure.com/#@/resource/subscriptions/5c4924fa-2b44-4cdb-8d95-1d0bae34b761/resourceGroups/rg-prospera/overview
-- **App Service**: https://portal.azure.com/#@/resource/subscriptions/5c4924fa-2b44-4cdb-8d95-1d0bae34b761/resourceGroups/rg-prospera/providers/Microsoft.Web/sites/Prosperaweb/appServices
-- **SQL Database**: https://portal.azure.com/#@/resource/subscriptions/5c4924fa-2b44-4cdb-8d95-1d0bae34b761/resourceGroups/rg-prospera/providers/Microsoft.Sql/servers/sql-prospera-server/databases/prosperaadmin/overview
-- **Application Insights**: https://portal.azure.com/#@/resource/subscriptions/5c4924fa-2b44-4cdb-8d95-1d0bae34b761/resourceGroups/rg-prospera/providers/microsoft.insights/components/ai-prospera/overview
+- **Resource Group**: [Ver no Azure Portal]
+- **App Service**: [Ver no Azure Portal]
+- **SQL Database**: [Ver no Azure Portal]
+- **Application Insights**: [Ver no Azure Portal]
 
 ### Aplicação
 - **Site**: https://prosperaweb.azurewebsites.net
@@ -159,15 +154,14 @@ Para deploys automáticos via GitHub Actions:
 
 ## ?? CREDENCIAIS
 
-### SQL Server Admin
-- **Username**: `prosperaadmin`
-- **Password**: `SuaSenhaForte@123`
-- **Server**: `sql-prospera-server.database.windows.net`
-- **Database**: `prosperaadmin`
+?? **IMPORTANTE**: Todas as credenciais estão armazenadas com segurança no Azure Portal.
 
-### Azure Admin
-- **Email**: `edimilson.silva@gpnet.com.br`
-- **Tenant**: Microsoft Entra ID configurado
+### Como Acessar Credenciais:
+1. **SQL Server**: Azure Portal > SQL Server > Settings
+2. **Connection Strings**: Azure Portal > App Service > Configuration > Connection strings
+3. **Application Insights**: Azure Portal > Application Insights > Properties
+
+**NUNCA** compartilhe credenciais em arquivos de código ou repositórios Git!
 
 ---
 
@@ -197,14 +191,8 @@ az webapp log download --name Prosperaweb --resource-group rg-prospera --log-fil
 
 ## ?? PRÓXIMOS PASSOS
 
-### 1. Configurar GitHub Actions para Deploy Automático
-1. Acesse: https://github.com/necromod/Prospera/settings/secrets/actions
-2. Clique em "New repository secret"
-3. Nome: `AZURE_WEBAPP_PUBLISH_PROFILE`
-4. Valor: Copie o conteúdo do arquivo `publish-profile.xml`
-5. Salve
-
-Agora todo push na branch `main` vai fazer deploy automático!
+### 1. Deploy Automático Está Configurado ?
+Todo push na branch `main` faz deploy automático via GitHub Actions.
 
 ### 2. Upgrade do App Service Plan (Recomendado para Produção)
 ```bash
@@ -255,6 +243,8 @@ No Azure Portal:
 - [x] Application Insights configurado
 - [x] Firewall do SQL configurado
 - [x] Connection String configurada
+- [x] GitHub Actions configurado
+- [x] Credenciais protegidas (não em código)
 
 ---
 
@@ -279,8 +269,29 @@ No Azure Portal:
 cd Prospera
 dotnet publish -c Release -o ./publish
 Compress-Archive -Path publish\* -DestinationPath deploy.zip -Force
-az webapp deployment source config-zip --name Prosperaweb --resource-group rg-prospera --src deploy.zip
+az webapp deploy --name Prosperaweb --resource-group rg-prospera --src-path deploy.zip --type zip
 ```
+
+---
+
+## ?? SEGURANÇA
+
+### Boas Práticas Implementadas:
+- ? HTTPS obrigatório
+- ? HSTS habilitado
+- ? Cookies seguros (HttpOnly, Secure, SameSite)
+- ? Connection strings no Azure (não no código)
+- ? Application secrets protegidos
+- ? Firewall configurado no SQL
+- ? TLS 1.2 mínimo
+- ? Autenticação Microsoft Entra ID disponível
+
+### Recomendações Adicionais:
+- [ ] Habilitar Azure Key Vault para secrets
+- [ ] Configurar Managed Identity para SQL
+- [ ] Implementar rate limiting
+- [ ] Adicionar WAF (Web Application Firewall)
+- [ ] Configurar Azure AD B2C para autenticação de usuários
 
 ---
 
@@ -294,16 +305,20 @@ az webapp deployment source config-zip --name Prosperaweb --resource-group rg-pr
 ? Site testado e funcionando
 ? Health check OK
 ? Monitoramento ativo
+? Deploy automático configurado
+? Credenciais protegidas
 ? Pronto para uso!
 
 **URL**: https://prosperaweb.azurewebsites.net
 
 ---
 
-**Deployment realizado com sucesso por Edimilson Ribeiro da Silva**
+**Deployment realizado com sucesso**
 
 **Data**: 17 de Novembro de 2025
 
 **Ambiente**: Production
 
 **Status**: ? ONLINE
+
+**Segurança**: ? CREDENCIAIS PROTEGIDAS

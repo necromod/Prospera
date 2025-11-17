@@ -78,3 +78,55 @@ Prospera/Prospera/
 
 # Visual Studio Copilot Snapshots
 CopilotSnapshots/
+
+# ========================================
+# ARQUIVOS SENSÍVEIS - NUNCA COMMITAR
+# ========================================
+
+# Publish profiles com credenciais
+*.PublishSettings
+*.pubxml.user
+publish-profile.xml
+*publish-profile*.xml
+*.azurepubxml
+
+# Arquivos de deployment com senhas
+deploy.zip
+*.deploy
+
+# Arquivos com credenciais
+*credentials*
+*password*
+*secret*
+
+# Connection strings com senhas
+*connectionstring*.txt
+*connstring*.txt
+
+# Arquivos de backup com dados sensíveis
+*.bak
+*.backup
+
+# Arquivos de configuração local
+appsettings.Local.json
+appsettings.*.local.json
+
+# Certificados e chaves
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+
+# Azure credentials
+.azure/
+azure-credentials.json
+
+# Terraform state (pode conter senhas)
+*.tfstate
+*.tfstate.backup
+
+# Environment files
+.env
+.env.local
+.env.*.local

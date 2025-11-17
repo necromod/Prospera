@@ -173,7 +173,7 @@ Pacotes adicionados:
 az group create --name rg-prospera --location brazilsouth
 
 # SQL Server e Database
-az sql server create --name sql-prospera-server --resource-group rg-prospera --admin-user prosperaadmin --admin-password 'SenhaForte123!'
+az sql server create --name sql-prospera-server --resource-group rg-prospera --admin-user <ADMIN_USER> --admin-password '<ADMIN_PASSWORD>'
 az sql db create --resource-group rg-prospera --server sql-prospera-server --name Prospera-DB --service-objective S0
 
 # App Service

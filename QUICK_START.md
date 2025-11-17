@@ -8,13 +8,13 @@
 # 1.1 - Resource Group
 az group create --name rg-prospera --location brazilsouth
 
-# 1.2 - SQL Server (TROQUE A SENHA!)
+# 1.2 - SQL Server (SUBSTITUA <ADMIN_USER> e <ADMIN_PASSWORD> por valores seguros!)
 az sql server create \
   --name sql-prospera-server \
   --resource-group rg-prospera \
   --location brazilsouth \
-  --admin-user prosperaadmin \
-  --admin-password 'SuaSenhaForte@123'
+  --admin-user <ADMIN_USER> \
+  --admin-password '<ADMIN_PASSWORD>'
 
 # 1.3 - SQL Database
 az sql db create \
@@ -58,11 +58,12 @@ az monitor app-insights component create \
 
 ```bash
 # 2.1 - Configurar Connection String no App Service
+# IMPORTANTE: Substitua <ADMIN_USER> e <ADMIN_PASSWORD> pelos valores que você definiu no Passo 1.2!
 az webapp config connection-string set \
   --name Prosperaweb \
   --resource-group rg-prospera \
   --connection-string-type SQLAzure \
-  --settings ProsperaContext="Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;User ID=prosperaadmin;Password=SuaSenhaForte@123;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  --settings ProsperaContext="Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;User ID=<ADMIN_USER>;Password=<ADMIN_PASSWORD>;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 
 # 2.2 - Obter Connection String do App Insights
 AI_CONN=$(az monitor app-insights component show \
@@ -108,7 +109,10 @@ cat publish-profile.xml
 # - Value: Cole o conteúdo do arquivo XML
 # - Clique em "Add secret"
 
-# 3.4 - Commit e Push (vai disparar o deploy automático)
+# 3.4 - IMPORTANTE: Delete o arquivo local após adicionar no GitHub!
+rm publish-profile.xml
+
+# 3.5 - Commit e Push (vai disparar o deploy automático)
 git add .
 git commit -m "Deploy para Azure - Prospera v1.0"
 git push origin main
@@ -175,9 +179,10 @@ az webapp log tail --name Prosperaweb --resource-group rg-prospera
 ### Migrations não aplicadas?
 ```bash
 # Aplicar manualmente (localmente)
+# IMPORTANTE: Use a connection string do Azure Portal!
 dotnet ef database update \
   --project Prospera/Prospera.csproj \
-  --connection "Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;User ID=prosperaadmin;Password=SuaSenhaForte@123;Encrypt=True;"
+  --connection "Server=tcp:sql-prospera-server.database.windows.net,1433;Initial Catalog=Prospera-DB;User ID=<ADMIN_USER>;Password=<ADMIN_PASSWORD>;Encrypt=True;"
 ```
 
 ## ?? Documentação Completa
@@ -187,13 +192,24 @@ dotnet ef database update \
 - **TROUBLESHOOTING.md** - Soluções para problemas
 - **START_HERE.md** - Visão geral completa
 
-## ?? Dicas
+## ?? Dicas de Segurança
 
-1. **Sempre use senhas fortes** - Mínimo 12 caracteres com letras, números e símbolos
-2. **Habilite logs** - Facilita troubleshooting
-3. **Use Application Insights** - Monitore performance e erros
-4. **Teste localmente antes** - `dotnet run` e teste tudo
-5. **Verifique o GitHub Actions** - Veja se o workflow passou
+1. **NUNCA** compartilhe senhas em código ou arquivos
+2. **SEMPRE** use senhas fortes (mínimo 12 caracteres, letras maiúsculas, minúsculas, números e símbolos)
+3. **DELETE** o arquivo `publish-profile.xml` após adicionar no GitHub
+4. **NÃO COMMITE** arquivos com credenciais
+5. **USE** Azure Key Vault para produção
+6. **ROTACIONE** senhas regularmente
+
+## ?? Checklist de Segurança
+
+- [ ] Senha forte definida para SQL Server
+- [ ] Publish profile adicionado apenas no GitHub Secrets
+- [ ] Arquivo local publish-profile.xml deletado
+- [ ] Connection strings configuradas no Azure Portal (não no código)
+- [ ] HTTPS Only habilitado
+- [ ] Firewall do SQL configurado
+- [ ] Application Insights sem informações sensíveis
 
 ## ?? Pronto!
 
@@ -210,3 +226,4 @@ Se tudo estiver OK, você verá:
 **Tempo total**: ~10 minutos
 **Custo**: ~R$ 115/mês
 **Status**: Production Ready
+**Segurança**: ? Credenciais protegidas
