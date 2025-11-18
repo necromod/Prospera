@@ -1,88 +1,71 @@
-ï»¿@model List<Prospera.Models.Contas>
-
-@{
-    ViewData["Title"] = "Terceiros";
-}
-
+@model List<Prospera.Models.Extrato>
+@{ViewData["Title"] = "Transações"; Layout = null;}
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaÃ§oes -->
-    <meta name="viewport" content="width=device-width">
-    <!-- link css -->
-    <link rel="stylesheet" href="/css/PaginaInicial.css">
-    <!-- Css Pagina Axiliares -->
-    <!-- Receitas css -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
-    <!-- DespesasCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
-    <!-- ContaBancariaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
-    <!-- TerceirosCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
-    <!-- TerceirosConsultaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
-    <!-- TransacaoConsultaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css">
-    <!-- Fonte inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-          rel="stylesheet">
-
-    <title>Prospera</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Prospera</title><link rel="icon" href="/img/Favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/MenuUsuario.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/ModalSystem.css" asp-append-version="true">
 </head>
-
-<body>
-    <!-- Region TransaÃ§Ãµes -->
-    <ul id="FundoMenusTransacaoConsult">
-        <ul class="Container TerceirosContainerTransacao" style="overflow-y: auto;">
-            <li class="HeadMenuTerceirosTransacao">
-            </li>
-            <li class="TxtInfTerceirosTransacao">
-            <li class="HeadTransacaoContainer">
-                <h4 class="TransacaoHead1">Nome</h4>
-                <h4 class="TransacaoHead2">Valor</h4>
-                <h4 class="TransacaoHead3">Pessoa</h4>
-                <h4 class="TransacaoHead4">ObservaÃ§Ã£o</h4>
-                <h4 class="TransacaoHead5">Data da MovimentaÃ§Ã£o</h4>
-                <h4 class="TransacaoHead6">Status</h4>
-                <h4 class="TransacaoHead7">Tipo de MovimentaÃ§Ã£o</h4>
-            </li>
-
-            </span>
-                @foreach (var conta in Model)
-                {
-                <br class="espacotop" />
-                <li class="TtxTransacaoContainer">
-                    <input type="text" id="TxtTransacaoNomeConsult" value="@conta.NomeCont" maxlength="30">
-                    <input type="text" id="TxtTransacaoValorfoneConsult" value="@conta.ValorCont" maxlength="100">
-                    <input type="text" id="TxtTransacaoPessoaConsult" value="@conta.PessoaCont">
-                    <input type="text" id="TxtTransacaoObservacaoConsult" value="@conta.ObservacaoCont">
-                    <input type="text" id="TxtTransacaoDatMovConsult" value="@conta.DatEmissaoCont" >
-                    <input type="text" id="TxtTransacaoStatusConsult" value="@conta.StatusCont">
-                    <input type="text" id="TxtTransacaoTpMovConsult" value="@conta.PagarReceberCont" >
-                    <input type="text" id="TxtTransacaoID" value="@conta.CodigoCont">
-                    <input type="text" id="" value="@conta.DatVenciCont">
-                    <input type="text" id="" value="@conta.MetodoPgtoCont">
-                </li>
-
-            }
-            <button id="BtnTransacaoVoltarConsult"><a asp-controller="Home" asp-action="MenuUsuario">Voltar</a></button>
-
-            </li>
-            <li>
-
-
-                <!-- ConteÃºdo da tela oculta aqui -->
-
-            </li>
-        </ul>
-    </ul>
-    <!-- FIM Transacoes -->
-
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
+<body style="overflow: hidden;">
+    <div class="modal-overlay" id="extratoModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Consulta de Transações
+                </h2>
+                <button type="button" class="modal-close-btn" onclick="window.location.href='/Home/MenuUsuario'">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-grid" style="margin-bottom: 2rem;">
+                    <div class="form-group"><label class="form-label">Data Início</label>
+                        <input type="date" id="dataInicio" class="form-input"></div>
+                    <div class="form-group"><label class="form-label">Data Fim</label>
+                        <input type="date" id="dataFim" class="form-input"></div>
+                    <div class="form-group"><label class="form-label">Tipo</label>
+                        <select id="tipoTransacao" class="form-select">
+                            <option value="">Todos</option><option value="Receita">Receita</option><option value="Despesa">Despesa</option>
+                        </select></div>
+                    <div class="form-group" style="align-self: flex-end;">
+                        <button type="button" class="btn btn-primary" style="width: 100%;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                            Filtrar
+                        </button>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <div class="search-input-group">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Buscar transações...">
+                    </div>
+                    <button type="button" class="btn btn-success">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline></svg>
+                        Exportar
+                    </button>
+                </div>
+                <div class="data-table-container">
+                    <table class="data-table"><thead><tr><th>Data</th><th>Descrição</th><th>Tipo</th><th>Valor</th><th>Conta</th><th>Status</th></tr></thead>
+                        <tbody id="extratoTableBody">
+                            <tr><td colspan="6" style="text-align: center; padding: 2rem; color: #94A3B8;">Nenhuma transação encontrada</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-group justify-center" style="margin-top: 2rem;">
+                    <button type="button" class="btn btn-outline" onclick="window.location.href='/Home/MenuUsuario'">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        Voltar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/ModalSystem.js" asp-append-version="true"></script>
+    <script>new ModalSystem('extratoModal');setupSearch('searchInput','extratoTableBody');</script>
 </body>
-
 </html>

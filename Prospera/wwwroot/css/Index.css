@@ -1,4 +1,3 @@
-
 li {
     list-style: none;
 }
@@ -16,10 +15,14 @@ input {
     outline: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    /* background-color: var(--color-Fundo) !important; */
-    /* background-color: black; */
-    /* background-color: black; */
+    overflow-x: hidden;
 }
 
 :root {
@@ -35,9 +38,6 @@ body {
     --color-RoxaCardMov: #8C52FF;
     --color-BlueFont: #516CEC;
     --color-BlueBotao: #38B6FF;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -46,978 +46,801 @@ a {
 
 html {
     position: relative;
-    /* min-height: 100%; */
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body:not(.MenusSelecao h4) {
     font-size: 14px;
 }
-/* ICONES FUNDO */
+
+/* ICONES FUNDO - Ajustados para responsividade */
 body img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.IconesFundoIndex {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ImgIndex1, .ImgIndex2, .ImgIndex3, .ImgIndex4, .ImgIndex5, .ImgIndex6, .ImgIndex7 {
+    width: clamp(200px, 20vw, 360px);
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .ImgIndex1 {
-    width: 300px;
-    position: absolute;
-    top: -11em;
+    top: -8em;
     left: -4em;
 }
 
 .ImgIndex2 {
-    position: absolute;
-    width: 360px;
-    margin-top: 2em;
-    right: -12em;
+    top: 2em;
+    right: -8em;
 }
+
 .ImgIndex3{
-    position: absolute;
     top: 39em;
-    width: 360px;
     left: -.8em;
 }
+
 .ImgIndex4{
-    position: absolute;
     top: 80em;
-    width: 360px;
     left: -6em;
 }
+
 .ImgIndex5{
-    position: absolute;
     top: 50em;
-    width: 360px;
     right: -5em;
 }
+
 .ImgIndex6{
-    position: absolute;
     top: 100em;
-    width: 360px;
     right: -5em;
 }
+
 .ImgIndex7{
-    position: absolute;
     top: 150em;
-    width: 360px;
     left: 0;
 }
-/* FIM ICONES FUNDO */
 
-/* REGION NAVBAR  */
+/* REGION NAVBAR - Fundo Transparente com Botões Ancorados */
 .MenuNav {
-    background-color: #7836FA;
     position: relative;
-    top: 0em;
+    width: 100%;
+    padding: 0;
+    top: 0;
 }
 
 .MenuVanInfContainer {
-    position: absolute;
-    width: 86%;
-    left: 23rem;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
 }
 
-    .MenuVanInfContainer a {
-        margin-right: 3em;
-        color: var(--color-Sextiary);
-        font-weight: 600;
-    }
+.MenuVanInfContainer a.StyleA {
+    color: var(--color-Sextiary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.MenuVanInfContainer a.StyleA:hover {
+    color: var(--color-quartiary);
+    transform: translateY(-2px);
+}
 
 .LibtnLogin {
     position: absolute;
+    left: 2rem;
     background-color: var(--color-RoxaCardMov) !important;
-    left: -8em;
-    width: 8em;
-    top: -.9em;
-    height: 3em;
+    padding: 0.8rem 2rem;
     border-radius: 6px;
-    transition: .3s;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-    .LibtnLogin:hover {
-        border-radius: 0px;
-        transform: scale(1.1);
-        transition: .3s;
-    }
+.LibtnLogin:hover {
+    border-radius: 12px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
-    .LibtnLogin a {
-        color: white;
-        padding: 13px 33px;
-        line-height: 2.8em;
-        font-size: 15px;
-        font-weight: 600;
-    }
+.LibtnLogin a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
 
 .LiperiodoGratis {
     position: absolute;
+    right: 2rem;
     background-color: var(--color-RoxaCardMov);
-    right: 15rem;
-    height: 3em;
-    width: 13em;
-    top: -1em;
+    padding: 0.8rem 2rem;
     border-radius: 6px;
-    transition: .3s;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-    .LiperiodoGratis:hover {
-        border-radius: 0px;
-        transform: scale(1.1);
-        transition: .3s;
-    }
+.LiperiodoGratis:hover {
+    border-radius: 12px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
-    .LiperiodoGratis a {
-        color: white;
-        /* background-color: #605F60; */
-        font-size: 14px;
-        font-weight: 600;
-        margin-left: 3em;
-        line-height: 3em;
-    }
-    .MenuVanInfContainer img{
-        position: absolute;
-        left: -18em;
-        width: 100px;
-        top: -2.4em;
-    }
+.LiperiodoGratis a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
 
-/* FIM MENUNAV */
+.MenuVanInfContainer img{
+    width: 80px;
+    height: auto;
+}
 
-
-/* INICO DIVINF PRINCIPAL */
+/* INICIO DIV PRINCIPAL - Responsiva */
 .ReginInfCentral {
     position: relative;
-    top: 4em;
     width: 100%;
-    height: 30rem;
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    min-height: 500px;
+}
+
+.InfSobrePros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 .InfSobrePros img {
-    width:550px;
-    position: absolute;
-    right: 10rem;
-    top: 4em;
-    transition: .3s;
+    max-width: 100%;
+    height: auto;
 }
 
-
 .TextoProspera img {
- width:1000px;
- position: absolute;
- left: 14em;
- top: 0;
-
-   
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 2rem;
 }
 
 .LibtnAproveitar {
-    position: absolute;
     background-color: var(--color-RoxaCardMov);
-    left: 14.3rem;
-    margin-top: 22em;
-    height: 4em;
-    width: 16em;
-    bottom: -7em;
+    padding: 1rem 3rem;
     border-radius: 6px;
-    transition: .3s;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    margin: 2rem 0;
 }
 
-    .LibtnAproveitar:hover {
-        border-radius: 0px;
-        transform: scale(1.1);
-        transition: .3s;
-    }
+.LibtnAproveitar:hover {
+    border-radius: 12px;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
 
-    .LibtnAproveitar a {
-        color: white;
-        font-size: 18px;
-        padding: 14px 70px;
-        font-weight: 600;
-        line-height: 2.8em;
-    }
+.LibtnAproveitar a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+.IconIniciar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
 
 .IconIniciar img{
-  width: 60px;
-  position: absolute;
-  left: 1em;
-  top:2.6em;
+    width: 60px;
+    height: auto;
 }
-.IconIniciar{
-    position: absolute;
-    left:  38em;
-    bottom: 0;
-    display: flex;
-  }
-  .IconIniciar h4{
-   position: absolute;
-   top: 1.4em;
-   left: 5em;
-   font-size: 20px;
-   color: var(--color-Sextiary);
-  }
+
+.IconIniciar h4{
+    font-size: 20px;
+    color: var(--color-Sextiary);
+}
+
 .LinkSite{
-    position: absolute;
     background-color: white;
-    right: 8em;
-  top: 1em;
-    height: 3.5em;
-    width: 15em;
+    padding: 1rem 2rem;
     border-radius: 6px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
 }
+
 .LinkSite a{
     font-size: 15px;
-    margin-left: 3em;
-    line-height: 3em;
     color: var(--color-BlueFont);
 }
-/* FIM DIV PRINCIPAL */
 
-/* DIV CONTAINER APP  */
-.MeuInfApp-Container {
-    background-color: white;
-    position: relative;
-    top: 28.7em;
-    width: 60%;
-    height: 24em;
-    left: -1em;
-    border-radius: 10px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+#ImgPrincipal {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
 }
 
+/* DIV CONTAINER APP - Responsiva */
+.RegionMeioInf {
+    width: 100%;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    margin-top: 4rem;
+}
+
+.MeuInfApp-Container {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.InfQrcode {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
 
 .InfQrcode h2 {
     color: var(--color-BlueFont);
-    position: absolute;
-    width: 70%;
-    font-size: 22px;
-    line-height: 4em;
+    font-size: clamp(18px, 3vw, 26px);
+    line-height: 1.4;
+    margin-bottom: 1rem;
 }
 
-.h4-1 {
+.h4-1, .h4-2 {
     color: var(--color-Sextiary);
-    position: absolute;
-    width: 60%;
-   text-align: left;
-    font-size: 18px;
-    top: 4em;
-    letter-spacing: 1px; 
-
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
-
-.h4-2 {
-    color: var(--color-Sextiary);
-    position: absolute;
-    width: 70%;
-    font-size: 17px;
-    text-align: left;
-    bottom: 0;
-
-}
-
 
 .QrcodeIcon {
-    position: absolute;
-    right: 2em;
-    top: 2.8em;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
     background-color: white;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    transition: .3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
 }
+
 .QrcodeIcon:hover {
-    transform: scale(1.1);
-    transition: .3s;
+    transform: scale(1.05);
 }
+
 .MaoAppIcon {
-    position: absolute;
-    right: -54rem;
-    width: 650px;
-    top: -2.9em;
-    transition: .3s;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-    .MaoAppIcon:hover {
-        transform: scale(1.1);
-        transition: .3s;
-    }
-/* FIM DIV CONTAINER APP */
+.MaoAppIcon:hover {
+    transform: scale(1.05);
+}
 
-
-/* REGIAO SERVICO */
+/* REGIAO SERVICO - Responsiva */
 .RegionServicos{
-    position: relative;
-     top: 50em;
-     width: 100%;
-     
+    width: 100%;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
 }
+
 .TextoServ h2{
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1rem;
     color: var(--color-Sextiary);
+    font-size: clamp(24px, 4vw, 36px);
 }
-.TextoServ hr{
-   width: 14%;
-   height: .1em;
-   background-color: var(--color-RoxaCardMov);
-   margin-bottom: 7em;
-   z-index: 9999;
-}
-.CardServicos-Container{
 
-    position: relative;
-    bottom: 3em;
-    height: 26em;
-    display: flex;
+.TextoServ hr{
+    width: 120px;
+    height: 4px;
+    background-color: var(--color-RoxaCardMov);
+    margin: 0 auto 4rem;
+    border: none;
+    border-radius: 2px;
 }
+
+.CardServicos-Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .CardServicos-Container li:not(.FooteServInf){
-    background-color:white;
-    width:18%;
-    border-radius: 6px;
-margin-right: 4em;
-margin-left: 4.5em;
-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+.CardServicos-Container li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
 .CardServicos-Container img:not(.FooteServInf){
-    width: 90px;
-   margin-left: 8em;
-   margin-top: 1em;
+    width: 80px;
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .CardServicos-Container h2:not(.FooteServInf){
     color: var(--color-default);
-    margin-left: 2.5em;
-   
+    font-size: clamp(18px, 2.5vw, 22px);
+    margin-bottom: 1rem;
 }
 
 .CardServicos-Container h4:not(.FooteServInf){
-  font-size: 15px;
-  width: 80%;
-  margin-left: 2.8em;
-  color: var(--color-quintiaty);
-      text-align: left;
-   }
-
-.FooteServInf h2,h4{
-text-align: center;
-color: var(--color-Sextiary);
+    font-size: clamp(14px, 1.8vw, 16px);
+    line-height: 1.6;
+    color: var(--color-quintiaty);
+    font-weight: 400;
 }
 
+.FooteServInf {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.FooteServInf h2{
+    color: var(--color-Sextiary);
+    margin-bottom: 1rem;
+    font-size: clamp(20px, 3vw, 28px);
+}
+
+.FooteServInf h4{
+    color: var(--color-Sextiary);
+    margin-bottom: 2rem;
+    font-size: clamp(14px, 2vw, 18px);
+}
 
 .LiBtnServConta{
-    position: absolute;
     background-color: var(--color-RoxaCardMov);
-    left: 48.7rem;
-    margin-top: 22em;
-    height: 4em;
-    width: 24em;
-    bottom: -7em;
+    padding: 1rem 3rem;
     border-radius: 6px;
-    transition: .3s;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 2rem auto;
 }
 
 .LiBtnServConta a{
-   padding: 17px 78px;
-   font-size: 18px;
-   color: white;
-   line-height: 3.2em;
+    color: white;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 600;
 }
-
 
 .LiBtnServConta:hover {
-    border-radius: 0px;
-    transform: scale(1.1);
-    transition: .3s;
+    border-radius: 12px;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
-/* FIM REGIAO SERVICO */
 
-
-
-/* POSICAO FOOTER */
-/* 
-REGIAO EMAIL  */
-
-
+/* FOOTER - Responsivo (sem animação de rotação) */
 .RegionFooter {
     background-color: white;
-    position: relative;
-    top: 78em;
-    left: -.6em;
-    height: 35em;
-    width: 101%;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 4rem 2rem 2rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+    margin-top: 4rem;
+    position: relative;
 }
 
 .CardInsiraEmails {
     background-color: var(--color-RoxaCardMov);
-    position: relative;
-    top: -5em;
-    height: 12.5em;
-    width: 50%;
-    left: 28rem;
-    z-index: 99999;
+    max-width: 900px;
+    margin: -6rem auto 3rem;
+    padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
-
-.LitxtFooterEmail {
-    background-color: white;
-    height: 3em;
-    width: 30%;
-    border-radius: 12px;
-    position: absolute;
-    right: 9em;
-    top: 4em;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
-}
-
-    .LitxtFooterEmail input {
-        background-color: white;
-        margin-left: .5em;
-        border-radius: 12px;
-        height: 3em;
-        width: 95%;
-        color: var(--color-Sextiary);
-    }
-
-.LibtnFooterEnviar {
-    position: absolute;
-    background-color: var(--color-BlueBotao);
-    height: 3.6em;
-    width: 10em;
-    right: 3em;
-    bottom: 5.2em;
-    border-radius: 12px;
-    transition: .3s;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-    .LibtnFooterEnviar:hover {
-        border-radius: 0px;
-        transform: scale(1.1);
-        transition: .3s;
-    }
-
-    .LibtnFooterEnviar a {
-        color: white;
-        margin: 0;
-        /* background-color: #373435; */
-        padding: 1em 3em;
-        line-height: 3.3em;
-        font-size: 16px;
-        border-radius: 12px;
-    }
 
 .CardInsiraEmails h4:first-child {
-    position: absolute;
-    top: 2em;
-    font-size: 16px;
     color: white;
-    left: 5em;
+    font-size: clamp(14px, 2vw, 18px);
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 .LiCheckFooter {
     color: white;
-    width: 36%;
-    position: absolute;
-    left: 8em;
-    top: 4.8em;
-    font-weight: 300;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(12px, 1.5vw, 14px);
 }
 
 #ChekFooterEmail {
-    position: absolute;
-    top: 1.4em;
-    left: -2em;
-    color: white !important;
+    width: 20px;
+    height: 20px;
 }
 
-/* FIM REGIAO EMAIL */
+.LitxtFooterEmail {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.LitxtFooterEmail input {
+    background-color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    width: 100%;
+    color: var(--color-Sextiary);
+}
+
+.LibtnFooterEnviar {
+    background-color: var(--color-BlueBotao);
+    padding: 0.8rem 2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+}
+
+.LibtnFooterEnviar:hover {
+    border-radius: 6px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.LibtnFooterEnviar a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
 
 .Footer {
-    /* background-color: #516CEC; */
-    margin-left: 5em;
-    width: 30%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0 2rem;
 }
 
-    .Footer h2 {
-        font-size: 35px;
-        margin-top: 1em;
-        margin-left: 1em;
-        color: var(--color-RoxaCardMov);
-    }
-
-    .Footer img {
-        rotate: (1.1);
-        width: 20%;
-        animation: rotate 5s linear infinite;
-    }
-
-
-
-.ImgFooter img{
-width: 30px;
-margin-bottom: 1em;
+.Footer h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    color: var(--color-RoxaCardMov);
 }
-.LiCabecalhoFooter{
+
+.Footer img {
+    width: clamp(60px, 8vw, 100px);
+    height: auto;
+}
+
+.LogoFooter {
+    width: clamp(60px, 8vw, 100px) !important;
+    height: auto;
+}
+
+.InfoFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.LiCabecalhoFooter {
     background-color: var(--color-RoxaCardMov);
-    width: 35.7%;
+    padding: 1rem 2rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    position: absolute;
-    left: 35em;
-    bottom: 18.8em;
     justify-content: space-around;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    gap: 2rem;
 }
+
 .LiCabecalhoFooter h4{
-   margin-left: 1em;
-   font-size: 16px;
-   color: white;
-   
+    color: white;
+    font-size: clamp(14px, 2vw, 18px);
 }
-.LibtnFooter{
+
+.LibtnFooter {
     background-color: white;
-    width: 35%;
-    height: 14em;
-    position: absolute;
-    left: 35.5em;
-    bottom: 4.8em;
-    display: flex;
-    flex-direction: column;
+    padding: 2rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
 .LibtnFooter a{
-   color: var(--color-Sextiary);
-   font-size: 18px;
-   margin-top: 1em;
-   margin-left: 8em;
-   width: 12%;
-}
-.ImgFooter{
-
-    width: 3%;
-    position: absolute;
-    left: 69em;
-    bottom: 5.5em;
-    display: flex;
-    flex-direction: column;
-}
-.H4footer{
-    width: 6%;
-    position: absolute;
-    left:  72.5em;
-    bottom: 5em;
     color: var(--color-Sextiary);
+    font-size: clamp(14px, 2vw, 18px);
+    transition: all 0.3s ease;
 }
-.H4footer h4{
-    margin-bottom: 2em;
+
+.LibtnFooter a:hover {
+    color: var(--color-RoxaCardMov);
+    transform: translateX(5px);
 }
+
 .LibtnFooter h4{
-    font-size: 12px;
-    width: 80%;
-    margin-left: 2.5em;
-    margin-top: 3em;
+    font-size: clamp(12px, 1.5vw, 14px);
     color: var(--color-Sextiary);
+    margin-top: 1rem;
 }
 
-/* FIM FOOTER */
-
-
-
-
-@media screen and (max-width: 360px){
-
-    .IconesFundoIndex img{
-        width: 190px;
-    }
-    /* MENU NAV */
-    .MenuNav{
-        background-color: #801D7B!important;
-    
-        width: 30%;
-    }
-    .MenuVanInfContainer{
-        width: 20%;
-    }
-   
-  .LibtnLogin{
-    width: 8em;
-    margin-left: -3em;
-  }
-  .LiperiodoGratis{
-    display: none;
-  }
-  .MenuVanInfContainer img{
-  width: 80px;
-       position: absolute;
-       margin-left: -7.4em;
-       margin-top: .6em;
-  }
-
-  /* FIM MENU NAV */
-
-  /* CONTEUDO  */
-  .LinkSite{
-    display: none;
-  }
-.TextoProspera img{
-    width: 100%;
-    margin-top: 19em;
-    margin-left: -13em;
-    position: absolute;
-}
-#ImgPrincipal{
-    width: 250px;
-    position: absolute;
-    left: 3em;
-    top: 1em;
-}
-.LibtnAproveitar{
-    display: none;
-}
-.MaoAppIcon{
-    width: 360px;
-    position: absolute;
-    top: -27em;
-    left: .4em;
-}
-.MeuInfApp-Container{
-    /* background-color: #38B6FF; */
-    width: 60%;
-    height: 18em;
-    position: absolute;
-    left: 4em;
-    top: 65em;
-}
-.QrcodeIcon{
-    width: 240px;
-    left: .5em;
-    top: .5em;
-    position: absolute;
-}
-.InfQrcode h2,h4{
-    display: none;
-}
-  /* FIM CONTEUDO */
-
-  /* CARDS */
-.CardServicos-Container{
+.ImgFooter {
     display: flex;
-    flex-direction: column;
-    margin-right: 2em;
-   
-}
-.CardServicos-Container li{
-    width: 17em!important;
-    height: 13em;
-    padding-bottom: 5.5em;
-    margin-bottom: 12em;
-    position: absolute;
-    left: -.7em;
-}
-.CardServ1{
-position: absolute;
-top:1em;
-}
-.CardServ2{
-    position: absolute;
-    top: 23em;
-    }
-
-    .CardServ3{
-        position: absolute;
-        top: 45em;
-        }
-        .CardServ4{
-            position: absolute;
-            top: 59rem;
-            }
-    
-
-  /* FIM CARDS */
-  .RegionFooter{
-    margin-top: 35em;
-    width: 22.5rem;
-    height: 23em;
-  }
-  .CardServicos-Container h2{
-    font-size: 16px;
-    margin-right: 1em;
-    margin-top: 7em;
-  }
-  .CardServicos-Container li img{
-   width: 70px !important;
-   position: absolute;
-   left: -2em;
-  }
-
-  .FooteServInf{
-    display: none;
-  }
-  .TextoServ{margin-top: 8.5em;}
-  .LinhaDivizora{width:12em!important;}
-
-    
-
-/* FOOTER */
-.CardInsiraEmails{
-    width: 90%;
-    height: 11em;
-    position: absolute;
-    left: 0;
-}
-.LitxtFooterEmail{
-    width: 60%;
-    margin-bottom: 2em;
-}
-.LibtnFooterEnviar{
-    width: 40%;
-  position: absolute;
-  top: 3.6em;
-  right: 1em;;
-}
-.LiCheckFooter{width: 80%;
-margin-top: 2em;
-position: absolute;
-}
-#ChekFooterEmail{
-    position: absolute;
-    left: -5em;
-}
-.LiCheckFooter h4{display: block;
-width: 90%;
-font-size: 10px;
-position: absolute;
-top: .7em;
-left: -4em;
-color: white;}
-
-.InfoFooter{
-    background-color: #1B1572;
-    position: absolute;
-    left: -42em;
-    bottom: -5em;
-    width:10%;
-}
-.LogoFooter{
-  position: absolute;
-  bottom: 5em;
-  width: 120px!important;
-  left: 12em;
-}
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
-/* FIM */
-
-
-@media screen and (max-width: 768px){
-
-/* NAVBAR */
-.LiperiodoGratis{display: none;}
-.StyleA{display: none;}
-.LibtnLogin{
-    margin-left: 24em;
-    width: 11em;
-}
-.LibtnLogin a{
-  text-align: center;
-  margin-left: 1.2em;
-}
-.MenuVanInfContainer img{
-    margin-right: 5em;
-}
-/* FIM */
-
-/* CONTEUDO */
-.IconesFundoIndex img{
-    width: 230px;
-}
-.TextoProspera img{
-    width: 90%!important;
-    position: absolute;
-    top: 40em;
-    left: 4em;
-}
-#ImgPrincipal{
-    width: 480px;
-    padding-left: 3em;
-    position: absolute;
-    left:7.6em;
+.ImgFooter img{
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.LibtnAproveitar{
-    position: absolute;
-    top: 43em;
-    left: 8em;
-}
-.IconIniciar{
-    position: absolute;
-    top: 62.3em;
-    left: 26em;
-}
-.RegionMeioInf{
-    margin-top: 14em;
-}
-.MeuInfApp-Container{
-    width: 93%;
-}
-.InfQrcode h2{
-    font-size: 16px;
-    width: 100%;
-}
-.InfQrcode h4{
-    font-size: 16px;
-}
-.h4-2{
-    width: 100%;
-}
-.QrcodeIcon{
-    width: 180px;
-    margin-top: 2.4em;
+.ImgFooter img:hover {
+    transform: scale(1.2);
 }
 
-/* FIM */
-
-
-/* CARDS */
-.TextoServ{   
-    margin-top: -8em;
-}
-.CardServicos-Container{
+.H4footer {
     display: flex;
-    margin-right: 2em;
-   
-}
-.CardServicos-Container li{
-    width: 22em!important;
-    height: 15em;
-    padding-bottom: 5.5em;
-    margin-bottom: 12em;
-    position: absolute;
-    left: -2em;
-}
-.CardServicos-Container h2{
-    font-size: 16px;
-    padding-left: 1.3em;
-    margin-top: 7em;
-    
-  }
-  .CardServicos-Container li img{
-   width: 70px !important;
-   position: absolute;
-  }
-.CardServ2{
-    left: 26em!important;
-    position: absolute;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.CardServ3{
-top: 27em;
-position: absolute;
-
+.H4footer h4{
+    color: var(--color-Sextiary);
+    font-size: clamp(12px, 1.5vw, 14px);
 }
-.CardServ4{
-    left: 26em!important;
-    top: 27em;
-    position: absolute;
-    
+
+/* MEDIA QUERIES - Mobile First Approach */
+
+/* Tablets e dispositivos médios (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .MenuVanInfContainer a.StyleA {
+        font-size: 0.85rem;
     }
     
+    .ReginInfCentral {
+        margin: 2rem auto;
+    }
+    
+    .CardServicos-Container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-    .FooteServInf{
+/* Tablets pequenos (768px) */
+@media screen and (max-width: 768px) {
+    .MenuNav {
+        padding: 0;
+    }
+    
+    .MenuVanInfContainer {
+        padding: 0.8rem 1rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .LibtnLogin {
+        position: static;
+        order: -1;
+    }
+    
+    .LiperiodoGratis {
+        position: static;
+        order: 999;
+    }
+    
+    .MenuVanInfContainer img {
+        order: -2;
+    }
+    
+    .ReginInfCentral {
+        padding: 0 1rem;
+    }
+    
+    .InfQrcode {
+        grid-template-columns: 1fr;
+    }
+    
+    .MaoAppIcon {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .CardServicos-Container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .CardInsiraEmails {
+        width: 95%;
+        margin: -4rem auto 2rem;
+    }
+    
+    .LiCabecalhoFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile (360px - 480px) */
+@media screen and (max-width: 480px) {
+    .MenuVanInfContainer {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .MenuVanInfContainer a.StyleA {
         display: none;
     }
-
-/* FIM CARD */
-
-/* FOOTER */
-
-.RegionFooter{
-width: 102%!important;
+    
+    .MenuVanInfContainer img {
+        width: 60px;
+    }
+    
+    .LibtnLogin, .LiperiodoGratis {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .ReginInfCentral {
+        margin: 1rem auto;
+        min-height: auto;
+    }
+    
+    .TextoProspera img {
+        max-width: 100%;
+    }
+    
+    #ImgPrincipal {
+        width: 100%;
+    }
+    
+    .IconIniciar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .LinkSite {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .MeuInfApp-Container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .QrcodeIcon {
+        max-width: 200px;
+    }
+    
+    .MaoAppIcon {
+        max-width: 300px;
+    }
+    
+    .RegionServicos {
+        padding: 2rem 1rem;
+    }
+    
+    .CardServicos-Container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .CardInsiraEmails {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        margin: -3rem auto 1rem;
+    }
+    
+    .LiCheckFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .InfoFooter {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .ImgFooter {
+        flex-wrap: wrap;
+    }
+    
+    .H4footer {
+        flex-wrap: wrap;
+    }
+    
+    /* Esconder imagens de fundo em mobile para performance */
+    .ImgIndex1, .ImgIndex2, .ImgIndex3, .ImgIndex4, .ImgIndex5, .ImgIndex6, .ImgIndex7 {
+        display: none;
+    }
 }
 
-.CardInsiraEmails{
-    width: 95%;
-    height: 11em;
-    position: absolute;
-    left: 0;
-}
-.LitxtFooterEmail{
-    width: 80%;
-    margin-bottom: 2em;
-}
-.LibtnFooterEnviar{
-    width: 20%;
-  position: absolute;
-  top: 3.6em;
-  right: 1em;;
-}
-.LiCheckFooter{width: 80%;
-margin-top: 2em;
-position: absolute;
-}
-#ChekFooterEmail{
-    position: absolute;
-    left: -5em;
-}
-.LiCheckFooter h4{display: block;
-width: 90%;
-font-size: 13px;
-position: absolute;
-top: .2em;
-left: -13em;
-color: white;}
-
-.InfoFooter{
-    position: absolute;
-    left: -35em;
-    bottom: 4em;
-    width:10%;
-}
-.LogoFooter{
-  position: absolute;
-  bottom: 5em;
-  width: 120px!important;
-  left: 12em;
-}
-.LiCabecalhoFooter{
-    display: none;
-}
-.LiContatoFooter{
-  display: none;
-}
-
-.LibtnFooter{
-   box-shadow: none;
-}
-.LibtnFooter h4{display: none;}
-.Footer img{
-    position: absolute;
-    bottom: 12em;
-    left: 19em;
-    width: 150px!important;
-}
-
-
-
-
-
-
-
+/* Telas muito pequenas (< 360px) */
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .MenuVanInfContainer {
+        padding: 0.3rem;
+    }
+    
+    .MenuVanInfContainer img {
+        width: 50px;
+    }
+    
+    .LibtnLogin, .LiperiodoGratis {
+        padding: 0.5rem 1rem;
+        font-size: 13px;
+    }
+    
+    .TextoServ h2 {
+        font-size: 20px;
+    }
+    
+    .CardServicos-Container li {
+        padding: 1rem;
+    }
+    
+    .Footer img {
+        width: 50px;
+    }
 }

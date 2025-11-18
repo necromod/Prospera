@@ -1,237 +1,471 @@
 @model List<Prospera.Models.Contas>
 
+@{
+    ViewData["Title"] = "Dashboard - Prospera";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaÃ§oes -->
-    <meta name="viewport" content="width=device-width">
-    <!-- link css -->
-    <link rel="stylesheet" href="/css/PaginaInicial.css">
-    <!-- Css Pagina Axiliares -->
-    <!-- Receitas css -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Receitas.css">
-    <!-- DespesasCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Despesas.css">
-    <!-- ContaBancariaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/ContaBancaria.css">
-    <!-- TerceirosCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Terceiros.css">
-    <!-- TerceirosConsultaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/ConsultaTerceiros.css">
-    <!-- TransacaoConsultaCSS -->
-    <link rel="stylesheet" href="/css/PaginaMenus/Transacao.css"> 
-    <!-- Fonte inter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
-          rel="stylesheet">
-
-    <title>Prospera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/MenuUsuario.css" asp-append-version="true">
 </head>
-
 <body>
-      <button id="AtivaMenu"  onclick="toggleMenu()"><img src="/img/PaginaInicial/MenuHamburger.png"></button>
-    <section id="CardCentral">
-        <!-- CardConversÃ£o e conta bancaria -->
-        <ul class="CardCotBanc">
-      <li class="ImgMundoCot EstiloScrooll"><img src="../img/PaginaInicial/CardCotBanc/ImgMundoCotaÃ§Ã£o.png"></li>
-            <ul class="CardCot">
-                <li class="CardHeadCotacao head1">
-                    <h2>CotaÃ§Ã£o em Euro</h2>
-                </li>
-                <li class="CardHeadCotacao head2">
-                    <h2>CotaÃ§Ã£o em Yuan</h2>
-                </li>
-                <li class="CardHeadCotacao head3">
-                    <h2>CotaÃ§Ã£o em Dolar</h2>
-                </li>
-                <li class="CardCot1"><span>Yuan</span><input type="text" id="TxtYuan" readonly> </li>
-                <li class="CardCot2"><span>Dolar</span><input type="text" id="TxtDolar" readonly></li>
-                <li class="CardCot3"><span>Euro</span><input type="text" id="TxtEuro" readonly></li>
-            </ul>
-            <ul class="CardBanco">
-                <li class="CardBanc1">
-                    <img src="/img/PaginaInicial/CardCotBanc/IconeBradesco.png"><input type="text"
-                                                                                       value="Bradesco"><input type="text" value="1.000,00" readonly>
-                </li>
-                <li class="CardBanc2">
-                    <img src="/img/PaginaInicial/CardCotBanc/IconeItau.png"><input type="text" value="Itau"><input type="text" value="35.000,000" readonly>
-                </li>
-                <li class="CardBanc3">
-                    <img src="/img/PaginaInicial/CardCotBanc/IconeInter.png"><input type="text" 
-                                                                                    value="Banco do Brasil"><input type="text" value="1.000,00" readonly>
-                </li>
-
-                </li>
-            </ul>
-        </ul>
-
-     
-        <!-- Cardes Transacoes -->
-        <div class="Cards container">
-            <ul class="CardTransacoes">
-                <li class="CardUltPagto">
-                    <h2>Pagamentos</h2>
-                    <h4>Ultimo Pagamento</h4>
-                    <span>R$<input type="text" value="1.500,00" readonly></span>
-                    <img src="../img/PaginaInicial/CardMov/LogoCardMov1.png">
-                </li>
-                <li class="CardUltReceb">
-                    <h2>Recebimentos</h2>
-                    <h4>Ultimo Recebimento</h4>
-                    <span>R$<input type="text" value="1.000,00" readonly></span>
-                    <img src="../img/PaginaInicial/CardMov/LogoCardMov2.png">
-                </li>
-                <li class="CardTotalTran">
-                    <h2>TrasaÃ§Ãµes</h2>
-                    <h4>Total de MovimentaÃ§Ãµes</h4>
-                    <span>R$<input type="text" value="500.000,00" readonly></span>
-                    <img src="/img/PaginaInicial/CardMov/LogoCardMov3.png">
-                </li>
-            </ul>
-            <!-- Cardes EvoluÃ§Ã£o meta -->
-                <div class="CardNoticias container">
-                  <h4 id="ContadorNews">NotÃ­cia 1 de 0</h4>
-                <ul id="news" class="news">
-                </ul>
-                  <button id="Anterior">Anterior</button>
-                <button id="proximo">PrÃ³xima</button>
-                <button id="RecarregaNoticias">Recarregar</button>
-
-           </div>
-
-            <!-- Cardes MovimentaÃ§Ã£o recente -->
-            <ul class="CardMovRecentes">
-                <li class="CabecalhoMovimentacoes">
-                    <h2>DescriÃ§Ã£o</h2>
-                    <h2>Valor</h2>
-                    <h2>Status</h2>
-                    <h2>Conta</h2>
-                    <h2>Pessoa</h2>
-                </li>
-
-                <ul class="InfMovimentacoes" style="max-height: 300px; overflow-y: auto;">
-                    <h4>MovimentaÃ§Ãµes recentes</h4>
-                    <li class="Inf1">
-                        <input type="text" value="Pagamento Conta de Luz" readonly id="TxtDescInf1" maxlength="20">
-                        <input type="text" value="R$1.200,00" readonly id="TxtValorInf1" maxlength="6">
-                        <input type="text" value="Atrasado" readonly id="TxtStatusInf1" maxlength="10">
-                        <input type="text" value="Itau" readonly id="TxtContaInf1" max="8">
-                        <input type="text" value="Marcelo" readonly id="TxtObsInf1" maxlength="30">
-
-
-                    </li>
-                    <li class="Inf2">
-
-                        <input type="text" value="teste" readonly id="TxtDescInf2">
-                        <input type="text" value="teste" readonly id="TxtValorInf2">
-                        <input type="text" value="teste" readonly id="TxtStatusInf2">
-                        <input type="text" value="teste" readonly id="TxtContaInf2">
-                        <input type="text" value="teste" readonly id="TxtObsInf2">
-
-                    </li>
-                    <li class="Inf3">
-
-                        <input type="text" value="teste" readonly id="TxtDescInf3">
-                        <input type="text" value="teste" readonly id="TxtValorInf3">
-                        <input type="text" value="teste" readonly id="TxtStatusInf3">
-                        <input type="text" value="teste" readonly id="TxtContaInf3">
-                        <input type="text" value="teste" readonly id="TxtObsInf3">
-
-                    </li>
-                    <li class="Inf4">
-
-                        <input type="text" value="teste" readonly id="TxtDescInf4">
-                        <input type="text" value="teste" readonly id="TxtValorInf4">
-                        <input type="text" value="teste" readonly id="TxtStatusInf4">
-                        <input type="text" value="teste" readonly id="TxtContaInf4">
-                        <input type="text" value="teste" readonly id="TxtObsInf4">
-
-                    </li>
-                    <li class="Inf5">
-
-                        <input type="text" value="teste" readonly id="TxtDescInf5">
-                        <input type="text" value="teste" readonly id="TxtValorInf5">
-                        <input type="text" value="teste" readonly id="TxtStatusInf5">
-                        <input type="text" value="teste" readonly id="TxtContaInf5">
-                        <input type="text" value="teste" readonly id="TxtObsInf5">
-
-                    </li>
-
-                </ul>
-            </ul>
-
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="/img/Favicon.png" alt="Prospera Logo">
+                <span>Prospera</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
-    </section>
 
-    <section id="MenuOpÃ§Ãµes">
-         
-        <div class="MenuLateral OcultaMenu Display">
-            
-                <h4 class="Sair" onclick="toggleMenu()" ><img src="/img/PaginaInicial/MenuHamburger.png"></h4>
-           
-           
-            <a asp-area="" asp-controller="Login" asp-action="Sair" id="BtnUsuarioConfig">
-                <img src="/img/PaginaInicial/Menu/IconeUsuario.png">
+        <div class="user-profile">
+            <div class="user-avatar">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div class="user-info">
+                <h3>Bem-vindo!</h3>
+                <p>@User.Identity?.Name</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <h4>Principal</h4>
+                <a href="#" class="nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <h4>Financeiro</h4>
+                <a asp-controller="Contas" asp-action="CreateReceitas" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Receitas</span>
+                </a>
+                <a asp-controller="Contas" asp-action="CreateDespesas" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    </svg>
+                    <span>Despesas</span>
+                </a>
+                <a asp-controller="Extrato" asp-action="ConsultaExtrato" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Transações</span>
+                </a>
+                <a asp-controller="ContaBancarias" asp-action="CreateContasBancarias" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                    <span>Contas Bancárias</span>
+                </a>
+                <a asp-controller="Terceiros" asp-action="CreateTerceiros" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Devedor/Pagador</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <h4>Em Breve</h4>
+                <a href="#" class="nav-item disabled">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Metas</span>
+                </a>
+                <a href="#" class="nav-item disabled">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>Orçamento</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <span>Ajuda</span>
             </a>
-
-            @* <a href="#" id="BtnUsuarioConfig"><img src="/img/PaginaInicial/Menu/IconeUsuario.png"></a>*@
-            <ul class="MenusSelecao container">
-                <h2>Menu</h2>
-
-                <li class="Selecao1">
-                    <a asp-controller="Contas" asp-action="CreateReceitas" id="BtnReceitas">Receitas</a>
-                    <img src="/img/PaginaInicial/Menu/Receitas.png">
-                </li>
-                <li class="Selecao2">
-                    <a asp-controller="Contas" asp-action="CreateDespesas" id="BtnDespesas">Despesas</a>
-                    <img src="/img/PaginaInicial/Menu/IDespesas.png">
-                </li>
-                <li class="Selecao3">
-                    <a asp-controller="Extrato" asp-action="ConsultaExtrato" id="BtnTransacoes">TransaÃ§Ãµes</a>
-                    <img src="/img/PaginaInicial/Menu/Transacoes.png">
-                </li>
-                <li class="Selecao4">
-                    <a href="#" id="BtnMetas">(Em breve)</a>
-                    <img src="/img/PaginaInicial/Menu/Metas.png">
-                </li>
-                <li class="Selecao5">
-                    <a href="#" id="BtnOrcamento">(Em breve)</a>
-                    <img src="/img/PaginaInicial/Menu/Orcamento.png">
-
-                </li>
-                <li class="Selecao6">
-                    <a asp-controller="ContaBancarias" asp-action="CreateContasBancarias" id="BtnContasBancaria">Contas BancÃ¡rias</a>
-                    <img src="/img/PaginaInicial/Menu/ContasBancaria.png">
-                </li>
-                <li class="Selecao7">
-                    <a asp-controller="Terceiros" asp-action="CreateTerceiros" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
-                    <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
-                </li>
-                <li class="Selecao8">
-                    <a href="#" id="BtnAjuda">Ajuda</a>
-                    <img src="/img/PaginaInicial/Menu/Ajuda.png">
-                </li>
-
-                <ul class="MenuAplicativo">
-                    <h2>Aplicativo Mobile</h2>
-
-                        <img src="/img/PaginaInicial/Menu/Qrcode.png">
-                    </a>
-
-                    <h4>Clique no Qrcode ou escaneie para Baixar o aplicativo</h4>
-                </ul>
-
-            </ul>
-
+            <a asp-controller="Login" asp-action="Sair" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+                <span>Sair</span>
+            </a>
         </div>
+    </aside>
 
-    </section>
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Header -->
+        <header class="page-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <h1>Dashboard</h1>
+            <div class="header-actions">
+                <button class="header-btn" title="Notificações">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
 
-    <!-- link js -->
-    <script src="/js/PaginaInicial.js" asp-append-version="true"></script>
-     <script src="/js/site.js" asp-append-version="true"></script>
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+            <div class="stat-card stat-card-primary">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Total em Contas</h3>
+                    <p class="stat-value">R$ 37.000,00</p>
+                    <span class="stat-change positive">+2,5% vs mês anterior</span>
+                </div>
+            </div>
+
+            <div class="stat-card stat-card-success">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Último Recebimento</h3>
+                    <p class="stat-value">R$ 1.000,00</p>
+                    <span class="stat-change">Hoje, 14:30</span>
+                </div>
+            </div>
+
+            <div class="stat-card stat-card-warning">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Último Pagamento</h3>
+                    <p class="stat-value">R$ 1.500,00</p>
+                    <span class="stat-change">Ontem, 09:15</span>
+                </div>
+            </div>
+
+            <div class="stat-card stat-card-info">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Total de Transações</h3>
+                    <p class="stat-value">R$ 500.000,00</p>
+                    <span class="stat-change">Este mês</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Grid -->
+        <div class="dashboard-grid">
+            <!-- Contas Bancárias -->
+            <section class="dashboard-card card-full">
+                <div class="card-header">
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                        Contas Bancárias
+                    </h2>
+                    <a asp-controller="ContaBancarias" asp-action="CreateContasBancarias" class="btn-link">Ver todas</a>
+                </div>
+                <div class="card-body">
+                    <div class="bank-cards">
+                        <div class="bank-card bank-card-bradesco">
+                            <div class="bank-card-header">
+                                <img src="/img/PaginaInicial/CardCotBanc/IconeBradesco.png" alt="Bradesco">
+                                <span class="bank-name">Bradesco</span>
+                            </div>
+                            <div class="bank-balance">
+                                <span class="balance-label">Saldo Disponível</span>
+                                <span class="balance-value">R$ 1.000,00</span>
+                            </div>
+                        </div>
+
+                        <div class="bank-card bank-card-itau">
+                            <div class="bank-card-header">
+                                <img src="/img/PaginaInicial/CardCotBanc/IconeItau.png" alt="Itaú">
+                                <span class="bank-name">Itaú</span>
+                            </div>
+                            <div class="bank-balance">
+                                <span class="balance-label">Saldo Disponível</span>
+                                <span class="balance-value">R$ 35.000,00</span>
+                            </div>
+                        </div>
+
+                        <div class="bank-card bank-card-bb">
+                            <div class="bank-card-header">
+                                <img src="/img/PaginaInicial/CardCotBanc/IconeInter.png" alt="Banco do Brasil">
+                                <span class="bank-name">Banco do Brasil</span>
+                            </div>
+                            <div class="bank-balance">
+                                <span class="balance-label">Saldo Disponível</span>
+                                <span class="balance-value">R$ 1.000,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cotações -->
+            <section class="dashboard-card">
+                <div class="card-header">
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        Cotações
+                    </h2>
+                    <span class="update-time" id="updateTime">Atualizado agora</span>
+                </div>
+                <div class="card-body">
+                    <div class="currency-list">
+                        <div class="currency-item">
+                            <span class="currency-flag">????</span>
+                            <div class="currency-info">
+                                <span class="currency-name">Dólar</span>
+                                <span class="currency-code">USD</span>
+                            </div>
+                            <div class="currency-value">
+                                <span class="value" id="txtDolar">R$ 5,12</span>
+                                <span class="change positive">+0,5%</span>
+                            </div>
+                        </div>
+
+                        <div class="currency-item">
+                            <span class="currency-flag">????</span>
+                            <div class="currency-info">
+                                <span class="currency-name">Euro</span>
+                                <span class="currency-code">EUR</span>
+                            </div>
+                            <div class="currency-value">
+                                <span class="value" id="txtEuro">R$ 5,48</span>
+                                <span class="change negative">-0,3%</span>
+                            </div>
+                        </div>
+
+                        <div class="currency-item">
+                            <span class="currency-flag">????</span>
+                            <div class="currency-info">
+                                <span class="currency-name">Yuan</span>
+                                <span class="currency-code">CNY</span>
+                            </div>
+                            <div class="currency-value">
+                                <span class="value" id="txtYuan">R$ 0,71</span>
+                                <span class="change positive">+0,2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Movimentações Recentes -->
+            <section class="dashboard-card">
+                <div class="card-header">
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        Movimentações Recentes
+                    </h2>
+                    <a asp-controller="Extrato" asp-action="ConsultaExtrato" class="btn-link">Ver todas</a>
+                </div>
+                <div class="card-body">
+                    <div class="transactions-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon expense">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="transaction-info">
+                                <span class="transaction-name">Pagamento Conta de Luz</span>
+                                <span class="transaction-date">Hoje, 14:30</span>
+                            </div>
+                            <div class="transaction-amount">
+                                <span class="amount expense">-R$ 1.200,00</span>
+                                <span class="transaction-status status-pending">Atrasado</span>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div class="transaction-icon income">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="18 15 12 9 6 15"></polyline>
+                                </svg>
+                            </div>
+                            <div class="transaction-info">
+                                <span class="transaction-name">Salário</span>
+                                <span class="transaction-date">15/01/2025</span>
+                            </div>
+                            <div class="transaction-amount">
+                                <span class="amount income">+R$ 5.000,00</span>
+                                <span class="transaction-status status-completed">Concluído</span>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div class="transaction-icon expense">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="transaction-info">
+                                <span class="transaction-name">Supermercado</span>
+                                <span class="transaction-date">14/01/2025</span>
+                            </div>
+                            <div class="transaction-amount">
+                                <span class="amount expense">-R$ 350,00</span>
+                                <span class="transaction-status status-completed">Concluído</span>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div class="transaction-icon expense">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="transaction-info">
+                                <span class="transaction-name">Internet</span>
+                                <span class="transaction-date">12/01/2025</span>
+                            </div>
+                            <div class="transaction-amount">
+                                <span class="amount expense">-R$ 99,00</span>
+                                <span class="transaction-status status-completed">Concluído</span>
+                            </div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div class="transaction-icon income">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="18 15 12 9 6 15"></polyline>
+                                </svg>
+                            </div>
+                            <div class="transaction-info">
+                                <span class="transaction-name">Freelance</span>
+                                <span class="transaction-date">10/01/2025</span>
+                            </div>
+                            <div class="transaction-amount">
+                                <span class="amount income">+R$ 1.200,00</span>
+                                <span class="transaction-status status-completed">Concluído</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notícias -->
+            <section class="dashboard-card">
+                <div class="card-header">
+                    <h2>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                            <path d="M18 14h-8"></path>
+                            <path d="M15 18h-5"></path>
+                            <path d="M10 6h8v4h-8V6Z"></path>
+                        </svg>
+                        Notícias Financeiras
+                    </h2>
+                    <button class="btn-icon" id="reloadNews" title="Recarregar">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <polyline points="1 20 1 14 7 14"></polyline>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="news-container" id="newsContainer">
+                        <div class="news-loading">
+                            <div class="spinner"></div>
+                            <p>Carregando notícias...</p>
+                        </div>
+                    </div>
+                    <div class="news-controls">
+                        <button class="btn-secondary btn-sm" id="prevNews">Anterior</button>
+                        <span class="news-counter" id="newsCounter">1 / 0</span>
+                        <button class="btn-secondary btn-sm" id="nextNews">Próxima</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="/js/MenuUsuario.js" asp-append-version="true"></script>
 </body>
-
 </html>

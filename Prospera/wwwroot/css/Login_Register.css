@@ -1,11 +1,16 @@
 html {
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-ul,
-li {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
     list-style: none;
 }
 
@@ -19,13 +24,15 @@ input {
 
 body {
     width: 100%;
-    /* background-color: black; */
+    overflow-x: hidden;
+    position: relative;
 }
 
 button {
     border: none;
     outline: none;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
 :root {
@@ -35,11 +42,7 @@ button {
     --color-tertiary: #801D7B;
     --color-tertiary2: #fdf6f6;
     --color-quartiary: #7836FA;
-    list-style: none;
 }
-
-
-
 
 html {
     position: relative;
@@ -50,623 +53,618 @@ body {
     font-size: 14px;
 }
 
-/*#region Login*/
+/* IMAGEM LATERAL DE FUNDO - Responsiva */
+.ImgLateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: clamp(400px, 40vw, 800px);
+    height: 100vh;
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+}
 
-/*#region NavBar */
+/* NAVBAR - Layout Original */
 .MenuNav {
     position: relative;
     width: 100%;
-    height: 3rem;
+    padding: 1rem 2rem;
+    background-color: transparent;
 }
 
 .Nav-Container {
-    width: 17rem;
     display: flex;
-    position: absolute;
-    left: 4em;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-    .Nav-Container img {
-        width: 50px;
-        height: 50px;
-        padding-right: .3em;
-        padding-top: .5em;
-    }
+.Nav-Container img:not(.ImgLateral) {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
 
-    .Nav-Container h2 {
-        color: var(--color-tertiary);
-        font-weight: 800;
-        padding-right: 2em;
-    }
+.Nav-Container img:hover:not(.ImgLateral) {
+    transform: scale(1.1);
+}
 
-    .Nav-Container li {
-        line-height: 42px;
-        background-color: var(--color-tertiary);
-        width: 10em;
-        height: 3em;
-        text-align: center;
-        position: relative;
-        top: 0.6em;
-        border-radius: 8px;
-        transition: .3s;
-    }
+.Nav-Container h2 {
+    color: var(--color-tertiary);
+    font-weight: 800;
+    font-size: clamp(18px, 3vw, 24px);
+    margin-right: auto;
+}
 
-        .Nav-Container li:hover {
-            background-color: var(--color-quartiary);
-            transition: .3s;
-            transform: scale(1.1);
-        }
+.Nav-Container li {
+    background-color: var(--color-tertiary);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
-        .Nav-Container li a {
-            color: white;
-            font-weight: 600;
-            padding: 1em 3.5em;
-            border-radius: 8px;
-        }
+.Nav-Container li:hover {
+    background-color: var(--color-quartiary);
+    transform: scale(1.05);
+}
 
-/*#endregion*/
+.Nav-Container li:hover a {
+    color: white;
+}
 
-/*#region Central Div*/
+.Nav-Container li a {
+    color: white;
+    font-weight: 600;
+    font-size: clamp(13px, 1.5vw, 16px);
+}
 
-/* .div-central img{
-width: 850px;
-position: absolute;
-right: 0.5em;
-top: 5em;
-
-} */
+/* LAYOUT CENTRAL - Grid Responsivo */
 .div-central {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    align-items: center;
     position: relative;
-    display: flex;
-    left: 18rem;
-    top: 8rem;
-    height: 23.5rem;
-    /* background-color: aqua; */
+    z-index: 1;
 }
 
-.imgLateral img {
-    width: 600px;
-    z-index: 1;
-    position: absolute;
-    right: 0;
+.imgFund {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgFund img {
-    width: 560px !important;
-    position: absolute;
-    left: -1.5em;
-    top: 1em;
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
-/* .ImgFundo img{
-  width: 55%;
-  position: absolute;
-  top: 1em;
-  left:0em;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-} */
-
-
-.TxtSenha {
-    position: absolute !important;
-    bottom: 19.2em !important;
+.imgFund img:hover {
+    transform: scale(1.02);
 }
 
+/* CARD DE LOGIN */
 .CardInfLogin {
     background-color: white;
-    position: absolute;
-    right: 0;
-    width: 42%;
-    height: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .LoginInf {
-    /* background-color: #e64c30; */
-    position: relative;
-    align-items: center;
-    top: 1.8em;
-    width: 80%;
-    height: 36em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-    .LoginInf h2 {
-        text-align: left;
-        position: absolute;
-        top: 3em;
-        color: var(--color-tertiary);
-    }
+.LoginInf h2 {
+    color: var(--color-tertiary);
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
 
-    /* .LiTxtLogin img{
-  position: absolute;
-  width: 20px;
-  left: 1.3em;
-  top: .9em;
-  z-index: 1;
- 
-  } */
-    .LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha) {
-        position: absolute;
-        top: 80%;
-        color: var(--color-tertiary);
-    }
+.LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha):not(.BtxtInscrevase) {
+    color: var(--color-tertiary);
+    font-size: clamp(13px, 1.5vw, 15px);
+}
 
+/* INPUTS COM ÍCONES */
+.TxtLogin, .TxtSenha {
+    position: relative;
+}
 
+.LoginInf li input:not(#ChekManterLogado) {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-    .LoginInf li input:not(#ChekManterLogado) {
-        padding-left: 2.7em;
-        position: absolute;
-        top: 35%;
-        border: none;
-        width: 14em;
-        border-radius: 20px;
-        height: 3em;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
+.LoginInf li input:focus {
+    outline: none;
+    border-color: var(--color-quartiary);
+    box-shadow: 0 4px 12px rgba(120, 54, 250, 0.15);
+}
 
-.IconSenha img {
+.IconSenha, .IconLogin {
+    position: absolute;
+    pointer-events: none;
+}
+
+.IconSenha img, .IconLogin img {
     position: absolute;
     width: 20px;
-    left: 3.6em;
-    top: 17.4em;
-    z-index: 99999;
+    height: 20px;
+    left: 1rem;
+    top: -2.8rem;
+    z-index: 10;
+}
+
+.IconSenha img {
+    top: -2.8rem;
 }
 
 .IconLogin img {
-    position: absolute;
-    width: 20px;
-    left: 3.6em;
-    top: 13.5em;
-    z-index: 99999;
+    top: -8.7rem;
 }
 
-/* .LiTxtSenha{
-  background-color: #7836FA;
-  top: 42%!important;
-  position: relative;
-  margin-bottom: 2em;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
- } */
-
 .LoginInf input::placeholder {
-    padding-left: 3em;
     color: var(--color-tertiary);
-    font-weight: 700;
+    font-weight: 500;
+    opacity: 0.7;
 }
 
 .CheckH4 {
-    position: absolute;
-    top: 53%;
-    left: 13%;
-    color: var(--color-tertiary);
-}
-
-#btn-transparent {
-    background-color: transparent;
-    color: white;
-    top: 50%;
-}
-
-
-#BtnLogin {
-    position: absolute;
-    top: 64%;
-    left: 23%;
-    transition: .3s;
-}
-
-    #BtnLogin button {
-        color: white;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 18px;
-        background-color: var(--color-tertiary);
-        padding: 0.8em 6em;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    #BtnLogin:hover {
-        background-color: var(--color-quartiary);
-        transition: .3s;
-        transform: scale(1.1);
-    }
-
-.BtxtEsqSenha {
-    position: absolute;
-    bottom: 0;
-    right: 3em;
-    /* background-color: red; */
-}
-
-#BtnAjuda {
-    position: absolute;
-    right: 10.7em;
-}
-
-.ImgLateral {
-    width: 1400px !important;
-    height: 1400px !important;
-    position: absolute;
-    top: -6rem;
-    right: -65rem;
-    opacity: .9;
-}
-
-
-@media screen and (max-width: 768px) {
-    .div-central img {
-        display: none;
-    }
-
-    .ImgFundo img {
-        display: none;
-    }
-
-    .ImgFundo2 img {
-        display: none;
-    }
-
-    .div-central {
-        left: 0;
-        width: 80%;
-        /* background-color: #7836FA; */
-    }
-
-    .CardInfLogin {
-        left: 11em;
-        width: 63%;
-    }
-
-    .Nav-Container {
-        width: 80%;
-        /* background-color: #801D7B; */
-    }
-
-        .Nav-Container li {
-            position: absolute;
-            right: 1.5em;
-        }
-
-    #BtnLogin {
-        margin-top: 1.5em;
-    }
-
-    .CheckH4 {
-        margin-top: 2em;
-    }
-}
-
-
-@media screen and (max-width: 360px) {
-    .ImgLateral {
-        display: none;
-    }
-
-    .Nav-Container {
-        /* background-color: #7836FA; */
-        left: 1em;
-    }
-
-    .CardInfLogin {
-        width: 30%;
-    }
-
-    .LoginInf {
-        right: 2em;
-        /* background-color: #801D7B; */
-    }
-
-    .div-central img {
-        display: none;
-    }
-
-    .CardInfLogin {
-        position: absolute;
-        top: -6em;
-        left: .3em;
-        height: 95%;
-        width: 90%;
-    }
-
-    .LoginInf {
-        /* background-color: #e64c30; */
-        position: relative;
-        width: 90%;
-    }
-
-    #TxtLogin {
-        position: absolute;
-        left: .6em;
-    }
-
-    #TxtSenha {
-        position: absolute;
-        left: -2.3em;
-    }
-
-    #BtnLogin {
-        position: absolute;
-        left: 4em;
-        margin-top: 1em;
-    }
-
-    .Nav-Container h2 {
-        font-size: 14px;
-        padding-left: 1em;
-        padding-top: .4em
-    }
-
-    .Nav-Container img {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        left: 0;
-    }
-}
-
-
-/*#endregion*/
-
-/*#endregion*/
-
-/*#region Cadastrar*/
-
-.CardInfCadastrar {
-    background-color: white;
-    position: absolute;
-    right: 0;
-    width: 42%;
-    height: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.CadastrarInf {
-    /* background-color: #e64c30; */
-    position: relative;
+    display: flex;
     align-items: center;
-    top: 1.8em;
-    width: 80%;
-    height: 36em;
-}
-
-    .CadastrarInf h2 {
-        text-align: left;
-        position: absolute;
-        left: 6em;
-        top: 1em;
-        color: var(--color-tertiary);
-    }
-   
-    .CadastrarInf input:not(#ChekPermitirEnvioEmail)
-{
-    padding-left: 3em;
-    position: absolute;
-    top: 35%;
-    border: none;
-    margin: 0;
-    width: 14em;
-    border-radius: 20px;
-    height: 3em;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.LiTxtNome {
-    top: 20%;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-    .LiTxtNome img {
-        position: absolute;
-        width: 20px;
-        left: 1.3em;
-        top: 0.7em;
-    }
-
-.LiTxtEmail {
-    top: 31%;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-    .LiTxtEmail img {
-        position: absolute;
-        width: 20px;
-        left: 1.3em;
-        top: 0.7em;
-    }
-
-.LiTxtSenha {
-    top: 42%;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-    .LiTxtSenha img {
-        position: absolute;
-        width: 20px;
-        left: 1.3em;
-        top: 0.7em;
-    }
-
-.LiTxtCPF {
-    top: 53%;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-    .LiTxtCPF img {
-        position: absolute;
-        width: 20px;
-        left: 1.3em;
-        top: 0.7em;
-    }
-
-
-
-
-.CadastrarInf input::placeholder {
-    padding-left: 3em;
+    gap: 0.5rem;
     color: var(--color-tertiary);
-    font-weight: 700;
+    font-size: 14px;
 }
 
-
-.ImgFundo2 img {
-    width: 560px !important;
-    position: absolute;
-    left: -1.5em;
-    top: 1em;
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
-}
-
-#BtnCadastrar {
-    position: absolute;
-    width: 13em;
-    height: 2.7em;
-    border-radius: 5px;
-    top: 72%;
-    left: 10.2em;
-    background-color: #801D7B;
-    text-align: center;
-    transition: .3s;
-    color: white;
-    font-weight: 600;
+#ChekManterLogado {
+    width: 18px;
+    height: 18px;
     cursor: pointer;
 }
 
-    #BtnCadastrar:hover {
-        background-color: var(--color-quartiary);
-        transition: .3s;
-        transform: scale(1.1);
-    }
+/* BOTÃO DE LOGIN */
+#BtnLogin {
+    width: 100%;
+}
+
+#BtnLogin button {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--color-tertiary) 0%, var(--color-quartiary) 100%);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(120, 54, 250, 0.3);
+}
+
+#BtnLogin button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(120, 54, 250, 0.4);
+}
+
+.BtxtEsqSenha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#BtnAjuda, #BtnEsqSenha {
+    color: var(--color-quartiary);
+    font-weight: 600;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+#BtnAjuda:hover, #BtnEsqSenha:hover {
+    color: var(--color-tertiary);
+    text-decoration: underline;
+}
 
 .BtxtInscrevase {
+    text-align: center;
+    color: var(--color-tertiary);
+    font-size: 14px;
+}
+
+#BtnInscrevase, #BtnCadastrarLogar {
+    color: var(--color-quartiary);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+#BtnInscrevase:hover, #BtnCadastrarLogar:hover {
+    color: var(--color-tertiary);
+    text-decoration: underline;
+}
+
+/* CARD DE CADASTRO */
+.CardInfCadastrar {
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.CadastrarInf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.CadastrarInf h2 {
+    color: var(--color-tertiary);
+    font-size: clamp(24px, 4vw, 32px);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.CadastrarInf input:not(#ChekPermitirEnvioEmail) {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.CadastrarInf input:focus {
+    outline: none;
+    border-color: var(--color-quartiary);
+    box-shadow: 0 4px 12px rgba(120, 54, 250, 0.15);
+}
+
+.LiTxtNome, .LiTxtEmail, .LiTxtSenha, .LiTxtCPF {
+    position: relative;
+}
+
+.LiTxtNome img, .LiTxtEmail img, .LiTxtSenha img, .LiTxtCPF img {
     position: absolute;
-    bottom: 0;
+    width: 20px;
+    height: 20px;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.CadastrarInf input::placeholder {
+    color: var(--color-tertiary);
+    font-weight: 500;
+    opacity: 0.7;
 }
 
 .CheckH4Cadastro {
-    position: absolute;
-    top: 61%;
-    left: 8%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--color-tertiary);
+    font-size: 13px;
+}
+
+#ChekPermitirEnvioEmail {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+#BtnCadastrar {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--color-tertiary) 0%, var(--color-quartiary) 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(120, 54, 250, 0.3);
+    margin-top: 1rem;
+}
+
+#BtnCadastrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(120, 54, 250, 0.4);
+}
+
+/* VALIDAÇÃO DE ERROS - Melhor Visibilidade */
+.text-danger {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 0.25rem;
+    display: block;
+    font-weight: 600;
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.close-alert {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.25rem 0.5rem;
     font-size: 12px;
 }
 
+/* IMAGENS DE CADASTRO */
+.ImgFundo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media screen and (max-width: 768px) {
-    .div-central img {
-        display: none;
+.ImgFundo2 img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.ImgFundo2 img:hover {
+    transform: scale(1.02);
+}
+
+/* MEDIA QUERIES - Responsividade */
+
+/* 4K e telas muito grandes (> 2560px) */
+@media screen and (min-width: 2560px) {
+    .ImgLateral {
+        width: 1000px;
+        opacity: 0.2;
     }
-
-    .ImgFundo img {
-        display: none;
-    }
-
-    .ImgFundo2 img {
-        display: none;
-    }
-
-    .div-central {
-        left: 0;
-        width: 80%;
-        /* background-color: #7836FA; */
-    }
-
-    .CadastrarInf {
-        left: 11em;
-        width: 63%;
-    }
-
-    .Nav-Container {
-        width: 80%;
-        /* background-color: #801D7B; */
-    }
-
-        .Nav-Container li {
-            position: absolute;
-            right: 1.5em;
-        }
-
-    #BtnLogin {
-        margin-top: 1.5em;
-    }
-
-    .CheckH4 {
-        margin-top: 2em;
+    
+    body {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     }
 }
 
+/* Desktop grande (1440px - 2560px) */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    .ImgLateral {
+        width: 700px;
+        opacity: 0.15;
+    }
+}
 
-@media screen and (max-width: 360px) {
+/* Laptop grande (1024px - 1440px) - Manter tudo */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .ImgLateral {
+        width: 500px;
+        opacity: 0.12;
+    }
+    
+    .div-central {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablets e Laptop pequeno (768px - 1024px) - Remover imagem da div-central */
+@media screen and (max-width: 1023px) {
+    .ImgLateral {
+        width: 400px;
+        opacity: 0.1;
+    }
+    
+    .div-central {
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+    }
+    
+    .imgFund, .ImgFundo2 {
+        display: none !important;
+    }
+    
+    .CardInfLogin, .CardInfCadastrar {
+        max-width: 600px;
+    }
+}
+
+/* Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .MenuNav {
+        padding: 1rem;
+    }
+    
+    .Nav-Container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .ImgLateral {
+        width: 300px;
+        opacity: 0.08;
+    }
+    
+    .div-central {
+        padding: 0 1rem;
+        margin: 1.5rem auto;
+    }
+    
+    .CardInfLogin, .CardInfCadastrar {
+        padding: 2rem 1.5rem;
+    }
+    
+    .LoginInf, .CadastrarInf {
+        gap: 1.2rem;
+    }
+}
+
+/* Mobile (480px - 768px) */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
     .ImgLateral {
         display: none;
     }
-
+    
+    .MenuNav {
+        padding: 0.8rem;
+    }
+    
     .Nav-Container {
-        /* background-color: #7836FA; */
-        left: 1em;
+        gap: 0.5rem;
     }
-
-    .CadastrarInf {
-        width: 30%;
-    }
-
-    .LoginInf {
-        right: 2em;
-        /* background-color: #801D7B; */
-    }
-
-    .div-central img {
-        display: none;
-    }
-
-    .CardInfLogin {
-        position: absolute;
-        top: -6em;
-        left: .3em;
-        height: 95%;
-        width: 90%;
-    }
-
-    .LoginInf {
-        /* background-color: #e64c30; */
-        position: relative;
-        width: 90%;
-    }
-
-    #TxtLogin {
-        position: absolute;
-        left: .6em;
-    }
-
-    #TxtSenha {
-        position: absolute;
-        left: -2.3em;
-    }
-
-    #BtnLogin {
-        position: absolute;
-        left: 4em;
-        margin-top: 1em;
-    }
-
-    .Nav-Container h2 {
-        font-size: 14px;
-        padding-left: 1em;
-        padding-top: .4em
-    }
-
-    .Nav-Container img {
+    
+    .Nav-Container img:not(.ImgLateral) {
         width: 40px;
         height: 40px;
-        position: absolute;
-        left: 0;
+    }
+    
+    .Nav-Container h2 {
+        font-size: 16px;
+    }
+    
+    .Nav-Container li {
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .Nav-Container li a {
+        font-size: 12px;
+    }
+    
+    .div-central {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+    
+    .CardInfLogin, .CardInfCadastrar {
+        padding: 1.5rem 1rem;
+        border-radius: 12px;
+    }
+    
+    .LoginInf h2, .CadastrarInf h2 {
+        font-size: 22px;
+    }
+    
+    .LoginInf li input:not(#ChekManterLogado),
+    .CadastrarInf input:not(#ChekPermitirEnvioEmail) {
+        padding: 0.9rem 0.9rem 0.9rem 2.8rem;
+        font-size: 14px;
+    }
+    
+    .IconSenha img, .IconLogin img,
+    .LiTxtNome img, .LiTxtEmail img, .LiTxtSenha img, .LiTxtCPF img {
+        width: 18px;
+        height: 18px;
+        left: 0.8rem;
+    }
+    
+    #BtnLogin button, #BtnCadastrar {
+        padding: 0.9rem 1.5rem;
+        font-size: 15px;
+    }
+    
+    .CheckH4, .CheckH4Cadastro {
+        font-size: 12px;
+    }
+    
+    .BtxtEsqSenha {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
-/*#endregion*/
+
+/* Mobile muito pequeno (< 360px) */
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .MenuNav {
+        padding: 0.5rem;
+    }
+    
+    .Nav-Container img:not(.ImgLateral) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .Nav-Container h2 {
+        font-size: 14px;
+    }
+    
+    .CardInfLogin, .CardInfCadastrar {
+        padding: 1rem 0.8rem;
+    }
+    
+    .LoginInf, .CadastrarInf {
+        gap: 1rem;
+    }
+    
+    .LoginInf h2, .CadastrarInf h2 {
+        font-size: 20px;
+    }
+}
+
+/* Desktop grande (> 1400px) - Layout otimizado */
+@media screen and (min-width: 1400px) {
+    .div-central {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        max-width: 1600px;
+    }
+    
+    .CardInfLogin, .CardInfCadastrar {
+        padding: 4rem 3rem;
+    }
+    
+    .imgFund img, .ImgFundo2 img {
+        max-width: 700px;
+    }
+}
