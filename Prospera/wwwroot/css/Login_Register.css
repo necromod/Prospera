@@ -404,28 +404,140 @@ body {
     box-shadow: 0 6px 16px rgba(120, 54, 250, 0.4);
 }
 
+/* TOAST NOTIFICATION - Popup Flutuante */
+.toast-notification {
+    position: fixed;
+    top: -100px;
+    right: 2rem;
+    min-width: 350px;
+    max-width: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toast-notification.show {
+    top: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-notification.error {
+    border-left: 4px solid #dc3545;
+}
+
+.toast-notification.success {
+    border-left: 4px solid #28a745;
+}
+
+.toast-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.toast-content {
+    flex: 1;
+}
+
+.toast-content strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+}
+
+.toast-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.toast-close:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 /* VALIDAÇÃO DE ERROS - Melhor Visibilidade */
 .text-danger {
     color: #dc3545;
-    font-size: 12px;
-    margin-top: 0.25rem;
+    font-size: 13px;
+    margin-top: 0.5rem;
     display: block;
     font-weight: 600;
+    padding-left: 0.5rem;
 }
 
 .alert {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
     position: relative;
     font-size: 14px;
     font-weight: 500;
+    animation: slideIn 0.3s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .alert-danger {
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    color: #721c24;
+    background-color: #fee;
+    border: 2px solid #fcc;
+    color: #c11;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.alert-danger::before {
+    content: "??";
+    font-size: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border: 2px solid #c3e6cb;
+    color: #155724;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.alert-success::before {
+    content: "?";
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .close-alert {
@@ -433,8 +545,33 @@ body {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #c11;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-alert:hover {
+    background-color: #a00;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.field-validation-error {
+    color: #dc3545;
     font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+.input-validation-error {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
 }
 
 /* IMAGENS DE CADASTRO */

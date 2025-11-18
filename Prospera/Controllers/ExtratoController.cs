@@ -58,7 +58,11 @@ namespace Prospera.Controllers
                 Console.WriteLine("Usuário logado: " + usuarioLogado.NomeUsuario);
             }
 
-            var contasDoUsuario = _context.Contas?.Where(c => c.IdUsuario == usuarioLogado.IdUsuario).ToList() ?? new List<Contas>();
+            var contasDoUsuario = _context.Contas?
+                .Include(c => c.Usuario)
+                .Where(c => c.IdUsuario == usuarioLogado.IdUsuario)
+                .OrderByDescending(c => c.DatVenciCont)
+                .ToList() ?? new List<Contas>();
 
             return View(contasDoUsuario);
         }

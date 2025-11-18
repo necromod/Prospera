@@ -1,4 +1,4 @@
-@model List<Prospera.Models.Extrato>
+@model List<Prospera.Models.Contas>
 @{ViewData["Title"] = "Transações"; Layout = null;}
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -50,9 +50,44 @@
                     </button>
                 </div>
                 <div class="data-table-container">
-                    <table class="data-table"><thead><tr><th>Data</th><th>Descrição</th><th>Tipo</th><th>Valor</th><th>Conta</th><th>Status</th></tr></thead>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                                <th>Recebedor/Pagador</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
                         <tbody id="extratoTableBody">
-                            <tr><td colspan="6" style="text-align: center; padding: 2rem; color: #94A3B8;">Nenhuma transação encontrada</td></tr>
+                            @if (Model != null && Model.Any())
+                            {
+                                @foreach (var conta in Model)
+                                {
+                                    <tr>
+                                        <td>@(conta.DatVenciCont?.ToString("dd/MM/yyyy") ?? "-")</td>
+                                        <td>@conta.NomeCont</td>
+                                        <td>
+                                            <span class="badge badge-@(conta.PagarReceberCont == "Receita" ? "success" : "danger")">
+                                                @conta.PagarReceberCont
+                                            </span>
+                                        </td>
+                                        <td>@conta.ValorCont.ToString("C")</td>
+                                        <td>@conta.RecebedorCont</td>
+                                        <td>
+                                            <span class="badge badge-@(conta.StatusCont == "Pago" ? "success" : "warning")">
+                                                @conta.StatusCont
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr><td colspan="6" style="text-align: center; padding: 2rem; color: #94A3B8;">Nenhuma transação encontrada</td></tr>
+                            }
                         </tbody>
                     </table>
                 </div>

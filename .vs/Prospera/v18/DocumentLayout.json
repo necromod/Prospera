@@ -3,42 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\.cleanup-verification.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\controllers\\extratocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\controllers\\extratocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\RESUMO_GERAL.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\changelog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\changelog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\quickstart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\quickstart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\.cleanup-verification.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\.cleanup-verification.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\prospera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\prospera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\views\\cadastro\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\views\\cadastro\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\correcao_arquivos_estaticos.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\correcao_arquivos_estaticos.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|c:\\users\\edsilva\\source\\repos\\necromod\\prospera\\prospera\\views\\extrato\\consultaextrato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A0256FF-1747-405E-A3C3-37CB9B5E5F67}|Prospera\\Prospera.csproj|solutionrelative:prospera\\views\\extrato\\consultaextrato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -68,132 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Prospera\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Prospera\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ConsultaExtrato.cshtml",
+              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Extrato\\ConsultaExtrato.cshtml",
+              "RelativeDocumentMoniker": "Prospera\\Views\\Extrato\\ConsultaExtrato.cshtml",
+              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Extrato\\ConsultaExtrato.cshtml",
+              "RelativeToolTip": "Prospera\\Views\\Extrato\\ConsultaExtrato.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAIBJwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T14:48:23.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Prospera",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
-              "RelativeDocumentMoniker": "Prospera\\Prospera.csproj",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Prospera.csproj",
-              "RelativeToolTip": "Prospera\\Prospera.csproj",
-              "ViewState": "AgIAAC8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-18T14:48:02.561Z",
+              "WhenOpened": "2025-11-18T17:42:02.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".cleanup-verification.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\.cleanup-verification.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\.cleanup-verification.md",
-              "ToolTip": "C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\.cleanup-verification.md",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\.cleanup-verification.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:36:22.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CORRECAO_ARQUIVOS_ESTATICOS.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\CORRECAO_ARQUIVOS_ESTATICOS.md",
-              "RelativeDocumentMoniker": "Prospera\\CORRECAO_ARQUIVOS_ESTATICOS.md",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\CORRECAO_ARQUIVOS_ESTATICOS.md",
-              "RelativeToolTip": "Prospera\\CORRECAO_ARQUIVOS_ESTATICOS.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:51:25.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Prospera\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Prospera\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAIEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T14:50:03.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cadastro.cshtml",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Cadastro\\Cadastro.cshtml",
-              "RelativeDocumentMoniker": "Prospera\\Views\\Cadastro\\Cadastro.cshtml",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Views\\Cadastro\\Cadastro.cshtml",
-              "RelativeToolTip": "Prospera\\Views\\Cadastro\\Cadastro.cshtml",
-              "ViewState": "AgIAAI8AAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T14:48:58.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RESUMO_GERAL.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\RESUMO_GERAL.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\RESUMO_GERAL.md",
-              "ToolTip": "C:\\Users\\edsilva\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\RESUMO_GERAL.md",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-111395980\\RESUMO_GERAL.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:36:22.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CHANGELOG.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\CHANGELOG.md",
-              "RelativeDocumentMoniker": "Prospera\\CHANGELOG.md",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\CHANGELOG.md",
-              "RelativeToolTip": "Prospera\\CHANGELOG.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:36:22.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QUICKSTART.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\QUICKSTART.md",
-              "RelativeDocumentMoniker": "Prospera\\QUICKSTART.md",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\QUICKSTART.md",
-              "RelativeToolTip": "Prospera\\QUICKSTART.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:36:22.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": ".cleanup-verification.md",
-              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\.cleanup-verification.md",
-              "RelativeDocumentMoniker": "Prospera\\.cleanup-verification.md",
-              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\.cleanup-verification.md",
-              "RelativeToolTip": "Prospera\\.cleanup-verification.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-18T14:36:22.963Z",
+              "Title": "ExtratoController.cs",
+              "DocumentMoniker": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Controllers\\ExtratoController.cs",
+              "RelativeDocumentMoniker": "Prospera\\Controllers\\ExtratoController.cs",
+              "ToolTip": "C:\\Users\\edsilva\\source\\repos\\necromod\\Prospera\\Prospera\\Controllers\\ExtratoController.cs",
+              "RelativeToolTip": "Prospera\\Controllers\\ExtratoController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:40:06.568Z",
               "EditorCaption": ""
             }
           ]

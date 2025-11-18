@@ -1,4 +1,4 @@
-Ôªø@model LoginModel
+@model LoginModel
 
 @{
     Layout = "_LayoutDeslogado";
@@ -20,68 +20,109 @@
 </head>
 
 <body>
+    <!-- Toast de mensagens (popup flutuante) -->
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="toast-notification error" id="toastNotification">
+            <div class="toast-icon">??</div>
+            <div class="toast-content">
+                <strong>Erro</strong>
+                <p>@TempData["MensagemErro"]</p>
+            </div>
+            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">?</button>
+        </div>
+    }
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="toast-notification success" id="toastNotification">
+            <div class="toast-icon">?</div>
+            <div class="toast-content">
+                <strong>Sucesso</strong>
+                <p>@TempData["MensagemSucesso"]</p>
+            </div>
+            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">?</button>
+        </div>
+    }
+
     <!-- Session NavBar -->
     <section id="NavBar">
         <div class="MenuNav">
-    <li class="ImgFundoLateral">
+            <li class="ImgFundoLateral">
+                <ul class="Nav-Container">
+                    <img src="~/img/Login/IconeLogin.png" asp-append-version="true" alt="Õcone Login">
+                    <img src="~/img/Login/Lateral.png" class="ImgLateral" asp-append-version="true" alt="Lateral">
+                    <h2>PROSPERA</h2>
+                    <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
+                </ul>
 
-
-            <ul class="Nav-Container">
-                <img src="~/img/Login/IconeLogin.png" asp-append-version="true" alt="√çcone Login">
-                <img src="~/img/Login/Lateral.png" class="ImgLateral" asp-append-version="true" alt="Lateral">
-                <h2>PROSPERA</h2>
-                <li><a asp-controller="Home" asp-action="Index" id="BtnInicio">INICIO</a></li>
-            </ul>
-
-
-            <ul class="div-central container">
-                <li class="imgFund">
-                    <img src="~/img/Login/LoginBanner.png" asp-append-version="true" alt="Banner Login">
-                </li>
+                <ul class="div-central container">
+                    <li class="imgFund">
+                        <img src="~/img/Login/LoginBanner.png" asp-append-version="true" alt="Banner Login">
+                    </li>
            
-                <ul class="CardInfLogin">
+                    <ul class="CardInfLogin">
+                        <ul class="LoginInf">
+                            <h2>Ol· <br> Seja bem vindo</h2>
 
-                    <ul class="LoginInf">
+                            <form asp-controller="Login" asp-action="Entrar" method="post">
+                                <li class="TxtLogin EspacoInput">
+                                    <input asp-for="Email" type="text" placeholder="Email" id="TxtLogin">
+                                </li>
+                                @Html.ValidationMessageFor(x => x.Email)
+                                
+                                <li class="IconSenha"><img src="~/img/Login/IconSenha.png" asp-append-version="true" alt="Õcone Senha"></li>
+                                <li class="IconLogin"><img src="~/img/Login/IconLogin.png" asp-append-version="true" alt="Õcone Login"></li>
 
-                        <h2>Ol√° <br> Seja bem vindo</h2>
-                        @if (TempData["MensagemErro"] != null)
-                        {
-                            <div class="alert alert-danger" role="alert">
-                                <button type="button" class="btn btn-danger btn-sm close-alert" data-bs-dismiss="alert" aria-label="Close">X</button>
-                                @TempData["MensagemErro"]
-                            </div>
-                        }
-                        <form asp-controller="Login" asp-action="Entrar" method="post">
-                        <li class="TxtLogin EspacoInput"><input asp-for="Email" type="text" placeholder="Email" id="TxtLogin"></li>
-                            @Html.ValidationMessageFor(x => x.Email)
-                            <li class="IconSenha"><img src="~/img/Login/IconSenha.png" asp-append-version="true" alt="√çcone Senha"></li>
-                            <li class="IconLogin"><img src="~/img/Login/IconLogin.png" asp-append-version="true" alt="√çcone Login"></li>
+                                <li class="TxtSenha EspacoInput">
+                                    <input type="password" asp-for="Senha" placeholder="Senha" id="TxtSenha">
+                                </li>
+                                @Html.ValidationMessageFor(x => x.Senha)
 
-                        <li class="TxtSenha EspacoInput"><input type="password" asp-for="Senha" placeholder="Senha" id="TxtSenha"></li>
-                            @Html.ValidationMessageFor(x => x.Senha)
+                                <h4 class="CheckH4">
+                                    <input type="checkbox" name="manterLogado" id="ChekManterLogado"> Manter logado?
+                                </h4>
 
-                        <h4 class="CheckH4"><input type="checkbox" name="manterLogado" id="ChekManterLogado">  Manter logado?</h4>
+                                <li id="BtnLogin">
+                                    <button type="submit" id="btn-transparent" class="btn btn-primary btn-block">LOGAR</button>
+                                </li>
+                            </form>
 
-                        <li id="BtnLogin"><button type="submit" id="btn-transparent" class="btn btn-primary btn-block">LOGAR</button></li>
-                        </form>
+                            <!-- Btxt - Bot„o que na verdade esta dentro de um texto, h1 ou p... -->
+                            <h4 class="BtxtInscrevase">N„o tem conta? <a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInscrevase">Inscreva-se</a></h4>
 
-                        <!-- Btxt - Bot√£o que na verdade esta dentro de um texto, h1 ou p... -->
-                        <h4 class="BtxtInscrevase">N√£o tem conta? <a asp-controller="Cadastro" asp-action="Cadastro" id="BtnInscrevase">Inscreva-se</a></h4>
+                            <h4 class="BtxtEsqSenha"><a href="#" id="BtnAjuda">Ajuda</a> <a href="#" id="BtnEsqSenha">Esqueceu a senha?</a></h4>
+                        </ul>
 
-                        <h4 class="BtxtEsqSenha"><a href="#" id="BtnAjuda">Ajuda</a> <a href="#" id="BtnEsqSenha">Esqueceu a senha?</a></h4>
-
-
+                        <ul>
+                        </ul>
                     </ul>
-
-                    <ul>
-                    </ul>
+                </ul>
+            </li>
         </div>
     </section>
 
-
-
     <!-- link js -->
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        // Auto-hide toast apÛs 5 segundos
+        document.addEventListener('DOMContentLoaded', function() {
+            const toast = document.getElementById('toastNotification');
+            if (toast) {
+                // Animar entrada
+                setTimeout(() => {
+                    toast.classList.add('show');
+                }, 100);
+
+                // Auto-hide
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    setTimeout(() => toast.remove(), 300);
+                }, 5000);
+            }
+        });
+    </script>
 </body>
 
 </html>
