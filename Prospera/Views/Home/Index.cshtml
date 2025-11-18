@@ -7,115 +7,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,600&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,00&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="/css/Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true">
 </head>
-
-@* MODELO PARA INSERSÇÃO DE LINK PARA PÁGINAS DIFERENTES!
-    <a asp-controller="NOME-DO-CONTROLADOR" asp-action="NOME-DO-ARQUIVO" class="CLASSES PARA ELEMENTOS CSS">TEXTO A SER EXIBIDO NO FRONT</a>
-
-    NOME-DO-CONTROLADOR será o nome da pasta em que está armazenado o arquivo .cshtml
-    NOME-DO-ARQUIVO será o nome final do arquivo a ser aberto, como index.cshtml
-    CLASSES PARA ELEMENTOS CSS são as classes normais que se adiciona a itens html, podendo também utilizar ID ao invés de classe
-*@
 
 <body>
     <div class="MenuNav container">
-
         <ul class="MenuVanInfContainer">
             <li class="LibtnLogin"><a asp-controller="Login" asp-action="Login">LOGIN</a></li>
             <a href="#" class="StyleA">About</a>
             <a href="#" class="StyleA">Serviços</a>
             <a href="#" class="StyleA">Contate-nos</a>
             <a href="#" class="StyleA">FAQ</a>
-            <img src="/img/Index/IconeEmpresa.png" alt="">
+            <img src="~/img/Index/IconeEmpresa.png" asp-append-version="true" alt="Logo Prospera">
             <li class="LiperiodoGratis"><a href="#">Periodo Grátis</a></li>
         </ul>
     </div>
     <div class="ReginInfCentral">
         <li class="IconesFundoIndex">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex1">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex2">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex3">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex4">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex5">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex6">
-            <img src="/img/Index/EstiloBolinha1.png" class="ImgIndex7">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex1" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex2" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex3" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex4" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex5" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex6" asp-append-version="true" alt="">
+            <img src="~/img/Index/EstiloBolinha1.png" class="ImgIndex7" asp-append-version="true" alt="">
         </li>
         <ul class="InfSobrePros">
-
-            <li class="TextoProspera"><img src="/img/Index/TextoSobreProspera.png"></li>
-           
-
+            <li class="TextoProspera"><img src="~/img/Index/TextoSobreProspera.png" asp-append-version="true" alt="Prospera"></li>
             <li class="LibtnAproveitar"><a asp-controller="Cadastro" asp-action="Cadastro" id="BtnAproveitar">Aproveitar</a>
-            <li class="IconIniciar"><img src="/img/Index/IconIniciar.png"> <h4>ACOMPANHE</h4></li>
-            <li class="LinkSite">
-                <a href="">Prospera.com.br</a>
-            </li>
-            <img src="~/img/Index/iconePrincipalInf.png" id="ImgPrincipal">
+            <li class="IconIniciar"><img src="~/img/Index/IconIniciar.png" asp-append-version="true" alt=""> <h4>ACOMPANHE</h4></li>
+            <li class="LinkSite"><a href="">Prospera.com.br</a></li>
+            <img src="~/img/Index/iconePrincipalInf.png" id="ImgPrincipal" asp-append-version="true" alt="Banner">
         </ul>
-
     </div>
+    
     <div class="RegionMeioInf">
         <ul class="MeuInfApp-Container">
             <li class="InfQrcode">
                 <h2>Descubra uma nova era de controle financeiro com nosso aplicativo inovador!</h2>
-                <h4 class="h4-1">Com funcionalidades intuitivas e uma interface amigável, nosso aplicativo financeiro é a ferramenta perfeita para simplificar suas finanças diárias. Ganhe mais tempo para o que realmente importa, enquanto mantém o controle total das suas despesas, receitas e metas financeiras.</h4>
+                <h4 class="h4-1">Com funcionalidades intuitivas e uma interface amigável, nosso aplicativo financeiro é a ferramenta perfeita para simplificar suas finanças diárias.</h4>
                 <h4 class="h4-2">Coloque a câmera em cima do Qrcode e acompanhe as novidades de perto</h4>
-                <img src="/img/Index/IconeQrCode.png" class="QrcodeIcon">
-                <img src="/img/Index/IconeMaoCel.png" class="MaoAppIcon">
+                <img src="~/img/Index/IconeQrCode.png" class="QrcodeIcon" asp-append-version="true" alt="QR Code">
+                <img src="~/img/Index/IconeMaoCel.png" class="MaoAppIcon" asp-append-version="true" alt="App Mobile">
             </li>
-            
-
         </ul>
     </div>
-    <div class="RegionServicos">
-    <li class="TextoServ">
-        <h2>Como a Prospera vai me ajudar?</h2>
-        <hr>
-    </li>
-    <li class="LinhaDivizora"></li>
-    <ul class="CardServicos-Container">
-        <li class="CardServ1">
-            <img src="/img/Index/Servico/CartaoAtual.png">
-            <h2>Controle suas despesas</h2>
-            <h4>Gerencie com precisão todas as despesas dos seus cartões de crédito. Tenha controle do cartão titular e dos adicionais. Receba lembretes para pagar suas faturas e contas em dia.</h4>
-        </li>
-        <li class="CardServ2">
-            <img src="/img/Index/Servico/GraficoAtual.png">
-            <h2>Acompanhe suas metas</h2>
-            <h4>Crie metas e acompanhe sua evolução. Gerencie seus objetivos financeiros de curto, médio e longo prazo. Fique cada vez mais perto de alcançar seus sonhos e objetivos.</h4>
-        </li>
-        <li class="CardServ3">
-            <img src="/img/Index/Servico/bancoAtual.png">
-            <h2>Controle sua riqueza</h2>
-            <h4>Acompanhe seu crescimento rumo a sua independência financeira. Gerencie seu patrimônio, acompanhe a evolução dos seus investimentos e todos os demais ativos e passivos.</h4>
-        </li>
-        <li class="CardServ4">
-            <img src="/img/Index/Servico/GerenciarAtual.png">
-            <h2>Gerencie seus projetos</h2>
-            <h4>Crie e gerencie projetos para saber exatamente quanto gastou em suas viagens de férias ou naquela reforma da sua casa.</h4>
-        </li>
     
-    </ul>
-      <li class="FooteServInf">
+    <div class="RegionServicos">
+        <li class="TextoServ">
+            <h2>Como a Prospera vai me ajudar?</h2>
+            <hr>
+        </li>
+        <li class="LinhaDivizora"></li>
+        <ul class="CardServicos-Container">
+            <li class="CardServ1">
+                <img src="~/img/Index/Servico/CartaoAtual.png" asp-append-version="true" alt="Cartões">
+                <h2>Controle suas despesas</h2>
+                <h4>Gerencie com precisão todas as despesas dos seus cartões de crédito. Receba lembretes para pagar suas faturas e contas em dia.</h4>
+            </li>
+            <li class="CardServ2">
+                <img src="~/img/Index/Servico/GraficoAtual.png" asp-append-version="true" alt="Gráficos">
+                <h2>Acompanhe suas metas</h2>
+                <h4>Crie metas e acompanhe sua evolução. Gerencie seus objetivos financeiros de curto, médio e longo prazo.</h4>
+            </li>
+            <li class="CardServ3">
+                <img src="~/img/Index/Servico/bancoAtual.png" asp-append-version="true" alt="Banco">
+                <h2>Controle sua riqueza</h2>
+                <h4>Acompanhe seu crescimento rumo a sua independência financeira. Gerencie seu patrimônio e investimentos.</h4>
+            </li>
+            <li class="CardServ4">
+                <img src="~/img/Index/Servico/GerenciarAtual.png" asp-append-version="true" alt="Projetos">
+                <h2>Gerencie seus projetos</h2>
+                <h4>Crie e gerencie projetos para saber exatamente quanto gastou em suas viagens ou reformas.</h4>
+            </li>
+        </ul>
+        <li class="FooteServInf">
             <h2>Experimente todos os recursos gratuitamente</h2>
             <h4>Sem informar dados de compra</h4>
-            <li class="LiBtnServConta"><a asp-controller="" asp-action="" id="BtnFooterHome">Crie sua conta Grátis</a></li>
+            <li class="LiBtnServConta"><a asp-controller="Cadastro" asp-action="Cadastro" id="BtnFooterHome">Crie sua conta Grátis</a></li>
         </li>
-</div>
+    </div>
+    
     <div class="RegionFooter">
         <ul class="CardInsiraEmails">
             <h4>Coloque o seu e-mail e acompanhe as novidades</h4>
-            <li class="LiCheckFooter"><input type="checkbox" name="" id="ChekFooterEmail"><h4>Aceito Receber e-mails sobre promoções e planos</h4></li>
+            <li class="LiCheckFooter"><input type="checkbox" id="ChekFooterEmail"><h4>Aceito Receber e-mails sobre promoções e planos</h4></li>
             <li class="LitxtFooterEmail"><input type="Email" autocomplete="off" id="TxtFooterEmail" placeholder="Email:"></li>
             <li class="LibtnFooterEnviar"><a href="">Enviar</a></li>
-
         </ul>
         <ul class="Footer">
-            <img src="/img/Index/IconeEmpresa.png" class="LogoFooter">
+            <img src="~/img/Index/IconeEmpresa.png" class="LogoFooter" asp-append-version="true" alt="Logo">
             <h2>PROSPERA</h2>
         </ul>
         <ul class="InfoFooter">
@@ -131,19 +115,18 @@
             </li>
             <li class="LiContatoFooter">
             <li class="ImgFooter">
-                <img src="/img/Index/facebook.png" class="ImgFooterFacebook">
-                <img src="/img/Index/twitter.png" class="ImgFooterTwitter">
-                <img src="/img/Index/instagram.png" class="ImgFooterInstagram">
-                <img src="/img/Index/linkedin.png" class="ImgFooterLinkedin">
+                <img src="~/img/Index/facebook.png" class="ImgFooterFacebook" asp-append-version="true" alt="Facebook">
+                <img src="~/img/Index/twitter.png" class="ImgFooterTwitter" asp-append-version="true" alt="Twitter">
+                <img src="~/img/Index/instagram.png" class="ImgFooterInstagram" asp-append-version="true" alt="Instagram">
+                <img src="~/img/Index/linkedin.png" class="ImgFooterLinkedin" asp-append-version="true" alt="LinkedIn">
             </li>
             <li class="H4footer">
-            <h4 class="H4Linkedin">Linkedin</h4>
-            <h4 class="H4Twitter">Twitter</h4>
-            <h4 class="H4Instagram">Instagram</h4>
-            <h4 class="H4Facebook">Facebook</h4>
+                <h4 class="H4Linkedin">Linkedin</h4>
+                <h4 class="H4Twitter">Twitter</h4>
+                <h4 class="H4Instagram">Instagram</h4>
+                <h4 class="H4Facebook">Facebook</h4>
             </li>
         </ul>
     </div>
-    <script src="/js/PaginaInicial.js"></script>
-
+    <script src="~/js/PaginaInicial.js" asp-append-version="true"></script>
 </body>

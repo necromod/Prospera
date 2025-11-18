@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>18636254-57d3-47d0-b5ec-f82c14af0e56</UserSecretsId>
+    <!-- Ensure wwwroot is published -->
+    <CopyRefAssembliesToPublishDirectory>true</CopyRefAssembliesToPublishDirectory>
+    <PublishWithAspNetCoreTargetManifest>true</PublishWithAspNetCoreTargetManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +36,13 @@
 
   <ItemGroup>
     <None Include=".github\workflows\azure-webapp-deploy.yml" />
+  </ItemGroup>
+
+  <!-- Explicitly include wwwroot files in publish -->
+  <ItemGroup>
+    <Content Update="wwwroot\**\*">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
