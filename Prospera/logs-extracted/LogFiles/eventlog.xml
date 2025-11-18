@@ -1,0 +1,852 @@
+<Events><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T19:41:38Z"/><EventRecordID>279448718</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 6932, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>2</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T19:41:40Z"/><EventRecordID>279450359</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+EventId: 35
+
+No XML encryptor configured. Key {77d8458d-0c8d-4b73-b9fa-50bf1c1e32cb} may be persisted to storage in unencrypted form.
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T19:41:40Z"/><EventRecordID>279450562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 9148.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1012</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:25Z"/><EventRecordID>281355828</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' was recycled after detecting app_offline.htm.</Data><Data>Process Id: 9148.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:27Z"/><EventRecordID>281357921</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 9148.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:30Z"/><EventRecordID>281361187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:30Z"/><EventRecordID>281361187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:30Z"/><EventRecordID>281361187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:44Z"/><EventRecordID>281375234</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 7536, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:46Z"/><EventRecordID>281376968</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 9588.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:48Z"/><EventRecordID>281378953</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 9588.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:50Z"/><EventRecordID>281381125</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:50Z"/><EventRecordID>281381125</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:50Z"/><EventRecordID>281381125</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:56Z"/><EventRecordID>281386781</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 11372, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:13:58Z"/><EventRecordID>281388906</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 6668.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:34:51Z"/><EventRecordID>282642015</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 6668.</Data><Data>File Version: 18.0.25107.16. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:34:53Z"/><EventRecordID>282644187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:34:53Z"/><EventRecordID>282644187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-17T20:34:53Z"/><EventRecordID>282644187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T11:49:12Z"/><EventRecordID>337502859</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 1300, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T11:49:15Z"/><EventRecordID>337506234</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 4180.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T12:31:03Z"/><EventRecordID>340013890</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 4180.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T12:31:05Z"/><EventRecordID>340016078</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T12:31:05Z"/><EventRecordID>340016078</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T12:31:05Z"/><EventRecordID>340016078</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T14:41:37Z"/><EventRecordID>347847937</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 972, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T14:41:38Z"/><EventRecordID>347849656</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 7752.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:03:28Z"/><EventRecordID>349159531</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 7752.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:03:30Z"/><EventRecordID>349161718</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:03:30Z"/><EventRecordID>349161718</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:03:30Z"/><EventRecordID>349161718</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:05:05Z"/><EventRecordID>349256187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 10568, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1005</EventID><Level>2</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:06:59Z"/><EventRecordID>349370203</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Failed to gracefully shutdown application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB'.</Data><Data>Process Id: 11272.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1007</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:06:59Z"/><EventRecordID>349370203</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' failed to load coreclr. Exception message:
+Managed server didn't initialize after 120000 ms.</Data><Data>Process Id: 11272.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:01Z"/><EventRecordID>349372406</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Prospera.Program
+EventId: 0
+
+An error occurred while migrating the database.
+
+Exception: 
+Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (5) was exceeded while executing database operations with 'SqlServerRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---&gt; Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---&gt; System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.&lt;&gt;c__DisplayClass18_0.&lt;Exists&gt;b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.&lt;&gt;c__DisplayClass12_0`2.&lt;Execute&gt;b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Prospera.Program.Main(String[] args) in /home/runner/work/Prospera/Prospera/Prospera/Program.cs:line 155
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:02Z"/><EventRecordID>349373046</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '' started successfully.</Data><Data>Process Id: 11272.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:02Z"/><EventRecordID>349373406</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:02Z"/><EventRecordID>349373406</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:02Z"/><EventRecordID>349373406</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:07:08Z"/><EventRecordID>349379359</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 9572, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1005</EventID><Level>2</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:03Z"/><EventRecordID>349494187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Failed to gracefully shutdown application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB'.</Data><Data>Process Id: 10404.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1007</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:03Z"/><EventRecordID>349494187</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' failed to load coreclr. Exception message:
+Managed server didn't initialize after 120000 ms.</Data><Data>Process Id: 10404.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:05Z"/><EventRecordID>349496453</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Prospera.Program
+EventId: 0
+
+An error occurred while migrating the database.
+
+Exception: 
+Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (5) was exceeded while executing database operations with 'SqlServerRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---&gt; Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---&gt; System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.&lt;&gt;c__DisplayClass18_0.&lt;Exists&gt;b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.&lt;&gt;c__DisplayClass12_0`2.&lt;Execute&gt;b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Prospera.Program.Main(String[] args) in /home/runner/work/Prospera/Prospera/Prospera/Program.cs:line 155
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:06Z"/><EventRecordID>349497156</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '' started successfully.</Data><Data>Process Id: 10404.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:06Z"/><EventRecordID>349497375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:06Z"/><EventRecordID>349497375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:09:06Z"/><EventRecordID>349497390</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:10:24Z"/><EventRecordID>349575375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 9112, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1005</EventID><Level>2</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:12:19Z"/><EventRecordID>349690234</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Failed to gracefully shutdown application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB'.</Data><Data>Process Id: 7532.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1007</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:12:19Z"/><EventRecordID>349690234</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' failed to load coreclr. Exception message:
+Managed server didn't initialize after 120000 ms.</Data><Data>Process Id: 7532.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:12:21Z"/><EventRecordID>349692421</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:12:21Z"/><EventRecordID>349692421</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T15:12:21Z"/><EventRecordID>349692421</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:48:53Z"/><EventRecordID>359083984</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 9824, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:48:56Z"/><EventRecordID>359087140</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 7020.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1012</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:49:49Z"/><EventRecordID>359140734</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' was recycled after detecting app_offline.htm.</Data><Data>Process Id: 7020.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:49:50Z"/><EventRecordID>359141484</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 7020.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:49:53Z"/><EventRecordID>359144781</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:49:53Z"/><EventRecordID>359144781</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:49:53Z"/><EventRecordID>359144781</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:00Z"/><EventRecordID>359151578</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 8876, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:02Z"/><EventRecordID>359153562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 11808.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:03Z"/><EventRecordID>359154812</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 11808.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:06Z"/><EventRecordID>359156984</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:06Z"/><EventRecordID>359156984</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:06Z"/><EventRecordID>359156984</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:11Z"/><EventRecordID>359162796</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 9588, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:14Z"/><EventRecordID>359164968</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 2312.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:50:45Z"/><EventRecordID>359196000</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware
+EventId: 1
+SpanId: 02ef73f85e6cd489
+TraceId: 6f33b29ccfa6b0bb9506661e76f5beb5
+ParentId: 0000000000000000
+RequestId: 40000524-0007-f700-b63f-84710c7967bb
+RequestPath: /Extrato/ConsultaExtrato
+
+An unhandled exception has occurred while executing the request.
+
+Exception: 
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[Prospera.Models.Contas]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[Prospera.Models.Extrato]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method210(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeResultAsync&gt;g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeNextResultFilterAsync&gt;g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeNextResourceFilter&gt;g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.&lt;Invoke&gt;g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:51:13Z"/><EventRecordID>359223937</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware
+EventId: 1
+SpanId: 20bac44780047a78
+TraceId: c21db8221e4cd8a5e85dfd4b0f7b7e9e
+ParentId: 0000000000000000
+RequestId: 400005c8-0000-fe00-b63f-84710c7967bb
+RequestPath: /Extrato/ConsultaExtrato
+
+An unhandled exception has occurred while executing the request.
+
+Exception: 
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[Prospera.Models.Contas]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[Prospera.Models.Extrato]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method210(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeResultAsync&gt;g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeNextResultFilterAsync&gt;g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeNextResourceFilter&gt;g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.&lt;Invoke&gt;g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:54:38Z"/><EventRecordID>359428968</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 2312.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:54:40Z"/><EventRecordID>359431140</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:54:40Z"/><EventRecordID>359431140</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T17:54:40Z"/><EventRecordID>359431156</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:22:44Z"/><EventRecordID>361115703</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 11260, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:23:45Z"/><EventRecordID>361176718</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Prospera.Program
+EventId: 0
+
+An error occurred while migrating the database.
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.&lt;&gt;c__DisplayClass18_0.&lt;Exists&gt;b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.&lt;&gt;c__DisplayClass12_0`2.&lt;Execute&gt;b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Prospera.Program.Main(String[] args) in /home/runner/work/Prospera/Prospera/Prospera/Program.cs:line 155
+ClientConnectionId:65abc2c6-a289-44c0-8e8f-7d4afabd7f8c
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:0f5203c7-c9df-43f7-9ad8-189e244c6fd5
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:23:46Z"/><EventRecordID>361177328</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 10936.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:07Z"/><EventRecordID>361198359</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 93898681d07bc5c2
+TraceId: 25dee29ec584d0fb3526de74d9efca69
+ParentId: 0000000000000000
+RequestId: 4000064c-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Login
+ActionId: 9fedbcda-794e-485a-9e7e-a26100422a74
+ActionName: Prospera.Controllers.LoginController.Login (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:07Z"/><EventRecordID>361198375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 93898681d07bc5c2
+TraceId: 25dee29ec584d0fb3526de74d9efca69
+ParentId: 0000000000000000
+RequestId: 4000064c-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Login
+ActionId: 9fedbcda-794e-485a-9e7e-a26100422a74
+ActionName: Prospera.Controllers.LoginController.Login (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:184a5959-8145-4778-9290-b947ae9f5944
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:a5c8c90f-7d96-43c6-b246-ec5089e06211
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:184a5959-8145-4778-9290-b947ae9f5944
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:a5c8c90f-7d96-43c6-b246-ec5089e06211
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:11Z"/><EventRecordID>361202609</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 0bb5a334fb2ba17d
+TraceId: e3abaeb8a3bb797baaa2dd1c35a0233d
+ParentId: 0000000000000000
+RequestId: 4000064f-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:11Z"/><EventRecordID>361202625</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 0bb5a334fb2ba17d
+TraceId: e3abaeb8a3bb797baaa2dd1c35a0233d
+ParentId: 0000000000000000
+RequestId: 4000064f-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:4640424a-bbb9-47fb-bac9-fe68ea906c3a
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:16dc4e9e-97cd-44ef-b932-2d21d1399a03
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:4640424a-bbb9-47fb-bac9-fe68ea906c3a
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:16dc4e9e-97cd-44ef-b932-2d21d1399a03
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:29Z"/><EventRecordID>361220625</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 29052f353edfee6d
+TraceId: 5fa82188424954a4b4d9a20fe1716d42
+ParentId: 0000000000000000
+RequestId: 40000650-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:29Z"/><EventRecordID>361220625</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 29052f353edfee6d
+TraceId: 5fa82188424954a4b4d9a20fe1716d42
+ParentId: 0000000000000000
+RequestId: 40000650-0003-fa00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:a1e1221e-6dd9-420e-8930-b9d03ce0eab7
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:5183bea0-ab69-485a-8619-00e398ca539d
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:a1e1221e-6dd9-420e-8930-b9d03ce0eab7
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:5183bea0-ab69-485a-8619-00e398ca539d
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:37Z"/><EventRecordID>361227953</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 7307e265a77e4f6a
+TraceId: ca1c47ed279b26e40ddc1db8212eb268
+ParentId: 0000000000000000
+RequestId: 400001b1-0005-ef00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:24:37Z"/><EventRecordID>361227968</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 7307e265a77e4f6a
+TraceId: ca1c47ed279b26e40ddc1db8212eb268
+ParentId: 0000000000000000
+RequestId: 400001b1-0005-ef00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 61a46633-2140-43b9-a3d4-ecc094e55e58
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:cd9343aa-8dc2-4c3e-8114-f9d9275da85d
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:db4115b8-3ba9-419e-bb28-e81efde3f1c8
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user '&lt;token-identified principal&gt;'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:cd9343aa-8dc2-4c3e-8114-f9d9275da85d
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:db4115b8-3ba9-419e-bb28-e81efde3f1c8
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:27:40Z"/><EventRecordID>361410906</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 10936.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:27:42Z"/><EventRecordID>361413093</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:27:42Z"/><EventRecordID>361413093</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:27:42Z"/><EventRecordID>361413093</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:28:11Z"/><EventRecordID>361442343</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 2368, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:12Z"/><EventRecordID>361503437</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Prospera.Program
+EventId: 0
+
+An error occurred while migrating the database.
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'prosperadmin'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.&lt;&gt;c__DisplayClass18_0.&lt;Exists&gt;b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.&lt;&gt;c__DisplayClass12_0`2.&lt;Execute&gt;b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Prospera.Program.Main(String[] args) in /home/runner/work/Prospera/Prospera/Prospera/Program.cs:line 155
+ClientConnectionId:3fbaf7ba-3cce-4361-9e8f-20905ef7be4c
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:6ed2a54a-020a-4a1d-b6c8-954ca0cfaf7d
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:13Z"/><EventRecordID>361504109</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 10200.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:21Z"/><EventRecordID>361512531</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 75c464f38478deea
+TraceId: e445acf1f9ff2f1313fb48f98de36f3f
+ParentId: 0000000000000000
+RequestId: 40000855-0006-fe00-b63f-84710c7967bb
+RequestPath: /Login/Login
+ActionId: f0d5d474-bdd8-472a-9a24-8cbcf3362492
+ActionName: Prospera.Controllers.LoginController.Login (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:21Z"/><EventRecordID>361512562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 75c464f38478deea
+TraceId: e445acf1f9ff2f1313fb48f98de36f3f
+ParentId: 0000000000000000
+RequestId: 40000855-0006-fe00-b63f-84710c7967bb
+RequestPath: /Login/Login
+ActionId: f0d5d474-bdd8-472a-9a24-8cbcf3362492
+ActionName: Prospera.Controllers.LoginController.Login (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'prosperadmin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:b9721401-9877-42fa-ba48-72f618511a8f
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:f4b2263d-52d6-4812-90cb-8459151a49c6
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'prosperadmin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:b9721401-9877-42fa-ba48-72f618511a8f
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:f4b2263d-52d6-4812-90cb-8459151a49c6
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:25Z"/><EventRecordID>361516609</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Database.Connection
+EventId: 20004
+SpanId: 9a2552e313492300
+TraceId: 925e6902b5ca186b8dfe0450331ae1e2
+ParentId: 0000000000000000
+RequestId: 4000060f-0001-fe00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 7f3cc78f-a2a1-430f-8f62-9238b8c0a715
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An error occurred using the connection to database 'ProsperaDB' on server 'tcp:prosperadb.database.windows.net,1433'.
+</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:29:25Z"/><EventRecordID>361516609</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Category: Microsoft.EntityFrameworkCore.Query
+EventId: 10100
+SpanId: 9a2552e313492300
+TraceId: 925e6902b5ca186b8dfe0450331ae1e2
+ParentId: 0000000000000000
+RequestId: 4000060f-0001-fe00-b63f-84710c7967bb
+RequestPath: /Login/Entrar
+ActionId: 7f3cc78f-a2a1-430f-8f62-9238b8c0a715
+ActionName: Prospera.Controllers.LoginController.Entrar (Prospera)
+
+An exception occurred while iterating over the results of a query for context type 'Prospera.Data.ProsperaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'prosperadmin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:93c5693b-5ec8-4804-b4fe-bf07e4d12367
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:b91239be-37c4-43ab-85ac-f3192efeded9
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+
+Exception: 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'prosperadmin'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.&lt;&gt;c.&lt;MoveNext&gt;b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.&lt;&gt;c__DisplayClass28_0`2.&lt;Execute&gt;b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:93c5693b-5ec8-4804-b4fe-bf07e4d12367
+Error Number:18456,State:1,Class:14
+ClientConnectionId before routing:b91239be-37c4-43ab-85ac-f3192efeded9
+Routing Destination:f5a9967f9951.tr10478.australiaeast1-a.worker.database.windows.net,11018
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1012</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:16Z"/><EventRecordID>363126953</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' was recycled after detecting app_offline.htm.</Data><Data>Process Id: 10200.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:16Z"/><EventRecordID>363127625</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 10200.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:18Z"/><EventRecordID>363129796</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:18Z"/><EventRecordID>363129796</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:18Z"/><EventRecordID>363129875</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name="Instrumentation Engine"/><EventID>1000</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:42Z"/><EventRecordID>363153281</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CInstrumentationMethod::Initialize - failed to initialize instrumentation method PID: 9632, hr: 80131375, name: Production Breakpoint Instrumentation Method</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1032</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T18:56:44Z"/><EventRecordID>363155109</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' started successfully.</Data><Data>Process Id: 2988.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1012</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:07:33Z"/><EventRecordID>363804687</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'C:\home\site\wwwroot\' was recycled after detecting app_offline.htm.</Data><Data>Process Id: 2988.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1033</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:07:34Z"/><EventRecordID>363805390</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application 'MACHINE/WEBROOT/APPHOST/PROSPERAWEB' has shutdown.</Data><Data>Process Id: 2988.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:07:36Z"/><EventRecordID>363807562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:07:36Z"/><EventRecordID>363807562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:07:36Z"/><EventRecordID>363807562</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Incoming-calls pipe shutdown.</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1026</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:08:26Z"/><EventRecordID>363857031</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application: w3wp.exe
+CoreCLR Version: 8.0.2225.52707
+.NET Version: 8.0.22
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.IO.IOException: The handle is invalid.
+   at System.ConsolePal.SetConsoleInputEncoding(Encoding enc)
+   at System.Console.set_InputEncoding(Encoding value)
+   at Prospera.Program.Main(String[] args) in C:\Users\edsilva\source\repos\necromod\Prospera\Prospera\Program.cs:line 25
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1018</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:08:26Z"/><EventRecordID>363857031</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' hit unexpected managed exception, exception code = '0xe0434352'. First 30KB characters of captured stdout and stderr logs:
+Unhandled exception. System.IO.IOException: The handle is invalid.
+   at System.ConsolePal.SetConsoleInputEncoding(Encoding enc)
+   at System.Console.set_InputEncoding(Encoding value)
+   at Prospera.Program.Main(String[] args) in C:\Users\edsilva\source\repos\necromod\Prospera\Prospera\Program.cs:line 25
+</Data><Data>Process Id: 8368.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1007</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:08:26Z"/><EventRecordID>363857031</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' failed to load coreclr. Exception message:
+CLR worker thread exited prematurely</Data><Data>Process Id: 8368.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:10:31Z"/><EventRecordID>363982093</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>CNamedPipe::Read - Read from named pipe failed: 0x8007006D.</Data></EventData></Event><Event><System><Provider Name="Production Breakpoints"/><EventID>4166</EventID><Level>4</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:10:31Z"/><EventRecordID>363982109</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>IfFailRetLogMessage(pNamedPipe-&gt;Read((BYTE*)&amp;controlRequest, sizeof(SnapshotHolderControlStruct))) failed in function CSnapshotHolder::HandleNewPipeConnection: -2147024787</Data></EventData></Event><Event><System><Provider Name=".NET Runtime"/><EventID>1026</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:13:05Z"/><EventRecordID>364136375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application: w3wp.exe
+CoreCLR Version: 8.0.2225.52707
+.NET Version: 8.0.22
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.IO.IOException: The handle is invalid.
+   at System.ConsolePal.SetConsoleInputEncoding(Encoding enc)
+   at System.Console.set_InputEncoding(Encoding value)
+   at Prospera.Program.Main(String[] args) in C:\Users\edsilva\source\repos\necromod\Prospera\Prospera\Program.cs:line 25
+</Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1018</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:13:05Z"/><EventRecordID>364136375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' hit unexpected managed exception, exception code = '0xe0434352'. First 30KB characters of captured stdout and stderr logs:
+Unhandled exception. System.IO.IOException: The handle is invalid.
+   at System.ConsolePal.SetConsoleInputEncoding(Encoding enc)
+   at System.Console.set_InputEncoding(Encoding value)
+   at Prospera.Program.Main(String[] args) in C:\Users\edsilva\source\repos\necromod\Prospera\Prospera\Program.cs:line 25
+</Data><Data>Process Id: 1272.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event><Event><System><Provider Name="IIS AspNetCore Module V2"/><EventID>1007</EventID><Level>1</Level><Task>0</Task><Keywords>Keywords</Keywords><TimeCreated SystemTime="2025-11-18T19:13:05Z"/><EventRecordID>364136375</EventRecordID><Channel>Application</Channel><Computer>WEBWK00000D</Computer><Security/></System><EventData><Data>Application '/LM/W3SVC/1607245690/ROOT' with physical root 'C:\home\site\wwwroot\' failed to load coreclr. Exception message:
+CLR worker thread exited prematurely</Data><Data>Process Id: 1272.</Data><Data>File Version: 18.0.25301.22. Description: IIS ASP.NET Core Module V2 Request Handler. Commit: </Data></EventData></Event></Events>

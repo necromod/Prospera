@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Text;
+using System.Globalization;
 
 namespace Prospera
 {
@@ -17,6 +19,11 @@ namespace Prospera
     {
         public static void Main(string[] args)
         {
+            // Configurar encoding UTF-8 globalmente
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.UTF8;
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Configure Application Insights for Azure monitoring
@@ -135,9 +142,23 @@ namespace Prospera
                 });
             }
 
+            // Configurar globalização para pt-BR
+            var supportedCultures = new[] { new CultureInfo("pt-BR") };
+            builder.Services.Configure<RequestLocalizationOptions>(options =>
+            {
+                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("pt-BR");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+
+            // Configurar cultura padrão
+            var cultureInfo = new CultureInfo("pt-BR");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             // Attempt to apply any pending migrations on startup
             if (!app.Environment.IsDevelopment())
@@ -179,6 +200,9 @@ namespace Prospera
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Usar localização de requisições
+            app.UseRequestLocalization();
 
             // Redirect HTTP to HTTPS
             app.UseHttpsRedirection();

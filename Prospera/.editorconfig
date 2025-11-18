@@ -1,0 +1,37 @@
+# EditorConfig para garantir encoding UTF-8 em todos os arquivos
+root = true
+
+# Configurações padrão para todos os arquivos
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Arquivos C#
+[*.cs]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+# Arquivos Razor
+[*.cshtml]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+# Arquivos JavaScript e CSS
+[*.{js,css}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# Arquivos JSON
+[*.json]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# Arquivos de configuração
+[*.{config,xml}]
+charset = utf-8
