@@ -24,12 +24,12 @@
     @if (TempData["MensagemErro"] != null)
     {
         <div class="toast-notification error" id="toastNotification">
-            <div class="toast-icon">??</div>
+            <div class="toast-icon">?</div>
             <div class="toast-content">
                 <strong>Erro</strong>
                 <p>@TempData["MensagemErro"]</p>
             </div>
-            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">?</button>
+            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">×</button>
         </div>
     }
 
@@ -41,7 +41,7 @@
                 <strong>Sucesso</strong>
                 <p>@TempData["MensagemSucesso"]</p>
             </div>
-            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">?</button>
+            <button class="toast-close" onclick="document.getElementById('toastNotification').remove()">×</button>
         </div>
     }
 
