@@ -19,7 +19,7 @@ namespace Prospera
     {
         public static void Main(string[] args)
         {
-            // Configurar encoding UTF-8 globalmente
+            // Reintroduzir configuração global de encoding UTF-8
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
             var builder = WebApplication.CreateBuilder(args);
