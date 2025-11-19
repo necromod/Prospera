@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Prospera.Data;
 using Prospera.Helpers;
 using Microsoft.AspNetCore.Authorization;
@@ -21,8 +21,6 @@ namespace Prospera
         {
             // Configurar encoding UTF-8 globalmente
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            Console.OutputEncoding = Encoding.UTF8;
-            Console.InputEncoding = Encoding.UTF8;
 
             var builder = WebApplication.CreateBuilder(args);
 
